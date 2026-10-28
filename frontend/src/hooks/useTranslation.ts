@@ -1,3 +1,5 @@
+
+import {appFetch as fetch} from '@/lib/app-path';
 /**
  * useTranslation Hook
  * ====================
@@ -28,7 +30,7 @@ export const LANGUAGES: Record<LanguageCode, { label: string; flag: string; coun
 
 // Circle-flags CDN URL
 export const getCircleFlagUrl = (countryCode: string) => 
-  `https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`;
+  `${process.env.NEXT_PUBLIC_BASE_PATH||''}/flags/${countryCode}.svg`;
 
 // Local storage key
 const STORAGE_KEY = 'puedo_casa_language';

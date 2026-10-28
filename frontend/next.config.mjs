@@ -2,14 +2,19 @@
 const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8000";
 
 const nextConfig = {
+  output:'standalone',
+  basePath:process.env.NEXT_PUBLIC_BASE_PATH||'',
+  experimental:{cpus:2},
+  env:{NEXT_PUBLIC_SAMPLE_MODE:process.env.SAMPLE_MODE==='1'?'1':'0'},
   // Optional static report presentation; ordinary local workspaces keep root assets.
-  assetPrefix: process.env.NEXT_PUBLIC_ATELIER_PREVIEW === 'true' ? '/apps/estimates' : undefined,
+  assetPrefix: process.env.NEXT_PUBLIC_ATELIER_PREVIEW === 'true' && !process.env.NEXT_PUBLIC_BASE_PATH ? '/apps/estimates' : undefined,
   // A constrained local verification host can avoid generated Webpack disk cache.
   webpack(config) {
     if (process.env.ESTIMATES_BUILD_CACHE === '0') config.cache = false;
     return config;
   },
   images: {
+    unoptimized:process.env.SAMPLE_MODE==='1',
     // Allow any external images - universal scraper can fetch from any domain
     remotePatterns: [
       {

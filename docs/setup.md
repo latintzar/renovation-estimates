@@ -6,13 +6,17 @@ Python 3.12 and the NumPy/Pydantic closure in `requirements-first-result.txt` ar
 
 The SQLite sink implements the assembler's `save_boq_line_items_batch` seam. Supabase remains the application's durable store. [Architecture](architecture.md).
 
-## Interface
+## Native interface
 
-Use Node 22.12 or later. From `frontend`, run `npm ci`, `npm run typecheck`, `npm run build`, then `npm run start`. Development uses `npm run dev`. Both servers bind to 127.0.0.1:3002. Root navigation opens `/listings` on any installation hostname. The `/first-estimate` entry connects the original report component to the actual synthetic calculation fixture. Regenerate/check it with `python3 tools/export-first-result.py --check`. The archived report applies its own fixed overhead/margin/tax arithmetic; those displayed percentages are part of this synthetic interface example, rather than a real project’s tax determination.
+From the root, use Node 22.18+ in the Node 22 line and Python 3.10+: `npm ci --prefix frontend`, `python3 tools/sample-app.py build`, then `python3 tools/sample-app.py start`. Open http://127.0.0.1:3002. `python3 tools/sample-app.py dev` runs the same source in development.
 
-`BACKEND_URL` selects the server-side FastAPI origin; its local default is `http://localhost:8000`. `NEXT_PUBLIC_SITE_URL` controls installation metadata. `NEXT_PUBLIC_MAPBOX_TOKEN` enables the existing map component with the recipient's public browser token. Playfair Display and Source Sans3 are self-hosted with their OFL notices; font provenance is in `frontend/public/fonts/provenance.json`.
+The original `/listings` feed opens immediately with three fictional properties. Each `/listing/101`–`103` workspace includes a four-room cached proposal, before/after imagery, comparables and 24calculated cost items. The server supplies the native API contracts from a committed cache. All sample API mutations and provider-backed paths return a configuration response. [Native workspace](native-workspace.md) records the calculation, data and route boundary.
 
-The listing importer requires the backend and its data contracts. The local calculation proof is independently usable while those integrations are commissioned.
+The launcher clears inherited credentials/cloud profiles and rejects private dotenv files in the frontend. For a mounted app, build and start with the same `--base-path /apps/estimates`; the proxy preserves that complete prefix. `--hostname` and `--port` select the listener. `.next/standalone` under frontend contains the actual production server, public/static assets, launcher and required dependencies; deploy it instead of build dependencies.
+
+Run `python3 tools/build-native-sample.py` after installing `requirements-first-result.txt` to reproduce the committed full report cache. It executes original coverage validation, quantity formulas, price lookup and BOQ assembly over authored measurements and a synthetic price book, with a socket fence. Actual model planning, photo analysis and comparable acquisition remain recipient integration work. The retained report applies its own fixed overhead/margin/tax arithmetic; the displayed percentages belong to this synthetic interface example rather than a real project's tax determination.
+
+For owned integrations, the original frontend commands remain available from `frontend`: `npm run dev`, `npm run typecheck`, `npm run build`, `npm run start`. `BACKEND_URL` selects the FastAPI origin, defaulting to loopback 8000. `NEXT_PUBLIC_SITE_URL` selects the recipient's metadata/share origin. `NEXT_PUBLIC_MAPBOX_TOKEN` selects the recipient's browser token. Maps receive location data from the recipient; cached fictional comparables keep map coordinates unset. Fonts and bundled flag icons retain their notices. The `/first-estimate` two-item calculation scene remains a smaller engineering reference.
 
 ## Private runtime file
 

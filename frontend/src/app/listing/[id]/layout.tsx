@@ -1,3 +1,6 @@
+import fixture from '@/fixtures/native-workspace.json';
+
+import {appFetch as fetch} from '@/lib/app-path';
 /**
  * Listing Layout — Per-listing OG metadata
  * ==========================================
@@ -18,7 +21,7 @@ import type { Metadata } from "next";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
 const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
 
-const APP_BASE = "https://app.leo.casa";
+const APP_BASE = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3002';
 
 const headers = {
   apikey: SUPABASE_KEY,
@@ -47,6 +50,7 @@ export async function generateMetadata({
   const { id } = await params;
 
   let listing: ListingRow | null = null;
+  if(process.env.SAMPLE_MODE==='1'){const row=fixture.reports.find(r=>String(r.listing.id)===id);return {title:row?.listing.title||'Vivienda',description:row?.listing.description};}
   try {
     const resp = await fetch(
       `${SUPABASE_URL}/rest/v1/listings?id=eq.${id}&select=title,price_eur,address,city,neighborhood,bedrooms,bathrooms,sqm&limit=1`,

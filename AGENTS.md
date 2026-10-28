@@ -13,3 +13,7 @@ Reference pricing, embeddings, property photographs, listing records and market-
 The API and admin routes retain their original trusted local-workspace contract. Keep the starter bound to loopback. A public deployment needs its own authentication, authorization, input acquisition policy and provider limits.
 
 Run provider/model/GPU calls only with the account owner's explicit authorization. Preserve third-party notices. Update source provenance and scoped verification whenever extraction code changes.
+
+## Native first result
+
+Run npm ci --prefix frontend, then python3 tools/sample-app.py build and start from root. This is the complete native workspace with explicitly selected read-only cached sample APIs. Keep original UI/provider algorithms intact. Runtime state/accounts belong to the recipient; keep private configuration outside the checkout and use the hidden-input runtime-env helper. See docs/native-workspace.md for cached data and actual-provider boundaries.

@@ -292,7 +292,7 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 
 ## frontend/src
 
-- [frontend/src/proxy.ts](modules/frontend/src/proxy.ts.md): 2 symbols.
+- [frontend/src/proxy.ts](modules/frontend/src/proxy.ts.md): 7 symbols.
 
 ## frontend/src/app
 
@@ -447,7 +447,7 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 
 ## frontend/src/app/listing/[id]
 
-- [frontend/src/app/listing/[id]/layout.tsx](modules/frontend/src/app/listing/[id]/layout.tsx.md): 18 symbols.
+- [frontend/src/app/listing/[id]/layout.tsx](modules/frontend/src/app/listing/[id]/layout.tsx.md): 19 symbols.
 - [frontend/src/app/listing/[id]/opengraph-image.tsx](modules/frontend/src/app/listing/[id]/opengraph-image.tsx.md): 38 symbols.
 - [frontend/src/app/listing/[id]/page.tsx](modules/frontend/src/app/listing/[id]/page.tsx.md): 14 symbols.
 
@@ -583,6 +583,7 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 ## frontend/src/lib
 
 - [frontend/src/lib/api.ts](modules/frontend/src/lib/api.ts.md): 34 symbols.
+- [frontend/src/lib/app-path.ts](modules/frontend/src/lib/app-path.ts.md): 3 symbols.
 - [frontend/src/lib/i18n.ts](modules/frontend/src/lib/i18n.ts.md): 10 symbols.
 - [frontend/src/lib/types.ts](modules/frontend/src/lib/types.ts.md): 30 symbols.
 - [frontend/src/lib/utils.ts](modules/frontend/src/lib/utils.ts.md): 10 symbols.
@@ -608,8 +609,10 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 
 ## tools
 
+- [tools/build-native-sample.py](modules/tools/build-native-sample.py.md): 1 symbols.
 - [tools/export-first-result.py](modules/tools/export-first-result.py.md): 1 symbols.
 - [tools/first-estimate.py](modules/tools/first-estimate.py.md): 12 symbols.
 - [tools/link-gate.py](modules/tools/link-gate.py.md): 3 symbols.
 - [tools/runtime-env.py](modules/tools/runtime-env.py.md): 6 symbols.
+- [tools/sample-app.py](modules/tools/sample-app.py.md): 2 symbols.
 - [tools/source-reference.py](modules/tools/source-reference.py.md): 4 symbols.

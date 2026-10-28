@@ -15,3 +15,7 @@ Construction/reference data, third-party document distributions and property med
 are outside this export. [Data rights](docs/providers.md#data-rights).
 
 The retained UI primitives follow shadcn/ui’s component pattern. Its complete MIT notice is preserved at [third_party/shadcn-ui-LICENSE.txt](third_party/shadcn-ui-LICENSE.txt), with an exact upstream blob receipt.
+
+## Bundled flag icons
+
+Six Circle Flags 2.8.1 SVGs are copied from the declared npm dependency for local language selection. HatScripts/circle-flags is MIT; its complete notice is retained at `frontend/public/flags/LICENSE`.

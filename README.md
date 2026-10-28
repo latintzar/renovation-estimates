@@ -6,22 +6,23 @@ Leo Estimate is a renovation cost estimator for Spanish properties, with room-by
 
 The original app keeps the listing, rooms, proposed work and itemized estimate together. The source includes its Next.js interface, FastAPI services, worker pipeline and deterministic costing modules.
 
-![Leo Estimate’s original report with the verified synthetic calculation](docs/assets/estimate-report-desktop.png)
+![Leo Estimate’s native renovation workspace](docs/assets/native-renovation-desktop.png)
 
-The sample estimate uses independently authored rates and measurements: two work items totaling €310. Provider accounts, licensed reference data and the full analysis pipeline have their own [setup guide](docs/setup.md).
+The workspace opens with three fictional properties and complete cached reports: four rooms and 24calculated work items per property. The photographs are recovered, originally generated project assets. Prices, measurements, observations and comparable properties are authored examples.
 
 ## Run the app
 
-Use Node 22.12 or later:
+Use Node 22.18+ in the Node 22 line and Python 3.10+, from the repository root:
 
 ```sh
 git clone https://github.com/latintzar/renovation-estimates.git
-cd renovation-estimates/frontend
-npm ci
-npm run dev
+cd renovation-estimates
+npm ci --prefix frontend
+python3 tools/sample-app.py build
+python3 tools/sample-app.py start
 ```
 
-Open `http://127.0.0.1:3002/first-estimate` for the original report interface backed by the proved synthetic rows. `/listings` opens the original listing workspace. Its listing importer uses the backend, recipient-owned provider accounts and licensed inputs. [Setup](docs/setup.md) records the database and full-pipeline integration boundary.
+Open **http://127.0.0.1:3002**. Browse the original listing feed, open a property, compare the before/after, explore rooms and comparables, then open **Presupuesto desglosado** for measurements, itemized costs and printing. This runs the complete native Next interface with a real read-only local API. [Native workspace](docs/native-workspace.md) explains the cached reports and deployment. [Provider setup](docs/setup.md) activates the original FastAPI, worker and analysis pipeline with recipient-owned services.
 
 ## Run the costing modules
 
@@ -40,6 +41,7 @@ These authored demonstration rates are synthetic; the receipt describes a calcul
 
 ## Guide
 
+- [Native workspace](docs/native-workspace.md): cached reports, API contracts and deployment.
 - [Setup](docs/setup.md): runtimes, private configuration and database artifacts.
 - [Workflows](docs/workflows.md): listing → rooms → comparable standard → work → quantities → estimate.
 - [Architecture](docs/architecture.md): queue, worker, providers, calculation and persistence.

@@ -1,3 +1,5 @@
+
+import {appFetch as fetch} from '@/lib/app-path';
 /**
  * Lean MVP API Client
  * ====================

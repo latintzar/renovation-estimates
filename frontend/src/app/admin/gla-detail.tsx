@@ -1,5 +1,7 @@
 "use client";
 
+import {appFetch as fetch} from '@/lib/app-path';
+
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ArrowLeft,

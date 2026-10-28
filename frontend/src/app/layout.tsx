@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: 'Renovation estimates', template: '%s | Renovation estimates' },
   description: 'Property analysis, comparable standards and auditable renovation quantities.',
-  icons: { icon: process.env.NEXT_PUBLIC_ATELIER_PREVIEW === 'true' ? '/apps/estimates/favicon.svg' : '/favicon.svg' },
+  icons: { icon: (process.env.NEXT_PUBLIC_BASE_PATH||'')+'/favicon.svg' },
 };
 
 export const viewport: Viewport = {

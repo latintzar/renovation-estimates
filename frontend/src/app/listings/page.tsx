@@ -1,5 +1,7 @@
 "use client";
 
+import {appFetch as fetch} from '@/lib/app-path';
+
 /**
  * Listings Page - app.leo.casa/listings
  * ======================================

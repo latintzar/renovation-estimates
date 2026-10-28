@@ -1,0 +1,3138 @@
+{
+  "fixture": "authored-native-workspace-v1",
+  "original_commit": "4dca5f9bd94a3ee4759dff949f3d185acd095022",
+  "calculation_source": {
+    "pricing/v4_quantification_pipeline.py": {
+      "git_blob": "6c0306069a8d14a2f0b6d7d32830202a83998b94",
+      "sha256": "a7b8c818f0e4b9977bed5b2a804685f3d0e89c24774836298180f1106b79f707"
+    },
+    "pricing/quantity_formula_v4.py": {
+      "git_blob": "27a2e1a4eb293635398849bbf1179fa75d516549",
+      "sha256": "235b6ad057175fbdc4a956a4694f9f446f6ddbf57b662250be9fc18ad6056e04"
+    },
+    "pricing/measurement_catalog_v4.py": {
+      "git_blob": "452791bc955bbe6f6eb683dfd200ee633b9a4d51",
+      "sha256": "34166345a10748a29be001ecc6c46bcc161258e83dab22e128141bca6e1a5b06"
+    },
+    "pricing/bcca_price_lookup.py": {
+      "git_blob": "240f9fe56b2f3eb26baa428ece761754e86e5d00",
+      "sha256": "b74fc476770bb9e73f2d63ab4e854e141db3587ca9414f08cbbf441a3142d804"
+    }
+  },
+  "calculation": "Original _plans_validate_or_raise, assemble_v4_boq, quantity_formula_v4, measurement_catalog_v4 and BCCAPriceLookup. Authored measured signals and synthetic SQLite price book; no model planning or market data.",
+  "provider_model_calls": 0,
+  "network_attempts": 0,
+  "reports": [
+    {
+      "listing": {
+        "id": 101,
+        "source_url": "",
+        "source_domain": "example.invalid",
+        "title": "Piso para reformar en Gràcia",
+        "description": "Vivienda ficticia para explorar el informe completo. Fotografías generadas y recuperadas del proyecto original; medidas, precios y comparables de ejemplo.",
+        "price_eur": 195000,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "sqm": 74,
+        "m2_built": 74,
+        "m2_useful": 65,
+        "listing_type": "sale",
+        "price_period": "total",
+        "address": "Gràcia · vivienda de ejemplo",
+        "city": "Barcelona",
+        "neighborhood": "Gràcia",
+        "country": "Spain",
+        "condition": "renovate",
+        "property_subtype": "flat",
+        "has_elevator": true,
+        "has_balcony": true,
+        "has_terrace": false,
+        "photos": [
+          "/images/landing/no-es-magia/before.webp",
+          "/images/landing/rooms/living.webp",
+          "/images/landing/rooms/kitchen.webp",
+          "/images/landing/rooms/bathroom.webp",
+          "/images/landing/rooms/entry.webp"
+        ],
+        "image_urls": [
+          "/images/landing/no-es-magia/before.webp",
+          "/images/landing/rooms/living.webp",
+          "/images/landing/rooms/kitchen.webp",
+          "/images/landing/rooms/bathroom.webp",
+          "/images/landing/rooms/entry.webp"
+        ],
+        "pipeline_status": "complete",
+        "created_at": "2026-10-28T09:00:00Z",
+        "updated_at": "2026-10-28T09:00:00Z"
+      },
+      "package": {
+        "package_type": "market_standard",
+        "strategy_name": "market_standard",
+        "total_cost": 6528.77,
+        "renovation_cost": 6528.77,
+        "grand_total_with_iva": 6528.77,
+        "line_items_count": 24,
+        "line_items": [
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 12.0,
+            "line_total": 768.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-floor"
+            },
+            "quantity": 24.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "living-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 3.885,
+            "line_total": 284.9,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-paint"
+            },
+            "quantity": 25.9,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "living-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 160.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-skirt"
+            },
+            "quantity": 20.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "living-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-light"
+            },
+            "quantity": 2.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "living-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "living-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-door"
+            },
+            "quantity": 1.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "living-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 6.0,
+            "line_total": 384.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-floor"
+            },
+            "quantity": 12.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "kitchen-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 3.885,
+            "line_total": 284.9,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-paint"
+            },
+            "quantity": 25.9,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "kitchen-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.4000000000000001,
+            "line_total": 112.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-skirt"
+            },
+            "quantity": 14.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "kitchen-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-light"
+            },
+            "quantity": 2.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "kitchen-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "kitchen-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-door"
+            },
+            "quantity": 1.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "kitchen-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 3.0,
+            "line_total": 192.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-floor"
+            },
+            "quantity": 6.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "bathroom-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 3.885,
+            "line_total": 284.9,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-paint"
+            },
+            "quantity": 25.9,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "bathroom-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.0,
+            "line_total": 80.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-skirt"
+            },
+            "quantity": 10.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "bathroom-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-light"
+            },
+            "quantity": 2.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "bathroom-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "bathroom-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-door"
+            },
+            "quantity": 1.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "bathroom-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.0,
+            "line_total": 256.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-floor"
+            },
+            "quantity": 8.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "entry-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 3.885,
+            "line_total": 284.9,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-paint"
+            },
+            "quantity": 25.9,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "entry-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.2000000000000002,
+            "line_total": 96.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-skirt"
+            },
+            "quantity": 12.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "entry-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-light"
+            },
+            "quantity": 2.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "entry-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "entry-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-door"
+            },
+            "quantity": 1.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "entry-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          }
+        ],
+        "duration_weeks": 4,
+        "total_labor_hours": 71.34,
+        "eli5_summary": {
+          "concept": {
+            "intro_before": "La vivienda conserva acabados antiguos y una distribución aprovechable. Este caso usa medidas y observaciones de ejemplo.",
+            "intro_after": "La propuesta renueva suelos, pintura, puntos eléctricos y carpintería por estancia.",
+            "design_style": "Reforma por estancias",
+            "key_upgrades": [
+              "Suelos continuos",
+              "Pintura y acabados",
+              "Puntos eléctricos"
+            ],
+            "value_story": "Cada partida conserva su medida, fórmula y precio de ejemplo."
+          },
+          "property_summary": {
+            "address": "Gràcia · vivienda de ejemplo",
+            "total_cost": 6528.77,
+            "total_weeks": 4
+          },
+          "rooms": [
+            {
+              "room_id": "living",
+              "room_name": "Salón",
+              "estimated_m2": 24.0,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1662.9,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "kitchen",
+              "room_name": "Cocina",
+              "estimated_m2": 12.0,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1230.9,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "bathroom",
+              "room_name": "Baño",
+              "estimated_m2": 6.0,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1006.9,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "entry",
+              "room_name": "Entrada",
+              "estimated_m2": 8.0,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1086.9,
+              "weeks": "1–2",
+              "packages": []
+            }
+          ],
+          "timeline": {
+            "total_weeks": 4,
+            "summary": "Plan de ejemplo de cuatro semanas, organizado por estancias y oficios."
+          }
+        },
+        "dimension_totals": {
+          "surface_finishes": 4987.6
+        },
+        "room_images": [
+          {
+            "room_id": "living",
+            "room_name": "Salón",
+            "before_image": "/images/landing/no-es-magia/before.webp",
+            "after_image": "/images/landing/no-es-magia/after-fair_market.webp",
+            "key_changes": [
+              "Suelos y pintura",
+              "Iluminación y carpintería"
+            ],
+            "is_hero": true
+          }
+        ],
+        "before_image": "/images/landing/no-es-magia/before.webp",
+        "after_image": "/images/landing/no-es-magia/after-fair_market.webp",
+        "comparables": [
+          {
+            "id": 1010,
+            "casafari_property_id": null,
+            "sale_price": 185406,
+            "price_per_sqm": 2505,
+            "total_area": 74,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.3,
+            "address": "Comparable ficticio 1 · Gràcia",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "below",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          },
+          {
+            "id": 1011,
+            "casafari_property_id": null,
+            "sale_price": 201529,
+            "price_per_sqm": 2723,
+            "total_area": 76,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.5,
+            "address": "Comparable ficticio 2 · Gràcia",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "reference",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          },
+          {
+            "id": 1012,
+            "casafari_property_id": null,
+            "sale_price": 217651,
+            "price_per_sqm": 2941,
+            "total_area": 78,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.7,
+            "address": "Comparable ficticio 3 · Gràcia",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "above",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          }
+        ],
+        "reference_sold_price": 201529,
+        "reference_comparable_id": 1011,
+        "price_basis": "Precios y medidas ficticios de ejemplo",
+        "confidence_score": null,
+        "sanity_check_passed": true,
+        "risk_flags": []
+      },
+      "comparables": [
+        {
+          "id": 1010,
+          "casafari_property_id": null,
+          "sale_price": 185406,
+          "price_per_sqm": 2505,
+          "total_area": 74,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.3,
+          "address": "Comparable ficticio 1 · Gràcia",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "below",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        },
+        {
+          "id": 1011,
+          "casafari_property_id": null,
+          "sale_price": 201529,
+          "price_per_sqm": 2723,
+          "total_area": 76,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.5,
+          "address": "Comparable ficticio 2 · Gràcia",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "reference",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        },
+        {
+          "id": 1012,
+          "casafari_property_id": null,
+          "sale_price": 217651,
+          "price_per_sqm": 2941,
+          "total_area": 78,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.7,
+          "address": "Comparable ficticio 3 · Gràcia",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "above",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        }
+      ],
+      "calculation": {
+        "saved_rows": 24,
+        "pem_subtotal": 4987.6,
+        "total_with_source_report_overheads_and_tax": 6528.77,
+        "labor_hours": 71.34,
+        "measurements": {
+          "living": {
+            "area_floor_m2": {
+              "value": 24.0
+            },
+            "area_wall_m2": {
+              "value": 52.0
+            },
+            "perimetro_room_ml": {
+              "value": 20.0
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "kitchen": {
+            "area_floor_m2": {
+              "value": 12.0
+            },
+            "area_wall_m2": {
+              "value": 36.4
+            },
+            "perimetro_room_ml": {
+              "value": 14.0
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "bathroom": {
+            "area_floor_m2": {
+              "value": 6.0
+            },
+            "area_wall_m2": {
+              "value": 26.0
+            },
+            "perimetro_room_ml": {
+              "value": 10.0
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "entry": {
+            "area_floor_m2": {
+              "value": 8.0
+            },
+            "area_wall_m2": {
+              "value": 31.2
+            },
+            "perimetro_room_ml": {
+              "value": 12.0
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "listing": {
+        "id": 102,
+        "source_url": "",
+        "source_domain": "example.invalid",
+        "title": "Apartamento con luz en Sant Antoni",
+        "description": "Vivienda ficticia para explorar el informe completo. Fotografías generadas y recuperadas del proyecto original; medidas, precios y comparables de ejemplo.",
+        "price_eur": 219000,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "sqm": 82,
+        "m2_built": 82,
+        "m2_useful": 72,
+        "listing_type": "sale",
+        "price_period": "total",
+        "address": "Sant Antoni · vivienda de ejemplo",
+        "city": "Barcelona",
+        "neighborhood": "Sant Antoni",
+        "country": "Spain",
+        "condition": "renovate",
+        "property_subtype": "flat",
+        "has_elevator": true,
+        "has_balcony": true,
+        "has_terrace": false,
+        "photos": [
+          "/images/landing/no-es-magia/before.webp",
+          "/images/landing/rooms/living.webp",
+          "/images/landing/rooms/kitchen.webp",
+          "/images/landing/rooms/bathroom.webp",
+          "/images/landing/rooms/entry.webp"
+        ],
+        "image_urls": [
+          "/images/landing/no-es-magia/before.webp",
+          "/images/landing/rooms/living.webp",
+          "/images/landing/rooms/kitchen.webp",
+          "/images/landing/rooms/bathroom.webp",
+          "/images/landing/rooms/entry.webp"
+        ],
+        "pipeline_status": "complete",
+        "created_at": "2026-10-28T09:00:00Z",
+        "updated_at": "2026-10-28T09:00:00Z"
+      },
+      "package": {
+        "package_type": "market_standard",
+        "strategy_name": "market_standard",
+        "total_cost": 7011.74,
+        "renovation_cost": 7011.74,
+        "grand_total_with_iva": 7011.74,
+        "line_items_count": 24,
+        "line_items": [
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 13.44,
+            "line_total": 860.16,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-floor"
+            },
+            "quantity": 26.88,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "living-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.305,
+            "line_total": 315.7,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-paint"
+            },
+            "quantity": 28.7,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "living-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.2399999999999998,
+            "line_total": 179.2,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-skirt"
+            },
+            "quantity": 22.4,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "living-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-light"
+            },
+            "quantity": 2.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "living-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "living-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-door"
+            },
+            "quantity": 1.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "living-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 6.72,
+            "line_total": 430.08,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-floor"
+            },
+            "quantity": 13.44,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "kitchen-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.305,
+            "line_total": 315.7,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-paint"
+            },
+            "quantity": 28.7,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "kitchen-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.568,
+            "line_total": 125.44,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-skirt"
+            },
+            "quantity": 15.68,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "kitchen-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-light"
+            },
+            "quantity": 2.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "kitchen-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "kitchen-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-door"
+            },
+            "quantity": 1.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "kitchen-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 3.36,
+            "line_total": 215.04,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-floor"
+            },
+            "quantity": 6.72,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "bathroom-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.305,
+            "line_total": 315.7,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-paint"
+            },
+            "quantity": 28.7,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "bathroom-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.1199999999999999,
+            "line_total": 89.6,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-skirt"
+            },
+            "quantity": 11.2,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "bathroom-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-light"
+            },
+            "quantity": 2.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "bathroom-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "bathroom-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-door"
+            },
+            "quantity": 1.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "bathroom-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.48,
+            "line_total": 286.72,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-floor"
+            },
+            "quantity": 8.96,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "entry-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.305,
+            "line_total": 315.7,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-paint"
+            },
+            "quantity": 28.7,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "entry-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.344,
+            "line_total": 107.52,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-skirt"
+            },
+            "quantity": 13.44,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "entry-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-light"
+            },
+            "quantity": 2.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "entry-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "entry-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-door"
+            },
+            "quantity": 1.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "entry-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          }
+        ],
+        "duration_weeks": 4,
+        "total_labor_hours": 76.69,
+        "eli5_summary": {
+          "concept": {
+            "intro_before": "La vivienda conserva acabados antiguos y una distribución aprovechable. Este caso usa medidas y observaciones de ejemplo.",
+            "intro_after": "La propuesta renueva suelos, pintura, puntos eléctricos y carpintería por estancia.",
+            "design_style": "Reforma por estancias",
+            "key_upgrades": [
+              "Suelos continuos",
+              "Pintura y acabados",
+              "Puntos eléctricos"
+            ],
+            "value_story": "Cada partida conserva su medida, fórmula y precio de ejemplo."
+          },
+          "property_summary": {
+            "address": "Sant Antoni · vivienda de ejemplo",
+            "total_cost": 7011.74,
+            "total_weeks": 4
+          },
+          "rooms": [
+            {
+              "room_id": "living",
+              "room_name": "Salón",
+              "estimated_m2": 26.88,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1805.06,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "kitchen",
+              "room_name": "Cocina",
+              "estimated_m2": 13.44,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1321.22,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "bathroom",
+              "room_name": "Baño",
+              "estimated_m2": 6.72,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1070.34,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "entry",
+              "room_name": "Entrada",
+              "estimated_m2": 8.96,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1159.94,
+              "weeks": "1–2",
+              "packages": []
+            }
+          ],
+          "timeline": {
+            "total_weeks": 4,
+            "summary": "Plan de ejemplo de cuatro semanas, organizado por estancias y oficios."
+          }
+        },
+        "dimension_totals": {
+          "surface_finishes": 5356.56
+        },
+        "room_images": [
+          {
+            "room_id": "living",
+            "room_name": "Salón",
+            "before_image": "/images/landing/no-es-magia/before.webp",
+            "after_image": "/images/landing/no-es-magia/after-fair_market.webp",
+            "key_changes": [
+              "Suelos y pintura",
+              "Iluminación y carpintería"
+            ],
+            "is_hero": true
+          }
+        ],
+        "before_image": "/images/landing/no-es-magia/before.webp",
+        "after_image": "/images/landing/no-es-magia/after-fair_market.webp",
+        "comparables": [
+          {
+            "id": 1020,
+            "casafari_property_id": null,
+            "sale_price": 207931,
+            "price_per_sqm": 2536,
+            "total_area": 82,
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.3,
+            "address": "Comparable ficticio 1 · Sant Antoni",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "below",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          },
+          {
+            "id": 1021,
+            "casafari_property_id": null,
+            "sale_price": 226012,
+            "price_per_sqm": 2756,
+            "total_area": 84,
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.5,
+            "address": "Comparable ficticio 2 · Sant Antoni",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "reference",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          },
+          {
+            "id": 1022,
+            "casafari_property_id": null,
+            "sale_price": 244093,
+            "price_per_sqm": 2977,
+            "total_area": 86,
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.7,
+            "address": "Comparable ficticio 3 · Sant Antoni",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "above",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          }
+        ],
+        "reference_sold_price": 226012,
+        "reference_comparable_id": 1021,
+        "price_basis": "Precios y medidas ficticios de ejemplo",
+        "confidence_score": null,
+        "sanity_check_passed": true,
+        "risk_flags": []
+      },
+      "comparables": [
+        {
+          "id": 1020,
+          "casafari_property_id": null,
+          "sale_price": 207931,
+          "price_per_sqm": 2536,
+          "total_area": 82,
+          "bedrooms": 3,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.3,
+          "address": "Comparable ficticio 1 · Sant Antoni",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "below",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        },
+        {
+          "id": 1021,
+          "casafari_property_id": null,
+          "sale_price": 226012,
+          "price_per_sqm": 2756,
+          "total_area": 84,
+          "bedrooms": 3,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.5,
+          "address": "Comparable ficticio 2 · Sant Antoni",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "reference",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        },
+        {
+          "id": 1022,
+          "casafari_property_id": null,
+          "sale_price": 244093,
+          "price_per_sqm": 2977,
+          "total_area": 86,
+          "bedrooms": 3,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.7,
+          "address": "Comparable ficticio 3 · Sant Antoni",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "above",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        }
+      ],
+      "calculation": {
+        "saved_rows": 24,
+        "pem_subtotal": 5356.56,
+        "total_with_source_report_overheads_and_tax": 7011.74,
+        "labor_hours": 76.69,
+        "measurements": {
+          "living": {
+            "area_floor_m2": {
+              "value": 26.88
+            },
+            "area_wall_m2": {
+              "value": 58.24
+            },
+            "perimetro_room_ml": {
+              "value": 22.4
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "kitchen": {
+            "area_floor_m2": {
+              "value": 13.44
+            },
+            "area_wall_m2": {
+              "value": 40.77
+            },
+            "perimetro_room_ml": {
+              "value": 15.68
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "bathroom": {
+            "area_floor_m2": {
+              "value": 6.72
+            },
+            "area_wall_m2": {
+              "value": 29.12
+            },
+            "perimetro_room_ml": {
+              "value": 11.2
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "entry": {
+            "area_floor_m2": {
+              "value": 8.96
+            },
+            "area_wall_m2": {
+              "value": 34.94
+            },
+            "perimetro_room_ml": {
+              "value": 13.44
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "listing": {
+        "id": 103,
+        "source_url": "",
+        "source_domain": "example.invalid",
+        "title": "Vivienda con terraza en Sants",
+        "description": "Vivienda ficticia para explorar el informe completo. Fotografías generadas y recuperadas del proyecto original; medidas, precios y comparables de ejemplo.",
+        "price_eur": 243000,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "sqm": 90,
+        "m2_built": 90,
+        "m2_useful": 79,
+        "listing_type": "sale",
+        "price_period": "total",
+        "address": "Sants · vivienda de ejemplo",
+        "city": "Barcelona",
+        "neighborhood": "Sants",
+        "country": "Spain",
+        "condition": "renovate",
+        "property_subtype": "flat",
+        "has_elevator": true,
+        "has_balcony": true,
+        "has_terrace": true,
+        "photos": [
+          "/images/landing/no-es-magia/before.webp",
+          "/images/landing/rooms/living.webp",
+          "/images/landing/rooms/kitchen.webp",
+          "/images/landing/rooms/bathroom.webp",
+          "/images/landing/rooms/entry.webp"
+        ],
+        "image_urls": [
+          "/images/landing/no-es-magia/before.webp",
+          "/images/landing/rooms/living.webp",
+          "/images/landing/rooms/kitchen.webp",
+          "/images/landing/rooms/bathroom.webp",
+          "/images/landing/rooms/entry.webp"
+        ],
+        "pipeline_status": "complete",
+        "created_at": "2026-10-28T09:00:00Z",
+        "updated_at": "2026-10-28T09:00:00Z"
+      },
+      "package": {
+        "package_type": "market_standard",
+        "strategy_name": "market_standard",
+        "total_cost": 7494.71,
+        "renovation_cost": 7494.71,
+        "grand_total_with_iva": 7494.71,
+        "line_items_count": 24,
+        "line_items": [
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 14.88,
+            "line_total": 952.32,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-floor"
+            },
+            "quantity": 29.76,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "living-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.725,
+            "line_total": 346.49999999999994,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-paint"
+            },
+            "quantity": 31.499999999999996,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "living-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.4800000000000004,
+            "line_total": 198.4,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-skirt"
+            },
+            "quantity": 24.8,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "living-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-light"
+            },
+            "quantity": 2.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "living-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "living-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "living-door"
+            },
+            "quantity": 1.0,
+            "room_id": "living",
+            "room_name": "Salón",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "living-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 7.44,
+            "line_total": 476.16,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-floor"
+            },
+            "quantity": 14.88,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "kitchen-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.725,
+            "line_total": 346.49999999999994,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-paint"
+            },
+            "quantity": 31.499999999999996,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "kitchen-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.736,
+            "line_total": 138.88,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-skirt"
+            },
+            "quantity": 17.36,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "kitchen-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-light"
+            },
+            "quantity": 2.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "kitchen-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "kitchen-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "kitchen-door"
+            },
+            "quantity": 1.0,
+            "room_id": "kitchen",
+            "room_name": "Cocina",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "kitchen-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 3.72,
+            "line_total": 238.08,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-floor"
+            },
+            "quantity": 7.44,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "bathroom-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.725,
+            "line_total": 346.49999999999994,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-paint"
+            },
+            "quantity": 31.499999999999996,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "bathroom-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.2400000000000002,
+            "line_total": 99.2,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-skirt"
+            },
+            "quantity": 12.4,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "bathroom-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-light"
+            },
+            "quantity": 2.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "bathroom-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "bathroom-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "bathroom-door"
+            },
+            "quantity": 1.0,
+            "room_id": "bathroom",
+            "room_name": "Baño",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "bathroom-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-FLOOR",
+            "description": "Suelo cerámico · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.96,
+            "line_total": 317.44,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_floor_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_floor_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-floor"
+            },
+            "quantity": 9.92,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "m2",
+            "unit_price": 32.0,
+            "item_id": "entry-floor",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-PAINT",
+            "description": "Preparación y pintura · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 4.725,
+            "line_total": 346.49999999999994,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "area_wall_m2"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "area_wall_m2"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-paint"
+            },
+            "quantity": 31.499999999999996,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "m2",
+            "unit_price": 11.0,
+            "item_id": "entry-paint",
+            "system": "painting",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SKIRT",
+            "description": "Rodapié · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.4880000000000002,
+            "line_total": 119.04,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "perimetro_room_ml"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "perimetro_room_ml"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-skirt"
+            },
+            "quantity": 14.88,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ml",
+            "unit_price": 8.0,
+            "item_id": "entry-skirt",
+            "system": "flooring",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-LIGHT",
+            "description": "Punto de luz · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.0,
+            "line_total": 130.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_lights_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_lights_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-light"
+            },
+            "quantity": 2.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 65.0,
+            "item_id": "entry-light",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-SOCKET",
+            "description": "Toma eléctrica · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 2.8,
+            "line_total": 180.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_sockets_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_sockets_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-socket"
+            },
+            "quantity": 4.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 45.0,
+            "item_id": "entry-socket",
+            "system": "electrical",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          },
+          {
+            "bcca_code": "SYNTH-DOOR",
+            "description": "Ajuste de carpintería · precio de ejemplo",
+            "item_kind": "v4",
+            "labor_hours": 1.5,
+            "line_total": 140.0,
+            "provenance": {
+              "formula_ast": {
+                "op": "SIGNAL",
+                "signal_id": "cantidad_doors_ud"
+              },
+              "match_mode": "authored-synthetic-price-book",
+              "pipeline": "v4",
+              "signals_used": [
+                "cantidad_doors_ud"
+              ],
+              "v4_dimension": "surface_finishes",
+              "work_item_id": "entry-door"
+            },
+            "quantity": 1.0,
+            "room_id": "entry",
+            "room_name": "Entrada",
+            "unit": "ud",
+            "unit_price": 140.0,
+            "item_id": "entry-door",
+            "system": "carpentry",
+            "price_basis": "Precios y medidas ficticios de ejemplo"
+          }
+        ],
+        "duration_weeks": 4,
+        "total_labor_hours": 82.04,
+        "eli5_summary": {
+          "concept": {
+            "intro_before": "La vivienda conserva acabados antiguos y una distribución aprovechable. Este caso usa medidas y observaciones de ejemplo.",
+            "intro_after": "La propuesta renueva suelos, pintura, puntos eléctricos y carpintería por estancia.",
+            "design_style": "Reforma por estancias",
+            "key_upgrades": [
+              "Suelos continuos",
+              "Pintura y acabados",
+              "Puntos eléctricos"
+            ],
+            "value_story": "Cada partida conserva su medida, fórmula y precio de ejemplo."
+          },
+          "property_summary": {
+            "address": "Sants · vivienda de ejemplo",
+            "total_cost": 7494.71,
+            "total_weeks": 4
+          },
+          "rooms": [
+            {
+              "room_id": "living",
+              "room_name": "Salón",
+              "estimated_m2": 29.76,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1947.22,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "kitchen",
+              "room_name": "Cocina",
+              "estimated_m2": 14.88,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1411.54,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "bathroom",
+              "room_name": "Baño",
+              "estimated_m2": 7.44,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1133.78,
+              "weeks": "1–2",
+              "packages": []
+            },
+            {
+              "room_id": "entry",
+              "room_name": "Entrada",
+              "estimated_m2": 9.92,
+              "tagline": "Acabados y electricidad",
+              "key_changes": [
+                "Suelo cerámico y rodapié",
+                "Pintura de paredes",
+                "Puntos de luz y tomas"
+              ],
+              "cost": 1232.98,
+              "weeks": "1–2",
+              "packages": []
+            }
+          ],
+          "timeline": {
+            "total_weeks": 4,
+            "summary": "Plan de ejemplo de cuatro semanas, organizado por estancias y oficios."
+          }
+        },
+        "dimension_totals": {
+          "surface_finishes": 5725.52
+        },
+        "room_images": [
+          {
+            "room_id": "living",
+            "room_name": "Salón",
+            "before_image": "/images/landing/no-es-magia/before.webp",
+            "after_image": "/images/landing/no-es-magia/after-fair_market.webp",
+            "key_changes": [
+              "Suelos y pintura",
+              "Iluminación y carpintería"
+            ],
+            "is_hero": true
+          }
+        ],
+        "before_image": "/images/landing/no-es-magia/before.webp",
+        "after_image": "/images/landing/no-es-magia/after-fair_market.webp",
+        "comparables": [
+          {
+            "id": 1030,
+            "casafari_property_id": null,
+            "sale_price": 230455,
+            "price_per_sqm": 2561,
+            "total_area": 90,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.3,
+            "address": "Comparable ficticio 1 · Sants",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "below",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          },
+          {
+            "id": 1031,
+            "casafari_property_id": null,
+            "sale_price": 250495,
+            "price_per_sqm": 2783,
+            "total_area": 92,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.5,
+            "address": "Comparable ficticio 2 · Sants",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "reference",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          },
+          {
+            "id": 1032,
+            "casafari_property_id": null,
+            "sale_price": 270534,
+            "price_per_sqm": 3006,
+            "total_area": 94,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "condition": "good",
+            "distance_km": 0.7,
+            "address": "Comparable ficticio 3 · Sants",
+            "property_url": "",
+            "photo_urls": [
+              "/images/landing/no-es-magia/after-fair_market.webp"
+            ],
+            "comp_role": "above",
+            "coordinates": null,
+            "source": "authored-synthetic-comparable"
+          }
+        ],
+        "reference_sold_price": 250495,
+        "reference_comparable_id": 1031,
+        "price_basis": "Precios y medidas ficticios de ejemplo",
+        "confidence_score": null,
+        "sanity_check_passed": true,
+        "risk_flags": []
+      },
+      "comparables": [
+        {
+          "id": 1030,
+          "casafari_property_id": null,
+          "sale_price": 230455,
+          "price_per_sqm": 2561,
+          "total_area": 90,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.3,
+          "address": "Comparable ficticio 1 · Sants",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "below",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        },
+        {
+          "id": 1031,
+          "casafari_property_id": null,
+          "sale_price": 250495,
+          "price_per_sqm": 2783,
+          "total_area": 92,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.5,
+          "address": "Comparable ficticio 2 · Sants",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "reference",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        },
+        {
+          "id": 1032,
+          "casafari_property_id": null,
+          "sale_price": 270534,
+          "price_per_sqm": 3006,
+          "total_area": 94,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "condition": "good",
+          "distance_km": 0.7,
+          "address": "Comparable ficticio 3 · Sants",
+          "property_url": "",
+          "photo_urls": [
+            "/images/landing/no-es-magia/after-fair_market.webp"
+          ],
+          "comp_role": "above",
+          "coordinates": null,
+          "source": "authored-synthetic-comparable"
+        }
+      ],
+      "calculation": {
+        "saved_rows": 24,
+        "pem_subtotal": 5725.52,
+        "total_with_source_report_overheads_and_tax": 7494.71,
+        "labor_hours": 82.04,
+        "measurements": {
+          "living": {
+            "area_floor_m2": {
+              "value": 29.76
+            },
+            "area_wall_m2": {
+              "value": 64.48
+            },
+            "perimetro_room_ml": {
+              "value": 24.8
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "kitchen": {
+            "area_floor_m2": {
+              "value": 14.88
+            },
+            "area_wall_m2": {
+              "value": 45.14
+            },
+            "perimetro_room_ml": {
+              "value": 17.36
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "bathroom": {
+            "area_floor_m2": {
+              "value": 7.44
+            },
+            "area_wall_m2": {
+              "value": 32.24
+            },
+            "perimetro_room_ml": {
+              "value": 12.4
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          },
+          "entry": {
+            "area_floor_m2": {
+              "value": 9.92
+            },
+            "area_wall_m2": {
+              "value": 38.69
+            },
+            "perimetro_room_ml": {
+              "value": 14.88
+            },
+            "cantidad_lights_ud": {
+              "value": 2
+            },
+            "cantidad_sockets_ud": {
+              "value": 4
+            },
+            "cantidad_doors_ud": {
+              "value": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "repository": "latintzar/leo-archive",
+  "commit": "4dca5f9bd94a3ee4759dff949f3d185acd095022",
+  "files": [
+    {
+      "path": "public/images/landing/rooms/kitchen.webp",
+      "git_blob": "7adf5ab0c2755225d418422964a4d257f13d98e9",
+      "sha256": "887e513baa52ddf417265663c10a2df53b32ae146afbbd1e49989f6ad614234b",
+      "bytes": 115146,
+      "generation_source": "backend/generate_room_photos.py",
+      "provenance": "Recovered originally generated source media; generation prompts retained at original source pin. Fictional sample property illustration."
+    },
+    {
+      "path": "public/images/landing/rooms/bathroom.webp",
+      "git_blob": "351c4438cbfb5c210e441ee4d448c4d6ee0cb689",
+      "sha256": "4604e3dac44d8bc653fc46b1abb90a8526d944422e08e42d6c38c6dc84da32bc",
+      "bytes": 106148,
+      "generation_source": "backend/generate_room_photos.py",
+      "provenance": "Recovered originally generated source media; generation prompts retained at original source pin. Fictional sample property illustration."
+    },
+    {
+      "path": "public/images/landing/rooms/living.webp",
+      "git_blob": "0b22388c7bffe088b9b352c2f5083124ebbe7ce9",
+      "sha256": "0f1e733219180a54cf1a7f7278784117506e2adf2fc699e9fa9585597e42c38b",
+      "bytes": 126968,
+      "generation_source": "backend/generate_room_photos.py",
+      "provenance": "Recovered originally generated source media; generation prompts retained at original source pin. Fictional sample property illustration."
+    },
+    {
+      "path": "public/images/landing/rooms/entry.webp",
+      "git_blob": "fa0bd1fe5b81374668fba6dc3f667e7d85ff9134",
+      "sha256": "7e2ac2358a8cd75faa296a246609b7e4bac3646d1f0c01ce5ecd78c324038e0a",
+      "bytes": 70900,
+      "generation_source": "backend/generate_room_photos.py",
+      "provenance": "Recovered originally generated source media; generation prompts retained at original source pin. Fictional sample property illustration."
+    },
+    {
+      "path": "public/images/landing/no-es-magia/before.webp",
+      "git_blob": "0bac0f626ecbc67f7114d7a0cbb93f551e88cd63",
+      "sha256": "bab633ab2b95289c109c2cd1137e42ccbcdeae23b759c928373ad4d65902f37e",
+      "bytes": 154186,
+      "generation_source": "backend/generate_landing_images.py",
+      "provenance": "Recovered originally generated source media; generation prompts retained at original source pin. Fictional sample property illustration."
+    },
+    {
+      "path": "public/images/landing/no-es-magia/after-fair_market.webp",
+      "git_blob": "7fe08b478d9752acffeccf7c13fe16c6bad951a3",
+      "sha256": "6b69ad66ca4f9fc68c091d7dcb501891a9b4d51baabf8c857865e0ec321c3e6f",
+      "bytes": 149714,
+      "generation_source": "backend/generate_landing_images.py",
+      "provenance": "Recovered originally generated source media; generation prompts retained at original source pin. Fictional sample property illustration."
+    }
+  ],
+  "release_base_path": "frontend"
+}

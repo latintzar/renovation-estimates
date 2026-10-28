@@ -120,6 +120,7 @@ interface ELI5Summary {
 }
 
 interface RenovationAnalysis {
+  property_area?: number;
   bracket: 'fair_market';
   target_price: number;
   asking_price: number;
@@ -695,7 +696,9 @@ export const BracketAnalysisModal: React.FC<BracketAnalysisModalProps> = ({
       onClose={() => setShowOfficialBudgetModal(false)}
       analysis={analysis}
       listingId={listingId}
-      address={address}
+      address={address||analysis.eli5_summary?.property_summary?.address}
+      propertyArea={analysis.property_area}
+      architectName="Por asignar"
     />
     {/* Negotiation Modal (overlay) */}
     <NegotiationModal
@@ -754,6 +757,12 @@ export const BracketAnalysisModal: React.FC<BracketAnalysisModalProps> = ({
           eli5={analysis.eli5_summary}
           hideNumbers={!!hideEli5Numbers}
         />
+      )}
+
+      {analysis.line_items && analysis.line_items.length>0 && (
+        <button type="button" onClick={()=>setShowOfficialBudgetModal(true)} className="w-full flex items-center justify-center gap-2 px-4 py-3 mb-6 border border-stone-200 bg-white text-stone-800 text-sm font-medium rounded-xl hover:bg-stone-50">
+          <FileText className="w-4 h-4" />Presupuesto desglosado
+        </button>
       )}
 
       {/* No ELI5 yet → pipeline likely incomplete */}

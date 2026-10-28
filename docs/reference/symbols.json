@@ -18690,232 +18690,232 @@
         {
           "name": "JsonObject",
           "kind": "TypeAliasDeclaration",
-          "line": 15
+          "line": 17
         },
         {
           "name": "RunStage",
           "kind": "InterfaceDeclaration",
-          "line": 17
+          "line": 19
         },
         {
           "name": "LastEvent",
           "kind": "InterfaceDeclaration",
-          "line": 25
+          "line": 27
         },
         {
           "name": "PipelineRun",
           "kind": "InterfaceDeclaration",
-          "line": 32
+          "line": 34
         },
         {
           "name": "ListingItem",
           "kind": "InterfaceDeclaration",
-          "line": 51
+          "line": 53
         },
         {
           "name": "GLATab",
           "kind": "TypeAliasDeclaration",
-          "line": 61
+          "line": 63
         },
         {
           "name": "GLADetailPayload",
           "kind": "InterfaceDeclaration",
-          "line": 63
+          "line": 65
         },
         {
           "name": "fmtFull",
           "kind": "VariableDeclaration",
-          "line": 79
+          "line": 81
         },
         {
           "name": "truncate",
           "kind": "VariableDeclaration",
-          "line": 90
+          "line": 92
         },
         {
           "name": "t",
           "kind": "VariableDeclaration",
-          "line": 91
+          "line": 93
         },
         {
           "name": "tryJson",
           "kind": "VariableDeclaration",
-          "line": 96
+          "line": 98
         },
         {
           "name": "raw",
           "kind": "VariableDeclaration",
-          "line": 97
+          "line": 99
         },
         {
           "name": "Badge",
           "kind": "VariableDeclaration",
-          "line": 107
+          "line": 109
         },
         {
           "name": "TabButton",
           "kind": "VariableDeclaration",
-          "line": 113
+          "line": 115
         },
         {
           "name": "CollapsibleJson",
           "kind": "VariableDeclaration",
-          "line": 133
+          "line": 135
         },
         {
           "name": "ChatBubble",
           "kind": "VariableDeclaration",
-          "line": 158
+          "line": 160
         },
         {
           "name": "isRight",
           "kind": "VariableDeclaration",
-          "line": 163
+          "line": 165
         },
         {
           "name": "GLADetail",
           "kind": "VariableDeclaration",
-          "line": 180
+          "line": 182
         },
         {
           "name": "fetchDetail",
           "kind": "VariableDeclaration",
-          "line": 190
+          "line": 192
         },
         {
           "name": "r",
           "kind": "VariableDeclaration",
-          "line": 194
+          "line": 196
         },
         {
           "name": "d",
           "kind": "VariableDeclaration",
-          "line": 195
+          "line": 197
         },
         {
           "name": "e",
           "kind": "VariableDeclaration",
-          "line": 198
+          "line": 200
         },
         {
           "name": "chat",
           "kind": "VariableDeclaration",
-          "line": 209
+          "line": 211
         },
         {
           "name": "opinionsRooms",
           "kind": "VariableDeclaration",
-          "line": 212
+          "line": 214
         },
         {
           "name": "rooms",
           "kind": "VariableDeclaration",
-          "line": 213
+          "line": 215
         },
         {
           "name": "memorySummary",
           "kind": "VariableDeclaration",
-          "line": 217
+          "line": 219
         },
         {
           "name": "memoryEvents",
           "kind": "VariableDeclaration",
-          "line": 218
+          "line": 220
         },
         {
           "name": "out",
           "kind": "VariableDeclaration",
-          "line": 219
+          "line": 221
         },
         {
           "name": "m",
           "kind": "VariableDeclaration",
-          "line": 220
+          "line": 222
         },
         {
           "name": "parsed",
           "kind": "VariableDeclaration",
-          "line": 222
+          "line": 224
         },
         {
           "name": "imageVersions",
           "kind": "VariableDeclaration",
-          "line": 229
+          "line": 231
         },
         {
           "name": "imageGroups",
           "kind": "VariableDeclaration",
-          "line": 232
+          "line": 234
         },
         {
           "name": "map",
           "kind": "VariableDeclaration",
-          "line": 233
+          "line": 235
         },
         {
           "name": "v",
           "kind": "VariableDeclaration",
-          "line": 234
+          "line": 236
         },
         {
           "name": "roomId",
           "kind": "VariableDeclaration",
-          "line": 235
+          "line": 237
         },
         {
           "name": "arr",
           "kind": "VariableDeclaration",
-          "line": 236
+          "line": 238
         },
         {
           "name": "role",
           "kind": "VariableDeclaration",
-          "line": 353
+          "line": 355
         },
         {
           "name": "mtype",
           "kind": "VariableDeclaration",
-          "line": 354
+          "line": 356
         },
         {
           "name": "createdAt",
           "kind": "VariableDeclaration",
-          "line": 355
+          "line": 357
         },
         {
           "name": "rawText",
           "kind": "VariableDeclaration",
-          "line": 356
+          "line": 358
         },
         {
           "name": "parsed",
           "kind": "VariableDeclaration",
-          "line": 357
+          "line": 359
         },
         {
           "name": "side",
           "kind": "VariableDeclaration",
-          "line": 379
+          "line": 381
         },
         {
           "name": "after",
           "kind": "VariableDeclaration",
-          "line": 456
+          "line": 458
         },
         {
           "name": "def",
           "kind": "VariableDeclaration",
-          "line": 457
+          "line": 459
         },
         {
           "name": "imgSrc",
           "kind": "VariableDeclaration",
-          "line": 458
+          "line": 460
         },
         {
           "name": "defSrc",
           "kind": "VariableDeclaration",
-          "line": 459
+          "line": 461
         }
       ]
     },
@@ -18925,777 +18925,777 @@
         {
           "name": "RunStage",
           "kind": "InterfaceDeclaration",
-          "line": 16
+          "line": 18
         },
         {
           "name": "LastEvent",
           "kind": "InterfaceDeclaration",
-          "line": 17
+          "line": 19
         },
         {
           "name": "PipelineRun",
           "kind": "InterfaceDeclaration",
-          "line": 18
+          "line": 20
         },
         {
           "name": "ListingItem",
           "kind": "InterfaceDeclaration",
-          "line": 26
+          "line": 28
         },
         {
           "name": "LogEntry",
           "kind": "InterfaceDeclaration",
-          "line": 31
+          "line": 33
         },
         {
           "name": "CostData",
           "kind": "InterfaceDeclaration",
-          "line": 32
+          "line": 34
         },
         {
           "name": "PipelineState",
           "kind": "TypeAliasDeclaration",
-          "line": 42
+          "line": 44
         },
         {
           "name": "RERUN_STAGES",
           "kind": "VariableDeclaration",
-          "line": 45
+          "line": 47
         },
         {
           "name": "STATUS_STAGES",
           "kind": "VariableDeclaration",
-          "line": 46
+          "line": 48
         },
         {
           "name": "GLA_STATUS_STAGES",
           "kind": "VariableDeclaration",
-          "line": 47
+          "line": 49
         },
         {
           "name": "SL",
           "kind": "VariableDeclaration",
-          "line": 48
+          "line": 50
         },
         {
           "name": "stagesForPipeline",
           "kind": "VariableDeclaration",
-          "line": 81
+          "line": 83
         },
         {
           "name": "runHasActionableFail",
           "kind": "VariableDeclaration",
-          "line": 86
+          "line": 88
         },
         {
           "name": "fmtTime",
           "kind": "VariableDeclaration",
-          "line": 91
+          "line": 93
         },
         {
           "name": "ms",
           "kind": "VariableDeclaration",
-          "line": 91
+          "line": 93
         },
         {
           "name": "m",
-          "kind": "VariableDeclaration",
-          "line": 91
-        },
-        {
-          "name": "h",
-          "kind": "VariableDeclaration",
-          "line": 91
-        },
-        {
-          "name": "d",
-          "kind": "VariableDeclaration",
-          "line": 91
-        },
-        {
-          "name": "fmtTs",
-          "kind": "VariableDeclaration",
-          "line": 92
-        },
-        {
-          "name": "fmtFull",
           "kind": "VariableDeclaration",
           "line": 93
         },
         {
-          "name": "domain",
+          "name": "h",
+          "kind": "VariableDeclaration",
+          "line": 93
+        },
+        {
+          "name": "d",
+          "kind": "VariableDeclaration",
+          "line": 93
+        },
+        {
+          "name": "fmtTs",
           "kind": "VariableDeclaration",
           "line": 94
         },
         {
-          "name": "CASAFARI",
+          "name": "fmtFull",
           "kind": "VariableDeclaration",
           "line": 95
         },
         {
-          "name": "$$",
+          "name": "domain",
           "kind": "VariableDeclaration",
           "line": 96
         },
         {
-          "name": "fmtTok",
+          "name": "CASAFARI",
           "kind": "VariableDeclaration",
           "line": 97
         },
         {
-          "name": "fmtDur",
+          "name": "$$",
           "kind": "VariableDeclaration",
           "line": 98
         },
         {
-          "name": "sec",
+          "name": "fmtTok",
           "kind": "VariableDeclaration",
           "line": 99
         },
         {
+          "name": "fmtDur",
+          "kind": "VariableDeclaration",
+          "line": 100
+        },
+        {
+          "name": "sec",
+          "kind": "VariableDeclaration",
+          "line": 101
+        },
+        {
           "name": "h",
           "kind": "VariableDeclaration",
-          "line": 102
+          "line": 104
         },
         {
           "name": "m",
           "kind": "VariableDeclaration",
-          "line": 103
+          "line": 105
         },
         {
           "name": "mins",
           "kind": "VariableDeclaration",
-          "line": 107
+          "line": 109
         },
         {
           "name": "dp",
           "kind": "VariableDeclaration",
-          "line": 108
+          "line": 110
         },
         {
           "name": "describeRun",
           "kind": "FunctionDeclaration",
-          "line": 114
+          "line": 116
         },
         {
           "name": "describeRun.stageOrder",
           "kind": "VariableDeclaration",
-          "line": 119
+          "line": 121
         },
         {
           "name": "describeRun.sorted",
           "kind": "VariableDeclaration",
-          "line": 120
+          "line": 122
         },
         {
           "name": "describeRun.active",
           "kind": "VariableDeclaration",
-          "line": 121
+          "line": 123
         },
         {
           "name": "describeRun.firstFail",
           "kind": "VariableDeclaration",
-          "line": 122
+          "line": 124
         },
         {
           "name": "describeRun.last",
           "kind": "VariableDeclaration",
-          "line": 127
+          "line": 129
         },
         {
           "name": "describeRun.last",
           "kind": "VariableDeclaration",
-          "line": 128
+          "line": 130
         },
         {
           "name": "pct",
           "kind": "VariableDeclaration",
-          "line": 131
+          "line": 133
         },
         {
           "name": "StageTimeline",
           "kind": "VariableDeclaration",
-          "line": 136
+          "line": 138
         },
         {
           "name": "stageMap",
           "kind": "VariableDeclaration",
-          "line": 137
+          "line": 139
         },
         {
           "name": "stageOrder",
-          "kind": "VariableDeclaration",
-          "line": 138
-        },
-        {
-          "name": "s",
           "kind": "VariableDeclaration",
           "line": 140
         },
         {
-          "name": "rawFail",
-          "kind": "VariableDeclaration",
-          "line": 141
-        },
-        {
-          "name": "run",
+          "name": "s",
           "kind": "VariableDeclaration",
           "line": 142
         },
         {
-          "name": "done",
+          "name": "rawFail",
           "kind": "VariableDeclaration",
           "line": 143
         },
         {
-          "name": "fail",
+          "name": "run",
           "kind": "VariableDeclaration",
           "line": 144
         },
         {
-          "name": "queued",
+          "name": "done",
           "kind": "VariableDeclaration",
           "line": 145
         },
         {
-          "name": "dot",
+          "name": "fail",
           "kind": "VariableDeclaration",
           "line": 146
+        },
+        {
+          "name": "queued",
+          "kind": "VariableDeclaration",
+          "line": 147
+        },
+        {
+          "name": "dot",
+          "kind": "VariableDeclaration",
+          "line": 148
         },
         {
           "name": "line",
           "kind": "VariableDeclaration",
-          "line": 146
+          "line": 148
         },
         {
           "name": "CostDetail",
           "kind": "VariableDeclaration",
-          "line": 153
+          "line": 155
         },
         {
           "name": "r",
           "kind": "VariableDeclaration",
-          "line": 155
+          "line": 157
         },
         {
           "name": "d",
           "kind": "VariableDeclaration",
-          "line": 155
+          "line": 157
         },
         {
           "name": "copyText",
           "kind": "VariableDeclaration",
-          "line": 156
+          "line": 158
         },
         {
           "name": "t",
           "kind": "VariableDeclaration",
-          "line": 156
+          "line": 158
         },
         {
           "name": "cleared",
           "kind": "VariableDeclaration",
-          "line": 156
+          "line": 158
         },
         {
           "name": "rt",
           "kind": "VariableDeclaration",
-          "line": 156
+          "line": 158
         },
         {
           "name": "handleCopy",
           "kind": "VariableDeclaration",
-          "line": 157
+          "line": 159
         },
         {
           "name": "t",
           "kind": "VariableDeclaration",
-          "line": 157
+          "line": 159
         },
         {
           "name": "el",
           "kind": "VariableDeclaration",
-          "line": 157
+          "line": 159
         },
         {
           "name": "total",
           "kind": "VariableDeclaration",
-          "line": 160
+          "line": 162
         },
         {
           "name": "cleared",
           "kind": "VariableDeclaration",
-          "line": 161
+          "line": 163
         },
         {
           "name": "clearedEntries",
           "kind": "VariableDeclaration",
-          "line": 162
+          "line": 164
         },
         {
           "name": "LogViewer",
           "kind": "VariableDeclaration",
-          "line": 167
+          "line": 169
         },
         {
           "name": "fetchLogs",
           "kind": "VariableDeclaration",
-          "line": 169
+          "line": 171
         },
         {
           "name": "r",
           "kind": "VariableDeclaration",
-          "line": 169
+          "line": 171
         },
         {
           "name": "d",
           "kind": "VariableDeclaration",
-          "line": 169
+          "line": 171
         },
         {
           "name": "t",
           "kind": "VariableDeclaration",
-          "line": 170
+          "line": 172
         },
         {
           "name": "handleCopy",
           "kind": "VariableDeclaration",
-          "line": 171
+          "line": 173
         },
         {
           "name": "text",
           "kind": "VariableDeclaration",
-          "line": 171
+          "line": 173
         },
         {
           "name": "el",
           "kind": "VariableDeclaration",
-          "line": 171
+          "line": 173
         },
         {
           "name": "err",
           "kind": "VariableDeclaration",
-          "line": 182
+          "line": 184
         },
         {
           "name": "prog",
           "kind": "VariableDeclaration",
-          "line": 182
+          "line": 184
         },
         {
           "name": "cleared",
           "kind": "VariableDeclaration",
-          "line": 182
+          "line": 184
         },
         {
           "name": "ClearDropdown",
           "kind": "VariableDeclaration",
-          "line": 188
+          "line": 190
         },
         {
           "name": "go",
           "kind": "VariableDeclaration",
-          "line": 190
+          "line": 192
         },
         {
           "name": "r",
           "kind": "VariableDeclaration",
-          "line": 190
+          "line": 192
         },
         {
           "name": "d",
           "kind": "VariableDeclaration",
-          "line": 190
+          "line": 192
         },
         {
           "name": "extra",
           "kind": "VariableDeclaration",
-          "line": 190
+          "line": 192
         },
         {
           "name": "LastActivity",
           "kind": "VariableDeclaration",
-          "line": 206
+          "line": 208
         },
         {
           "name": "isErr",
           "kind": "VariableDeclaration",
-          "line": 208
+          "line": 210
         },
         {
           "name": "stageOrder",
           "kind": "VariableDeclaration",
-          "line": 209
+          "line": 211
         },
         {
           "name": "showStage",
           "kind": "VariableDeclaration",
-          "line": 210
+          "line": 212
         },
         {
           "name": "raw",
           "kind": "VariableDeclaration",
-          "line": 212
+          "line": 214
         },
         {
           "name": "summary",
           "kind": "VariableDeclaration",
-          "line": 213
+          "line": 215
         },
         {
           "name": "lines",
           "kind": "VariableDeclaration",
-          "line": 215
+          "line": 217
         },
         {
           "name": "meaningful",
           "kind": "VariableDeclaration",
-          "line": 216
+          "line": 218
         },
         {
           "name": "last",
           "kind": "VariableDeclaration",
-          "line": 218
+          "line": 220
         },
         {
           "name": "cleaned",
           "kind": "VariableDeclaration",
-          "line": 220
+          "line": 222
         },
         {
           "name": "CompTarget",
           "kind": "InterfaceDeclaration",
-          "line": 236
+          "line": 238
         },
         {
           "name": "CompItem",
           "kind": "InterfaceDeclaration",
-          "line": 237
+          "line": 239
         },
         {
           "name": "CompCard",
           "kind": "VariableDeclaration",
-          "line": 239
+          "line": 241
         },
         {
           "name": "border",
           "kind": "VariableDeclaration",
-          "line": 240
+          "line": 242
         },
         {
           "name": "badge",
           "kind": "VariableDeclaration",
-          "line": 241
+          "line": 243
         },
         {
           "name": "ComparablesPanel",
           "kind": "VariableDeclaration",
-          "line": 274
+          "line": 276
         },
         {
           "name": "r",
           "kind": "VariableDeclaration",
-          "line": 282
+          "line": 284
         },
         {
           "name": "d",
           "kind": "VariableDeclaration",
-          "line": 283
+          "line": 285
         },
         {
           "name": "Detail",
           "kind": "VariableDeclaration",
-          "line": 339
+          "line": 341
         },
         {
           "name": "run",
           "kind": "VariableDeclaration",
-          "line": 340
+          "line": 342
         },
         {
           "name": "st",
           "kind": "VariableDeclaration",
-          "line": 340
+          "line": 342
         },
         {
           "name": "p",
           "kind": "VariableDeclaration",
-          "line": 340
+          "line": 342
         },
         {
           "name": "stale",
-          "kind": "VariableDeclaration",
-          "line": 341
-        },
-        {
-          "name": "hasFail",
-          "kind": "VariableDeclaration",
-          "line": 341
-        },
-        {
-          "name": "isRunning",
           "kind": "VariableDeclaration",
           "line": 343
         },
         {
-          "name": "isStopped",
+          "name": "hasFail",
           "kind": "VariableDeclaration",
-          "line": 344
+          "line": 343
         },
         {
-          "name": "canResume",
+          "name": "isRunning",
           "kind": "VariableDeclaration",
           "line": 345
         },
         {
+          "name": "isStopped",
+          "kind": "VariableDeclaration",
+          "line": 346
+        },
+        {
+          "name": "canResume",
+          "kind": "VariableDeclaration",
+          "line": 347
+        },
+        {
           "name": "resume",
-          "kind": "VariableDeclaration",
-          "line": 346
-        },
-        {
-          "name": "r",
-          "kind": "VariableDeclaration",
-          "line": 346
-        },
-        {
-          "name": "e",
-          "kind": "VariableDeclaration",
-          "line": 346
-        },
-        {
-          "name": "stop",
-          "kind": "VariableDeclaration",
-          "line": 347
-        },
-        {
-          "name": "r",
-          "kind": "VariableDeclaration",
-          "line": 347
-        },
-        {
-          "name": "e",
-          "kind": "VariableDeclaration",
-          "line": 347
-        },
-        {
-          "name": "del",
           "kind": "VariableDeclaration",
           "line": 348
         },
         {
+          "name": "r",
+          "kind": "VariableDeclaration",
+          "line": 348
+        },
+        {
+          "name": "e",
+          "kind": "VariableDeclaration",
+          "line": 348
+        },
+        {
+          "name": "stop",
+          "kind": "VariableDeclaration",
+          "line": 349
+        },
+        {
+          "name": "r",
+          "kind": "VariableDeclaration",
+          "line": 349
+        },
+        {
+          "name": "e",
+          "kind": "VariableDeclaration",
+          "line": 349
+        },
+        {
+          "name": "del",
+          "kind": "VariableDeclaration",
+          "line": 350
+        },
+        {
           "name": "Row",
-          "kind": "VariableDeclaration",
-          "line": 391
-        },
-        {
-          "name": "run",
-          "kind": "VariableDeclaration",
-          "line": 392
-        },
-        {
-          "name": "st",
-          "kind": "VariableDeclaration",
-          "line": 392
-        },
-        {
-          "name": "p",
-          "kind": "VariableDeclaration",
-          "line": 392
-        },
-        {
-          "name": "stale",
-          "kind": "VariableDeclaration",
-          "line": 392
-        },
-        {
-          "name": "hasFail",
           "kind": "VariableDeclaration",
           "line": 393
         },
         {
-          "name": "pipelineType",
+          "name": "run",
           "kind": "VariableDeclaration",
           "line": 394
         },
         {
-          "name": "lastActivityTime",
+          "name": "st",
+          "kind": "VariableDeclaration",
+          "line": 394
+        },
+        {
+          "name": "p",
+          "kind": "VariableDeclaration",
+          "line": 394
+        },
+        {
+          "name": "stale",
+          "kind": "VariableDeclaration",
+          "line": 394
+        },
+        {
+          "name": "hasFail",
+          "kind": "VariableDeclaration",
+          "line": 395
+        },
+        {
+          "name": "pipelineType",
           "kind": "VariableDeclaration",
           "line": 396
         },
         {
+          "name": "lastActivityTime",
+          "kind": "VariableDeclaration",
+          "line": 398
+        },
+        {
           "name": "pipelineBadge",
           "kind": "VariableDeclaration",
-          "line": 397
+          "line": 399
         },
         {
           "name": "AdminPage",
           "kind": "FunctionDeclaration",
-          "line": 436
+          "line": 438
         },
         {
           "name": "AdminPage.fetchL",
           "kind": "VariableDeclaration",
-          "line": 439
+          "line": 441
         },
         {
           "name": "AdminPage.r",
-          "kind": "VariableDeclaration",
-          "line": 439
-        },
-        {
-          "name": "AdminPage.d",
-          "kind": "VariableDeclaration",
-          "line": 439
-        },
-        {
-          "name": "AdminPage.isProcessing",
-          "kind": "VariableDeclaration",
-          "line": 440
-        },
-        {
-          "name": "AdminPage.pipelineLabel",
           "kind": "VariableDeclaration",
           "line": 441
         },
         {
-          "name": "AdminPage.openNewListingModal",
+          "name": "AdminPage.d",
+          "kind": "VariableDeclaration",
+          "line": 441
+        },
+        {
+          "name": "AdminPage.isProcessing",
           "kind": "VariableDeclaration",
           "line": 442
         },
         {
-          "name": "AdminPage.handleUrlSubmit",
+          "name": "AdminPage.pipelineLabel",
           "kind": "VariableDeclaration",
           "line": 443
         },
         {
-          "name": "AdminPage.scrapeResult",
+          "name": "AdminPage.openNewListingModal",
           "kind": "VariableDeclaration",
-          "line": 447
+          "line": 444
         },
         {
-          "name": "AdminPage.scrapedData",
+          "name": "AdminPage.handleUrlSubmit",
+          "kind": "VariableDeclaration",
+          "line": 445
+        },
+        {
+          "name": "AdminPage.scrapeResult",
           "kind": "VariableDeclaration",
           "line": 449
         },
         {
+          "name": "AdminPage.scrapedData",
+          "kind": "VariableDeclaration",
+          "line": 451
+        },
+        {
           "name": "AdminPage.photos",
           "kind": "VariableDeclaration",
-          "line": 450
+          "line": 452
         },
         {
           "name": "AdminPage.createResult",
           "kind": "VariableDeclaration",
-          "line": 453
+          "line": 455
         },
         {
           "name": "AdminPage.listingId",
           "kind": "VariableDeclaration",
-          "line": 484
+          "line": 486
         },
         {
           "name": "AdminPage.runResult",
           "kind": "VariableDeclaration",
-          "line": 487
+          "line": 489
         },
         {
           "name": "AdminPage.e",
           "kind": "VariableDeclaration",
-          "line": 497
+          "line": 499
         },
         {
           "name": "AdminPage.msg",
           "kind": "VariableDeclaration",
-          "line": 498
+          "line": 500
         },
         {
           "name": "AdminPage.active",
           "kind": "VariableDeclaration",
-          "line": 504
+          "line": 506
         },
         {
           "name": "AdminPage.r",
-          "kind": "VariableDeclaration",
-          "line": 504
-        },
-        {
-          "name": "AdminPage.iv",
-          "kind": "VariableDeclaration",
-          "line": 504
-        },
-        {
-          "name": "AdminPage.handleGlobalPaste",
           "kind": "VariableDeclaration",
           "line": 506
         },
         {
+          "name": "AdminPage.iv",
+          "kind": "VariableDeclaration",
+          "line": 506
+        },
+        {
+          "name": "AdminPage.handleGlobalPaste",
+          "kind": "VariableDeclaration",
+          "line": 508
+        },
+        {
           "name": "AdminPage.activeElement",
           "kind": "VariableDeclaration",
-          "line": 509
+          "line": 511
         },
         {
           "name": "AdminPage.refresh",
           "kind": "VariableDeclaration",
-          "line": 518
+          "line": 520
         },
         {
           "name": "AdminPage.stopAll",
           "kind": "VariableDeclaration",
-          "line": 519
+          "line": 521
         },
         {
           "name": "AdminPage.resumeAll",
           "kind": "VariableDeclaration",
-          "line": 520
+          "line": 522
         },
         {
           "name": "AdminPage.sel",
           "kind": "VariableDeclaration",
-          "line": 521
+          "line": 523
         },
         {
           "name": "AdminPage.stats",
           "kind": "VariableDeclaration",
-          "line": 522
+          "line": 524
         },
         {
           "name": "AdminPage.t",
           "kind": "VariableDeclaration",
-          "line": 523
+          "line": 525
         },
         {
           "name": "AdminPage.run",
           "kind": "VariableDeclaration",
-          "line": 524
+          "line": 526
         },
         {
           "name": "AdminPage.r",
-          "kind": "VariableDeclaration",
-          "line": 524
-        },
-        {
-          "name": "AdminPage.ok",
-          "kind": "VariableDeclaration",
-          "line": 525
-        },
-        {
-          "name": "AdminPage.fail",
           "kind": "VariableDeclaration",
           "line": 526
         },
         {
-          "name": "AdminPage.stopped",
+          "name": "AdminPage.ok",
           "kind": "VariableDeclaration",
           "line": 527
+        },
+        {
+          "name": "AdminPage.fail",
+          "kind": "VariableDeclaration",
+          "line": 528
+        },
+        {
+          "name": "AdminPage.stopped",
+          "kind": "VariableDeclaration",
+          "line": 529
         },
         {
           "name": "AdminPage.r",
           "kind": "VariableDeclaration",
-          "line": 527
+          "line": 529
         },
         {
           "name": "AdminPage.stale",
           "kind": "VariableDeclaration",
-          "line": 528
+          "line": 530
         }
       ]
     },
@@ -21505,92 +21505,97 @@
         {
           "name": "SUPABASE_URL",
           "kind": "VariableDeclaration",
-          "line": 18
+          "line": 21
         },
         {
           "name": "SUPABASE_KEY",
           "kind": "VariableDeclaration",
-          "line": 19
+          "line": 22
         },
         {
           "name": "APP_BASE",
           "kind": "VariableDeclaration",
-          "line": 21
+          "line": 24
         },
         {
           "name": "headers",
           "kind": "VariableDeclaration",
-          "line": 23
+          "line": 26
         },
         {
           "name": "ListingRow",
           "kind": "TypeAliasDeclaration",
-          "line": 28
+          "line": 31
         },
         {
           "name": "fmtPrice",
           "kind": "VariableDeclaration",
-          "line": 39
+          "line": 42
         },
         {
           "name": "generateMetadata",
           "kind": "FunctionDeclaration",
-          "line": 42
+          "line": 45
         },
         {
           "name": "generateMetadata.listing",
           "kind": "VariableDeclaration",
-          "line": 49
+          "line": 52
+        },
+        {
+          "name": "generateMetadata.row",
+          "kind": "VariableDeclaration",
+          "line": 53
         },
         {
           "name": "generateMetadata.resp",
           "kind": "VariableDeclaration",
-          "line": 51
+          "line": 55
         },
         {
           "name": "generateMetadata.rows",
           "kind": "VariableDeclaration",
-          "line": 55
+          "line": 59
         },
         {
           "name": "generateMetadata.location",
           "kind": "VariableDeclaration",
-          "line": 62
+          "line": 66
         },
         {
           "name": "generateMetadata.shortLocation",
           "kind": "VariableDeclaration",
-          "line": 63
+          "line": 67
         },
         {
           "name": "generateMetadata.price",
           "kind": "VariableDeclaration",
-          "line": 65
+          "line": 69
         },
         {
           "name": "generateMetadata.specs",
           "kind": "VariableDeclaration",
-          "line": 70
+          "line": 74
         },
         {
           "name": "generateMetadata.title",
           "kind": "VariableDeclaration",
-          "line": 78
+          "line": 82
         },
         {
           "name": "generateMetadata.description",
           "kind": "VariableDeclaration",
-          "line": 82
+          "line": 86
         },
         {
           "name": "generateMetadata.listingUrl",
           "kind": "VariableDeclaration",
-          "line": 91
+          "line": 95
         },
         {
           "name": "ListingLayout",
           "kind": "FunctionDeclaration",
-          "line": 124
+          "line": 128
         }
       ]
     },
@@ -21870,112 +21875,112 @@
         {
           "name": "PipelineState",
           "kind": "TypeAliasDeclaration",
-          "line": 20
+          "line": 22
         },
         {
           "name": "ListingsPage",
           "kind": "FunctionDeclaration",
-          "line": 22
+          "line": 24
         },
         {
           "name": "ListingsPage.router",
           "kind": "VariableDeclaration",
-          "line": 23
+          "line": 25
         },
         {
           "name": "ListingsPage.pipelineLabels",
           "kind": "VariableDeclaration",
-          "line": 34
+          "line": 36
         },
         {
           "name": "ListingsPage.handleGlobalPaste",
           "kind": "VariableDeclaration",
-          "line": 50
+          "line": 52
         },
         {
           "name": "ListingsPage.activeElement",
           "kind": "VariableDeclaration",
-          "line": 54
+          "line": 56
         },
         {
           "name": "ListingsPage.loadListings",
           "kind": "VariableDeclaration",
-          "line": 65
+          "line": 67
         },
         {
           "name": "ListingsPage.result",
           "kind": "VariableDeclaration",
-          "line": 68
+          "line": 70
         },
         {
           "name": "ListingsPage.e",
           "kind": "VariableDeclaration",
-          "line": 72
+          "line": 74
         },
         {
           "name": "ListingsPage.handleUrlSubmit",
           "kind": "VariableDeclaration",
-          "line": 80
+          "line": 82
         },
         {
           "name": "ListingsPage.result",
           "kind": "VariableDeclaration",
-          "line": 86
+          "line": 88
         },
         {
           "name": "ListingsPage.scrapedData",
           "kind": "VariableDeclaration",
-          "line": 93
+          "line": 95
         },
         {
           "name": "ListingsPage.photos",
           "kind": "VariableDeclaration",
-          "line": 94
+          "line": 96
         },
         {
           "name": "ListingsPage.createResult",
           "kind": "VariableDeclaration",
-          "line": 96
+          "line": 98
         },
         {
           "name": "ListingsPage.listingId",
           "kind": "VariableDeclaration",
-          "line": 131
+          "line": 133
         },
         {
           "name": "ListingsPage.pipelineResult",
           "kind": "VariableDeclaration",
-          "line": 136
+          "line": 138
         },
         {
           "name": "ListingsPage.pipelineData",
           "kind": "VariableDeclaration",
-          "line": 140
+          "line": 142
         },
         {
           "name": "ListingsPage.pipelineError",
           "kind": "VariableDeclaration",
-          "line": 146
+          "line": 148
         },
         {
           "name": "ListingsPage.e",
           "kind": "VariableDeclaration",
-          "line": 156
+          "line": 158
         },
         {
           "name": "ListingsPage.msg",
           "kind": "VariableDeclaration",
-          "line": 157
+          "line": 159
         },
         {
           "name": "ListingsPage.isProcessing",
           "kind": "VariableDeclaration",
-          "line": 164
+          "line": 166
         },
         {
           "name": "EmptyState",
           "kind": "FunctionDeclaration",
-          "line": 252
+          "line": 254
         }
       ]
     },
@@ -25187,262 +25192,262 @@
         {
           "name": "BracketAnalysisModalProps",
           "kind": "InterfaceDeclaration",
-          "line": 168
+          "line": 169
         },
         {
           "name": "formatPrice",
           "kind": "VariableDeclaration",
-          "line": 181
+          "line": 182
         },
         {
           "name": "SharePopupProps",
           "kind": "InterfaceDeclaration",
-          "line": 196
+          "line": 197
         },
         {
           "name": "SharePopup",
           "kind": "VariableDeclaration",
-          "line": 204
+          "line": 205
         },
         {
           "name": "RoomImage",
           "kind": "InterfaceDeclaration",
-          "line": 256
+          "line": 257
         },
         {
           "name": "RoomImagesCarousel",
           "kind": "VariableDeclaration",
-          "line": 265
+          "line": 266
         },
         {
           "name": "images",
           "kind": "VariableDeclaration",
-          "line": 276
+          "line": 277
         },
         {
           "name": "doIt",
-          "kind": "VariableDeclaration",
-          "line": 285
-        },
-        {
-          "name": "map",
           "kind": "VariableDeclaration",
           "line": 286
         },
         {
-          "name": "img",
+          "name": "map",
           "kind": "VariableDeclaration",
           "line": 287
         },
         {
-          "name": "current",
+          "name": "img",
           "kind": "VariableDeclaration",
-          "line": 297
+          "line": 288
         },
         {
-          "name": "displayRoomName",
+          "name": "current",
           "kind": "VariableDeclaration",
           "line": 298
         },
         {
-          "name": "goNext",
+          "name": "displayRoomName",
           "kind": "VariableDeclaration",
-          "line": 300
+          "line": 299
         },
         {
-          "name": "goPrev",
+          "name": "goNext",
           "kind": "VariableDeclaration",
           "line": 301
         },
         {
-          "name": "formatCompact",
+          "name": "goPrev",
           "kind": "VariableDeclaration",
-          "line": 375
+          "line": 302
         },
         {
-          "name": "absValue",
+          "name": "formatCompact",
           "kind": "VariableDeclaration",
           "line": 376
         },
         {
+          "name": "absValue",
+          "kind": "VariableDeclaration",
+          "line": 377
+        },
+        {
           "name": "normalizeEnergyRating",
           "kind": "VariableDeclaration",
-          "line": 386
+          "line": 387
         },
         {
           "name": "m",
           "kind": "VariableDeclaration",
-          "line": 388
+          "line": 389
         },
         {
           "name": "getEnergyColor",
           "kind": "VariableDeclaration",
-          "line": 393
+          "line": 394
         },
         {
           "name": "colors",
           "kind": "VariableDeclaration",
-          "line": 394
+          "line": 395
         },
         {
           "name": "HeroMetricsSection",
           "kind": "VariableDeclaration",
-          "line": 401
+          "line": 402
         },
         {
           "name": "netProfit",
           "kind": "VariableDeclaration",
-          "line": 410
+          "line": 411
         },
         {
           "name": "isNetPositive",
           "kind": "VariableDeclaration",
-          "line": 411
+          "line": 412
         },
         {
           "name": "currentEnergyLetter",
           "kind": "VariableDeclaration",
-          "line": 412
+          "line": 413
         },
         {
           "name": "targetEnergyLetter",
           "kind": "VariableDeclaration",
-          "line": 413
+          "line": 414
         },
         {
           "name": "formatTime",
           "kind": "VariableDeclaration",
-          "line": 478
+          "line": 479
         },
         {
           "name": "days",
           "kind": "VariableDeclaration",
-          "line": 481
+          "line": 482
         },
         {
           "name": "weeks",
           "kind": "VariableDeclaration",
-          "line": 483
+          "line": 484
         },
         {
           "name": "simplifyDescription",
           "kind": "VariableDeclaration",
-          "line": 488
+          "line": 489
         },
         {
           "name": "simplifications",
           "kind": "VariableDeclaration",
-          "line": 490
+          "line": 491
         },
         {
           "name": "ELI5RoomTable",
           "kind": "VariableDeclaration",
-          "line": 521
+          "line": 522
         },
         {
           "name": "eurFmt",
           "kind": "VariableDeclaration",
-          "line": 523
+          "line": 524
         },
         {
           "name": "texts",
           "kind": "VariableDeclaration",
-          "line": 528
+          "line": 529
         },
         {
           "name": "r",
           "kind": "VariableDeclaration",
-          "line": 532
+          "line": 533
         },
         {
           "name": "kc",
           "kind": "VariableDeclaration",
-          "line": 535
+          "line": 536
         },
         {
           "name": "pkg",
           "kind": "VariableDeclaration",
-          "line": 536
+          "line": 537
         },
         {
           "name": "ki",
           "kind": "VariableDeclaration",
-          "line": 539
+          "line": 540
         },
         {
           "name": "doIt",
           "kind": "VariableDeclaration",
-          "line": 542
-        },
-        {
-          "name": "map",
-          "kind": "VariableDeclaration",
           "line": 543
         },
         {
-          "name": "t",
+          "name": "map",
           "kind": "VariableDeclaration",
           "line": 544
         },
         {
           "name": "t",
           "kind": "VariableDeclaration",
-          "line": 549
+          "line": 545
         },
         {
-          "name": "round100",
+          "name": "t",
           "kind": "VariableDeclaration",
           "line": 550
         },
         {
-          "name": "hasBeforeAfter",
+          "name": "round100",
           "kind": "VariableDeclaration",
           "line": 551
         },
         {
-          "name": "hasConceptIntro",
+          "name": "hasBeforeAfter",
           "kind": "VariableDeclaration",
           "line": 552
         },
         {
-          "name": "shouldHideNumbers",
+          "name": "hasConceptIntro",
           "kind": "VariableDeclaration",
           "line": 553
         },
         {
+          "name": "shouldHideNumbers",
+          "kind": "VariableDeclaration",
+          "line": 554
+        },
+        {
           "name": "sortedRooms",
           "kind": "VariableDeclaration",
-          "line": 555
+          "line": 556
         },
         {
           "name": "BracketAnalysisModal",
           "kind": "VariableDeclaration",
-          "line": 674
+          "line": 675
         },
         {
           "name": "bracketLabel",
           "kind": "VariableDeclaration",
-          "line": 688
+          "line": 689
         },
         {
           "name": "refComparable",
           "kind": "VariableDeclaration",
-          "line": 718
+          "line": 721
         },
         {
           "name": "refComparablePrice",
           "kind": "VariableDeclaration",
-          "line": 719
+          "line": 722
         },
         {
           "name": "asking",
           "kind": "VariableDeclaration",
-          "line": 722
+          "line": 725
         },
         {
           "name": "valueIncrease",
           "kind": "VariableDeclaration",
-          "line": 723
+          "line": 726
         }
       ]
     },
@@ -25777,572 +25782,572 @@
         {
           "name": "RenoCacheEntry",
           "kind": "InterfaceDeclaration",
-          "line": 20
+          "line": 22
         },
         {
           "name": "renoCache",
           "kind": "VariableDeclaration",
-          "line": 28
+          "line": 30
         },
         {
           "name": "invalidateRenoCache",
           "kind": "VariableDeclaration",
-          "line": 31
+          "line": 33
         },
         {
           "name": "CACHE_MAX_AGE_MS",
           "kind": "VariableDeclaration",
-          "line": 36
+          "line": 38
         },
         {
           "name": "Comparable",
           "kind": "InterfaceDeclaration",
-          "line": 42
+          "line": 44
         },
         {
           "name": "PriceBrackets",
           "kind": "InterfaceDeclaration",
-          "line": 60
+          "line": 62
         },
         {
           "name": "BracketsData",
           "kind": "InterfaceDeclaration",
-          "line": 68
+          "line": 70
         },
         {
           "name": "RenovationOption",
           "kind": "InterfaceDeclaration",
-          "line": 75
+          "line": 77
         },
         {
           "name": "CardState",
           "kind": "TypeAliasDeclaration",
-          "line": 126
+          "line": 130
         },
         {
           "name": "ComparablesCardProps",
           "kind": "InterfaceDeclaration",
-          "line": 128
+          "line": 132
         },
         {
           "name": "formatPrice",
           "kind": "VariableDeclaration",
-          "line": 150
+          "line": 154
         },
         {
           "name": "buildRenovationOptionsFromV048",
           "kind": "VariableDeclaration",
-          "line": 157
+          "line": 161
         },
         {
           "name": "pkgs",
           "kind": "VariableDeclaration",
-          "line": 170
+          "line": 176
         },
         {
           "name": "marketStandardPkg",
           "kind": "VariableDeclaration",
-          "line": 171
+          "line": 177
         },
         {
           "name": "raw",
           "kind": "VariableDeclaration",
-          "line": 172
+          "line": 178
         },
         {
           "name": "pkg",
           "kind": "VariableDeclaration",
-          "line": 178
+          "line": 184
         },
         {
           "name": "asking",
           "kind": "VariableDeclaration",
-          "line": 179
+          "line": 185
         },
         {
           "name": "referenceComparable",
           "kind": "VariableDeclaration",
-          "line": 180
+          "line": 186
         },
         {
           "name": "referenceSoldPrice",
           "kind": "VariableDeclaration",
-          "line": 183
+          "line": 189
         },
         {
           "name": "targetPrice",
           "kind": "VariableDeclaration",
-          "line": 189
+          "line": 195
         },
         {
           "name": "renovationCost",
           "kind": "VariableDeclaration",
-          "line": 190
+          "line": 196
         },
         {
           "name": "itemCount",
           "kind": "VariableDeclaration",
-          "line": 191
+          "line": 197
         },
         {
           "name": "durationWeeks",
           "kind": "VariableDeclaration",
-          "line": 192
+          "line": 198
         },
         {
           "name": "MiniListingCard",
           "kind": "VariableDeclaration",
-          "line": 231
+          "line": 239
         },
         {
           "name": "mainPhoto",
           "kind": "VariableDeclaration",
-          "line": 234
+          "line": 242
         },
         {
           "name": "formatCompactPrice",
           "kind": "VariableDeclaration",
-          "line": 274
+          "line": 282
         },
         {
           "name": "absPrice",
           "kind": "VariableDeclaration",
-          "line": 275
+          "line": 283
         },
         {
           "name": "RenovationOptionCard",
           "kind": "VariableDeclaration",
-          "line": 282
+          "line": 290
         },
         {
           "name": "avgWeeks",
           "kind": "VariableDeclaration",
-          "line": 297
+          "line": 305
         },
         {
           "name": "netProfit",
           "kind": "VariableDeclaration",
-          "line": 332
+          "line": 340
         },
         {
           "name": "isNetPositive",
           "kind": "VariableDeclaration",
-          "line": 333
+          "line": 341
         },
         {
           "name": "V5_STAGE_ORDER",
           "kind": "VariableDeclaration",
-          "line": 377
+          "line": 385
         },
         {
           "name": "PATIENCE_MESSAGES",
           "kind": "VariableDeclaration",
-          "line": 388
+          "line": 396
         },
         {
           "name": "PipelineProgress",
           "kind": "VariableDeclaration",
-          "line": 401
+          "line": 409
         },
         {
           "name": "interval",
           "kind": "VariableDeclaration",
-          "line": 416
+          "line": 424
         },
         {
           "name": "startRef",
           "kind": "VariableDeclaration",
-          "line": 428
+          "line": 436
         },
         {
           "name": "timer",
           "kind": "VariableDeclaration",
-          "line": 430
+          "line": 438
         },
         {
           "name": "fmtElapsed",
           "kind": "VariableDeclaration",
-          "line": 436
+          "line": 444
         },
         {
           "name": "m",
           "kind": "VariableDeclaration",
-          "line": 437
-        },
-        {
-          "name": "s",
-          "kind": "VariableDeclaration",
-          "line": 438
-        },
-        {
-          "name": "progress",
-          "kind": "VariableDeclaration",
-          "line": 442
-        },
-        {
-          "name": "stageStatusMap",
-          "kind": "VariableDeclaration",
           "line": 445
         },
         {
-          "name": "map",
+          "name": "s",
           "kind": "VariableDeclaration",
           "line": 446
         },
         {
-          "name": "s",
+          "name": "progress",
           "kind": "VariableDeclaration",
-          "line": 448
+          "line": 450
         },
         {
-          "name": "name",
-          "kind": "VariableDeclaration",
-          "line": 449
-        },
-        {
-          "name": "succeeded",
-          "kind": "VariableDeclaration",
-          "line": 451
-        },
-        {
-          "name": "inProgress",
-          "kind": "VariableDeclaration",
-          "line": 452
-        },
-        {
-          "name": "queued",
+          "name": "stageStatusMap",
           "kind": "VariableDeclaration",
           "line": 453
         },
         {
-          "name": "idx",
+          "name": "map",
           "kind": "VariableDeclaration",
-          "line": 468
+          "line": 454
         },
         {
-          "name": "visibleStages",
+          "name": "s",
           "kind": "VariableDeclaration",
-          "line": 479
+          "line": 456
         },
         {
-          "name": "status",
+          "name": "name",
           "kind": "VariableDeclaration",
-          "line": 549
+          "line": 457
         },
         {
-          "name": "isLast",
+          "name": "succeeded",
           "kind": "VariableDeclaration",
-          "line": 550
+          "line": 459
         },
         {
-          "name": "ComparablesCard",
+          "name": "inProgress",
           "kind": "VariableDeclaration",
-          "line": 627
-        },
-        {
-          "name": "initialMock",
-          "kind": "VariableDeclaration",
-          "line": 628
-        },
-        {
-          "name": "lastSentRef",
-          "kind": "VariableDeclaration",
-          "line": 644
-        },
-        {
-          "name": "payload",
-          "kind": "VariableDeclaration",
-          "line": 649
-        },
-        {
-          "name": "last",
-          "kind": "VariableDeclaration",
-          "line": 650
-        },
-        {
-          "name": "primary",
-          "kind": "VariableDeclaration",
-          "line": 657
-        },
-        {
-          "name": "eli5Summary",
-          "kind": "VariableDeclaration",
-          "line": 662
-        },
-        {
-          "name": "addr",
-          "kind": "VariableDeclaration",
-          "line": 663
-        },
-        {
-          "name": "payload",
-          "kind": "VariableDeclaration",
-          "line": 668
-        },
-        {
-          "name": "last",
-          "kind": "VariableDeclaration",
-          "line": 669
-        },
-        {
-          "name": "STAGE_LABELS",
-          "kind": "VariableDeclaration",
-          "line": 677
-        },
-        {
-          "name": "STAGE_SUBTITLES",
-          "kind": "VariableDeclaration",
-          "line": 716
-        },
-        {
-          "name": "extractAskingPrice",
-          "kind": "VariableDeclaration",
-          "line": 745
-        },
-        {
-          "name": "d",
-          "kind": "VariableDeclaration",
-          "line": 746
-        },
-        {
-          "name": "extractTargetPrices",
-          "kind": "VariableDeclaration",
-          "line": 750
-        },
-        {
-          "name": "defaults",
-          "kind": "VariableDeclaration",
-          "line": 751
-        },
-        {
-          "name": "b",
-          "kind": "VariableDeclaration",
-          "line": 753
-        },
-        {
-          "name": "applyPipelineStatus",
-          "kind": "VariableDeclaration",
-          "line": 762
+          "line": 460
         },
         {
           "name": "queued",
           "kind": "VariableDeclaration",
-          "line": 763
+          "line": 461
         },
         {
-          "name": "inProg",
+          "name": "idx",
           "kind": "VariableDeclaration",
-          "line": 764
+          "line": 476
         },
         {
-          "name": "completed",
+          "name": "visibleStages",
           "kind": "VariableDeclaration",
-          "line": 765
-        },
-        {
-          "name": "total",
-          "kind": "VariableDeclaration",
-          "line": 766
-        },
-        {
-          "name": "stage",
-          "kind": "VariableDeclaration",
-          "line": 767
-        },
-        {
-          "name": "label",
-          "kind": "VariableDeclaration",
-          "line": 768
-        },
-        {
-          "name": "fetchCompletedData",
-          "kind": "VariableDeclaration",
-          "line": 788
-        },
-        {
-          "name": "ts",
-          "kind": "VariableDeclaration",
-          "line": 789
-        },
-        {
-          "name": "askingPrice",
-          "kind": "VariableDeclaration",
-          "line": 802
-        },
-        {
-          "name": "targetPrices",
-          "kind": "VariableDeclaration",
-          "line": 803
-        },
-        {
-          "name": "options",
-          "kind": "VariableDeclaration",
-          "line": 809
-        },
-        {
-          "name": "pollInterval",
-          "kind": "VariableDeclaration",
-          "line": 840
-        },
-        {
-          "name": "cancelled",
-          "kind": "VariableDeclaration",
-          "line": 841
-        },
-        {
-          "name": "cacheKey",
-          "kind": "VariableDeclaration",
-          "line": 844
-        },
-        {
-          "name": "cached",
-          "kind": "VariableDeclaration",
-          "line": 845
-        },
-        {
-          "name": "loadData",
-          "kind": "VariableDeclaration",
-          "line": 863
-        },
-        {
-          "name": "ts",
-          "kind": "VariableDeclaration",
-          "line": 865
-        },
-        {
-          "name": "askingPrice",
-          "kind": "VariableDeclaration",
-          "line": 890
-        },
-        {
-          "name": "targetPrices",
-          "kind": "VariableDeclaration",
-          "line": 891
-        },
-        {
-          "name": "hasRun",
-          "kind": "VariableDeclaration",
-          "line": 892
-        },
-        {
-          "name": "pipelineRunning",
-          "kind": "VariableDeclaration",
-          "line": 914
-        },
-        {
-          "name": "pipelineFailed",
-          "kind": "VariableDeclaration",
-          "line": 915
-        },
-        {
-          "name": "pollResp",
-          "kind": "VariableDeclaration",
-          "line": 924
-        },
-        {
-          "name": "pollResult",
-          "kind": "VariableDeclaration",
-          "line": 925
-        },
-        {
-          "name": "err",
-          "kind": "VariableDeclaration",
-          "line": 944
-        },
-        {
-          "name": "failedStage",
-          "kind": "VariableDeclaration",
-          "line": 955
-        },
-        {
-          "name": "stageLabel",
-          "kind": "VariableDeclaration",
-          "line": 956
-        },
-        {
-          "name": "options",
-          "kind": "VariableDeclaration",
-          "line": 971
-        },
-        {
-          "name": "err",
-          "kind": "VariableDeclaration",
-          "line": 998
-        },
-        {
-          "name": "handleRun",
-          "kind": "VariableDeclaration",
-          "line": 1014
-        },
-        {
-          "name": "response",
-          "kind": "VariableDeclaration",
-          "line": 1020
-        },
-        {
-          "name": "result",
-          "kind": "VariableDeclaration",
-          "line": 1024
-        },
-        {
-          "name": "err",
-          "kind": "VariableDeclaration",
-          "line": 1033
-        },
-        {
-          "name": "handleBack",
-          "kind": "VariableDeclaration",
-          "line": 1039
-        },
-        {
-          "name": "handleRunPipeline",
-          "kind": "VariableDeclaration",
-          "line": 1059
-        },
-        {
-          "name": "startResp",
-          "kind": "VariableDeclaration",
-          "line": 1073
-        },
-        {
-          "name": "startResult",
-          "kind": "VariableDeclaration",
-          "line": 1074
-        },
-        {
-          "name": "pollInterval",
-          "kind": "VariableDeclaration",
-          "line": 1080
-        },
-        {
-          "name": "statusResp",
-          "kind": "VariableDeclaration",
-          "line": 1082
+          "line": 487
         },
         {
           "name": "status",
           "kind": "VariableDeclaration",
-          "line": 1083
+          "line": 557
         },
         {
-          "name": "loaded",
+          "name": "isLast",
           "kind": "VariableDeclaration",
-          "line": 1088
+          "line": 558
         },
         {
-          "name": "e",
+          "name": "ComparablesCard",
           "kind": "VariableDeclaration",
-          "line": 1108
+          "line": 635
         },
         {
-          "name": "err",
+          "name": "initialMock",
           "kind": "VariableDeclaration",
-          "line": 1112
+          "line": 636
+        },
+        {
+          "name": "lastSentRef",
+          "kind": "VariableDeclaration",
+          "line": 652
+        },
+        {
+          "name": "payload",
+          "kind": "VariableDeclaration",
+          "line": 657
+        },
+        {
+          "name": "last",
+          "kind": "VariableDeclaration",
+          "line": 658
         },
         {
           "name": "primary",
           "kind": "VariableDeclaration",
-          "line": 1202
+          "line": 665
+        },
+        {
+          "name": "eli5Summary",
+          "kind": "VariableDeclaration",
+          "line": 670
+        },
+        {
+          "name": "addr",
+          "kind": "VariableDeclaration",
+          "line": 671
+        },
+        {
+          "name": "payload",
+          "kind": "VariableDeclaration",
+          "line": 676
+        },
+        {
+          "name": "last",
+          "kind": "VariableDeclaration",
+          "line": 677
+        },
+        {
+          "name": "STAGE_LABELS",
+          "kind": "VariableDeclaration",
+          "line": 685
+        },
+        {
+          "name": "STAGE_SUBTITLES",
+          "kind": "VariableDeclaration",
+          "line": 724
+        },
+        {
+          "name": "extractAskingPrice",
+          "kind": "VariableDeclaration",
+          "line": 753
+        },
+        {
+          "name": "d",
+          "kind": "VariableDeclaration",
+          "line": 754
+        },
+        {
+          "name": "extractTargetPrices",
+          "kind": "VariableDeclaration",
+          "line": 758
+        },
+        {
+          "name": "defaults",
+          "kind": "VariableDeclaration",
+          "line": 759
+        },
+        {
+          "name": "b",
+          "kind": "VariableDeclaration",
+          "line": 761
+        },
+        {
+          "name": "applyPipelineStatus",
+          "kind": "VariableDeclaration",
+          "line": 770
+        },
+        {
+          "name": "queued",
+          "kind": "VariableDeclaration",
+          "line": 771
+        },
+        {
+          "name": "inProg",
+          "kind": "VariableDeclaration",
+          "line": 772
+        },
+        {
+          "name": "completed",
+          "kind": "VariableDeclaration",
+          "line": 773
+        },
+        {
+          "name": "total",
+          "kind": "VariableDeclaration",
+          "line": 774
+        },
+        {
+          "name": "stage",
+          "kind": "VariableDeclaration",
+          "line": 775
+        },
+        {
+          "name": "label",
+          "kind": "VariableDeclaration",
+          "line": 776
+        },
+        {
+          "name": "fetchCompletedData",
+          "kind": "VariableDeclaration",
+          "line": 796
+        },
+        {
+          "name": "ts",
+          "kind": "VariableDeclaration",
+          "line": 797
+        },
+        {
+          "name": "askingPrice",
+          "kind": "VariableDeclaration",
+          "line": 810
+        },
+        {
+          "name": "targetPrices",
+          "kind": "VariableDeclaration",
+          "line": 811
+        },
+        {
+          "name": "options",
+          "kind": "VariableDeclaration",
+          "line": 817
+        },
+        {
+          "name": "pollInterval",
+          "kind": "VariableDeclaration",
+          "line": 849
+        },
+        {
+          "name": "cancelled",
+          "kind": "VariableDeclaration",
+          "line": 850
+        },
+        {
+          "name": "cacheKey",
+          "kind": "VariableDeclaration",
+          "line": 853
+        },
+        {
+          "name": "cached",
+          "kind": "VariableDeclaration",
+          "line": 854
+        },
+        {
+          "name": "loadData",
+          "kind": "VariableDeclaration",
+          "line": 872
+        },
+        {
+          "name": "ts",
+          "kind": "VariableDeclaration",
+          "line": 874
+        },
+        {
+          "name": "askingPrice",
+          "kind": "VariableDeclaration",
+          "line": 899
+        },
+        {
+          "name": "targetPrices",
+          "kind": "VariableDeclaration",
+          "line": 900
+        },
+        {
+          "name": "hasRun",
+          "kind": "VariableDeclaration",
+          "line": 901
+        },
+        {
+          "name": "pipelineRunning",
+          "kind": "VariableDeclaration",
+          "line": 923
+        },
+        {
+          "name": "pipelineFailed",
+          "kind": "VariableDeclaration",
+          "line": 924
+        },
+        {
+          "name": "pollResp",
+          "kind": "VariableDeclaration",
+          "line": 933
+        },
+        {
+          "name": "pollResult",
+          "kind": "VariableDeclaration",
+          "line": 934
+        },
+        {
+          "name": "err",
+          "kind": "VariableDeclaration",
+          "line": 953
+        },
+        {
+          "name": "failedStage",
+          "kind": "VariableDeclaration",
+          "line": 964
+        },
+        {
+          "name": "stageLabel",
+          "kind": "VariableDeclaration",
+          "line": 965
+        },
+        {
+          "name": "options",
+          "kind": "VariableDeclaration",
+          "line": 980
+        },
+        {
+          "name": "err",
+          "kind": "VariableDeclaration",
+          "line": 1008
+        },
+        {
+          "name": "handleRun",
+          "kind": "VariableDeclaration",
+          "line": 1024
+        },
+        {
+          "name": "response",
+          "kind": "VariableDeclaration",
+          "line": 1030
+        },
+        {
+          "name": "result",
+          "kind": "VariableDeclaration",
+          "line": 1034
+        },
+        {
+          "name": "err",
+          "kind": "VariableDeclaration",
+          "line": 1043
+        },
+        {
+          "name": "handleBack",
+          "kind": "VariableDeclaration",
+          "line": 1049
+        },
+        {
+          "name": "handleRunPipeline",
+          "kind": "VariableDeclaration",
+          "line": 1069
+        },
+        {
+          "name": "startResp",
+          "kind": "VariableDeclaration",
+          "line": 1083
+        },
+        {
+          "name": "startResult",
+          "kind": "VariableDeclaration",
+          "line": 1084
+        },
+        {
+          "name": "pollInterval",
+          "kind": "VariableDeclaration",
+          "line": 1090
+        },
+        {
+          "name": "statusResp",
+          "kind": "VariableDeclaration",
+          "line": 1092
+        },
+        {
+          "name": "status",
+          "kind": "VariableDeclaration",
+          "line": 1093
+        },
+        {
+          "name": "loaded",
+          "kind": "VariableDeclaration",
+          "line": 1098
+        },
+        {
+          "name": "e",
+          "kind": "VariableDeclaration",
+          "line": 1118
+        },
+        {
+          "name": "err",
+          "kind": "VariableDeclaration",
+          "line": 1122
+        },
+        {
+          "name": "primary",
+          "kind": "VariableDeclaration",
+          "line": 1212
         }
       ]
     },
@@ -26717,92 +26722,92 @@
         {
           "name": "LazyComparablesMap",
           "kind": "VariableDeclaration",
-          "line": 21
+          "line": 23
         },
         {
           "name": "ComparablesApiResponse",
           "kind": "TypeAliasDeclaration",
-          "line": 36
+          "line": 38
         },
         {
           "name": "ViewMode",
           "kind": "TypeAliasDeclaration",
-          "line": 44
+          "line": 46
         },
         {
           "name": "MapLabels",
           "kind": "TypeAliasDeclaration",
-          "line": 46
+          "line": 48
         },
         {
           "name": "ComparablesTabProps",
           "kind": "TypeAliasDeclaration",
-          "line": 53
+          "line": 55
         },
         {
           "name": "ComparablesTab",
           "kind": "VariableDeclaration",
-          "line": 61
+          "line": 63
         },
         {
           "name": "run",
           "kind": "VariableDeclaration",
-          "line": 71
+          "line": 73
         },
         {
           "name": "resp",
           "kind": "VariableDeclaration",
-          "line": 75
+          "line": 77
         },
         {
           "name": "json",
           "kind": "VariableDeclaration",
-          "line": 76
+          "line": 78
         },
         {
           "name": "comparables",
           "kind": "VariableDeclaration",
-          "line": 94
+          "line": 96
         },
         {
           "name": "comps",
           "kind": "VariableDeclaration",
-          "line": 95
+          "line": 97
         },
         {
           "name": "score",
           "kind": "VariableDeclaration",
-          "line": 96
+          "line": 98
         },
         {
           "name": "s",
           "kind": "VariableDeclaration",
-          "line": 103
+          "line": 105
         },
         {
           "name": "da",
           "kind": "VariableDeclaration",
-          "line": 105
+          "line": 107
         },
         {
           "name": "db",
           "kind": "VariableDeclaration",
-          "line": 106
+          "line": 108
         },
         {
           "name": "hasCoordinates",
           "kind": "VariableDeclaration",
-          "line": 111
+          "line": 113
         },
         {
           "name": "mapDisabled",
           "kind": "VariableDeclaration",
-          "line": 112
+          "line": 114
         },
         {
           "name": "isMapView",
           "kind": "VariableDeclaration",
-          "line": 113
+          "line": 115
         }
       ]
     },
@@ -26812,347 +26817,347 @@
         {
           "name": "PhotoLightbox",
           "kind": "VariableDeclaration",
-          "line": 29
+          "line": 31
         },
         {
           "name": "containerRef",
           "kind": "VariableDeclaration",
-          "line": 30
+          "line": 32
         },
         {
           "name": "scaleVal",
           "kind": "VariableDeclaration",
-          "line": 31
+          "line": 33
         },
         {
           "name": "xVal",
           "kind": "VariableDeclaration",
-          "line": 32
+          "line": 34
         },
         {
           "name": "yVal",
           "kind": "VariableDeclaration",
-          "line": 33
+          "line": 35
         },
         {
           "name": "bgOpacity",
           "kind": "VariableDeclaration",
-          "line": 34
+          "line": 36
         },
         {
           "name": "gesture",
           "kind": "VariableDeclaration",
-          "line": 37
+          "line": 39
         },
         {
           "name": "dist",
           "kind": "VariableDeclaration",
-          "line": 47
+          "line": 49
         },
         {
           "name": "springTo",
           "kind": "VariableDeclaration",
-          "line": 50
+          "line": 52
         },
         {
           "name": "spring",
           "kind": "VariableDeclaration",
-          "line": 51
+          "line": 53
         },
         {
           "name": "v",
           "kind": "VariableDeclaration",
-          "line": 52
-        },
-        {
-          "name": "current",
-          "kind": "VariableDeclaration",
-          "line": 53
-        },
-        {
-          "name": "raf",
-          "kind": "VariableDeclaration",
           "line": 54
         },
         {
-          "name": "step",
+          "name": "current",
           "kind": "VariableDeclaration",
           "line": 55
         },
         {
-          "name": "dx",
+          "name": "raf",
           "kind": "VariableDeclaration",
           "line": 56
         },
         {
-          "name": "springForce",
+          "name": "step",
           "kind": "VariableDeclaration",
           "line": 57
         },
         {
-          "name": "dampForce",
+          "name": "dx",
           "kind": "VariableDeclaration",
           "line": 58
         },
         {
-          "name": "accel",
+          "name": "springForce",
           "kind": "VariableDeclaration",
           "line": 59
         },
         {
+          "name": "dampForce",
+          "kind": "VariableDeclaration",
+          "line": 60
+        },
+        {
+          "name": "accel",
+          "kind": "VariableDeclaration",
+          "line": 61
+        },
+        {
           "name": "handleTouchStart",
           "kind": "VariableDeclaration",
-          "line": 73
+          "line": 75
         },
         {
           "name": "g",
           "kind": "VariableDeclaration",
-          "line": 74
+          "line": 76
         },
         {
           "name": "handleTouchMove",
           "kind": "VariableDeclaration",
-          "line": 88
+          "line": 90
         },
         {
           "name": "g",
           "kind": "VariableDeclaration",
-          "line": 89
+          "line": 91
         },
         {
           "name": "startDist",
           "kind": "VariableDeclaration",
-          "line": 92
+          "line": 94
         },
         {
           "name": "curDist",
           "kind": "VariableDeclaration",
-          "line": 93
+          "line": 95
         },
         {
           "name": "newScale",
           "kind": "VariableDeclaration",
-          "line": 94
+          "line": 96
         },
         {
           "name": "dx",
           "kind": "VariableDeclaration",
-          "line": 97
+          "line": 99
         },
         {
           "name": "dy",
           "kind": "VariableDeclaration",
-          "line": 98
+          "line": 100
         },
         {
           "name": "s",
           "kind": "VariableDeclaration",
-          "line": 99
+          "line": 101
         },
         {
           "name": "handleTouchEnd",
           "kind": "VariableDeclaration",
-          "line": 109
+          "line": 111
         },
         {
           "name": "g",
           "kind": "VariableDeclaration",
-          "line": 110
+          "line": 112
         },
         {
           "name": "s",
           "kind": "VariableDeclaration",
-          "line": 121
+          "line": 123
         },
         {
           "name": "y",
           "kind": "VariableDeclaration",
-          "line": 122
+          "line": 124
         },
         {
           "name": "handleTap",
           "kind": "VariableDeclaration",
-          "line": 134
+          "line": 136
         },
         {
           "name": "now",
           "kind": "VariableDeclaration",
-          "line": 135
+          "line": 137
         },
         {
           "name": "g",
           "kind": "VariableDeclaration",
-          "line": 136
+          "line": 138
         },
         {
           "name": "current",
           "kind": "VariableDeclaration",
-          "line": 139
+          "line": 141
         },
         {
           "name": "NegotiationIssue",
           "kind": "InterfaceDeclaration",
-          "line": 188
+          "line": 190
         },
         {
           "name": "NegotiationData",
           "kind": "InterfaceDeclaration",
-          "line": 195
+          "line": 197
         },
         {
           "name": "NegotiationModalProps",
           "kind": "InterfaceDeclaration",
-          "line": 214
+          "line": 216
         },
         {
           "name": "RoomPhotosMap",
           "kind": "TypeAliasDeclaration",
-          "line": 220
+          "line": 222
         },
         {
           "name": "eur",
           "kind": "VariableDeclaration",
-          "line": 224
+          "line": 226
         },
         {
           "name": "pickPhoto",
           "kind": "VariableDeclaration",
-          "line": 230
+          "line": 232
         },
         {
           "name": "rid",
           "kind": "VariableDeclaration",
-          "line": 232
+          "line": 234
         },
         {
           "name": "urls",
           "kind": "VariableDeclaration",
-          "line": 233
+          "line": 235
         },
         {
           "name": "collectPhotos",
           "kind": "VariableDeclaration",
-          "line": 240
+          "line": 242
         },
         {
           "name": "out",
           "kind": "VariableDeclaration",
-          "line": 242
+          "line": 244
         },
         {
           "name": "rid",
           "kind": "VariableDeclaration",
-          "line": 243
+          "line": 245
         },
         {
           "name": "url",
           "kind": "VariableDeclaration",
-          "line": 244
+          "line": 246
         },
         {
           "name": "NegotiationPanel",
           "kind": "VariableDeclaration",
-          "line": 252
+          "line": 254
         },
         {
           "name": "photosMap",
           "kind": "VariableDeclaration",
-          "line": 259
+          "line": 261
         },
         {
           "name": "texts",
           "kind": "VariableDeclaration",
-          "line": 268
+          "line": 270
         },
         {
           "name": "issue",
           "kind": "VariableDeclaration",
-          "line": 271
+          "line": 273
         },
         {
           "name": "tip",
           "kind": "VariableDeclaration",
-          "line": 275
+          "line": 277
         },
         {
           "name": "doIt",
           "kind": "VariableDeclaration",
-          "line": 281
+          "line": 283
         },
         {
           "name": "map",
           "kind": "VariableDeclaration",
-          "line": 282
+          "line": 284
         },
         {
           "name": "t",
           "kind": "VariableDeclaration",
-          "line": 283
+          "line": 285
         },
         {
           "name": "t",
-          "kind": "VariableDeclaration",
-          "line": 291
-        },
-        {
-          "name": "targetPrice",
           "kind": "VariableDeclaration",
           "line": 293
         },
         {
+          "name": "targetPrice",
+          "kind": "VariableDeclaration",
+          "line": 295
+        },
+        {
           "name": "savings",
-          "kind": "VariableDeclaration",
-          "line": 296
-        },
-        {
-          "name": "savingsPct",
-          "kind": "VariableDeclaration",
-          "line": 297
-        },
-        {
-          "name": "tips",
           "kind": "VariableDeclaration",
           "line": 298
         },
         {
+          "name": "savingsPct",
+          "kind": "VariableDeclaration",
+          "line": 299
+        },
+        {
+          "name": "tips",
+          "kind": "VariableDeclaration",
+          "line": 300
+        },
+        {
           "name": "photos",
           "kind": "VariableDeclaration",
-          "line": 328
+          "line": 330
         },
         {
           "name": "photo",
           "kind": "VariableDeclaration",
-          "line": 369
+          "line": 371
         },
         {
           "name": "NegotiationModal",
           "kind": "VariableDeclaration",
-          "line": 433
+          "line": 435
         },
         {
           "name": "fetchData",
           "kind": "VariableDeclaration",
-          "line": 442
+          "line": 444
         },
         {
           "name": "resp",
           "kind": "VariableDeclaration",
-          "line": 446
+          "line": 448
         },
         {
           "name": "json",
           "kind": "VariableDeclaration",
-          "line": 447
+          "line": 449
         },
         {
           "name": "prev",
           "kind": "VariableDeclaration",
-          "line": 466
+          "line": 468
         },
         {
           "name": "handleKeyDown",
           "kind": "VariableDeclaration",
-          "line": 472
+          "line": 474
         }
       ]
     },
@@ -28361,232 +28366,232 @@
         {
           "name": "API_URL",
           "kind": "VariableDeclaration",
-          "line": 14
+          "line": 16
         },
         {
           "name": "LanguageCode",
           "kind": "TypeAliasDeclaration",
-          "line": 17
+          "line": 19
         },
         {
           "name": "LANGUAGES",
           "kind": "VariableDeclaration",
-          "line": 20
+          "line": 22
         },
         {
           "name": "getCircleFlagUrl",
           "kind": "VariableDeclaration",
-          "line": 30
+          "line": 32
         },
         {
           "name": "STORAGE_KEY",
           "kind": "VariableDeclaration",
-          "line": 34
+          "line": 36
         },
         {
           "name": "SOURCE_LANGUAGE",
           "kind": "VariableDeclaration",
-          "line": 37
+          "line": 39
         },
         {
           "name": "TranslationCache",
           "kind": "InterfaceDeclaration",
-          "line": 39
+          "line": 41
         },
         {
           "name": "UseTranslationReturn",
           "kind": "InterfaceDeclaration",
-          "line": 43
+          "line": 45
         },
         {
           "name": "ListingTranslateData",
           "kind": "InterfaceDeclaration",
-          "line": 55
+          "line": 57
         },
         {
           "name": "globalCache",
           "kind": "VariableDeclaration",
-          "line": 63
+          "line": 65
         },
         {
           "name": "preloadTranslations",
           "kind": "FunctionDeclaration",
-          "line": 75
+          "line": 77
         },
         {
           "name": "preloadTranslations.resp",
           "kind": "VariableDeclaration",
-          "line": 79
+          "line": 81
         },
         {
           "name": "preloadTranslations.json",
           "kind": "VariableDeclaration",
-          "line": 80
+          "line": 82
         },
         {
           "name": "preloadTranslations.translations",
           "kind": "VariableDeclaration",
-          "line": 83
+          "line": 85
         },
         {
           "name": "preloadTranslations.count",
           "kind": "VariableDeclaration",
-          "line": 84
+          "line": 86
         },
         {
           "name": "getCacheKey",
           "kind": "FunctionDeclaration",
-          "line": 97
+          "line": 99
         },
         {
           "name": "useTranslation",
           "kind": "FunctionDeclaration",
-          "line": 101
+          "line": 103
         },
         {
           "name": "useTranslation.setLanguage",
           "kind": "VariableDeclaration",
-          "line": 116
+          "line": 118
         },
         {
           "name": "useTranslation.isSourceLanguage",
           "kind": "VariableDeclaration",
-          "line": 123
+          "line": 125
         },
         {
           "name": "useTranslation.translateText",
           "kind": "VariableDeclaration",
-          "line": 126
+          "line": 128
         },
         {
           "name": "useTranslation.cacheKey",
           "kind": "VariableDeclaration",
-          "line": 137
+          "line": 139
         },
         {
           "name": "useTranslation.response",
           "kind": "VariableDeclaration",
-          "line": 144
+          "line": 146
         },
         {
           "name": "useTranslation.data",
           "kind": "VariableDeclaration",
-          "line": 159
+          "line": 161
         },
         {
           "name": "useTranslation.translated",
           "kind": "VariableDeclaration",
-          "line": 160
+          "line": 162
         },
         {
           "name": "useTranslation.error",
           "kind": "VariableDeclaration",
-          "line": 166
+          "line": 168
         },
         {
           "name": "useTranslation.translateBatch",
           "kind": "VariableDeclaration",
-          "line": 175
+          "line": 177
         },
         {
           "name": "useTranslation.results",
           "kind": "VariableDeclaration",
-          "line": 186
+          "line": 188
         },
         {
           "name": "useTranslation.toTranslate",
           "kind": "VariableDeclaration",
-          "line": 187
+          "line": 189
         },
         {
           "name": "useTranslation.cacheKey",
           "kind": "VariableDeclaration",
-          "line": 190
+          "line": 192
         },
         {
           "name": "useTranslation.response",
           "kind": "VariableDeclaration",
-          "line": 207
+          "line": 209
         },
         {
           "name": "useTranslation.data",
           "kind": "VariableDeclaration",
-          "line": 226
+          "line": 228
         },
         {
           "name": "useTranslation.translations",
           "kind": "VariableDeclaration",
-          "line": 227
+          "line": 229
         },
         {
           "name": "useTranslation.translated",
           "kind": "VariableDeclaration",
-          "line": 231
+          "line": 233
         },
         {
           "name": "useTranslation.error",
           "kind": "VariableDeclaration",
-          "line": 237
+          "line": 239
         },
         {
           "name": "useTranslation.translateListing",
           "kind": "VariableDeclaration",
-          "line": 252
+          "line": 254
         },
         {
           "name": "useTranslation.cachedTitle",
           "kind": "VariableDeclaration",
-          "line": 261
+          "line": 263
         },
         {
           "name": "useTranslation.cachedDesc",
           "kind": "VariableDeclaration",
-          "line": 262
+          "line": 264
         },
         {
           "name": "useTranslation.cachedSummary",
           "kind": "VariableDeclaration",
-          "line": 263
+          "line": 265
         },
         {
           "name": "useTranslation.cachedReasons",
           "kind": "VariableDeclaration",
-          "line": 264
+          "line": 266
         },
         {
           "name": "useTranslation.allReasonsCached",
           "kind": "VariableDeclaration",
-          "line": 265
+          "line": 267
         },
         {
           "name": "useTranslation.titleOk",
           "kind": "VariableDeclaration",
-          "line": 267
+          "line": 269
         },
         {
           "name": "useTranslation.descOk",
           "kind": "VariableDeclaration",
-          "line": 268
+          "line": 270
         },
         {
           "name": "useTranslation.summaryOk",
           "kind": "VariableDeclaration",
-          "line": 269
+          "line": 271
         },
         {
           "name": "useTranslation.response",
           "kind": "VariableDeclaration",
-          "line": 285
+          "line": 287
         },
         {
           "name": "useTranslation.result",
           "kind": "VariableDeclaration",
-          "line": 303
+          "line": 305
         },
         {
           "name": "useTranslation.error",
           "kind": "VariableDeclaration",
-          "line": 329
+          "line": 331
         }
       ]
     },
@@ -28826,172 +28831,192 @@
         {
           "name": "API_BASE",
           "kind": "VariableDeclaration",
-          "line": 21
+          "line": 23
         },
         {
           "name": "ApiError",
           "kind": "InterfaceDeclaration",
-          "line": 27
+          "line": 29
         },
         {
           "name": "ApiSuccess",
           "kind": "InterfaceDeclaration",
-          "line": 32
+          "line": 34
         },
         {
           "name": "ApiResult",
           "kind": "TypeAliasDeclaration",
-          "line": 37
+          "line": 39
         },
         {
           "name": "apiCall",
           "kind": "FunctionDeclaration",
-          "line": 39
+          "line": 41
         },
         {
           "name": "apiCall.response",
           "kind": "VariableDeclaration",
-          "line": 44
+          "line": 46
         },
         {
           "name": "apiCall.data",
           "kind": "VariableDeclaration",
-          "line": 52
+          "line": 54
         },
         {
           "name": "apiCall.error",
           "kind": "VariableDeclaration",
-          "line": 71
+          "line": 73
         },
         {
           "name": "ValidationResult",
           "kind": "InterfaceDeclaration",
-          "line": 87
+          "line": 89
         },
         {
           "name": "validateUrl",
           "kind": "FunctionDeclaration",
-          "line": 99
+          "line": 101
         },
         {
           "name": "validateUrl.response",
           "kind": "VariableDeclaration",
-          "line": 101
+          "line": 103
         },
         {
           "name": "validateUrl.data",
           "kind": "VariableDeclaration",
-          "line": 107
+          "line": 109
         },
         {
           "name": "validateUrl.error",
           "kind": "VariableDeclaration",
-          "line": 126
+          "line": 128
         },
         {
           "name": "scrapeUrl",
           "kind": "FunctionDeclaration",
-          "line": 144
+          "line": 146
         },
         {
           "name": "scrapeUrl.result",
           "kind": "VariableDeclaration",
-          "line": 148
+          "line": 150
         },
         {
           "name": "scrapePreview",
           "kind": "FunctionDeclaration",
-          "line": 159
+          "line": 161
         },
         {
           "name": "scrapePreview.result",
           "kind": "VariableDeclaration",
-          "line": 160
+          "line": 162
         },
         {
           "name": "ListingsResult",
           "kind": "InterfaceDeclaration",
-          "line": 172
+          "line": 174
         },
         {
           "name": "getListings",
           "kind": "FunctionDeclaration",
-          "line": 180
+          "line": 182
         },
         {
           "name": "getListings.result",
           "kind": "VariableDeclaration",
-          "line": 184
+          "line": 186
         },
         {
           "name": "getListings.listings",
           "kind": "VariableDeclaration",
-          "line": 193
+          "line": 195
         },
         {
           "name": "getListing",
           "kind": "FunctionDeclaration",
-          "line": 206
+          "line": 208
         },
         {
           "name": "createListing",
           "kind": "FunctionDeclaration",
-          "line": 213
+          "line": 215
         },
         {
           "name": "runPipeline",
           "kind": "FunctionDeclaration",
-          "line": 225
+          "line": 227
         },
         {
           "name": "updateListing",
           "kind": "FunctionDeclaration",
-          "line": 234
+          "line": 236
         },
         {
           "name": "deleteListing",
           "kind": "FunctionDeclaration",
-          "line": 247
+          "line": 249
         },
         {
           "name": "getListingPhotos",
           "kind": "FunctionDeclaration",
-          "line": 256
+          "line": 258
         },
         {
           "name": "getListingPhotos.result",
           "kind": "VariableDeclaration",
-          "line": 257
+          "line": 259
         },
         {
           "name": "DomainInfo",
           "kind": "InterfaceDeclaration",
-          "line": 273
+          "line": 275
         },
         {
           "name": "KNOWN_DOMAINS",
           "kind": "VariableDeclaration",
-          "line": 280
+          "line": 282
         },
         {
           "name": "getDomainInfo",
           "kind": "FunctionDeclaration",
-          "line": 310
+          "line": 312
         },
         {
           "name": "getDomainInfo.hostname",
           "kind": "VariableDeclaration",
-          "line": 312
+          "line": 314
         },
         {
           "name": "extractDomain",
           "kind": "FunctionDeclaration",
-          "line": 327
+          "line": 329
         },
         {
           "name": "isValidUrl",
           "kind": "FunctionDeclaration",
-          "line": 338
+          "line": 340
+        }
+      ]
+    },
+    {
+      "path": "frontend/src/lib/app-path.ts",
+      "symbols": [
+        {
+          "name": "appBasePath",
+          "kind": "VariableDeclaration",
+          "line": 1
+        },
+        {
+          "name": "appPath",
+          "kind": "FunctionDeclaration",
+          "line": 2
+        },
+        {
+          "name": "appFetch",
+          "kind": "FunctionDeclaration",
+          "line": 4
         }
       ]
     },
@@ -29056,72 +29081,72 @@
         {
           "name": "Language",
           "kind": "TypeAliasDeclaration",
-          "line": 7
+          "line": 9
         },
         {
           "name": "translations",
           "kind": "VariableDeclaration",
-          "line": 9
+          "line": 11
         },
         {
           "name": "DeepStringify",
           "kind": "TypeAliasDeclaration",
-          "line": 264
+          "line": 266
         },
         {
           "name": "Translations",
           "kind": "TypeAliasDeclaration",
-          "line": 265
+          "line": 267
         },
         {
           "name": "getTranslations",
           "kind": "FunctionDeclaration",
-          "line": 267
+          "line": 269
         },
         {
           "name": "LanguageContextType",
           "kind": "InterfaceDeclaration",
-          "line": 273
+          "line": 275
         },
         {
           "name": "LanguageContext",
           "kind": "VariableDeclaration",
-          "line": 279
+          "line": 281
         },
         {
           "name": "LanguageProviderProps",
           "kind": "InterfaceDeclaration",
-          "line": 281
+          "line": 283
         },
         {
           "name": "LanguageProvider",
           "kind": "FunctionDeclaration",
-          "line": 286
+          "line": 288
         },
         {
           "name": "LanguageProvider.setLanguage",
           "kind": "VariableDeclaration",
-          "line": 296
+          "line": 298
         },
         {
           "name": "LanguageProvider.error",
           "kind": "VariableDeclaration",
-          "line": 306
+          "line": 308
         },
         {
           "name": "useLanguage",
           "kind": "FunctionDeclaration",
-          "line": 318
+          "line": 320
         },
         {
           "name": "useLanguage.context",
           "kind": "VariableDeclaration",
-          "line": 319
+          "line": 321
         },
         {
           "name": "useTranslations",
           "kind": "FunctionDeclaration",
-          "line": 327
+          "line": 329
         }
       ]
     },
@@ -29366,12 +29391,37 @@
         {
           "name": "proxy",
           "kind": "FunctionDeclaration",
-          "line": 2
+          "line": 4
+        },
+        {
+          "name": "proxy.base",
+          "kind": "VariableDeclaration",
+          "line": 5
+        },
+        {
+          "name": "proxy.path",
+          "kind": "VariableDeclaration",
+          "line": 6
+        },
+        {
+          "name": "proxy.result",
+          "kind": "VariableDeclaration",
+          "line": 8
+        },
+        {
+          "name": "proxy.target",
+          "kind": "VariableDeclaration",
+          "line": 12
+        },
+        {
+          "name": "proxy.host",
+          "kind": "VariableDeclaration",
+          "line": 12
         },
         {
           "name": "config",
           "kind": "VariableDeclaration",
-          "line": 6
+          "line": 19
         }
       ]
     },
@@ -29542,6 +29592,19 @@
           "name": "PACKAGE_CONFIG",
           "kind": "VariableDeclaration",
           "line": 87
+        }
+      ]
+    },
+    {
+      "path": "tools/build-native-sample.py",
+      "summary": "Build cached native report contracts with original BOQ math and authored inputs.",
+      "symbols": [
+        {
+          "name": "build",
+          "kind": "FunctionDef",
+          "line": 10,
+          "summary": "",
+          "parameters": []
         }
       ]
     },
@@ -29760,6 +29823,29 @@
           "parameters": [
             "argv"
           ]
+        }
+      ]
+    },
+    {
+      "path": "tools/sample-app.py",
+      "summary": "Build or run the original renovation app with cached local reports.",
+      "symbols": [
+        {
+          "name": "environment",
+          "kind": "FunctionDef",
+          "line": 16,
+          "summary": "",
+          "parameters": [
+            "base_path",
+            "state_dir"
+          ]
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 28,
+          "summary": "",
+          "parameters": []
         }
       ]
     },

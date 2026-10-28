@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "view": "listings",
+      "width": 1600,
+      "status": 200,
+      "path": "/apps/estimates/listings",
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    },
+    {
+      "view": "renovation",
+      "width": 1600,
+      "status": 200,
+      "path": "/apps/estimates/listing/101",
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    },
+    {
+      "view": "listing",
+      "width": 1600,
+      "status": 200,
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    },
+    {
+      "view": "comparables",
+      "width": 1600,
+      "status": 200,
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    },
+    {
+      "view": "listings",
+      "width": 390,
+      "status": 200,
+      "path": "/apps/estimates/listings",
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    },
+    {
+      "view": "renovation",
+      "width": 390,
+      "status": 200,
+      "path": "/apps/estimates/listing/101",
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    },
+    {
+      "view": "listing",
+      "width": 390,
+      "status": 200,
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    },
+    {
+      "view": "comparables",
+      "width": 390,
+      "status": 200,
+      "foreign": 0,
+      "missing": [],
+      "page_errors": 0,
+      "console_errors": 0,
+      "overflow": false
+    }
+  ],
+  "screenshots": {
+    "renovation-1600.png": "388041ec95c789589580376d5e0a9e73bb8804c90fc0972672a4d7a6687cb671",
+    "listings-1600.png": "8d326a61ba59e1f763154e374f1577d3235a4b29ac3d263f36fbbf15bbdf5731",
+    "comparables-390.png": "049eacdb43536fd37e0be0c3c6734bddf93d97c183bd6a8ed018015c99e5db60",
+    "listing-1600.png": "51bbdacfea5a6ac0c985681fa248f7d1b9a9637cbe34f17b7d363e0e6e709870",
+    "listing-390.png": "19e5dd4df14295ac099d0ac270a5e3450b1a24cc8181d43619f36668c7cbf6c9",
+    "comparables-1600.png": "8bf8c12f331be1a8494cf68c15daab0f673661a2481225b9e4f382b128f4c8dd",
+    "renovation-390.png": "24a2bc8de77da072aff55620f3414909f9a6530527d2b98b1e77fbbaff6a97da",
+    "listings-390.png": "04a7b1b2f51d60943955a3d3a79c5754cc2add4732d14c0b2ae397e0c07fe9f6"
+  }
+}

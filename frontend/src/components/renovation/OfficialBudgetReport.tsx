@@ -167,8 +167,8 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
   listingId,
   address,
   clientName = 'Propietario',
-  architectName = 'Arquitecto Técnico',
-  propertyArea = 80,
+  architectName = 'Por asignar',
+  propertyArea,
 }) => {
   const [activeSection, setActiveSection] = useState<string>('summary');
   const [expandedChapters, setExpandedChapters] = useState<Set<string>>(new Set());
@@ -315,7 +315,7 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
           </tr>
           <tr className="border-b border-stone-200">
             <td className="py-2 text-stone-800">Superficie:</td>
-            <td className="py-2 text-stone-900">{propertyArea} m² construidos</td>
+            <td className="py-2 text-stone-900">{propertyArea ? propertyArea+' m² construidos' : 'Por medir'}</td>
           </tr>
           <tr className="border-b border-stone-200">
             <td className="py-2 text-stone-800">Promotor/Cliente:</td>

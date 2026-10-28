@@ -1,5 +1,7 @@
 'use client';
 
+import {appFetch as fetch} from '@/lib/app-path';
+
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { 
   Scale, 
@@ -103,6 +105,8 @@ interface RenovationOption {
     category?: string;
     subcategory?: string;
   }>;
+  property_area?: number;
+  price_basis?: string;
   confidence_score?: number;
   sanity_check_passed?: boolean;
   risk_flags?: Array<string | { flag: string; severity?: string; mitigation?: string }>;
@@ -159,8 +163,10 @@ const buildRenovationOptionsFromV048 = ({
   strategySelection,
   askingPrice,
   targetPrices,
+  listing,
 }: {
   packages: any[];
+  listing?: any;
   strategySelection: any;
   askingPrice: number;
   targetPrices: { fast_sell: number; fair_market: number; out_of_market: number };
@@ -213,6 +219,8 @@ const buildRenovationOptionsFromV048 = ({
     delta_scopes: pkg?.delta_scopes,
     dimension_totals: pkg?.dimension_totals,
     cost_breakdown: pkg?.cost_breakdown || {},
+    price_basis:pkg?.price_basis,
+    property_area:Number(listing?.m2_built||listing?.sqm||0)||undefined,
     confidence_score: pkg?.confidence_score || 0.8,
     sanity_check_passed: pkg?.sanity_check_passed ?? true,
     risk_flags: pkg?.risk_flags || [],
@@ -811,6 +819,7 @@ export const ComparablesCard: React.FC<ComparablesCardProps> = ({ listingId, onB
         strategySelection: packagesResult.strategy_selection,
         askingPrice,
         targetPrices,
+      listing:listingResult.data,
       });
 
       if (options.length > 0) {
@@ -973,7 +982,8 @@ export const ComparablesCard: React.FC<ComparablesCardProps> = ({ listingId, onB
             strategySelection: v5Result.strategy_selection,
             askingPrice,
             targetPrices,
-          });
+          listing:listingResult.data,
+      });
 
           if (options.length > 0) {
             setRenovationOptions(options);

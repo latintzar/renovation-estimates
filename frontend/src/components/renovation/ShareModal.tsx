@@ -103,12 +103,12 @@ export const ShareModal: React.FC<ShareModalProps> = ({
     };
   }, [isOpen, onClose]);
 
-  const PRODUCTION_ORIGIN = "https://app.leo.casa";
+  const PRODUCTION_ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || (typeof window==='undefined'?'http://localhost:3002':window.location.origin);
 
   const contractorUrl = useMemo(() => {
     if (!isOpen) return "";
     try {
-      const url = new URL(`/listing/${listingId}`, PRODUCTION_ORIGIN);
+      const url = new URL(`${process.env.NEXT_PUBLIC_BASE_PATH||''}/listing/${listingId}`, PRODUCTION_ORIGIN);
       url.searchParams.set("view", "contractor");
       return url.toString();
     } catch {
@@ -185,7 +185,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({
       url.search = window.location.search;
       return url.toString();
     } catch {
-      return `${PRODUCTION_ORIGIN}/listing/${listingId}`;
+      return `${PRODUCTION_ORIGIN}${process.env.NEXT_PUBLIC_BASE_PATH||''}/listing/${listingId}`;
     }
   }, [listingId]);
 
@@ -257,11 +257,11 @@ export const ShareModalPanel: React.FC<ShareModalPanelProps> = ({
   const [shareCopied, setShareCopied] = useState(false);
   const [briefCopied, setBriefCopied] = useState(false);
 
-  const PRODUCTION_ORIGIN = "https://app.leo.casa";
+  const PRODUCTION_ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || (typeof window==='undefined'?'http://localhost:3002':window.location.origin);
 
   const contractorUrl = useMemo(() => {
     try {
-      const url = new URL(`/listing/${listingId}`, PRODUCTION_ORIGIN);
+      const url = new URL(`${process.env.NEXT_PUBLIC_BASE_PATH||''}/listing/${listingId}`, PRODUCTION_ORIGIN);
       url.searchParams.set("view", "contractor");
       return url.toString();
     } catch {
@@ -336,11 +336,11 @@ export const ShareModalPanel: React.FC<ShareModalPanelProps> = ({
 
   const shareUrl = useMemo(() => {
     try {
-      const url = new URL(`/listing/${listingId}`, PRODUCTION_ORIGIN);
+      const url = new URL(`${process.env.NEXT_PUBLIC_BASE_PATH||''}/listing/${listingId}`, PRODUCTION_ORIGIN);
       if (isContractorView) url.searchParams.set("view", "contractor");
       return url.toString();
     } catch {
-      return `${PRODUCTION_ORIGIN}/listing/${listingId}`;
+      return `${PRODUCTION_ORIGIN}${process.env.NEXT_PUBLIC_BASE_PATH||''}/listing/${listingId}`;
     }
   }, [listingId, isContractorView]);
 
