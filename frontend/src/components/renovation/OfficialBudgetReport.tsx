@@ -785,6 +785,7 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
         <div className="flex items-center gap-3">
           <button
             onClick={onClose}
+            aria-label="Close report"
             className="p-1.5 text-stone-900 hover:text-stone-900 hover:bg-stone-100 rounded"
           >
             <X className="w-5 h-5" />

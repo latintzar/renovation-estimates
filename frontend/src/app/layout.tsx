@@ -7,14 +7,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: 'Renovation estimates', template: '%s | Renovation estimates' },
   description: 'Property analysis, comparable standards and auditable renovation quantities.',
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: process.env.NEXT_PUBLIC_ATELIER_PREVIEW === 'true' ? '/apps/estimates/favicon.svg' : '/favicon.svg' },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  maximumScale: 5,
+  userScalable: true,
   themeColor: "#FDFBF7", // Leo cream background
 };
 

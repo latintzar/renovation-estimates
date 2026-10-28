@@ -7,3 +7,5 @@ Publication improves the README introduction and uses the actual native report a
 Validation after these edits: TypeScript and the Next production build pass. The deterministic first-result calculation, authored price basis, provider boundaries and original source authority remain documented in the setup and architecture guides.
 
 The public first-result helper supports a build-time static preview mode with its own asset prefix and a setup link. The ordinary local entry still opens /listings. Its Atelier credit is linked. The README includes the public clone command.
+
+Native static preview QA exposed root-relative public-font and icon paths. Fonts now bundle through the build so its configured asset prefix applies; preview metadata uses the same prefix. Browser zoom is available and the report close control has an accessible name. The report structure and amounts are preserved.
