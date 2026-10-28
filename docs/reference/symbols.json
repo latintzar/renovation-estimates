@@ -21463,9 +21463,14 @@
           "line": 10
         },
         {
-          "name": "FirstEstimatePage.subtotal",
+          "name": "FirstEstimatePage.hostedPreview",
           "kind": "VariableDeclaration",
           "line": 12
+        },
+        {
+          "name": "FirstEstimatePage.subtotal",
+          "kind": "VariableDeclaration",
+          "line": 13
         }
       ]
     },

@@ -443,7 +443,7 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 
 ## frontend/src/app/first-estimate
 
-- [frontend/src/app/first-estimate/page.tsx](modules/frontend/src/app/first-estimate/page.tsx.md): 2 symbols.
+- [frontend/src/app/first-estimate/page.tsx](modules/frontend/src/app/first-estimate/page.tsx.md): 3 symbols.
 
 ## frontend/src/app/listing/[id]
 

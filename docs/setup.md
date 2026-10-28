@@ -69,3 +69,7 @@ The example file at repository root contains supported field names and empty val
 The selected-file runner keeps empty cloud fields from reopening ambient account discovery.
 
 The report adapter adds an authored flooring category to the two synthetic finish items. Prices, quantities, labor hours and line totals come directly from the original calculation receipt.
+
+## Static report preview
+
+Set NEXT_PUBLIC_ATELIER_PREVIEW=true during a frontend production build to use the /apps/estimates asset prefix and link the report entry to the recipient setup guide. Ordinary local builds link to the original /listings workspace. This flag changes the first-result presentation, while the report component and calculation stay the same.

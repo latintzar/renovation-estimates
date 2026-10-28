@@ -13,6 +13,8 @@ The sample estimate uses independently authored rates and measurements: two work
 Use Python 3.12:
 
 ```sh
+git clone https://github.com/latintzar/renovation-estimates.git
+cd renovation-estimates
 python3.12 -m venv .venv
 .venv/bin/python -m pip install -r requirements-first-result.txt
 .venv/bin/python tools/first-estimate.py
@@ -33,7 +35,7 @@ npm ci
 npm run dev
 ```
 
-Open `http://127.0.0.1:3002/first-estimate` for the original report interface backed by the proved synthetic rows. `/listings` opens the original listing workspace. This is the original workspace. Its listing importer uses the backend, recipient-owned provider accounts and licensed inputs. [Setup](docs/setup.md) records the database and full-pipeline integration boundary.
+Open `http://127.0.0.1:3002/first-estimate` for the original report interface backed by the proved synthetic rows. `/listings` opens the original listing workspace. Its listing importer uses the backend, recipient-owned provider accounts and licensed inputs. [Setup](docs/setup.md) records the database and full-pipeline integration boundary.
 
 ## Guide
 
