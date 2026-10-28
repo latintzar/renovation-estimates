@@ -1,6 +1,8 @@
-# Leo Estimate — renovation estimates for Spanish properties
+# Leo Estimate
 
-Estimate a property’s renovation before making an offer. Built for property buyers and estate agents in Spain, with room-by-room work, quantities and price evidence.
+Leo Estimate is a renovation cost estimator for Spanish properties, with room-by-room work, quantities and price evidence.
+
+[Website](https://atelierneyra.com/renovation-estimates) · [Documentation](https://docs.atelierneyra.com/leo-estimates/overview/)
 
 The original app keeps the listing, rooms, proposed work and itemized estimate together. The source includes its Next.js interface, FastAPI services, worker pipeline and deterministic costing modules.
 
