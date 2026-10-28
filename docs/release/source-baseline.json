@@ -1,0 +1,3425 @@
+{
+  "repository": "latintzar/leo-archive",
+  "ref": "full-snapshot-2026-03-20",
+  "upstream_commit": "4dca5f9bd94a3ee4759dff949f3d185acd095022",
+  "note": "Original before-transform hashes for modified/omitted files stay private. Released bytes and unchanged-source blobs are recorded here.",
+  "files": [
+    {
+      "path": "docs/history/archive-README.md",
+      "modified": true,
+      "release_sha256": "9aae6bb55595d1fd791e6f38a905fb2418f5a18e1e3f7cd22ad07c36a0d57ceb",
+      "release_bytes": 4817
+    },
+    {
+      "path": "README.md",
+      "modified": true,
+      "release_sha256": "d97e141cda24547b0946ea02b77765d18da23f76ab0d3358f9d59d97213fb229",
+      "release_bytes": 2761
+    },
+    {
+      "path": "backend/__init__.py",
+      "source_path": "lean-mvp/backend/__init__.py",
+      "source_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "backend/backend/reports/v4_audit_matching_listing_12_hardnouns.md",
+      "source_path": "lean-mvp/backend/backend/reports/v4_audit_matching_listing_12_hardnouns.md",
+      "source_blob": "c701dde9ed4459129ba7bd8ab47e949becceb4dd",
+      "sha256": "db86ddeda7e1b332d50d778632daaaf16318a6ca2a372b43a05236614f4be340",
+      "bytes": 4689
+    },
+    {
+      "path": "backend/clients/__init__.py",
+      "source_path": "lean-mvp/backend/clients/__init__.py",
+      "source_blob": "0fa195a0636920ee2342eea6974a56c68e51853d",
+      "sha256": "66eeb2fc0342ae03339ee588983e3e61b9d64768919d280ab4393c0e052da2b8",
+      "bytes": 833
+    },
+    {
+      "path": "backend/clients/casafari_client.py",
+      "modified": true,
+      "release_sha256": "5d533e04910b96576b425aa92788a0a1f4603fa9eb2b4fb640a31f7e040e2744",
+      "release_bytes": 35276
+    },
+    {
+      "path": "backend/clients/foursquare_client.py",
+      "modified": true,
+      "release_sha256": "b9b41baa4544d5288e91d07a8e710567d42715fe4a794ba3a2d8265d5059e0fd",
+      "release_bytes": 23852
+    },
+    {
+      "path": "backend/clients/geoapify_isochrone.py",
+      "source_path": "lean-mvp/backend/clients/geoapify_isochrone.py",
+      "source_blob": "4b9156a9d508d8a73dd2aea7251961f990d2dc79",
+      "sha256": "58641876ccec292c05f83e6c6404451f77ba2388e090d1a5f9ceabceac321006",
+      "bytes": 8432
+    },
+    {
+      "path": "backend/clients/google_places_client.py",
+      "source_path": "lean-mvp/backend/clients/google_places_client.py",
+      "source_blob": "3f0927522353416a30fa9ffb53d6f6e5b48e50e9",
+      "sha256": "9d56654028db119cc2356b58b182932174ca5721e94b7879ba1d28522b313e3c",
+      "bytes": 19647
+    },
+    {
+      "path": "backend/clients/overture_client.py",
+      "modified": true,
+      "release_sha256": "0b53534c4fae5e360eaaae1bd1a81ad70818f3486af2d981d01339b8a98fd06f",
+      "release_bytes": 19791
+    },
+    {
+      "path": "backend/clients/streetview_client.py",
+      "source_path": "lean-mvp/backend/clients/streetview_client.py",
+      "source_blob": "5a7773d4affa1af6a3b99b45f7df50e9c6d2580b",
+      "sha256": "9772eb8cb33c5c0989fc4d351199d24e9990cf1632d93df0793fc3564b70a20d",
+      "bytes": 10248
+    },
+    {
+      "path": "backend/clients/transitland_client.py",
+      "modified": true,
+      "release_sha256": "c6c911fa0c49446dfe18926b0071e1cf474ed70bf232e51a7af9875590ef5dc6",
+      "release_bytes": 31354
+    },
+    {
+      "path": "backend/config.py",
+      "modified": true,
+      "release_sha256": "afca4c3eb0e3ce9db8b5a7a32f31f5d484d34ed6678a392506d05d734d3be0b7",
+      "release_bytes": 6505
+    },
+    {
+      "path": "backend/database.py",
+      "source_path": "lean-mvp/backend/database.py",
+      "source_blob": "e02804971583d5c8fb76ab755f1b2f46192de455",
+      "sha256": "ce9da683ba7131a75e549d02fae2a853774f7a26de5307a592b53ea0486a866f",
+      "bytes": 104858
+    },
+    {
+      "path": "backend/generate_ana_illustrations.py",
+      "modified": true,
+      "release_sha256": "e8303e8729a29552ddcadfc52a7074f791e9fd47135c16e8f3066ea4997a5209",
+      "release_bytes": 13440
+    },
+    {
+      "path": "backend/generate_landing_images.py",
+      "modified": true,
+      "release_sha256": "f2c84466c19f3008d436051e742833f1aada2619b4a2ee42cb3c717fac8d5181",
+      "release_bytes": 7813
+    },
+    {
+      "path": "backend/generate_new_before.py",
+      "modified": true,
+      "release_sha256": "573c6d200f24f45522e32e711a6cd9d042b5fad5af883604fc8dd312b01ffbdc",
+      "release_bytes": 10010
+    },
+    {
+      "path": "backend/generate_room_photos.py",
+      "modified": true,
+      "release_sha256": "289e089d8bf4f65cf85503fd0e8133dee59375a8bf9f4ef13fa4d236aa93cbbd",
+      "release_bytes": 6950
+    },
+    {
+      "path": "backend/generate_scope_images.py",
+      "modified": true,
+      "release_sha256": "e4237dbcc63606abf0ef641603b7ed16db495ab351100d02be0bec5e4ed03cb2",
+      "release_bytes": 8277
+    },
+    {
+      "path": "backend/main.py",
+      "modified": true,
+      "release_sha256": "45e73fa3d03aadbb68bbe1bfd3c5540d054551ac99ec08d638d931c768146067",
+      "release_bytes": 4517
+    },
+    {
+      "path": "backend/migrations/003_section3_tables.sql",
+      "source_path": "lean-mvp/backend/migrations/003_section3_tables.sql",
+      "source_blob": "e00171534f77b02b514c20283cfbb1b7e8b2ccb5",
+      "sha256": "5ce8809206915f59ac5e9957cec1f6df93ac9d7fd9ef6715f3bb4a86fd39f267",
+      "bytes": 8602
+    },
+    {
+      "path": "backend/migrations/004_renovation_reports.sql",
+      "source_path": "lean-mvp/backend/migrations/004_renovation_reports.sql",
+      "source_blob": "838277b4515551663af822a4ba7f3e0da05b49c5",
+      "sha256": "c4eb47201f6fd63baf2592c40f5acf9ce42b9f5cfc5d9ec150b5732bed8b2daf",
+      "bytes": 3085
+    },
+    {
+      "path": "backend/migrations/005_pipeline_run_status_source_of_truth.sql",
+      "source_path": "lean-mvp/backend/migrations/005_pipeline_run_status_source_of_truth.sql",
+      "source_blob": "b0792786aa08c56100bff6875de325f11a56e4bb",
+      "sha256": "a217477fb2dc2523501439f2f5d54cca6607c59c9e246395582d3734a0f4ee18",
+      "bytes": 16612
+    },
+    {
+      "path": "backend/migrations/009_gemini_call_log_and_run_costs_view.sql",
+      "source_path": "lean-mvp/backend/migrations/009_gemini_call_log_and_run_costs_view.sql",
+      "source_blob": "813c46e8362c0cb9b227f63726b628db40ba7de6",
+      "sha256": "5d4f6016484cc22a286234ed78b6edadd0a1096c32d7e39cb3c84d9338111352",
+      "bytes": 4357
+    },
+    {
+      "path": "backend/migrations/010_refresh_pipeline_run_status_normalize_v5.sql",
+      "source_path": "lean-mvp/backend/migrations/010_refresh_pipeline_run_status_normalize_v5.sql",
+      "source_blob": "5ea227328323d8e58d4daa71494ffb68b6646abd",
+      "sha256": "b4bb963fea3b284ec5918a1f243df9b5b904fc971a500a7ea8c25dadd2d86c8b",
+      "bytes": 15937
+    },
+    {
+      "path": "backend/migrations/010b_gemini_call_log_clear_history.sql",
+      "source_path": "lean-mvp/backend/migrations/010b_gemini_call_log_clear_history.sql",
+      "source_blob": "838a7346ab90f0b19d23156425829089854110b0",
+      "sha256": "670433643f91218eb5031989f19b55782c044b161397c094a1a0a4f3d4094ede",
+      "bytes": 5134
+    },
+    {
+      "path": "backend/migrations/011_refresh_pipeline_run_status_remove_architect_report.sql",
+      "source_path": "lean-mvp/backend/migrations/011_refresh_pipeline_run_status_remove_architect_report.sql",
+      "source_blob": "2e1ee1e9e6cf46209deff6c91025f631e8fac793",
+      "sha256": "bd38e15ad69bee29d93c245adcb3b262b7ace12450e85f071f074679aa5887fd",
+      "bytes": 15067
+    },
+    {
+      "path": "backend/pipeline/__init__.py",
+      "source_path": "lean-mvp/backend/pipeline/__init__.py",
+      "source_blob": "26cebae7af0c110ddc4486f82c6fbba26cfdc219",
+      "sha256": "0af60201e917713a0ef6c57b9e1aa686ebaedbe2651b5d20a3638ab0633d3448",
+      "bytes": 347
+    },
+    {
+      "path": "backend/pipeline/cadastre_client.py",
+      "source_path": "lean-mvp/backend/pipeline/cadastre_client.py",
+      "source_blob": "48d66cbf5eedfbb839bec717861564b8ed22b0b1",
+      "sha256": "df2ece3b4f86241ae62f9f44bff69682f38296904c40b664454d5532d1928fc4",
+      "bytes": 42985
+    },
+    {
+      "path": "backend/pipeline/gemini_client.py",
+      "modified": true,
+      "release_sha256": "2a19518df3d13a4f359c0e4271d4311de92c4059487d25623ad419852ceb4348",
+      "release_bytes": 71625
+    },
+    {
+      "path": "backend/pipeline/gla_stages.py",
+      "source_path": "lean-mvp/backend/pipeline/gla_stages.py",
+      "source_blob": "35e6047873e48a05b0184d114becb47d295b8acf",
+      "sha256": "b57748874fbca7454ec57bb164b98d6d99fa5f11f23c280682bfdc67dde3974a",
+      "bytes": 3105
+    },
+    {
+      "path": "backend/pipeline/prompts/condition_assessment_v2.py",
+      "source_path": "lean-mvp/backend/pipeline/prompts/condition_assessment_v2.py",
+      "source_blob": "2fe0e0ed53188f669c631464e8b35d739c9c85e2",
+      "sha256": "5e1974d493b6ccf099a1ed0bee25658100081f71d148d93f51579357ee9afef6",
+      "bytes": 12256
+    },
+    {
+      "path": "backend/pipeline/prompts/rule_verification.py",
+      "source_path": "lean-mvp/backend/pipeline/prompts/rule_verification.py",
+      "source_blob": "3e499ee1687ba36b9e10f331e13341258e288918",
+      "sha256": "5897b2d4f9d45233a1326fb30d9220f7c717261380f33e33c1fdd94c5963a1f3",
+      "bytes": 6117
+    },
+    {
+      "path": "backend/pipeline/prompts/scope_mapper_v2.py",
+      "source_path": "lean-mvp/backend/pipeline/prompts/scope_mapper_v2.py",
+      "source_blob": "46ffcb90827c5bbbb9fa5ea8b6b9259bc5b27cbf",
+      "sha256": "579291ffb96e4c5b30073619f926c866a60979308a10d57d2312c017cca85b5d",
+      "bytes": 13723
+    },
+    {
+      "path": "backend/pipeline/prompts/uniclass_assessment.py",
+      "source_path": "lean-mvp/backend/pipeline/prompts/uniclass_assessment.py",
+      "source_blob": "ea04405a155e3b5b617681c256880277810be620",
+      "sha256": "7b994098346157f49d789bf8e3163930512fddf161a6a50cec70d794bbac2c24",
+      "bytes": 13717
+    },
+    {
+      "path": "backend/pipeline/schemas/gap_analysis.py",
+      "source_path": "lean-mvp/backend/pipeline/schemas/gap_analysis.py",
+      "source_blob": "13dcfec594e6c3d65b5c13230661fff00b6d253a",
+      "sha256": "9f6eebed4bc6dbee66dc4f7466cf1a82d61e16d64b30e52e49f3684916c61ac5",
+      "bytes": 4938
+    },
+    {
+      "path": "backend/pipeline/schemas/property_intelligence.py",
+      "source_path": "lean-mvp/backend/pipeline/schemas/property_intelligence.py",
+      "source_blob": "a66d452a05114dcadeda8997ea29242be7aa111d",
+      "sha256": "228d4c91565710ee55ae13d8f3e8f1706e1cc8af8360bacb76cfb24f3a9006be",
+      "bytes": 11017
+    },
+    {
+      "path": "backend/pipeline/schemas/renovation.py",
+      "source_path": "lean-mvp/backend/pipeline/schemas/renovation.py",
+      "source_blob": "37bf310046e2fee57aad0136e5b86b29080581fb",
+      "sha256": "1a8a0a4ec2238d05afce398785312627d96a11b5e55c5806c74bcd92f6e0d75b",
+      "bytes": 9117
+    },
+    {
+      "path": "backend/pipeline/steps/__init__.py",
+      "source_path": "lean-mvp/backend/pipeline/steps/__init__.py",
+      "source_blob": "aafbfc1e1c061ac18cbba8b4bc4651cbec6355b2",
+      "sha256": "dfe6d7e5e098c54b79f75d812d7770e5d10bab53fe69e0c679790d4da8c7b707",
+      "bytes": 901
+    },
+    {
+      "path": "backend/pipeline/steps/cluster_photos.py",
+      "source_path": "lean-mvp/backend/pipeline/steps/cluster_photos.py",
+      "source_blob": "97570cb3f26c7fe94e40755403a0340138171ec3",
+      "sha256": "9463e1e19d47a3be7b1399c205800a9b04e588a1824e8a128f8b0a26a9f0b854",
+      "bytes": 24302
+    },
+    {
+      "path": "backend/pipeline/steps/cluster_photos_v5.py",
+      "source_path": "lean-mvp/backend/pipeline/steps/cluster_photos_v5.py",
+      "source_blob": "731dee8b4b39301ffebc6e354217e7fcc6d9eea0",
+      "sha256": "4c162e846efa36f899e0f11af350ed5f5a3ebe4a0ab3b575ecf0300855913034",
+      "bytes": 9897
+    },
+    {
+      "path": "backend/pipeline/steps/map_to_scope.py",
+      "source_path": "lean-mvp/backend/pipeline/steps/map_to_scope.py",
+      "source_blob": "b0afc3bab33a52e5c4dde08d4f32205ad44f5fb2",
+      "sha256": "9c85e5f67a640e7743f5f2f7c1a5e388903ab76f2bbdca41f8d5f2b703e44831",
+      "bytes": 11542
+    },
+    {
+      "path": "backend/pipeline/steps/smart_m2.py",
+      "source_path": "lean-mvp/backend/pipeline/steps/smart_m2.py",
+      "source_blob": "e13199e15c0abe2f2e05c90894b942916b200a4f",
+      "sha256": "b7fc142aaee68a1a00946faad9320b9a222528b0a93dd96d2a2ff4e9e2f1cbd9",
+      "bytes": 54914
+    },
+    {
+      "path": "backend/pipeline/steps/visuals.py",
+      "source_path": "lean-mvp/backend/pipeline/steps/visuals.py",
+      "source_blob": "2e94e6784f83ea5f67182da243abd440c1730f72",
+      "sha256": "c124aa53b6e2d5d4508e9e85ce1d2f2513cac0053db657660c4bdad73f8a9c9d",
+      "bytes": 26246
+    },
+    {
+      "path": "backend/pipeline/utils/glb_utils.py",
+      "source_path": "lean-mvp/backend/pipeline/utils/glb_utils.py",
+      "source_blob": "3a1ab4800403541f25f2c3e79e54849153eb6834",
+      "sha256": "1d7241e7dd9990847ff00aff44ec208d3f4f3caa6604e6a04e14ebf06990a50e",
+      "bytes": 10290
+    },
+    {
+      "path": "backend/pipeline/v032_orchestrator.py",
+      "source_path": "lean-mvp/backend/pipeline/v032_orchestrator.py",
+      "source_blob": "74e4eb728a34ac87231d3da0341fcd39524529fd",
+      "sha256": "060fa5db9673b986de181bcd6832b796bb050163ba1f629c9ce7681bcf5dda37",
+      "bytes": 15687
+    },
+    {
+      "path": "backend/pipeline/v5_stages.py",
+      "source_path": "lean-mvp/backend/pipeline/v5_stages.py",
+      "source_blob": "1031233f03c40dda9606430bcfa78e23ce00e9bf",
+      "sha256": "fadca3fd7dda622e4f8abe94ac72cc51c30c96d82ae8953856643f810fd78da7",
+      "bytes": 8036
+    },
+    {
+      "path": "backend/pricing/PHASE_PROMPT_REQUIREMENTS.md",
+      "source_path": "lean-mvp/backend/pricing/PHASE_PROMPT_REQUIREMENTS.md",
+      "source_blob": "e1f95ecc6cc70911cdb5fdbebf5142d459fec2dd",
+      "sha256": "30a9d27b339c5bbfcd42412bc99d2720c8e08bc282dbec8c120667ebbbe52fec",
+      "bytes": 7249
+    },
+    {
+      "path": "backend/pricing/PIR_UPGRADE_DESIGN.md",
+      "source_path": "lean-mvp/backend/pricing/PIR_UPGRADE_DESIGN.md",
+      "source_blob": "c639410308eab167d3cad6f282f5625d55874759",
+      "sha256": "984d86f09196148e061f940029f0a16eec72854fbe065e38fddbc96959fe704a",
+      "bytes": 24479
+    },
+    {
+      "path": "backend/pricing/PROMPT_SPEC.md",
+      "source_path": "lean-mvp/backend/pricing/PROMPT_SPEC.md",
+      "source_blob": "495204cf8beb11156f1d62ff7dac86c846d9fd30",
+      "sha256": "da55ebcedced13ad920f01746c69198ba7ee53a0f894f879c688a8e3afd50825",
+      "bytes": 125892
+    },
+    {
+      "path": "backend/pricing/README.md",
+      "source_path": "lean-mvp/backend/pricing/README.md",
+      "source_blob": "f5350a35bf65b4b6a9341bcfa61c0bb73f92b3a5",
+      "sha256": "9deb0e740afaffc64d5d4054f40e5bfa62b598d7eb79ebf33d61b280974b4c0e",
+      "bytes": 12815
+    },
+    {
+      "path": "backend/pricing/V2_IMPLEMENTATION_PLAN.md",
+      "source_path": "lean-mvp/backend/pricing/V2_IMPLEMENTATION_PLAN.md",
+      "source_blob": "a1ac45020dd2b46fc1e25f6a397669543eaf807e",
+      "sha256": "1dea7736dc53c96d138083a16df41db6f4db99ab52b1d74657bdbd558c96ed0f",
+      "bytes": 62317
+    },
+    {
+      "path": "backend/pricing/V4_QUANTIFICATION_ARCHITECTURE.md",
+      "source_path": "lean-mvp/backend/pricing/V4_QUANTIFICATION_ARCHITECTURE.md",
+      "source_blob": "fa39aa37d5c24d64333227e672f8267c05dcfad2",
+      "sha256": "ea21ec43489380ce35e1f21a65b97084bb938bfdc9c197bdd0e9ac8d9d1c55bf",
+      "bytes": 12411
+    },
+    {
+      "path": "backend/pricing/__init__.py",
+      "source_path": "lean-mvp/backend/pricing/__init__.py",
+      "source_blob": "fbcdea97a402d48ed4c2fccafdf0d05c1fc067e8",
+      "sha256": "e89dc005c40424e55009ac19efa97613e090df0719b8994060d6af1eb6b75012",
+      "bytes": 329
+    },
+    {
+      "path": "backend/pricing/bcca_embedding_matcher.py",
+      "source_path": "lean-mvp/backend/pricing/bcca_embedding_matcher.py",
+      "source_blob": "aa7cace6f23fd217191ec84e1c2f68a5eeeb55be",
+      "sha256": "f2ba8f207d560d1ef45de0fec2c7a921c78b86887ffc639787c19a059533d9bb",
+      "bytes": 16187
+    },
+    {
+      "path": "backend/pricing/bcca_price_lookup.py",
+      "source_path": "lean-mvp/backend/pricing/bcca_price_lookup.py",
+      "source_blob": "240f9fe56b2f3eb26baa428ece761754e86e5d00",
+      "sha256": "b74fc476770bb9e73f2d63ab4e854e141db3587ca9414f08cbbf441a3142d804",
+      "bytes": 11205
+    },
+    {
+      "path": "backend/pricing/coverage_ledger.py",
+      "source_path": "lean-mvp/backend/pricing/coverage_ledger.py",
+      "source_blob": "245a607b9c57cd3b8a0b1dc33acd63bb53a5e365",
+      "sha256": "4c4028bd2efaa739e265cda7ed7c15725644b2af9778fd96ea5d5590abcc7568",
+      "bytes": 2747
+    },
+    {
+      "path": "backend/pricing/delta_scope_generator.py",
+      "source_path": "lean-mvp/backend/pricing/delta_scope_generator.py",
+      "source_blob": "4ccd101d9c987d2f77075caedcb5ceebd179e520",
+      "sha256": "f7dc93e7de7f1ef5c7aefc365fdad49229dfb36c62792751d373f338e05e8b5a",
+      "bytes": 36988
+    },
+    {
+      "path": "backend/pricing/embedding_runtime.py",
+      "source_path": "lean-mvp/backend/pricing/embedding_runtime.py",
+      "source_blob": "9fa8adec2f0745e63b013bf8394cc737208de571",
+      "sha256": "0e997d7dd557f98be6ba8b8090800c09701eaa57d63c90d3a438f5741d258ed7",
+      "bytes": 1505
+    },
+    {
+      "path": "backend/pricing/enrich_kg_quantity_guidance.py",
+      "modified": true,
+      "release_sha256": "baf841376a5ae1f541b93c54c22274d5f0c4f8868073ddee3b582c0396a4983f",
+      "release_bytes": 13213
+    },
+    {
+      "path": "backend/pricing/flatten_bcca.py",
+      "source_path": "lean-mvp/backend/pricing/flatten_bcca.py",
+      "source_blob": "66e31f301c6184eb2989e24cb2a699ad4a8e3221",
+      "sha256": "a2a0878d524c152437c8cbbedabf8246bf1d3342441b5a56f4bf6310527182e1",
+      "bytes": 6734
+    },
+    {
+      "path": "backend/pricing/flatten_kg.py",
+      "source_path": "lean-mvp/backend/pricing/flatten_kg.py",
+      "source_blob": "cbda5d2713d3b57ee694f23e435a0cc4ea138c9a",
+      "sha256": "e212a9f94408dad719aaa8f16f2aa738df036462536879b7020897e046462b03",
+      "bytes": 10642
+    },
+    {
+      "path": "backend/pricing/gla_opinion.py",
+      "source_path": "lean-mvp/backend/pricing/gla_opinion.py",
+      "source_blob": "61ce7644483ae97cf2066e3bc4dc9a0e1ebaa406",
+      "sha256": "408d203ce84b92a353a0783ea6c4ff145cbc3f7d15c5eeb5aa0fc5216be541f6",
+      "bytes": 5717
+    },
+    {
+      "path": "backend/pricing/image_cache.py",
+      "source_path": "lean-mvp/backend/pricing/image_cache.py",
+      "source_blob": "ff4f89a37bd709886327b2c30a7780f78b96263c",
+      "sha256": "47a6770e3613b278c0d31461a6ca2dd4580992ca7e5af94ae971d8d44c5da038",
+      "bytes": 10805
+    },
+    {
+      "path": "backend/pricing/measurement_catalog_v4.py",
+      "source_path": "lean-mvp/backend/pricing/measurement_catalog_v4.py",
+      "source_blob": "452791bc955bbe6f6eb683dfd200ee633b9a4d51",
+      "sha256": "34166345a10748a29be001ecc6c46bcc161258e83dab22e128141bca6e1a5b06",
+      "bytes": 12170
+    },
+    {
+      "path": "backend/pricing/multi_phase_estimator_v1.py",
+      "source_path": "lean-mvp/backend/pricing/multi_phase_estimator_v1.py",
+      "source_blob": "95a347dd93cdb668fccbe64fae616b816a685443",
+      "sha256": "b6de75c1c10d0a31bf6f39f4b7f98e43805011b0ddbcf616e28c985cebc74d50",
+      "bytes": 87280
+    },
+    {
+      "path": "backend/pricing/phase_prompts_v1.py",
+      "source_path": "lean-mvp/backend/pricing/phase_prompts_v1.py",
+      "source_blob": "cc25967c7bdd5eebf6142a9ab5686ce34dcd1442",
+      "sha256": "9e927f49c3d6af4e57aa00583eae6ffd86219b0ad769a19cb2724304c1424a79",
+      "bytes": 90641
+    },
+    {
+      "path": "backend/pricing/pir_generator.py",
+      "source_path": "lean-mvp/backend/pricing/pir_generator.py",
+      "source_blob": "e5e454cb20c1ad27e0fe4ecff69700918e1563cc",
+      "sha256": "f71880070ee83bbc38d5b2d2c4f284feb06357c634935463798eed1ec944aeeb",
+      "bytes": 98294
+    },
+    {
+      "path": "backend/pricing/prompts/gla/__init__.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/gla/__init__.py",
+      "source_blob": "f25b8358d861bf8ccc18ef2a04b581b0b07ec5f0",
+      "sha256": "be412a68a1d46919489f5dd32278e310e4581ac7acaf6941618321969f523886",
+      "bytes": 44
+    },
+    {
+      "path": "backend/pricing/prompts/gla/opinion_room.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/gla/opinion_room.py",
+      "source_blob": "6dd9be13bda26ced05319565fbc0f34a58bb7171",
+      "sha256": "7cde907dc4a1f17fae488a4f5f3c2c598578b68f84335001283b894005c988d6",
+      "bytes": 2631
+    },
+    {
+      "path": "backend/pricing/prompts/v5/__init__.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/__init__.py",
+      "source_blob": "40ba4f1a1cefc92b14b54061b0ff7a2cce97004d",
+      "sha256": "a999eda28fc5bc5a9934a2ea99989593b36a85fc82b4a50f41b89bf256ebf98a",
+      "bytes": 63
+    },
+    {
+      "path": "backend/pricing/prompts/v5/age_context.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/age_context.py",
+      "source_blob": "7421533f354efe4b60f89e3c2dc3bb3b5c992deb",
+      "sha256": "6b82f3e76fbe170d5cae0cc9ea512c4526a19dd9e16cf44d227b143e4cd0652b",
+      "bytes": 5190
+    },
+    {
+      "path": "backend/pricing/prompts/v5/comparable_selector.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/comparable_selector.py",
+      "source_blob": "0f7ceb037baae63ad5a72d0794e267f9f29ad34a",
+      "sha256": "84c04a1fe844ca5d08d47fac15ff4451969eddb2c9e1b6e29c0890e5d14cbd36",
+      "bytes": 1799
+    },
+    {
+      "path": "backend/pricing/prompts/v5/decompose_work_items.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/decompose_work_items.py",
+      "source_blob": "8c0b2d05c1040698f08100b70f1e45c0d75cdccc",
+      "sha256": "198a84e527ac7f105b3af6fd6be8e8e8f35e7626281715c38ce697b3752b1c76",
+      "bytes": 6920
+    },
+    {
+      "path": "backend/pricing/prompts/v5/delta_cross_room_review.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/delta_cross_room_review.py",
+      "source_blob": "af7768aef352eaad8323e0ec60b4b6ff6eb368a5",
+      "sha256": "fd0093d23a2c13a9bef1ef3f3ffc1dce926842a5f3533834ff54e7cf1e7da52f",
+      "bytes": 6203
+    },
+    {
+      "path": "backend/pricing/prompts/v5/delta_slots.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/delta_slots.py",
+      "source_blob": "c65a14ca798eb90d474982d137ef1877104b4990",
+      "sha256": "ccc127fca844e2ab4aa2f85116526aa1b2751bcced5ab9315ff8460f283e4a6e",
+      "bytes": 5871
+    },
+    {
+      "path": "backend/pricing/prompts/v5/pir_comparable_home.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/pir_comparable_home.py",
+      "source_blob": "9242de6b525cc6cd7f555ca826821dee58d75998",
+      "sha256": "f176e760b503b7c25259ddb4084a5d24e5d6e94e36fec3cd7c236246ad168692",
+      "bytes": 1062
+    },
+    {
+      "path": "backend/pricing/prompts/v5/pir_target_room.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/pir_target_room.py",
+      "source_blob": "aebe587ce947a90f141061765fbaa747fddbadd4",
+      "sha256": "1565321658d7292135999dc92e5f0efa1676e21dd20e456e56ddfdb2be302ed4",
+      "bytes": 2275
+    },
+    {
+      "path": "backend/pricing/prompts/v5/strategy_targets.py",
+      "source_path": "lean-mvp/backend/pricing/prompts/v5/strategy_targets.py",
+      "source_blob": "d5bf346b04aa37fab8adcafa2f28a9d6cd445093",
+      "sha256": "b3bc56ef97accfdd2f1d04ebc563087599d213758d1d888abb3522483c15d736",
+      "bytes": 1169
+    },
+    {
+      "path": "backend/pricing/quantity_formula_v4.py",
+      "source_path": "lean-mvp/backend/pricing/quantity_formula_v4.py",
+      "source_blob": "27a2e1a4eb293635398849bbf1179fa75d516549",
+      "sha256": "235b6ad057175fbdc4a956a4694f9f446f6ddbf57b662250be9fc18ad6056e04",
+      "bytes": 13044
+    },
+    {
+      "path": "backend/pricing/quantity_resolver.py",
+      "source_path": "lean-mvp/backend/pricing/quantity_resolver.py",
+      "source_blob": "1944035ef320d235887424482d87403987861809",
+      "sha256": "319c0458ae8f62dd213522732c8dcdec8409b9822630cc909e9a227f1fb19977",
+      "bytes": 13722
+    },
+    {
+      "path": "backend/pricing/room_inference.py",
+      "source_path": "lean-mvp/backend/pricing/room_inference.py",
+      "source_blob": "d7c7638f6bc02efde4c3f8b16f2f3eefb424a715",
+      "sha256": "ad6f74d1ccbaa148d5bb368923990ee8bb81bc12c3f2035576716d4b3092abff",
+      "bytes": 13994
+    },
+    {
+      "path": "backend/pricing/schemas/__init__.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/__init__.py",
+      "source_blob": "33a9bb540582072cdcb726fdaae29afe395f514b",
+      "sha256": "70b6ff31724bac64d0ca592f5920399588f84d872f2adfa73f7d66711b3367b0",
+      "bytes": 1955
+    },
+    {
+      "path": "backend/pricing/schemas/estimation_error.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/estimation_error.py",
+      "source_blob": "40c0eaafe2bbc0c5f7d42a64aad5b13db24fb44f",
+      "sha256": "097c2c5b139d9645210adf107eb24060f26f656ee7c061d48459962c0a8fc4e3",
+      "bytes": 7334
+    },
+    {
+      "path": "backend/pricing/schemas/gemini_schemas_v1.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/gemini_schemas_v1.py",
+      "source_blob": "c8264c1675f18ac71894f302baa580f09c55d3ec",
+      "sha256": "861972710b3ddfd152a1080f715c12e05287d40d35a2a33f40e18297952ccc2b",
+      "bytes": 63048
+    },
+    {
+      "path": "backend/pricing/schemas/gemini_schemas_v2.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/gemini_schemas_v2.py",
+      "source_blob": "05f67204f5f2c43834580f989c08910ea4cb799d",
+      "sha256": "223dc4238458d95f9a3fb30117ca6fa07506e6de64c9e06fbfac7abc4d05b832",
+      "bytes": 13487
+    },
+    {
+      "path": "backend/pricing/schemas/gemini_schemas_v3.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/gemini_schemas_v3.py",
+      "source_blob": "40951e8428d3af23b5546a083bf273ea03a26c88",
+      "sha256": "5f14687c729c179cd94e89559f40ab37795efd1c32883f55351e8ebf96ae74a0",
+      "bytes": 3207
+    },
+    {
+      "path": "backend/pricing/schemas/gemini_schemas_v4.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/gemini_schemas_v4.py",
+      "source_blob": "d668951475e390f3e2ccd132d953ce759b2a5b4d",
+      "sha256": "cb1fb0f4857648e36b2eea8a96549b30ce11aba8a3ba1e3a203d14829e1f2f58",
+      "bytes": 7803
+    },
+    {
+      "path": "backend/pricing/schemas/gemini_schemas_v5.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/gemini_schemas_v5.py",
+      "source_blob": "9e03453eb6843f240f307308a343e3d9f827cee9",
+      "sha256": "91086511b115e40a5e22cad1055d29d1c5f190715a693246891c6e954a1bef71",
+      "bytes": 7728
+    },
+    {
+      "path": "backend/pricing/schemas/phase_outputs.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/phase_outputs.py",
+      "source_blob": "96dd7621bf8367d97a6cf3620897f78a90b5a49a",
+      "sha256": "42b31c74b1816a31ddb88eee381ef2bcdde43f744516e6b21f9bb110bf16fba9",
+      "bytes": 30802
+    },
+    {
+      "path": "backend/pricing/schemas/unified_estimate.py",
+      "source_path": "lean-mvp/backend/pricing/schemas/unified_estimate.py",
+      "source_blob": "6ab92f29ba808dc65ede240ed6a66c2e490bb7f0",
+      "sha256": "9ff6bd775827e426ab8e38a212daddc81cfee7d41982dcb15e494801a0cea4d1",
+      "bytes": 24479
+    },
+    {
+      "path": "backend/pricing/scripts/build_bcca_dimension_artifacts_v1.py",
+      "source_path": "lean-mvp/backend/pricing/scripts/build_bcca_dimension_artifacts_v1.py",
+      "source_blob": "8e18d61d1b83a6aa49c1c960c431c3a4ed462f8f",
+      "sha256": "bd249d3ef3685f0e308317dac0313a2aba5343715c68de7d124eb325d480c45b",
+      "bytes": 10487
+    },
+    {
+      "path": "backend/pricing/scripts/build_bcca_embedding_index.py",
+      "source_path": "lean-mvp/backend/pricing/scripts/build_bcca_embedding_index.py",
+      "source_blob": "6e54b49b6944c7b4d08ddf890c79f69d76e58428",
+      "sha256": "334cff099cbd9495c712b5340b7e4d4f5d689c6820eb533ca81c5207213b0f17",
+      "bytes": 3049
+    },
+    {
+      "path": "backend/pricing/scripts/build_bcca_embedding_index_full.py",
+      "source_path": "lean-mvp/backend/pricing/scripts/build_bcca_embedding_index_full.py",
+      "source_blob": "e57032344959548804ff3727f51fc8278cd7cc12",
+      "sha256": "4a996365aceb4c62ed1ac93999cd5e287cce685122d8d23d0632652033da7722",
+      "bytes": 6120
+    },
+    {
+      "path": "backend/pricing/strategy_selector.py",
+      "source_path": "lean-mvp/backend/pricing/strategy_selector.py",
+      "source_blob": "dd1348285ff01ae1e8615873dc3c726292bd2f67",
+      "sha256": "0944cf2ff248660edd5f141d810160d14c4034c71bee98dc8247cf9c1502c2a2",
+      "bytes": 18571
+    },
+    {
+      "path": "backend/pricing/system_instruction.txt",
+      "source_path": "lean-mvp/backend/pricing/system_instruction.txt",
+      "source_blob": "7e7127423b6e99e716eae5fad020952b2ed501a0",
+      "sha256": "e32c06669ea402f6b94b7fb3ff6a44fc46910076e25401510e814eb45bfaeae1",
+      "bytes": 5205
+    },
+    {
+      "path": "backend/pricing/takeoff_menu.py",
+      "source_path": "lean-mvp/backend/pricing/takeoff_menu.py",
+      "source_blob": "bd80338f59c82c0bbb69d4af54a4ea2c3673ce41",
+      "sha256": "4b2a851202397f5e607288fef8059b4dba0549c563749cede2d0bb302a14e072",
+      "bytes": 7720
+    },
+    {
+      "path": "backend/pricing/v2_boq_generator.py",
+      "source_path": "lean-mvp/backend/pricing/v2_boq_generator.py",
+      "source_blob": "e299280b5f47ffd6e5b05ea784cd81358fcca600",
+      "sha256": "d2433abf3dea4a79ce9a0474366653b63174bc236de282ea0be1cc2aa6dce43c",
+      "bytes": 82333
+    },
+    {
+      "path": "backend/pricing/v2_scheduler.py",
+      "source_path": "lean-mvp/backend/pricing/v2_scheduler.py",
+      "source_blob": "696f8ae33216bc58b3a1b1027cba2ac908ea299c",
+      "sha256": "3feecde1cd4f656fca241e6096c82deb3d11ae4d50ffaeeb88b934e5d57e250e",
+      "bytes": 17358
+    },
+    {
+      "path": "backend/pricing/v3_boq_generator.py",
+      "source_path": "lean-mvp/backend/pricing/v3_boq_generator.py",
+      "source_blob": "fe3b42c60929bbf320168530bf843f10ba8dbcd8",
+      "sha256": "1ba1766998cadf4d4e46dedddb0c6b46d5b13cef1f11bda25579a9a5f301e942",
+      "bytes": 8023
+    },
+    {
+      "path": "backend/pricing/v3_delta_scopes.py",
+      "source_path": "lean-mvp/backend/pricing/v3_delta_scopes.py",
+      "source_blob": "45f4e5334555feaee7d94c6d9e608fb081efa1f3",
+      "sha256": "997099c6dae9f9de1025886535d5ed8b61acab8697519d3c3ec81816a56ff970",
+      "bytes": 30880
+    },
+    {
+      "path": "backend/pricing/v4_quantification_pipeline.py",
+      "source_path": "lean-mvp/backend/pricing/v4_quantification_pipeline.py",
+      "source_blob": "6c0306069a8d14a2f0b6d7d32830202a83998b94",
+      "sha256": "a7b8c818f0e4b9977bed5b2a804685f3d0e89c24774836298180f1106b79f707",
+      "bytes": 128631
+    },
+    {
+      "path": "backend/pricing/v5_architect_report.py",
+      "source_path": "lean-mvp/backend/pricing/v5_architect_report.py",
+      "source_blob": "3dc9b397da8afb7f7bf784004319e78971f3b8cd",
+      "sha256": "30fec28de5635e74fb2ab4831fbfda5e2cd5e13934a703cdd8439b76b33b712b",
+      "bytes": 28685
+    },
+    {
+      "path": "backend/pricing/v5_comparable_selector.py",
+      "source_path": "lean-mvp/backend/pricing/v5_comparable_selector.py",
+      "source_blob": "fa690a5dd3eb4f8e4755a694b985e92d386d6b3b",
+      "sha256": "84270791523e5dbc80c003fe7893d881ce5c552c61924ed061a6b8742ca41546",
+      "bytes": 4895
+    },
+    {
+      "path": "backend/pricing/v5_comparable_standard.py",
+      "source_path": "lean-mvp/backend/pricing/v5_comparable_standard.py",
+      "source_blob": "d45b2d410269e8d2a70a8f89e002e73be32c0508",
+      "sha256": "24320c523316a679eebdee6adc431a9f3df25b1681c985f8325bde3d25e603da",
+      "bytes": 4953
+    },
+    {
+      "path": "backend/pricing/v5_eli5.py",
+      "source_path": "lean-mvp/backend/pricing/v5_eli5.py",
+      "source_blob": "7dfbd67554c9a7db25e8e7bcf5649051807aab5e",
+      "sha256": "7fa8ffc635db9928d9603b2de93dac30fda6263f2514e112af7bbba835322342",
+      "bytes": 13250
+    },
+    {
+      "path": "backend/pricing/v5_negotiation.py",
+      "source_path": "lean-mvp/backend/pricing/v5_negotiation.py",
+      "source_blob": "83c93cc08fd38cc2e5837fbfd1fff52fae92a5a4",
+      "sha256": "d76c3cf936cfc8b99952bec40c7e903889100f616fea7efda593847f27b44721",
+      "bytes": 22954
+    },
+    {
+      "path": "backend/pricing/v5_pir.py",
+      "source_path": "lean-mvp/backend/pricing/v5_pir.py",
+      "source_blob": "c1a00f0c90f71d28ca9f15fcd4bb81aca2a44ce3",
+      "sha256": "aa545c6491d7260b931792ba1b43d1c1fe25ed1d990e0e80721ceb001e5cb2d7",
+      "bytes": 6218
+    },
+    {
+      "path": "backend/pricing/v5_room_images.py",
+      "source_path": "lean-mvp/backend/pricing/v5_room_images.py",
+      "source_blob": "c1a3cb41778e8cec467e7cd10730e27ebd07f367",
+      "sha256": "6fc6a3d06125339c45f68b76786c3883fba38cc3e3d84236377cd1fff0a96e79",
+      "bytes": 50417
+    },
+    {
+      "path": "backend/pricing/v5_room_tags.py",
+      "source_path": "lean-mvp/backend/pricing/v5_room_tags.py",
+      "source_blob": "a537f35facfe64fc2ac8c059276f007cd81b04dd",
+      "sha256": "2e89049b08db5ca4d55661718b1c81a470a2fa9b653322aad107cc5b9d5758a2",
+      "bytes": 2029
+    },
+    {
+      "path": "backend/pricing/v5_room_types.py",
+      "source_path": "lean-mvp/backend/pricing/v5_room_types.py",
+      "source_blob": "c908d4c9774943e2b1311f53ec6a0bd927eb0521",
+      "sha256": "47b9791f6f42942f88ad5cb73e376ecf3ba4750496308f895ba174d5b30f0125",
+      "bytes": 9821
+    },
+    {
+      "path": "backend/pricing/v5_run_market_standard.py",
+      "source_path": "lean-mvp/backend/pricing/v5_run_market_standard.py",
+      "source_blob": "b903b9be1953263cfa04e60cb9d92026d6c4471f",
+      "sha256": "0fee19ed01e1aa8b82cf8616a4c6b56b43c25486c9d64887aa526f756e271a8e",
+      "bytes": 25840
+    },
+    {
+      "path": "backend/pricing/v5_slots.py",
+      "source_path": "lean-mvp/backend/pricing/v5_slots.py",
+      "source_blob": "62e3e3fa1b4fecb94c8ff0b6480815c14c718e1e",
+      "sha256": "7d6aa006e6dc0e9a0652e9abddba454a1ede3506d36a929d723fd7df2d7c9902",
+      "bytes": 14350
+    },
+    {
+      "path": "backend/pricing/v5_strategy_delta_decompose.py",
+      "source_path": "lean-mvp/backend/pricing/v5_strategy_delta_decompose.py",
+      "source_blob": "a9a3182c583addcd4824be2303a2d1ad37c09914",
+      "sha256": "571fadd5aaafae343091a773255af03fb11563656af7120f1bcabc5f8bc80a9c",
+      "bytes": 20239
+    },
+    {
+      "path": "backend/pricing/v5_to_v4_adapter.py",
+      "source_path": "lean-mvp/backend/pricing/v5_to_v4_adapter.py",
+      "source_blob": "cf895c5d43a03d902a5a2c099b4f95580a85f0b1",
+      "sha256": "92f99abc3f874060af96d7fb58770206f358e9edef2ec39fc594deca83dac8a1",
+      "bytes": 1956
+    },
+    {
+      "path": "backend/pricing/v5_work_items.py",
+      "source_path": "lean-mvp/backend/pricing/v5_work_items.py",
+      "source_blob": "cb1b74ef926be68a1110e80597bbab5aa373afdc",
+      "sha256": "90f70e43eec0c245539d48d11ce6176e2031936a8dcbe30e3829e596c3c82a1d",
+      "bytes": 4947
+    },
+    {
+      "path": "backend/pricing/worklist_validator.py",
+      "source_path": "lean-mvp/backend/pricing/worklist_validator.py",
+      "source_blob": "b76ce3483cd9f51615b4a4def932a94d98625a4d",
+      "sha256": "e81833e34c0debaf54ffffe9fc774f6bdf2dbc9ff18fe5407385fbc3a57070f4",
+      "bytes": 5187
+    },
+    {
+      "path": "backend/regenerate_landing_images.py",
+      "modified": true,
+      "release_sha256": "c747606da3b0abbb85e2e8bfc7172ee7de93408af5732b841209087ebc76b165",
+      "release_bytes": 5403
+    },
+    {
+      "path": "backend/requirements.txt",
+      "modified": true,
+      "release_sha256": "d79d23c7a7f0b74305a78906f2740b129252e5162813dfc5dd247fb38461a784",
+      "release_bytes": 1304
+    },
+    {
+      "path": "backend/routes/__init__.py",
+      "source_path": "lean-mvp/backend/routes/__init__.py",
+      "source_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "backend/routes/admin_routes.py",
+      "source_path": "lean-mvp/backend/routes/admin_routes.py",
+      "source_blob": "b87d982ef60aaa15ac06318ac308173f4deb7cb8",
+      "sha256": "8eefee76d17027270387c7a392f15b6677147de2f5c9b80a375e83e78609a78f",
+      "bytes": 69147
+    },
+    {
+      "path": "backend/routes/building_context.py",
+      "modified": true,
+      "release_sha256": "0fc1e17f67d54db017de7ed92de11d9cd2594e8e2b47d49eb927a79e879c2681",
+      "release_bytes": 6210
+    },
+    {
+      "path": "backend/routes/cs_chat.py",
+      "modified": true,
+      "release_sha256": "1d0c3a17d2fb907b23f486370f3d13933b557d0468502f42fbd9c07feb86498e",
+      "release_bytes": 32455
+    },
+    {
+      "path": "backend/routes/curation_v2.py",
+      "source_path": "lean-mvp/backend/routes/curation_v2.py",
+      "source_blob": "675a0ec0caf0837fdcdacac0bd11c70e7e737158",
+      "sha256": "a612c6930236c04a53ee91f4892317ea5213ce7544699a2a724a72bf05f6a0ca",
+      "bytes": 42023
+    },
+    {
+      "path": "backend/routes/listings.py",
+      "source_path": "lean-mvp/backend/routes/listings.py",
+      "source_blob": "f3b3c53f7241fde3216e7d3759276752327902fe",
+      "sha256": "2861f78e5b430a400be88c7e14bf24db2d4a8a26adb51cf6f0641be57f30d9a5",
+      "bytes": 7970
+    },
+    {
+      "path": "backend/routes/meta_whatsapp.py",
+      "modified": true,
+      "release_sha256": "40e98d822ba0def9c8651d3614d4526ce0256f29c6b9b5183637c9f6f90a6ec5",
+      "release_bytes": 40742
+    },
+    {
+      "path": "backend/routes/scrape.py",
+      "source_path": "lean-mvp/backend/routes/scrape.py",
+      "source_blob": "39a0c06a65d871ebb6c07bb930e749519cb051ab",
+      "sha256": "a33b3705c3b42a6e0e4851e03f1742c27bc0d1f8bae4f4422b3400d5804a83d5",
+      "bytes": 4670
+    },
+    {
+      "path": "backend/routes/story.py",
+      "source_path": "lean-mvp/backend/routes/story.py",
+      "source_blob": "0569185c0144430617461c682ae5450b3b50af84",
+      "sha256": "9242c3e6546b7e2f85adce83c0b992a636f46e526f604e676d352a4fa22b24c8",
+      "bytes": 15473
+    },
+    {
+      "path": "backend/routes/transcribe.py",
+      "source_path": "lean-mvp/backend/routes/transcribe.py",
+      "source_blob": "cc087e28d074c1859b3ed561c0ad9be30d7a42d5",
+      "sha256": "3fa58f1983a3cb0b7cf09837ae5e799ebecc23f52eddcc22a756685ea0e7fe36",
+      "bytes": 3220
+    },
+    {
+      "path": "backend/routes/translate.py",
+      "source_path": "lean-mvp/backend/routes/translate.py",
+      "source_blob": "bef9e7b3bfe8da2769916885de96a2adb7622f81",
+      "sha256": "352b2064418cc4bd21d1f2a2b0d7ef05c67f65c07771794fbc69ecab46a88ec2",
+      "bytes": 6572
+    },
+    {
+      "path": "backend/routes/v2_routes.py",
+      "source_path": "lean-mvp/backend/routes/v2_routes.py",
+      "source_blob": "7ebbfdd6105eb6bd345da86cd741d3cfdfc5e2bd",
+      "sha256": "9025333fce1771312229bfe252e4d075237575eb7e6d8096b516d3a52c51034e",
+      "bytes": 24427
+    },
+    {
+      "path": "backend/routes/v3_routes.py",
+      "source_path": "lean-mvp/backend/routes/v3_routes.py",
+      "source_blob": "08b381430d59d7f767967503c54de3e351afa41b",
+      "sha256": "359d482b2a2c23b8c43f6d6204f81732bcadd321b3a61e36994beeaf7a1acea8",
+      "bytes": 7082
+    },
+    {
+      "path": "backend/routes/webhooks.py",
+      "modified": true,
+      "release_sha256": "18fd375ef1cd98a649759a8e4b015618b62542ff51793939e820f891d285334a",
+      "release_bytes": 28401
+    },
+    {
+      "path": "backend/run_single_stage.py",
+      "modified": true,
+      "release_sha256": "4bf149c53c0e77d759a7a687fb853823952fdf192eeec232af815caaf43bcfda",
+      "release_bytes": 2362
+    },
+    {
+      "path": "backend/schema.py",
+      "source_path": "lean-mvp/backend/schema.py",
+      "source_blob": "a6ed67de16a2bcf71598f89e3ecaf305032fd5c5",
+      "sha256": "514b3df2086d09ff0c432750193ca14d2ed80f09d65596e4b7f495f158d72bff",
+      "bytes": 15454
+    },
+    {
+      "path": "backend/scraper/__init__.py",
+      "source_path": "lean-mvp/backend/scraper/__init__.py",
+      "source_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "backend/scraper/address_resolver.py",
+      "source_path": "lean-mvp/backend/scraper/address_resolver.py",
+      "source_blob": "74964afe163f57233e0fa610fe5beaad2d135523",
+      "sha256": "62c184e16c54de932af56ebd2529585a55b4d9e4ccb6c63f7ebafc94479831e8",
+      "bytes": 20256
+    },
+    {
+      "path": "backend/scraper/bot_detection.py",
+      "source_path": "lean-mvp/backend/scraper/bot_detection.py",
+      "source_blob": "5f709efbdd6e54fe002d3f5e4a9cf37858299a87",
+      "sha256": "a0f625b67de89ad925ca9efb2f9ee26dceef51922ccf8162884e4fbfe8f415ed",
+      "bytes": 11046
+    },
+    {
+      "path": "backend/scraper/description_formatter.py",
+      "source_path": "lean-mvp/backend/scraper/description_formatter.py",
+      "source_blob": "6a83872caf2694d861fc59efaf97c57361709f86",
+      "sha256": "3733d6712074d99fa93b911b1d04dba9e9063b2ec86552bb291a29b984735f37",
+      "bytes": 3267
+    },
+    {
+      "path": "backend/scraper/fetcher.py",
+      "source_path": "lean-mvp/backend/scraper/fetcher.py",
+      "source_blob": "7204c778271074ba0cc81f6c1756c577e6d139a9",
+      "sha256": "133b2b1cf344cb23e9d12801ed90c3e9ae2438614778627451b7a6e06df23e76",
+      "bytes": 7478
+    },
+    {
+      "path": "backend/scraper/geoapify_geocoder.py",
+      "source_path": "lean-mvp/backend/scraper/geoapify_geocoder.py",
+      "source_blob": "e0684339d4d7093308bffbc2a15e7e52b29566b0",
+      "sha256": "70fbd41b252734a17a76131df366d935b70ad3ee94160428d2fd36e8b3f25f9c",
+      "bytes": 18150
+    },
+    {
+      "path": "backend/scraper/geocoder.py",
+      "source_path": "lean-mvp/backend/scraper/geocoder.py",
+      "source_blob": "904049b68474d69b729865186c822a4bcdb5ae45",
+      "sha256": "1cfd11a7a61e2aedb9912b60b6c600a67401fb2d92ac17b437120138c14daf18",
+      "bytes": 10873
+    },
+    {
+      "path": "backend/scraper/location_intelligence.py",
+      "modified": true,
+      "release_sha256": "1306b212132e95c56b4bad09475a4a86acc333b27ddefadff9c1dde587af3b7c",
+      "release_bytes": 18687
+    },
+    {
+      "path": "backend/scraper/normalizer.py",
+      "source_path": "lean-mvp/backend/scraper/normalizer.py",
+      "source_blob": "93eed49b7261f092b53f7e0665c4c19ab973475a",
+      "sha256": "7789b4b42e080f5d23154da5a511ae534fc71149f415887c290c852835263afb",
+      "bytes": 8070
+    },
+    {
+      "path": "backend/scraper/parsers/__init__.py",
+      "source_path": "lean-mvp/backend/scraper/parsers/__init__.py",
+      "source_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "backend/scraper/parsers/gemini_universal.py",
+      "modified": true,
+      "release_sha256": "9203c32e7fc49ac556007a1f4f75e6708caf671c5fbe5bd7e6af0b3bb8e80b7b",
+      "release_bytes": 31554
+    },
+    {
+      "path": "backend/scraper/parsers/idealista.py",
+      "source_path": "lean-mvp/backend/scraper/parsers/idealista.py",
+      "source_blob": "9e545b94682dcc01da9d86b6ee946b7967f02819",
+      "sha256": "b683f93c8852d205f666783076ffc1ce5a3ef77e944b95ad2d8f9aac172581ac",
+      "bytes": 11167
+    },
+    {
+      "path": "backend/scraper/parsers/universal.py",
+      "source_path": "lean-mvp/backend/scraper/parsers/universal.py",
+      "source_blob": "feaa6d001095fecec40eb0e9d27160b91987c09c",
+      "sha256": "d3827f95a26fcb8da66fbb496513c07bc57e8b8f4f0fce4d04c7360c36cd58d3",
+      "bytes": 1270
+    },
+    {
+      "path": "backend/scraper/parsers/url_validator.py",
+      "modified": true,
+      "release_sha256": "b02076dc201320666dfffa5b88cfc70ab5c5c6f37f61882251b54df0eafa3d73",
+      "release_bytes": 3812
+    },
+    {
+      "path": "backend/scraper/router.py",
+      "source_path": "lean-mvp/backend/scraper/router.py",
+      "source_blob": "9b4df9e3d0b26531d082e4cedfe2290eadbf5eb3",
+      "sha256": "f0a0fd6a4d519bf88251ad89ae9fd6bf373b2eeb7774a169e35fe1b593c33fb3",
+      "bytes": 12177
+    },
+    {
+      "path": "backend/scraper/rules.py",
+      "source_path": "lean-mvp/backend/scraper/rules.py",
+      "source_blob": "35e0f03c6a4803f1e06259f44a8cb490486ce76a",
+      "sha256": "49e04c771f968e423adef28db4409593bd94712933d2ec02013e7c26cb231f45",
+      "bytes": 9426
+    },
+    {
+      "path": "backend/scripts/README.md",
+      "source_path": "lean-mvp/backend/scripts/README.md",
+      "source_blob": "aaf4a3af1f50d23a4e5cf95c0b1a4c50bc1f09e8",
+      "sha256": "731a542b683c62d2f4f1db2aed50b91fb24a454f54ec639ae6664f00d2b27a88",
+      "bytes": 1384
+    },
+    {
+      "path": "backend/scripts/_md_report.py",
+      "source_path": "lean-mvp/backend/scripts/_md_report.py",
+      "source_blob": "ce606bc710af386792cfa46f8aa9d3fc2fd5e3e7",
+      "sha256": "07bdafb8f17ff47348b9ea9c81db948d9ec64cb53dee809da7d1730c4923d2b1",
+      "bytes": 1147
+    },
+    {
+      "path": "backend/scripts/audit_v4_matching_deterministic.py",
+      "source_path": "lean-mvp/backend/scripts/audit_v4_matching_deterministic.py",
+      "source_blob": "b32a6b8510ea7f9e3a0d3309d3598f2c686617fd",
+      "sha256": "e1393fd6e9c0045488176574cb3625263b45d9a700a5b5851ae277f0f09a38b9",
+      "bytes": 13144
+    },
+    {
+      "path": "backend/scripts/audit_v4_narrative_to_worklist.py",
+      "source_path": "lean-mvp/backend/scripts/audit_v4_narrative_to_worklist.py",
+      "source_blob": "ed7e3ca9aaafab6213c34d21d500210d9239c257",
+      "sha256": "737e31757e27ef7c9c4260f7f474fea1dba07a910dcd9341ed3e2c11ed45beb4",
+      "bytes": 12835
+    },
+    {
+      "path": "backend/scripts/bcca_paraphrase_log.txt",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/build_bcca_whole_dwelling_denylist_v1.py",
+      "source_path": "lean-mvp/backend/scripts/build_bcca_whole_dwelling_denylist_v1.py",
+      "source_blob": "969be1b7f145f08eff297c4a97052e69050e5997",
+      "sha256": "944e8c0bd3e81c21c53bef43cdb21fc58b53390b95fe4918ccc76301ebad256b",
+      "bytes": 4157
+    },
+    {
+      "path": "backend/scripts/build_ffe_database.py",
+      "source_path": "lean-mvp/backend/scripts/build_ffe_database.py",
+      "source_blob": "115a6885583b920b9b4e52e6df5babc19f1b8595",
+      "sha256": "11904a6c8b81e2e63600ec47c9c923c4839fff39ea3dbcbdfdd75974bef05328",
+      "bytes": 139948
+    },
+    {
+      "path": "backend/scripts/capture_flipper_listing_screenshots.py",
+      "source_path": "lean-mvp/backend/scripts/capture_flipper_listing_screenshots.py",
+      "source_blob": "d54dff85ef667b1be10273e1840c972483fd52c7",
+      "sha256": "b084137a172b71d3a85e72bcc722c6907830192a17c8e6e2d1e2c699e1ff7b1a",
+      "bytes": 10145
+    },
+    {
+      "path": "backend/scripts/clear_listing_from_stage.py",
+      "source_path": "lean-mvp/backend/scripts/clear_listing_from_stage.py",
+      "source_blob": "8798deed5c3a577c32bd6147237b4481fc7baea3",
+      "sha256": "de54d12a1ac5307c108e67c2cda231db0362fdb6d6b28446b55534d2ef8199ae",
+      "bytes": 6905
+    },
+    {
+      "path": "backend/scripts/clear_v4_artifacts.py",
+      "source_path": "lean-mvp/backend/scripts/clear_v4_artifacts.py",
+      "source_blob": "655a99eafd210a8b4bedca75ee218cdb420bb8d6",
+      "sha256": "5eba63950ff1cc9e531d062a8312d1bc89829994ab84dd86f94a8866f1140a03",
+      "bytes": 3777
+    },
+    {
+      "path": "backend/scripts/cluster_villa_romer.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/cost_optimization_test.py",
+      "modified": true,
+      "release_sha256": "f7cb334b40423fdbcf6a556f82dacafb8f2266019f2c7fc77a426a7d1bec5543",
+      "release_bytes": 14779
+    },
+    {
+      "path": "backend/scripts/crawl_atelier.py",
+      "source_path": "lean-mvp/backend/scripts/crawl_atelier.py",
+      "source_blob": "a55d0064b050b03e3a3c114a8002a5eb879c7738",
+      "sha256": "89c9b48a4c7f86e6aab1f27a0c944c68dd70abe54a0d9822acc1eeb66aeb0589",
+      "bytes": 4149
+    },
+    {
+      "path": "backend/scripts/embed_glb_pir_viewer.py",
+      "source_path": "lean-mvp/backend/scripts/embed_glb_pir_viewer.py",
+      "source_blob": "3aa3e5d2d992bf438f17e75cb3a26034009830bc",
+      "sha256": "c9b460228958407aaf05a2d291fd9dd38f30b917d45488cc3459c198dafe116f",
+      "bytes": 2458
+    },
+    {
+      "path": "backend/scripts/enqueue_listing_12_run.py",
+      "source_path": "lean-mvp/backend/scripts/enqueue_listing_12_run.py",
+      "source_blob": "59699bbce882a43ba32a909a53a03ccd0a208aa4",
+      "sha256": "d53455043a92ed220f6f529b19adb1607739b744af80e0e78c4a787f99753d31",
+      "bytes": 922
+    },
+    {
+      "path": "backend/scripts/enqueue_v2_pipeline_run.py",
+      "source_path": "lean-mvp/backend/scripts/enqueue_v2_pipeline_run.py",
+      "source_blob": "cdd55d91287d6465f01f02f094222491069cfab2",
+      "sha256": "ffd677f7c006b5c569c964ff552a0715223c687d34e9d5f697d38cb9ae6e386f",
+      "bytes": 1132
+    },
+    {
+      "path": "backend/scripts/export_bcca_index.py",
+      "source_path": "lean-mvp/backend/scripts/export_bcca_index.py",
+      "source_blob": "fb5ae1b802b29e799e17cad2485e69fcf1c12afb",
+      "sha256": "5195d72af52f97271de5c31323cc8056231456f40935c35aa1f2b76450fb2d4f",
+      "bytes": 2735
+    },
+    {
+      "path": "backend/scripts/export_ffe_index.py",
+      "source_path": "lean-mvp/backend/scripts/export_ffe_index.py",
+      "source_blob": "eb9560d70c545bc0675b24facd37738de0dd22ea",
+      "sha256": "e13cd8e62e26ef90724996172098ee552376c2cfab0025b68c86d13f6e971e1f",
+      "bytes": 3230
+    },
+    {
+      "path": "backend/scripts/export_v4_artifacts_md.py",
+      "source_path": "lean-mvp/backend/scripts/export_v4_artifacts_md.py",
+      "source_blob": "fa1a300b2435cf61b524f85e7c81eedcd9ed09c6",
+      "sha256": "f68afc64a59cc76c6241148b81c36ac33cae1cf82a9f5847619724c893ad24af",
+      "bytes": 4389
+    },
+    {
+      "path": "backend/scripts/export_v4_postrich_analysis_md.py",
+      "source_path": "lean-mvp/backend/scripts/export_v4_postrich_analysis_md.py",
+      "source_blob": "3cfb688fab85f4a95283c065dceadefb0821ca79",
+      "sha256": "7501d21da5305fd88dbf499d44de51b8852cff1b6928d38d575efe70a77d0161",
+      "bytes": 10452
+    },
+    {
+      "path": "backend/scripts/extract_energy_knowledge.py",
+      "source_path": "lean-mvp/backend/scripts/extract_energy_knowledge.py",
+      "source_blob": "ffeb2f3e0d5bb936cf129daa54b878fc82ba2016",
+      "sha256": "1296eb07a12793e69a104c62cfa6aff8d0c23d6cdb6c9de6755ffaf5c0aa655f",
+      "bytes": 19819
+    },
+    {
+      "path": "backend/scripts/extract_interior_design_knowledge.py",
+      "source_path": "lean-mvp/backend/scripts/extract_interior_design_knowledge.py",
+      "source_blob": "cf4365de8bdac787edb9910ea5dc1bf119201be6",
+      "sha256": "09ab6b490602f0e688d76d09556e654a90ae205af5bec2987ffe583f4425ff2e",
+      "bytes": 25183
+    },
+    {
+      "path": "backend/scripts/extract_je_gallery.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/extract_je_photos.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/extract_process_knowledge.py",
+      "source_path": "lean-mvp/backend/scripts/extract_process_knowledge.py",
+      "source_blob": "87c1c04571473496e9e41a644469cc90293716eb",
+      "sha256": "ecef2c607ff2ad83f496293aa8845d8f4b9a74098464d384173729b257e3e90f",
+      "bytes": 12305
+    },
+    {
+      "path": "backend/scripts/fb_auth_scraper.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/fb_investigate.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/fb_local_scrape.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/fb_vacuum.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/ffe_research_gemini3pro.txt",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/ffe_research_results.txt",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/final_cross_ref.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/forum_discovery_test.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/forum_discovery_v2_test.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/gate0_export_smart_m2_listing_12.py",
+      "source_path": "lean-mvp/backend/scripts/gate0_export_smart_m2_listing_12.py",
+      "source_blob": "d9037ef9fec60f7a81cbf4041f2dbe567283d079",
+      "sha256": "ec575113e5d965a3d043997d9b1b1c9aaa55eb6430aae5fab238d2e035a86a3e",
+      "bytes": 4848
+    },
+    {
+      "path": "backend/scripts/gate0_export_smart_m2_panorama_single_room.py",
+      "source_path": "lean-mvp/backend/scripts/gate0_export_smart_m2_panorama_single_room.py",
+      "source_blob": "4e5f7e660576b31809d4fe786ea019028d7258f8",
+      "sha256": "ab14a3112465b3e9a1337443996c43fb2943e4cdd98d4c96bb28a4fb28a2c05f",
+      "bytes": 7308
+    },
+    {
+      "path": "backend/scripts/gate0_export_smart_m2_single_room.py",
+      "source_path": "lean-mvp/backend/scripts/gate0_export_smart_m2_single_room.py",
+      "source_blob": "12be19902c643c00c3e6fcd99381256b333982f2",
+      "sha256": "1dfcd731ef779d292d4cfdc53fb6b75eb4bbf161ee005337c759d2fd4b0d55ab",
+      "bytes": 3056
+    },
+    {
+      "path": "backend/scripts/gate0_export_smart_m2_three_rooms.py",
+      "source_path": "lean-mvp/backend/scripts/gate0_export_smart_m2_three_rooms.py",
+      "source_blob": "2ebf094c3ce7ae276e41d6e62389eb53b18f7b4b",
+      "sha256": "00c8a01677cd585e648380a5830b3e0e13539b965fb4d38abda194ae5bf41d0b",
+      "bytes": 3673
+    },
+    {
+      "path": "backend/scripts/gemini_image_gen_smoke.py",
+      "modified": true,
+      "release_sha256": "0f7d5e75406c59493518f577680c268f17d7bcca27ca48b3461bd11a543dce2a",
+      "release_bytes": 2424
+    },
+    {
+      "path": "backend/scripts/gen_vinterior_render.py",
+      "modified": true,
+      "release_sha256": "3d6151065ba679154f7f08f1435cfaffb4000b6b6c527053943be9775c837142",
+      "release_bytes": 3539
+    },
+    {
+      "path": "backend/scripts/generate_bcca_full_index.py",
+      "source_path": "lean-mvp/backend/scripts/generate_bcca_full_index.py",
+      "source_blob": "a0aa0b9f2e44b2809893c8ac4d141571df07a04e",
+      "sha256": "abb7894f74a1edcdf0435a5abd3f18dc2d1986c4969197c95fae11cf129b1ae0",
+      "bytes": 6734
+    },
+    {
+      "path": "backend/scripts/glb_pir_builder.py",
+      "source_path": "lean-mvp/backend/scripts/glb_pir_builder.py",
+      "source_blob": "9bbcb9a7355ac9e492e637d39d852f252fb1b3c2",
+      "sha256": "7ea219d5550680c301d7d9fb6f25bfc39df5f869d5597ec7a0080cd192cefab4",
+      "bytes": 7394
+    },
+    {
+      "path": "backend/scripts/habitissimo_supply_discovery.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/houzz_trades_scrape.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/ludicrous_cascade.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/ludicrous_cascade_marbella.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/ludicrous_cascade_v2.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/ludicrous_cascade_v3.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/model_shootout.py",
+      "modified": true,
+      "release_sha256": "c26082b517f7423e6cf8e1b60720dc4c15102bc393e080ef55693ca8fd9952e0",
+      "release_bytes": 7369
+    },
+    {
+      "path": "backend/scripts/parallel_inspired_test.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/paraphrase_bcca_descriptions.py",
+      "modified": true,
+      "release_sha256": "e3d1c36cb8c93fc3d94c578bc5193818fb3decf3f2b638fb1ab40278464e9946",
+      "release_bytes": 13012
+    },
+    {
+      "path": "backend/scripts/parse_ffe_research.py",
+      "source_path": "lean-mvp/backend/scripts/parse_ffe_research.py",
+      "source_blob": "abd07dc32715cc39ee798dc6768ec87610858fb8",
+      "sha256": "52f5d9dda12c88e653af384cb0999ed4f4ae2e299013268778202f1f7891c29d",
+      "bytes": 22404
+    },
+    {
+      "path": "backend/scripts/pipeline_health.py",
+      "modified": true,
+      "release_sha256": "560aead9606683d3d09a7df1848f295d85b45144ae445acf4b83f0fc83a908ee",
+      "release_bytes": 9465
+    },
+    {
+      "path": "backend/scripts/probe_glb_indoorgml_lite.py",
+      "source_path": "lean-mvp/backend/scripts/probe_glb_indoorgml_lite.py",
+      "source_blob": "05f701897dfdedd907a58a638a9d679533964eb8",
+      "sha256": "532ca5efc4552313fc37a3322c36eaff7b4aed1f4b6ebc765d94b98b19e21485",
+      "bytes": 8109
+    },
+    {
+      "path": "backend/scripts/qc_delta_bcca_worklist.py",
+      "source_path": "lean-mvp/backend/scripts/qc_delta_bcca_worklist.py",
+      "source_blob": "636b0d01e48f6e411d9a47a3a0fbe888b7a38a7d",
+      "sha256": "fb633d342b52bb41e645d239222bc9ec66ec02a9b5aabdda791cfd344535fca0",
+      "bytes": 32800
+    },
+    {
+      "path": "backend/scripts/rasterscan_floorplan.py",
+      "source_path": "lean-mvp/backend/scripts/rasterscan_floorplan.py",
+      "source_blob": "9141b5cdaafb85be402e0f098756e3f807b09007",
+      "sha256": "652adc8312acc5619c6294d5eceb54b82b729a72d7160ed2e39f367df842ff2d",
+      "bytes": 2580
+    },
+    {
+      "path": "backend/scripts/renovation_report_smoke.py",
+      "modified": true,
+      "release_sha256": "2cbb65895830af7ed6ef658902ca3c1596d27e5c9b6ae128ffa918ef6e1ad48d",
+      "release_bytes": 3790
+    },
+    {
+      "path": "backend/scripts/rerun_from_stage.py",
+      "source_path": "lean-mvp/backend/scripts/rerun_from_stage.py",
+      "source_blob": "f68e32fec8ac1bf3f7ac001426073666a9c77b0a",
+      "sha256": "7b69268a48632f5071c223f80f787f57be9215ddde0545401451c5f6a1be51ec",
+      "bytes": 11839
+    },
+    {
+      "path": "backend/scripts/rerun_v4_bcca_match_rich_and_compare.py",
+      "source_path": "lean-mvp/backend/scripts/rerun_v4_bcca_match_rich_and_compare.py",
+      "source_blob": "ac3db4f6402ec1af360165b6e991e934a449ad14",
+      "sha256": "c01e7eb7764041e57fba6cd32eef66f4d840568b35f71d1b2f3e2dc741bc0317",
+      "bytes": 9121
+    },
+    {
+      "path": "backend/scripts/research_ffe_expansion.py",
+      "modified": true,
+      "release_sha256": "7643ce43fc7386e60675828abcb7c5b3175c8b50cd16e840f2cb0e1530e4cd5a",
+      "release_bytes": 9960
+    },
+    {
+      "path": "backend/scripts/research_proof.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_proof_shower.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_proof_sofia_shower.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_v2_sofia.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_v3_sofia.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_v4_london_boiler.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_v4_sofia.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_v5_finsbury_boiler.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/research_v5_universal.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/review_richness_probe.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/run_v2_pipeline.py",
+      "source_path": "lean-mvp/backend/scripts/run_v2_pipeline.py",
+      "source_blob": "55d52b091a77a600cca7987db14182af795a6c9f",
+      "sha256": "9f3a22bcaee9beda5c121e5bdf2f2cd64eb23fbb14fca42cb63322ab8e0e9997",
+      "bytes": 3407
+    },
+    {
+      "path": "backend/scripts/run_v4_all_strategies.py",
+      "source_path": "lean-mvp/backend/scripts/run_v4_all_strategies.py",
+      "source_blob": "50cd7fe8ce6da826513d69e1e689c45d82368d9a",
+      "sha256": "5ec65dba606050e76e867cc8bda9415369da134c2645aa7bde2d2701c721bbb0",
+      "bytes": 24766
+    },
+    {
+      "path": "backend/scripts/run_v4_pricing_from_rich_matches.py",
+      "source_path": "lean-mvp/backend/scripts/run_v4_pricing_from_rich_matches.py",
+      "source_blob": "5e02fa0d84c5c4b8887cdb9d42415e239b15e1d0",
+      "sha256": "3ad166d880ccfbee84d7b357089d152b7cf3ec5ab8e0d77e837871ece1675388",
+      "bytes": 17828
+    },
+    {
+      "path": "backend/scripts/scrape_and_cluster_villa.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/scrape_villa_romer.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/smoke_delta_bcca_worklist.py",
+      "modified": true,
+      "release_sha256": "af9dae110af7268a3c68adca06b8c257d2a0f8fba8f04b44e3da435f3cef1dae",
+      "release_bytes": 10911
+    },
+    {
+      "path": "backend/scripts/smoke_v4_quantification.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v4_quantification.py",
+      "source_blob": "c9a527d3d06c903aa32e8072c51fdbc47a52df61",
+      "sha256": "eb1da329c40bd7d4d54302fcbde28040aa1a0778d04715d26e97b9e0ccfa90d7",
+      "bytes": 3817
+    },
+    {
+      "path": "backend/scripts/smoke_v4_tail_forage_only_from_v5_work_items.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v4_tail_forage_only_from_v5_work_items.py",
+      "source_blob": "55734209595e37ebce6e2b25591e22ef5ee043fd",
+      "sha256": "87ec48befa8d8182c513ff15bfa49a3e2a56b6a8c5a3f11c7f8b79d1cf7f03f0",
+      "bytes": 18183
+    },
+    {
+      "path": "backend/scripts/smoke_v4_tail_match_only_from_v5_work_items.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v4_tail_match_only_from_v5_work_items.py",
+      "source_blob": "c8661586cb7d8ccc3f0874760aae1f0d9063ceed",
+      "sha256": "28d4260484571de4981c9344d3ae6f8c4a1a20b1a8e13360d32bbceff3ccf180",
+      "bytes": 5686
+    },
+    {
+      "path": "backend/scripts/smoke_v4_tail_quant_plan_only_from_v5_work_items.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v4_tail_quant_plan_only_from_v5_work_items.py",
+      "source_blob": "642cc6feb0b3fbe3535873bb8328b112a1a9e511",
+      "sha256": "a8771ecd351d211d7b437c7d048ee9a8582376fa2d82aa0fc08509cec924fe9e",
+      "bytes": 6663
+    },
+    {
+      "path": "backend/scripts/smoke_v5_clustering.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_clustering.py",
+      "source_blob": "0006976cf21271649faef9b111977d8ae39c80ae",
+      "sha256": "cd9bb6697bc6df886d0fbec62400abf1b1a480e530d134837b5d7c9d3504120f",
+      "bytes": 4389
+    },
+    {
+      "path": "backend/scripts/smoke_v5_comparable_pir_v5.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_comparable_pir_v5.py",
+      "source_blob": "853d040e7473af3be5d80947c5414da14a991b8b",
+      "sha256": "87a8552313a74a7955c40c1ed03ac57f13b63dc6cf1e2c323627b44e676705a4",
+      "bytes": 5355
+    },
+    {
+      "path": "backend/scripts/smoke_v5_comparable_selector.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_comparable_selector.py",
+      "source_blob": "7a79667b698e948eb879dbbfd73146adfb570296",
+      "sha256": "4fbc2ef5ab5edce9caf91c720139693f34882f22e50d04d5f43f8080cf1d1022",
+      "bytes": 2724
+    },
+    {
+      "path": "backend/scripts/smoke_v5_comparables_snapshot.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_comparables_snapshot.py",
+      "source_blob": "0abaca4dbf7bb6a13da9cdb7aed00c298fa6401b",
+      "sha256": "fefbd23f4776373543d219d3c8d23dc82363052145e18095fa891e262133bc4d",
+      "bytes": 2816
+    },
+    {
+      "path": "backend/scripts/smoke_v5_decompose_work_items.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_decompose_work_items.py",
+      "source_blob": "213fcaeaef4eb5cd4928032bb8fe90329ff160ec",
+      "sha256": "e893a8114323919e309370dd2075cfe923985c9e1184172490d8d57ab5a7c907",
+      "bytes": 3039
+    },
+    {
+      "path": "backend/scripts/smoke_v5_delta_slots.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_delta_slots.py",
+      "source_blob": "7f52812d2200e40b673f7fd905a1b51b9bf52d8c",
+      "sha256": "758a92e6da68333a560f7d7e7c9506e5c2b4268757511f9a69b668fc1dacc26e",
+      "bytes": 3461
+    },
+    {
+      "path": "backend/scripts/smoke_v5_eli5.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_eli5.py",
+      "source_blob": "ea101b39bf343c6eee82a5efd1c66ab19f797569",
+      "sha256": "6fa0f43709ba93f1506d1ac8f4e66931760cf2dbff03f4310dd2d2738e4b639f",
+      "bytes": 6309
+    },
+    {
+      "path": "backend/scripts/smoke_v5_listing_snapshot.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_listing_snapshot.py",
+      "source_blob": "8086773c29be01ccfb457b1c752afc61dcbdeedc",
+      "sha256": "baaf0da420d3d973d41216eedd30bc3fb7cf8db7152c82ba212b75f387fc8b5f",
+      "bytes": 2491
+    },
+    {
+      "path": "backend/scripts/smoke_v5_pir_target_slots.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_pir_target_slots.py",
+      "source_blob": "f971e88c3b73cb809bd6c4bf58ad251add218440",
+      "sha256": "fe0691409a826114ff4b40a86164f7acd03e048de85744bc01890fabc3c82a0c",
+      "bytes": 8122
+    },
+    {
+      "path": "backend/scripts/smoke_v5_room_images.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_room_images.py",
+      "source_blob": "b343a5df3b841ecf01fddfe512fe3a5516441dd8",
+      "sha256": "157a6230191a1ccffb1db44bd9ce2eeb09c0a91107ed0147d883188a0eb2e048",
+      "bytes": 5083
+    },
+    {
+      "path": "backend/scripts/smoke_v5_room_tags.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_room_tags.py",
+      "source_blob": "b7c97678bef7e0f429955d55bcea19635578325d",
+      "sha256": "46c84ff88a33a3ac6832e855e5b004036aa8cf5002ef96f9502f3cec39440823",
+      "bytes": 3162
+    },
+    {
+      "path": "backend/scripts/smoke_v5_strategy_targets.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_strategy_targets.py",
+      "source_blob": "e65a0d8c1fc978d26358a5841340352ed3bf5909",
+      "sha256": "fcf95addab637796d3b7fb82a2915cf8b176cb2b76c3d92fee3335eaa4ac39c2",
+      "bytes": 4868
+    },
+    {
+      "path": "backend/scripts/smoke_v5_to_v4_tail.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_to_v4_tail.py",
+      "source_blob": "9414298ba9d05893cd6854df65c5ac0e390f347c",
+      "sha256": "ef2b3a60d6d52ece338e8497ce0e48b9eb5d0843d5ac14d5b0616e3b2d8aaaef",
+      "bytes": 2789
+    },
+    {
+      "path": "backend/scripts/smoke_v5_work_items_to_v4_tail.py",
+      "source_path": "lean-mvp/backend/scripts/smoke_v5_work_items_to_v4_tail.py",
+      "source_blob": "bcc632cdfb786bd1ff47798eb7879fd3791d7e4c",
+      "sha256": "ee35c1c3e28f9e07acaff9773ca27b3acaf30a64d3e96b58f8efa3cc33693e2b",
+      "bytes": 4421
+    },
+    {
+      "path": "backend/scripts/test_houzz.py",
+      "source_path": "lean-mvp/backend/scripts/test_houzz.py",
+      "source_blob": "0e8b3792b17f7f15b2ce779d3f9eba06e0faa402",
+      "sha256": "ec796f934d511eb5f3a0156aa7e1c94ae717773f2ac6e9118937e15886a349cb",
+      "bytes": 1422
+    },
+    {
+      "path": "backend/scripts/transcribe_cold_call.py",
+      "omitted": true
+    },
+    {
+      "path": "backend/scripts/try_houzz_quote_submission.py",
+      "modified": true,
+      "release_sha256": "df3dbc129b4d1df1795bcc6b54ce26f9e153cd64c81ff2409653ea104d5936dc",
+      "release_bytes": 27595
+    },
+    {
+      "path": "backend/scripts/validate_pipeline_listing.py",
+      "modified": true,
+      "release_sha256": "d238f58f8197a8b0bc01025bdf5ebc2d2da8aba36bbc7a62a9f0709a39069666",
+      "release_bytes": 13657
+    },
+    {
+      "path": "backend/services/__init__.py",
+      "source_path": "lean-mvp/backend/services/__init__.py",
+      "source_blob": "5a86a8889ab30cfacc4867bbd96215b7070253e8",
+      "sha256": "a4c8461a6e43a5097c94061686935dcb2e2a7fa5c6c9ad965f6b3be0dfb009c2",
+      "bytes": 367
+    },
+    {
+      "path": "backend/services/curation_service.py",
+      "source_path": "lean-mvp/backend/services/curation_service.py",
+      "source_blob": "9790a5040d99d8bd2f988068421cf239b3ddcf89",
+      "sha256": "83d993c82b0b967ec84f11832fbb444927a88f3f3b8300bd6add618ee74de0d1",
+      "bytes": 45010
+    },
+    {
+      "path": "backend/services/tour_executor.py",
+      "source_path": "lean-mvp/backend/services/tour_executor.py",
+      "source_blob": "0e2c91ee6ab864ce655f2c2277bd5d3f6ce2032e",
+      "sha256": "c18ef22486c907f36efa19e538825e6648be8146b7535b72014571952ac34b7a",
+      "bytes": 14131
+    },
+    {
+      "path": "backend/services/tour_generator.py",
+      "modified": true,
+      "release_sha256": "fd906fbdbf3a8553970f8c8a3e43ac9e1e4cf1b3739d571639ab7306974ca595",
+      "release_bytes": 6438
+    },
+    {
+      "path": "backend/services/tour_generator_legacy.py",
+      "source_path": "lean-mvp/backend/services/tour_generator_legacy.py",
+      "source_blob": "a3be24d1c085220b5f8c76fbec35370a179cb98f",
+      "sha256": "35234d1d2642e2ccc69ebcd26f57131d08025c92c4ce1409f07390b9571e0c92",
+      "bytes": 26907
+    },
+    {
+      "path": "backend/services/translation_service.py",
+      "source_path": "lean-mvp/backend/services/translation_service.py",
+      "source_blob": "ad2b5ca961b68f99585dbb711954b39751a5f0ad",
+      "sha256": "3d3a5840593314625ce0bc7e9d19e50ced2182ec141e79c27e366ebc9fd0f757",
+      "bytes": 5960
+    },
+    {
+      "path": "backend/test_router.py",
+      "source_path": "lean-mvp/backend/test_router.py",
+      "source_blob": "946c10f4c6a0b74005921dabdbf96c95cf313b7e",
+      "sha256": "4789b655fc8ee09a2ce5a029272bd7cce6884a61f58b26406bac29b58f449de3",
+      "bytes": 757
+    },
+    {
+      "path": "backend/tests/test_smoke.py",
+      "source_path": "lean-mvp/backend/tests/test_smoke.py",
+      "source_blob": "20d342f538ec1fdeb4ed6bca946b121e0bb8a113",
+      "sha256": "c8d93bc01a81f6c34b6cf7090f39c4979838c447043cc184ac31b6b5367d4149",
+      "bytes": 112
+    },
+    {
+      "path": "backend/tools/__init__.py",
+      "source_path": "lean-mvp/backend/tools/__init__.py",
+      "source_blob": "56324e140c6ce4bdb6a2338ae4a83ac3fe2b2059",
+      "sha256": "339483750933e7b53de6d919623b19013baafb577c33b44f1e91c53cd80b2b2a",
+      "bytes": 430
+    },
+    {
+      "path": "backend/tools/leo_call_transcriber.py",
+      "source_path": "lean-mvp/backend/tools/leo_call_transcriber.py",
+      "source_blob": "7be3d0dd5c154b984b87462425a2598347ada098",
+      "sha256": "5fc45cd8392de0f83d2e44982d5a0f6de134d05a648fe63ed8c7c7223ccd38a3",
+      "bytes": 25223
+    },
+    {
+      "path": "backend/tools/leo_conference_call.py",
+      "modified": true,
+      "release_sha256": "2b0ef619ec8dd6ec928e85f3caac19a5defe3eaa8c8add7b6693fb3c0831aef7",
+      "release_bytes": 12696
+    },
+    {
+      "path": "backend/tools/leo_email_proxy.py",
+      "modified": true,
+      "release_sha256": "7ba9e3dfb3f046522c4de8e7237eca554d86f0927053068c7bd086bace679223",
+      "release_bytes": 12609
+    },
+    {
+      "path": "backend/tools/leo_webhook_handler.py",
+      "modified": true,
+      "release_sha256": "beeb23b501d4fd06f6920a0bce651a352303aa7f0146089c644c9317dea9b239",
+      "release_bytes": 11383
+    },
+    {
+      "path": "backend/utils/__init__.py",
+      "source_path": "lean-mvp/backend/utils/__init__.py",
+      "source_blob": "46f4886ed53412fb7a95d9bfc6a3e0c6aae57ad1",
+      "sha256": "58f8f3b8a39783028cf04e3e4d4b12db7d1d44a9daee409b9a855163bd628ef7",
+      "bytes": 792
+    },
+    {
+      "path": "backend/utils/google_search.py",
+      "modified": true,
+      "release_sha256": "480c5fa53e167a6d3d5e03519212a223795c259d009ec359708376069dfdcd36",
+      "release_bytes": 11245
+    },
+    {
+      "path": "backend/whatsapp/README.md",
+      "modified": true,
+      "release_sha256": "b9c75915d50999aa556cfcf778c8170d948d86229584aafeddd826e96f6b90ec",
+      "release_bytes": 6876
+    },
+    {
+      "path": "backend/whatsapp/__init__.py",
+      "source_path": "lean-mvp/backend/whatsapp/__init__.py",
+      "source_blob": "f70e93bd55e0bcc1e458e6f78c6de4be5ce588c2",
+      "sha256": "8c84ae97b45cd596612ee6077fbc82db2dc341f422a4f61c101431f28f79fd5f",
+      "bytes": 85
+    },
+    {
+      "path": "backend/whatsapp/agent.py",
+      "modified": true,
+      "release_sha256": "8ee695f5c5a9f8053050e69a69d5f1b89a996105569065eb71df82db76fa2917",
+      "release_bytes": 74637
+    },
+    {
+      "path": "backend/whatsapp/formatter.py",
+      "source_path": "lean-mvp/backend/whatsapp/formatter.py",
+      "source_blob": "9db3ff6de6c459915309bd78d05dcf6a0108fc05",
+      "sha256": "6d0a90bf60ce1870623c3e19c1206066d96a0884c4a5305385cc93862ff3b90b",
+      "bytes": 6311
+    },
+    {
+      "path": "backend/whatsapp/media.py",
+      "source_path": "lean-mvp/backend/whatsapp/media.py",
+      "source_blob": "e2126d3c89ef429f085d5434ba8ee7a4ca453eed",
+      "sha256": "7707f42211ebfb63e5815d9c75a4f5c715848fdcb20c1bb53f84f21f07dbe74b",
+      "bytes": 7742
+    },
+    {
+      "path": "backend/whatsapp/message_queue.py",
+      "source_path": "lean-mvp/backend/whatsapp/message_queue.py",
+      "source_blob": "536b99e24fe5f18e7b8098adebb7f5d02b605ca5",
+      "sha256": "0a170e7e820f90a2343a33d7aab39fb79cb4d8eff681818a58ac4f7087ceec84",
+      "bytes": 14254
+    },
+    {
+      "path": "backend/whatsapp/tools.py",
+      "modified": true,
+      "release_sha256": "e85fba0c30c9cd087b2ce5d4df691316771bf30f68f54f36798b2e4fdc285132",
+      "release_bytes": 65480
+    },
+    {
+      "path": "backend/whatsapp/twilio_client.py",
+      "modified": true,
+      "release_sha256": "9d22b571fb2579bac0551b277cbdc3de9c16f4f381043f3161abe8073c03b4b6",
+      "release_bytes": 5832
+    },
+    {
+      "path": "backend/workers/__init__.py",
+      "source_path": "lean-mvp/backend/workers/__init__.py",
+      "source_blob": "4cc8de407f662d5ef055efcc895f719aec7d3bfc",
+      "sha256": "87b52d12be5bf9235d5a3f8b2c73afe077d03e0516b93e70de7ad5f28d72187d",
+      "bytes": 32
+    },
+    {
+      "path": "backend/workers/handlers.py",
+      "source_path": "lean-mvp/backend/workers/handlers.py",
+      "source_blob": "998427b7eb4ed31d701fa4d43f8fd15749ee8eeb",
+      "sha256": "3bb5d552661e4a573b1e6bf4d795eae29203ec07d2b9b45ffa9aa3dfd6d0046e",
+      "bytes": 164431
+    },
+    {
+      "path": "backend/workers/pipeline_worker.py",
+      "source_path": "lean-mvp/backend/workers/pipeline_worker.py",
+      "source_blob": "c8b8190e685560edcfcbbc5ed96f894146248f08",
+      "sha256": "75fe739e91e9821a5188e6f9d7c0e2c466a85e63851d9b2bf1c2ba0c1033b66f",
+      "bytes": 37775
+    },
+    {
+      "path": "db/001_schema.sql",
+      "source_path": "lean-mvp/db/001_schema.sql",
+      "source_blob": "637ec900b7e9f864733fa961315b7fe6aaf92d42",
+      "sha256": "2e1a842483370f4e432afa07f39eeaf2c3eab77c8a963d3048e46e3b4c13da59",
+      "bytes": 28478
+    },
+    {
+      "path": "docs/AGENT_PORTAL_DESIGN.md",
+      "modified": true,
+      "release_sha256": "c9a3604dbd0c60e0c4d6fc27d8d723adc5927929f7af6ecd03d86c452bef94c5",
+      "release_bytes": 66828
+    },
+    {
+      "path": "docs/ANALYSIS_PIPELINE_ARCHITECTURE.md",
+      "modified": true,
+      "release_sha256": "1d2e802a1fe6c722fe8455f5014752da977c8ff5ee117e6f68a70d3dfe440f01",
+      "release_bytes": 114023
+    },
+    {
+      "path": "docs/CLUSTER_PANORAMA_PIPELINE.md",
+      "modified": true,
+      "release_sha256": "f793f5570b3e02190c139e9a990d5ebe4e49cacc8b709c2f7ba8fd6557895edc",
+      "release_bytes": 1970
+    },
+    {
+      "path": "docs/EXTERNAL_DEPENDENCY_AUDIT.md",
+      "modified": true,
+      "release_sha256": "661fb3cdb21dd9e410fade8937895566fca5ff191bdac43fa7d6f7c5a59713c8",
+      "release_bytes": 9445
+    },
+    {
+      "path": "docs/GLB_PIR_WORKFLOW.md",
+      "modified": true,
+      "release_sha256": "fb56103919536a053a92f6204ac99d31d6712fa4c1a9ffc67a7991792e166f2d",
+      "release_bytes": 1914
+    },
+    {
+      "path": "docs/GOOGLE_PLACES_API_DECISION.md",
+      "modified": true,
+      "release_sha256": "479751a7702897636b54cb30f8128d5510d543da5d268a12579fa955cb0f2e59",
+      "release_bytes": 5706
+    },
+    {
+      "path": "docs/IMPLEMENTATION_COMPLETE_ANALYSIS.md",
+      "modified": true,
+      "release_sha256": "3d105cd569b348db09faf1e550cf1b4e031fdc3754aee26782f7a1253d8ea786",
+      "release_bytes": 65582
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN_BRACKET_ANALYSIS.md",
+      "modified": true,
+      "release_sha256": "392d628d0a8df03975b6697b03d43a8fe6a762d31fe1c509e8481f4de908bb92",
+      "release_bytes": 20297
+    },
+    {
+      "path": "docs/KG_TRAVERSAL_ARCHITECTURE.md",
+      "modified": true,
+      "release_sha256": "c747bea778b0b08c9d906d8b34b5439f892c2957169ce6aee0e9ea618fef9713",
+      "release_bytes": 23682
+    },
+    {
+      "path": "docs/MARKET_COMPARISON_ARCHITECTURE.md",
+      "modified": true,
+      "release_sha256": "8060049bad679d6586b8fc846e385bfa0329e42de1bb675fd4dbcedeb6e1d3a6",
+      "release_bytes": 236887
+    },
+    {
+      "path": "docs/PETER_AGENTIC_ARCHITECTURE_DECISION.md",
+      "modified": true,
+      "release_sha256": "8c5bcb1fde695a343b331ab0801da9dad7c7d13523a501e919fad2a383cddb26",
+      "release_bytes": 7314
+    },
+    {
+      "path": "docs/PETER_AGENTIC_IMPLEMENTATION_AUDIT.md",
+      "modified": true,
+      "release_sha256": "b4ee7187ba0fbfe9192c0dd997af7420f539779a43a7f1f1dd8cb1a141b45366",
+      "release_bytes": 31410
+    },
+    {
+      "path": "docs/PETER_AGENTIC_MASTER_INDEX.md",
+      "modified": true,
+      "release_sha256": "5b20e9a05e175e0428d9b16db8a2f8974b7b53aaededd54eaf5bc75880d8065a",
+      "release_bytes": 9772
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.1.md",
+      "modified": true,
+      "release_sha256": "eea909c3f4d4f8ea013433ed2329021fe03488106c62a52005f50b6f3641d5fa",
+      "release_bytes": 16821
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.2_IMPLEMENTATION.md",
+      "modified": true,
+      "release_sha256": "24cf2d4b1cb344aa3331206795273d513bc6bd18af127f4138b3d92d6f7e848a",
+      "release_bytes": 48782
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.3.1_KNOWLEDGE_INTEGRATION.md",
+      "modified": true,
+      "release_sha256": "5cad4a50d2c1b297f443801ad421723605f30e5e811d3c2366fe19613561badd",
+      "release_bytes": 19277
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.3.2_UNIFIED_PROPERTY_INTELLIGENCE.md",
+      "modified": true,
+      "release_sha256": "dac6f40644c129935f770dd842df9b5b8cea7b4a372eed940303c69de3ef95a7",
+      "release_bytes": 37924
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.3_HYBRID_IMPLEMENTATION.md",
+      "modified": true,
+      "release_sha256": "4e69324c18d7374fb3ba957bcd70cfcc95af3c57e98e39d605c68fda6db7f8ac",
+      "release_bytes": 54652
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.4_UNIFIED_ESTIMATOR.md",
+      "modified": true,
+      "release_sha256": "c0de598f721d99f5ddf31f9812401a94cd5172f30c342534117805f3d2432f3b",
+      "release_bytes": 487052
+    },
+    {
+      "path": "docs/PIPELINE_CHANGELOG_ROOM_TAGS_SLOTS_V1.md",
+      "modified": true,
+      "release_sha256": "de85d7f554f5d21265f532fc75f2c56a612706c7c304e8b615e66a935d4d830f",
+      "release_bytes": 4989
+    },
+    {
+      "path": "docs/PIPELINE_V1_ARCHITECTURE.md",
+      "modified": true,
+      "release_sha256": "7183b1d14648aad8c10dde9a182e39019f60f6ea2675094c78323ed8b8a8475c",
+      "release_bytes": 8205
+    },
+    {
+      "path": "docs/PIPELINE_V1_PROMPTS.md",
+      "modified": true,
+      "release_sha256": "8588043c8d8887451145eb72215599022be8db77faf0c650afacb3a2b4a15d8e",
+      "release_bytes": 11468
+    },
+    {
+      "path": "docs/PIPELINE_V5_IMPLEMENTATION_PLAN_SINGLE_STRATEGY.md",
+      "modified": true,
+      "release_sha256": "aa8cf42b237f287838419a91b2441df90fd7b52da7658f5c420c183fbca78f5f",
+      "release_bytes": 11230
+    },
+    {
+      "path": "docs/PIPELINE_V5_READINESS_CHECKLIST.md",
+      "modified": true,
+      "release_sha256": "83c1b8de9c2123333006a78c6eaa17b854d8365e5fcf074585e8d3b6ac855863",
+      "release_bytes": 5190
+    },
+    {
+      "path": "docs/PLACE_CURATION_V2.md",
+      "modified": true,
+      "release_sha256": "4d932bb0d34e34548009f4d40668c111f8c54236d8ea96279c6dbd8b5947ca60",
+      "release_bytes": 1188
+    },
+    {
+      "path": "docs/PROPERTY_HOOD_TOUR_ARCHITECTURE.md",
+      "modified": true,
+      "release_sha256": "e91d803d49774c3c43961b80b880880d29b72ceb06125def420c874e2107882c",
+      "release_bytes": 16506
+    },
+    {
+      "path": "docs/RENOVATION_PIPELINE_INDEX.md",
+      "modified": true,
+      "release_sha256": "e72ba9a9d033f01c97124407068cd1a659efca108ac28fc42fb66dcfeaf8d5a5",
+      "release_bytes": 8216
+    },
+    {
+      "path": "docs/RENOVATION_PIPELINE_V3_PLAN.md",
+      "modified": true,
+      "release_sha256": "da797055ea7389eacb24143876e6d86d70f493dcde29095f84e2f28164eca885",
+      "release_bytes": 39091
+    },
+    {
+      "path": "docs/ROOM_TAGS_SLOTS_GSO_V1.md",
+      "modified": true,
+      "release_sha256": "d9ec72d4f62bfcaf56669718746f92f2438d766bdbd2258cc8fe508ddb1fefcd",
+      "release_bytes": 21543
+    },
+    {
+      "path": "docs/SLOTS_BY_ROOM_TYPE_V1.md",
+      "modified": true,
+      "release_sha256": "5304710c3e981d43fd1c8103823196a00c9154b5bc215de8c54c41a3fd05456e",
+      "release_bytes": 9300
+    },
+    {
+      "path": "docs/V1_IMPLEMENTATION_HANDOFF.md",
+      "modified": true,
+      "release_sha256": "24809056fedfd5546c79cb028991cbf81be2c546878d36e1da63e1a0423ae38e",
+      "release_bytes": 15332
+    },
+    {
+      "path": "docs/V1_IMPLEMENTATION_PLAN.md",
+      "modified": true,
+      "release_sha256": "265be666f116149f9d901062302db4b52005095ec25b8b918f1dbbebb1fd831a",
+      "release_bytes": 59800
+    },
+    {
+      "path": "docs/V1_RECHECKS.md",
+      "modified": true,
+      "release_sha256": "90cc536b1622a8b2c537c89079d06c0aa12935238da08b14d885c835102e8f00",
+      "release_bytes": 8588
+    },
+    {
+      "path": "docs/V1_SCHEMA_SPECIFICATION.md",
+      "modified": true,
+      "release_sha256": "7c2e71f0700162b5e0d94c84cd543e2c3d115e06ffdbf07e8f437570ebfe75d0",
+      "release_bytes": 14892
+    },
+    {
+      "path": "docs/V3_QUALITY_FIX_PLAN.md",
+      "modified": true,
+      "release_sha256": "31adaf8c6e58b7220dbc5473442ebc0915ac7b09dfcffeb7c2681f9b7250e438",
+      "release_bytes": 14448
+    },
+    {
+      "path": "docs/V3_TECH_DEBT_AUDIT.md",
+      "modified": true,
+      "release_sha256": "d557011eaebfb4721044a137b96fda5cbfae9f4c3d7b9a90e9bc609f0ed5e75f",
+      "release_bytes": 7020
+    },
+    {
+      "path": "docs/V5_SLOTS_PIPELINE_IMPLEMENTATION_PLAN.md",
+      "modified": true,
+      "release_sha256": "9f9bbd6bf3354c61a98dfe3e5bcad0cc667776686ca6441e9796bc74876f6df4",
+      "release_bytes": 14840
+    },
+    {
+      "path": "frontend/.eslintrc.json",
+      "omitted": true
+    },
+    {
+      "path": "frontend/next-env.d.ts",
+      "modified": true,
+      "release_sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+      "release_bytes": 288
+    },
+    {
+      "path": "frontend/next.config.mjs",
+      "modified": true,
+      "release_sha256": "d102263329a77c340e43dd11d00139a9b6f787e443feb7732dd3e647c97e3404",
+      "release_bytes": 3277
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "modified": true,
+      "release_sha256": "5d2307501e30da1b521d5ceb56f6f33da095d8b3be3a7ae1c8c6ebf7e58bacb1",
+      "release_bytes": 262857
+    },
+    {
+      "path": "frontend/package.json",
+      "modified": true,
+      "release_sha256": "e6fb5d13a4d23ff0d09ca512fa5e034889ae9b62fb59a5144d6135b4e137f183",
+      "release_bytes": 1280
+    },
+    {
+      "path": "frontend/postcss.config.mjs",
+      "source_path": "lean-mvp/frontend/postcss.config.mjs",
+      "source_blob": "0b705dd37074544a312e487b977b62e101ceb1ea",
+      "sha256": "286d3e42ce5518ab3bd5b6e9721531adaeb41112ffc00fd2b683f9fa8a0a36be",
+      "bytes": 158
+    },
+    {
+      "path": "frontend/src/app/[lang]/FlipperLandingClient.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/[lang]/LandingPageClient.deprecated.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/[lang]/layout.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/[lang]/opengraph-image.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/[lang]/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/[lang]/twitter-image.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/admin/gla-detail.tsx",
+      "source_path": "lean-mvp/frontend/src/app/admin/gla-detail.tsx",
+      "source_blob": "e68801c2946be31c73f360e8765b1ebde629c7fe",
+      "sha256": "1b203974f74454769073c2d5d4a471a2ce441bb7cdccc79efd2811eb72c58f87",
+      "bytes": 20026
+    },
+    {
+      "path": "frontend/src/app/admin/page.tsx",
+      "source_path": "lean-mvp/frontend/src/app/admin/page.tsx",
+      "source_blob": "62c8af9cd5b5d7f921223ad2677cf3855fb046ee",
+      "sha256": "7fe67c334d82c8d0bf8898bdcd216861c24862c38735d0b539fad059aeab9ebe",
+      "bytes": 53751
+    },
+    {
+      "path": "frontend/src/app/agent/DEPRECATED.md",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/agent/activity/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/agent/layout.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/agent/onboard/[id]/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/agent/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/agent/settings/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/[id]/clear-from-stage/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/[id]/clear-from-stage/route.ts",
+      "source_blob": "41ba3079ef7f3e2a480338ca1fba785278e46f48",
+      "sha256": "8812b37b3d4926537b2c6c96bfaf889fab3c5486ddd6cd369c3d4917d5764b1c",
+      "bytes": 1029
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/[id]/comparables/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/[id]/comparables/route.ts",
+      "source_blob": "3c71fbf767201bc66b0c35d36d62af10ddeff4f7",
+      "sha256": "c6d7239925b7553eb8a01387331d37c6986c04dac90349c83c98e1269e50f218",
+      "bytes": 3503
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/[id]/delete/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/[id]/delete/route.ts",
+      "source_blob": "2e5c561414b23c71ed5711b1f64a85323b32937f",
+      "sha256": "bec75895335734ce87eac35b950f63ba425278485c1b2150b2f3105f522d6919",
+      "bytes": 804
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/[id]/gla-detail/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/[id]/gla-detail/route.ts",
+      "source_blob": "50137453d1df42b2fe0a359140336445f982c0f9",
+      "sha256": "7eef6a1124b8c2eda8ce1652f3eed7253c289d2923ccbfec91aa9119a4f9b2aa",
+      "bytes": 825
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/[id]/resume/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/[id]/resume/route.ts",
+      "source_blob": "74d6d02e836f47533d914832e3e00cd5010b0cb4",
+      "sha256": "7bac591c27d5a664850677a5a2f217956aa5368687ea0377984dd51b91c60779",
+      "bytes": 808
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/[id]/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/[id]/route.ts",
+      "source_blob": "09861d22dec37f852dcb5c1106f36e5eb28e7fd0",
+      "sha256": "ec021f81553f9aef53a1da46295e8950249c1cb26d18f2e6fde775123461de85",
+      "bytes": 791
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/[id]/stop/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/[id]/stop/route.ts",
+      "source_blob": "4d9713cb75dc1ad0cc2274cf7154c07e0208f498",
+      "sha256": "18b3a57249bae8bc126f613e01221dc237fbdb3e51337acb66e82cab1e0195ee",
+      "bytes": 816
+    },
+    {
+      "path": "frontend/src/app/api/admin/listings/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/listings/route.ts",
+      "source_blob": "25faa4a499b4e3ef886c774503834b5db96ef503",
+      "sha256": "885f3494fd8c0b159f04e771ef245dcea0174452a04a0b871d3870de221821fe",
+      "bytes": 754
+    },
+    {
+      "path": "frontend/src/app/api/admin/pipeline-version/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/pipeline-version/route.ts",
+      "source_blob": "b51bc2d1ae9acbc3742057383249585917b8b5fd",
+      "sha256": "5b1d823e590523fce76e702976af7201de73eb4e49d57a6f594d5bc2a1ea3dc8",
+      "bytes": 704
+    },
+    {
+      "path": "frontend/src/app/api/admin/resume-all/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/resume-all/route.ts",
+      "source_blob": "712e87992cb2ffeea2683ac3cd48e19249384a83",
+      "sha256": "fcf7e1cfa24e8db5fd102cdf0deded8ee64c53b703a17d2bc991800f85b01b7d",
+      "bytes": 680
+    },
+    {
+      "path": "frontend/src/app/api/admin/runs/[runId]/costs/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/runs/[runId]/costs/route.ts",
+      "source_blob": "7deb52d24d7ea21f53cd6f7cec432ff387f05129",
+      "sha256": "0089481f7aed75e1f7e65d62bfc2263afe24fd38f7e3832888eaad1428b14040",
+      "bytes": 906
+    },
+    {
+      "path": "frontend/src/app/api/admin/runs/[runId]/logs/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/runs/[runId]/logs/route.ts",
+      "source_blob": "3138763cc48320713f0e0927e308cdbdaf7e2559",
+      "sha256": "2a8695a3dd372e5188ee7b112d67816f2dbecf4591a97d803be8b1fd51d8ed2c",
+      "bytes": 1885
+    },
+    {
+      "path": "frontend/src/app/api/admin/runs/[runId]/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/runs/[runId]/route.ts",
+      "source_blob": "77a72659322c491534ebc20f3e2973b7de5213fa",
+      "sha256": "578070f67346667639700ce9fd75acd2ffb0fd3c49a9811a3fa70a98b5c79d49",
+      "bytes": 889
+    },
+    {
+      "path": "frontend/src/app/api/admin/runs/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/runs/route.ts",
+      "source_blob": "33bb707821a52c5fe4733d1ee171dcbfc1f810a2",
+      "sha256": "46a8fdca726ef750e0096dab451bd3d7e6d1c22ac8df75adfebdbad8d0585d77",
+      "bytes": 1146
+    },
+    {
+      "path": "frontend/src/app/api/admin/stop-all/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/admin/stop-all/route.ts",
+      "source_blob": "356ee17b2eeb85e90681b5c040e2879459d95e02",
+      "sha256": "61afe54d7db59d302a2a2a4032e0b6b52b436064b7886df37e67e20fdbd44ff2",
+      "bytes": 663
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/comparables/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/listings/[id]/comparables/route.ts",
+      "source_blob": "ca05553e2250ccc2e843ceda4839181ec4e9e756",
+      "sha256": "33370fb0a949c706045f0046a4677de0570e659cf5379eb952a7bc27fa1efdc8",
+      "bytes": 5542
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/negotiation/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/listings/[id]/negotiation/route.ts",
+      "source_blob": "13962a8907156c25cfaaa34ec6a8eb8a8da2dad9",
+      "sha256": "00898f295305816605a530ae89cbf8050dda099fb2eb11ed1c05adc2ccd2c326",
+      "bytes": 2742
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/photo-clusters/route.ts",
+      "modified": true,
+      "release_sha256": "62ca5e693338b49c7c91367c32377fab1de131a011c11171f9535b402f9d944e",
+      "release_bytes": 1149
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/photos/route.ts",
+      "modified": true,
+      "release_sha256": "379ece631a551cc86685d8e97a9cd8643e28b05b19892c63f2ed1d32465776ed",
+      "release_bytes": 1140
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/room-analyses/route.ts",
+      "modified": true,
+      "release_sha256": "6c485c67c1f5f496ffcacec4638818051c1592e1fa96fd1173437060cab53d56",
+      "release_bytes": 1146
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/route.ts",
+      "modified": true,
+      "release_sha256": "dbc2eb19afe061dba2de6f76c2ed810d95074b51a4895671172ab6013cad877b",
+      "release_bytes": 2777
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/run-pipeline/route.ts",
+      "modified": true,
+      "release_sha256": "a20c62707e12a91bc133511549d478eb9f257db3e300aff4b02c45715620dc04",
+      "release_bytes": 2206
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/translations/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/listings/[id]/translations/route.ts",
+      "source_blob": "c32d72abbee5e1de9d9c06fcaae80e640c1c9bdc",
+      "sha256": "26a600f829288218d75e9159d8087cc293ebbca0f3a60bf4ebbd07019d005049",
+      "bytes": 2625
+    },
+    {
+      "path": "frontend/src/app/api/listings/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/listings/route.ts",
+      "source_blob": "fe4a9f950a9f6fc7416446711cc1bd0707a79f2f",
+      "sha256": "d213c52769f0610201093f9925f6fb67ee5e2529017ab2eb42ab8248bd80cfc2",
+      "bytes": 1969
+    },
+    {
+      "path": "frontend/src/app/api/renovation/[id]/comparables/brackets/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/renovation/[id]/comparables/brackets/route.ts",
+      "source_blob": "6dc8c0dff70c19febdd3a4ddc4f066d7b3f53862",
+      "sha256": "161483d79a4578d81d653473c42fb1c77d5f059f468dffa2d6f63a882e6d9bcc",
+      "bytes": 1937
+    },
+    {
+      "path": "frontend/src/app/api/renovation/[id]/v048/packages/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/renovation/[id]/v048/packages/route.ts",
+      "source_blob": "8fbfcea7e891e9a69df3f9dfd0895ecfe86c6b27",
+      "sha256": "dbe367040a950f76266a3622f45c9a622e4497e365ffa1926d4569bcd8b4a7f7",
+      "bytes": 5334
+    },
+    {
+      "path": "frontend/src/app/api/renovation/[id]/v048/status/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/renovation/[id]/v048/status/route.ts",
+      "source_blob": "5d23cd4bd3cb6e18a42569335aa6afdf15750eaf",
+      "sha256": "26e5c25f120b464a758621b6a44a4e10373e9628cca1faf941e5cdf2c84ec807",
+      "bytes": 1879
+    },
+    {
+      "path": "frontend/src/app/api/scrape/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/scrape/route.ts",
+      "source_blob": "1e5a172c257c13d38cc1fc06c87b52672afac1a0",
+      "sha256": "6796027184370ec6f9eaa9d1041190a10970d7e4261751e990c2dca2db355775",
+      "bytes": 1665
+    },
+    {
+      "path": "frontend/src/app/api/scrape/validate/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/scrape/validate/route.ts",
+      "source_blob": "291b23ac1a81f9c8d047f32bca01c88947a9c970",
+      "sha256": "329159ce1e6ccf05f46662687bfd4f3cc3038670ae11feb9cea437b7aec5daab",
+      "bytes": 1313
+    },
+    {
+      "path": "frontend/src/app/api/translate/batch/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/translate/batch/route.ts",
+      "source_blob": "c3d9a81856a49b4e5e8011707d7cbf4fabc42ec7",
+      "sha256": "e3622b50f284ed316efdafc2ade669aac8aafaa5b4c2302332a73be99fe4da6c",
+      "bytes": 875
+    },
+    {
+      "path": "frontend/src/app/api/translate/languages/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/translate/languages/route.ts",
+      "source_blob": "0afb1df5427ccf7193924dd429dfc571f46255e8",
+      "sha256": "47d2b7a618249138f57ae8f49b80a522d57e81f74c1185c927880728ca38fb59",
+      "bytes": 813
+    },
+    {
+      "path": "frontend/src/app/api/translate/listing/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/translate/listing/route.ts",
+      "source_blob": "8726e7866b4c1324a21de11fb26d583783da4f33",
+      "sha256": "7b6c67d004af550888b58a99ef2090ae655fc6e1782962c06720411c768e2286",
+      "bytes": 886
+    },
+    {
+      "path": "frontend/src/app/api/translate/text/route.ts",
+      "source_path": "lean-mvp/frontend/src/app/api/translate/text/route.ts",
+      "source_blob": "d0489f65e75e99a2a9f05c29ee17dd17e892904c",
+      "sha256": "1dc39079441f9409dca4ba88b551dd3273ac4687135d719749c9aa1a86c4da66",
+      "bytes": 878
+    },
+    {
+      "path": "frontend/src/app/confirm/page.tsx",
+      "source_path": "lean-mvp/frontend/src/app/confirm/page.tsx",
+      "source_blob": "02102b1c1c138c5205ee13617500b4c849c80762",
+      "sha256": "f55f5c1b23a4366c77b0ffe7ff61e4ffc278b54bb94766f653ae90a4705a18a4",
+      "bytes": 4892
+    },
+    {
+      "path": "frontend/src/app/cookies/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/estimate/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "modified": true,
+      "release_sha256": "9bcb11925284633be53ffe231d5fd17703f49b9d6b0074bf1a0edf36c5dd0bee",
+      "release_bytes": 7860
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "modified": true,
+      "release_sha256": "11a6586f7cd22d7b95d34f9579ef277f49c3f71d3c0a32cfb91880745580d4a5",
+      "release_bytes": 1093
+    },
+    {
+      "path": "frontend/src/app/listing/[id]/layout.tsx",
+      "source_path": "lean-mvp/frontend/src/app/listing/[id]/layout.tsx",
+      "source_blob": "f50594f0aeecb9fc46032eb396e48476be75038a",
+      "sha256": "59055d39f1873c8c60a48168e3c298f28275eb547011e0f4a653498b50d049d7",
+      "bytes": 3769
+    },
+    {
+      "path": "frontend/src/app/listing/[id]/opengraph-image.tsx",
+      "source_path": "lean-mvp/frontend/src/app/listing/[id]/opengraph-image.tsx",
+      "source_blob": "2b5cb3404f55ca150df65520d4382b46fee52481",
+      "sha256": "a7d62d36bf45604ccb955084641e448650cae844e700c198983ae32bebf92366",
+      "bytes": 12112
+    },
+    {
+      "path": "frontend/src/app/listing/[id]/page.tsx",
+      "source_path": "lean-mvp/frontend/src/app/listing/[id]/page.tsx",
+      "source_blob": "2ab7c6290cf90a96fde7fb53df974cb3db9296ca",
+      "sha256": "62d7db0f703642e0638d3049199dcfbb4e80450b6453dd438b608ae18b6fae0d",
+      "bytes": 10887
+    },
+    {
+      "path": "frontend/src/app/listings/page.tsx",
+      "source_path": "lean-mvp/frontend/src/app/listings/page.tsx",
+      "source_blob": "054881e2d42a26aba315907d819ba33c485fec66",
+      "sha256": "0f436d03b16fe4b1d59aa8e10ad583b1409885518267a3cf08edfb4af3e7d61d",
+      "bytes": 10162
+    },
+    {
+      "path": "frontend/src/app/opengraph-image.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/PitchClient.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/AnimatedCounter.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/ArchDiagram.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/CallBridge.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/CostWalkthrough.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/DecisionDiamond.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/EmailArc.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/FunnelViz.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/ImageAnalysisOverlay.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/LogFeed.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/MiniFilm.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/MoodboardChat.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/POVTransition.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/PageScanViz.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/PhoneScene.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/PipelineFlow.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/PriceScatterChart.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/ResearchJourney.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/Section.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/SourceAnnotation.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/TimelineChat.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/TokenMeter.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/TradeCard.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/TrustStackViz.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/TypewriterChat.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/components/URLBurst.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/hooks/useScrollSection.ts",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/pitch/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/privacy/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/profile/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/providers.tsx",
+      "source_path": "lean-mvp/frontend/src/app/providers.tsx",
+      "source_blob": "84cefa757e1adf76022afba01c8b7d592e21d9c6",
+      "sha256": "3905a2ea1a46b29efff558659d506f55aefdd742844d50a354153ec9a6d76b1b",
+      "bytes": 403
+    },
+    {
+      "path": "frontend/src/app/run-status/page.tsx",
+      "source_path": "lean-mvp/frontend/src/app/run-status/page.tsx",
+      "source_blob": "a6b78c9d666f80f03eb253fafdf56708ea8210fc",
+      "sha256": "8b8deb7ec9a25e21ccb7e0e16fe0156d543a12f1b9d5b8999183ce392a9f8b11",
+      "bytes": 194
+    },
+    {
+      "path": "frontend/src/app/sitemap.ts",
+      "source_path": "lean-mvp/frontend/src/app/sitemap.ts",
+      "source_blob": "d2513bd4d0fad43ce0fb842453e7f6cb181007b5",
+      "sha256": "d7c0d265a0ad7d72060775280d859a358774fb90e1e3fad95654b9e38e192e2c",
+      "bytes": 766
+    },
+    {
+      "path": "frontend/src/app/terms/page.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/app/twitter-image.tsx",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/components/BeforeAfter.tsx",
+      "source_path": "lean-mvp/frontend/src/components/BeforeAfter.tsx",
+      "source_blob": "15214c170639570beeea0c89a6e92f78ee69ad9c",
+      "sha256": "f7b3b74a1bc2958aab3666ca9472183a8a9063fe8c8d749ca77d2e5a689c92b1",
+      "bytes": 8879
+    },
+    {
+      "path": "frontend/src/components/BottomNav.tsx",
+      "source_path": "lean-mvp/frontend/src/components/BottomNav.tsx",
+      "source_blob": "3c7f1d88d69517c25f0674838953bc492d7732c7",
+      "sha256": "d5d45b639068a1db847f6287222a42cf64af990e41298370e82919c29fdbee34",
+      "bytes": 3054
+    },
+    {
+      "path": "frontend/src/components/LanguageToggle.tsx",
+      "source_path": "lean-mvp/frontend/src/components/LanguageToggle.tsx",
+      "source_blob": "9d34907904a55c778d03478b98cf16b6665923ba",
+      "sha256": "b5c96a7581b072b8278f3d583eeb3e387d17bd55e8fa6f91b5497e3f7f9a02bf",
+      "bytes": 3861
+    },
+    {
+      "path": "frontend/src/components/ListingBottomNav.tsx",
+      "source_path": "lean-mvp/frontend/src/components/ListingBottomNav.tsx",
+      "source_blob": "51992b44eb55127ea12478dddc2a3c7f2e95edfd",
+      "sha256": "e0723793c404e1ea78b8391f4f8ebb1e4953cfeaea5189f1d4cf114eb2fb9d78",
+      "bytes": 4130
+    },
+    {
+      "path": "frontend/src/components/ListingReview.tsx",
+      "source_path": "lean-mvp/frontend/src/components/ListingReview.tsx",
+      "source_blob": "b61c86347fd413c0250b8bdd7407a4d6e188c954",
+      "sha256": "5dcfe4874ce7c404c35ae615ce0722d1aad93c4ab40e5005635a9ac0ce53c79c",
+      "bytes": 15494
+    },
+    {
+      "path": "frontend/src/components/ListingReviewMode.tsx",
+      "source_path": "lean-mvp/frontend/src/components/ListingReviewMode.tsx",
+      "source_blob": "7573e0a90561f54c9a5cdceb216623d04d000e32",
+      "sha256": "69e73d345a6ba036f5790c3078392d267a3c341b6bb829d63b5a7d50db994c80",
+      "bytes": 29410
+    },
+    {
+      "path": "frontend/src/components/MapModal.tsx",
+      "source_path": "lean-mvp/frontend/src/components/MapModal.tsx",
+      "source_blob": "550af9b78dd84162176402cb52b93bb4f797e5df",
+      "sha256": "8e12ebba2aec684fbec072522770c11c387d34e93612e3b25cd8b910be2564c1",
+      "bytes": 7530
+    },
+    {
+      "path": "frontend/src/components/PasteLinkModal.tsx",
+      "source_path": "lean-mvp/frontend/src/components/PasteLinkModal.tsx",
+      "source_blob": "46f36d334924ed004db8d515b681780b92332927",
+      "sha256": "8db6d98b2633c2a1c96f7981f503dc52cd2eb9dd458246d2edcfe076befc6fb1",
+      "bytes": 16250
+    },
+    {
+      "path": "frontend/src/components/PlaceCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/PlaceCard.tsx",
+      "source_blob": "bce8d87d563120641d6340328a78ab5b424d700c",
+      "sha256": "72592a8a034f74d31583aa38fa7c2e99a7ffa1ff81300eb87ba6342fdcd19729",
+      "bytes": 10773
+    },
+    {
+      "path": "frontend/src/components/PropertyCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/PropertyCard.tsx",
+      "source_blob": "5c1a2f0a679a70565f39031af100a70372d531cd",
+      "sha256": "f5b091b26271af14293f990146bbb26685a4d1654cbdfe8c0c8647a048cf6441",
+      "bytes": 4712
+    },
+    {
+      "path": "frontend/src/components/UrlInput.tsx",
+      "source_path": "lean-mvp/frontend/src/components/UrlInput.tsx",
+      "source_blob": "2febfbb71cd456c810f2be0b00c37d6dc07ab949",
+      "sha256": "48df3ad21432ae19349750957a25c9c6809298aa634fa14781c30084d1e88428",
+      "bytes": 6040
+    },
+    {
+      "path": "frontend/src/components/agent/CompletionSummary.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/CompletionSummary.tsx",
+      "source_blob": "e988d1013b23646edae7a2a4a1c0c79e4ed5da41",
+      "sha256": "af4ebb1870eb4e0754910c3026851d576eee118fbc9658dad84810ff6410a198",
+      "bytes": 3237
+    },
+    {
+      "path": "frontend/src/components/agent/ContactCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/ContactCard.tsx",
+      "source_blob": "9c22f910edb9b7940a2d8594f391206cbcf762a1",
+      "sha256": "e516f977facab12e3f61345bed9cd508884d08fceec1d77da71aee4357cd3391",
+      "bytes": 6195
+    },
+    {
+      "path": "frontend/src/components/agent/DocumentCards.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/DocumentCards.tsx",
+      "source_blob": "00fdfb9372175b5aa922b2fd4399bcdd14bf4473",
+      "sha256": "490d64a6c1dd28b2123369eac36de51f628b23aa3506347a921e5913207eb3bf",
+      "bytes": 4173
+    },
+    {
+      "path": "frontend/src/components/agent/FileDropZone.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/FileDropZone.tsx",
+      "source_blob": "d37c05767900ea290e2848f3e95dd9d83a680355",
+      "sha256": "eb09e2ec58f6c6dd40f1752e51a6b863230ed28565acfe0bd4ff98db4eb0aa0e",
+      "bytes": 4656
+    },
+    {
+      "path": "frontend/src/components/agent/InteractiveFloorPlan.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/InteractiveFloorPlan.tsx",
+      "source_blob": "a27850d4afe23ff67d0a81b57143f5bdcda7cdd1",
+      "sha256": "9b6f2bec45d5025b51282ef827bf4f1bf4521ee328362bae96bff7acb0b4f55b",
+      "bytes": 9001
+    },
+    {
+      "path": "frontend/src/components/agent/InventoryList.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/InventoryList.tsx",
+      "source_blob": "6c4a12ab2b9ee42ba829629e0290f2f51313793a",
+      "sha256": "16b616c6ade2cd7716a25803568d13a8934a03c1394cd5d219feee04ebbcecd9",
+      "bytes": 4067
+    },
+    {
+      "path": "frontend/src/components/agent/PhotoClusterGrid.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/PhotoClusterGrid.tsx",
+      "source_blob": "98a7045ff69fcdc54eb9e8de899f79e6a16e9b94",
+      "sha256": "154542b4ed605c6d5443e566dfb2e4fd0ef89e02ec89acff5e52d29389e3ddb7",
+      "bytes": 5299
+    },
+    {
+      "path": "frontend/src/components/agent/PropertySummaryCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/agent/PropertySummaryCard.tsx",
+      "source_blob": "1697d2da92b6567ec81efc272146dd1c9d601cc4",
+      "sha256": "7de3ba62c5878216396a927aeb896e69c589d37473b438dc0cf220da33de8690",
+      "bytes": 3263
+    },
+    {
+      "path": "frontend/src/components/buyer-intelligence/ComplexitySlider.tsx",
+      "source_path": "lean-mvp/frontend/src/components/buyer-intelligence/ComplexitySlider.tsx",
+      "source_blob": "dce2a58e0a8c72ec881226fa86de7af00bd2d7bf",
+      "sha256": "d4548ff86b538a829c3f9cd91f840a592e5c42696aeb5a612d231243a4a552bd",
+      "bytes": 2908
+    },
+    {
+      "path": "frontend/src/components/buyer-intelligence/ReferencesOverlay.tsx",
+      "source_path": "lean-mvp/frontend/src/components/buyer-intelligence/ReferencesOverlay.tsx",
+      "source_blob": "b36cea0ebfdff799f009a0b95619fe32ae7de9fb",
+      "sha256": "930ff82a60c192355d281b05e2161bc114272b43f845b943718b0d23e774ecc2",
+      "bytes": 9176
+    },
+    {
+      "path": "frontend/src/components/index.ts",
+      "source_path": "lean-mvp/frontend/src/components/index.ts",
+      "source_blob": "61d6eb157ca73bc97aebc9ebb6dc49ccdf07cede",
+      "sha256": "e753573a48e2d40c405d8bb9c2b35d16acdd490d794aea605d3607c515cd4cbe",
+      "bytes": 610
+    },
+    {
+      "path": "frontend/src/components/landing/AgentContent.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/AgentContent.tsx",
+      "source_blob": "897a320840d1bcefc402b6c51e402443c3147228",
+      "sha256": "243e4094862030e5af54a259ded7050d73d9a09f8cfb69d096e5f8e9ce2a4237",
+      "bytes": 8680
+    },
+    {
+      "path": "frontend/src/components/landing/BuyerAgentsContent.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/BuyerAgentsContent.tsx",
+      "source_blob": "ce7914c5e358028f5f1ad1495b3990873434d4b9",
+      "sha256": "6298bcfc27f66445c44b2ac6ca253c6c6a801c53aab5144218d13cf2c1cd161e",
+      "bytes": 20474
+    },
+    {
+      "path": "frontend/src/components/landing/BuyersContent.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/BuyersContent.tsx",
+      "source_blob": "fb2b2c8da5eed5d4782680fda182ddfee4ee3537",
+      "sha256": "4462336e51fc2e3ce87cb2af497f313bd837b0e6ee6886b983f3b8ffe863ff92",
+      "bytes": 11533
+    },
+    {
+      "path": "frontend/src/components/landing/HomebuyerContent.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/HomebuyerContent.tsx",
+      "source_blob": "80980c9999ceca898a165b3e65a09c5beb158a26",
+      "sha256": "d83b8ee6138fbdffde439b82f382819fa433d752f7adc4863326b375d7f0ffa6",
+      "bytes": 22474
+    },
+    {
+      "path": "frontend/src/components/landing/RelocationContent.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/RelocationContent.tsx",
+      "source_blob": "5643f40756dfd76c4fcde3b7b4b3e1d3d6276ca9",
+      "sha256": "8d782e6ae19c1770e3313343e7c5219a2f1a7c95014a447df48d07a89dc0c8db",
+      "bytes": 14488
+    },
+    {
+      "path": "frontend/src/components/landing/RentersContent.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/RentersContent.tsx",
+      "source_blob": "b118559a66eb671d2ac03f070c08aaf1a2b1ba54",
+      "sha256": "09b0b9f286f2217408bb8f576685cf7d03ef0e0f9f7977eda84603ad356f696e",
+      "bytes": 2947
+    },
+    {
+      "path": "frontend/src/components/landing/content-data.ts",
+      "source_path": "lean-mvp/frontend/src/components/landing/content-data.ts",
+      "source_blob": "e3cefc81a5b210d3d661f340b30b4ce36b4eef7d",
+      "sha256": "d775b9475868d05376b13abd41ec618efb24d5b039470c4c4a5fd38fa286fe36",
+      "bytes": 24333
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/AgentVignettes.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/AgentVignettes.tsx",
+      "source_blob": "f93774812700c966bcf96bf201e9d57593150e13",
+      "sha256": "7409b85101177a71f88717aa4850305d9aa8669b5451449ccf54ab212dba2ce3",
+      "bytes": 29426
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/BuyersVignettes.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/BuyersVignettes.tsx",
+      "source_blob": "d74a4022e048841ed62022696d768a2e313bf379",
+      "sha256": "c730723ccbfd827d363c6913ee1b8d0b49ce43b76f1bc00bb5419e97c0fc99a8",
+      "bytes": 18407
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/ChecklistVisuals.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/ChecklistVisuals.tsx",
+      "source_blob": "8ba53ab0a74aebaa0abd6dcbe9aa898a6bb15d1a",
+      "sha256": "508115dab6fc77172f6af034fbf6589b077a89e90dca9437f9669944639260d7",
+      "bytes": 18809
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/ClientPortalMockup.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/ClientPortalMockup.tsx",
+      "source_blob": "8b10c67083b6b9e93b7632be186d35a66ef6f340",
+      "sha256": "3622b7eeb26b291d4b4a0993cae5866fe7a61d33b17923389f7ed750caddf04f",
+      "bytes": 16735
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/CompactVignettes.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/CompactVignettes.tsx",
+      "source_blob": "c530960ebcdcd94144ece9b76abc72455fa31da7",
+      "sha256": "6851918c4c6d883ec5d371cef99606d623e6163acf851ac180707ab2db9c7740",
+      "bytes": 18265
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/HeroVisuals.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/HeroVisuals.tsx",
+      "source_blob": "fa8efe0e055444f03f9006d12e91a5379b057c74",
+      "sha256": "39310470a4d2537201f01b4c2a0eb07fd2b7bf5f2c3dcc83445e7ab7bb408a67",
+      "bytes": 6699
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/Isochrones.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/Isochrones.tsx",
+      "source_blob": "f0bc9344b84c82af1bc070215551044135e62abb",
+      "sha256": "cd41c389fc837e04007a12b94e69e61a57a576fd77087557ca92cca8f7d77b75",
+      "bytes": 26930
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/LandingImages.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/LandingImages.tsx",
+      "source_blob": "a29bd6d109b105bb5d8a8b4b1d4aef665c169667",
+      "sha256": "5ce205d6f1dd0c763f0e931f8cba5ac6bf7406a67e3c729b9f09731714008ece",
+      "bytes": 9079
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/LifeStagesVisual.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/LifeStagesVisual.tsx",
+      "source_blob": "7ba8f863b50c06dc89cfc1bddb400e1d20bae454",
+      "sha256": "552c59b16d369c3582759aab4382a76c23b6a443c460669510a9a4e96134308b",
+      "bytes": 9042
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/MarketingMockups.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/MarketingMockups.tsx",
+      "source_blob": "5862f049ac4f44488caa0d6956017faf493f2571",
+      "sha256": "2b0437b80352ce8cbdbe7cd037ff20921162c1d2674ab13a4b72450b6f41963d",
+      "bytes": 33257
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/MicroMockups.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/MicroMockups.tsx",
+      "source_blob": "9a2d982c99ad22eb5f4dd4248616095e6ba56de1",
+      "sha256": "61e239048c6d6df37903ecef5317bb3d6934b9b1c9ad1924485e1e59b78df540",
+      "bytes": 12006
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/RelocationVignettes.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/RelocationVignettes.tsx",
+      "source_blob": "3b44e97eeca23abd8276f8030b6487a2957706a8",
+      "sha256": "2e56d063e2bf2e1d68c88ba275f7434c0064eade0dc998c2662255af19fe0491",
+      "bytes": 15558
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/RenovationTiersMockup.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/RenovationTiersMockup.tsx",
+      "source_blob": "f06aa3ac2c7924d37f9b673f796dcc9b0d95514f",
+      "sha256": "c6e0329c13a3460dae71ac289ab3289156a1c8fa0dc1a733a80c2c21610c0b8a",
+      "bytes": 19940
+    },
+    {
+      "path": "frontend/src/components/landing/illustrations/index.ts",
+      "source_path": "lean-mvp/frontend/src/components/landing/illustrations/index.ts",
+      "source_blob": "fbab376fee096293359560f5696aebb11f95a308",
+      "sha256": "d24b3a39bda6fd5e47b148b743619cda99d69cc80fd0ad043388812966c951d8",
+      "bytes": 3381
+    },
+    {
+      "path": "frontend/src/components/landing/phone-mockups.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/phone-mockups.tsx",
+      "source_blob": "ee7dd2925b83a15136b054449014f73ccae96ccb",
+      "sha256": "1e6d87ce865cdfedd5230b851252308c89ee71a3a670383b3047a73b05b1b313",
+      "bytes": 38244
+    },
+    {
+      "path": "frontend/src/components/landing/sections/HowItWorks.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/HowItWorks.tsx",
+      "source_blob": "64241790756b62e9b1c96850ddd78a2689d3576d",
+      "sha256": "ad05c4d2495f40041f3487cd44c6794240f499d717fd295a3d59f67013e94371",
+      "bytes": 4754
+    },
+    {
+      "path": "frontend/src/components/landing/sections/RentersHowItWorks.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/RentersHowItWorks.tsx",
+      "source_blob": "47574258851e3bc7c23ff7eb8c7c494dd6f297d5",
+      "sha256": "ea0357e075d8f8c4c3fbe40d426a561a6d101f960e374df4e5921e860ba8feae",
+      "bytes": 4201
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionBenefits.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionBenefits.tsx",
+      "source_blob": "5972f964e4d311364a518bef9303a2da50faaf7e",
+      "sha256": "e3292c60d6466021445c9385b1abd971470ae82dcbe5be9d38a45c6455165fc1",
+      "bytes": 1963
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionCTA.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionCTA.tsx",
+      "source_blob": "a8af433aed807e25590cf86e0a4064e1264c4733",
+      "sha256": "194a264c695c70dcf9079a7f11ce1b81cfa36062467ce5d78ffc092aec3a7fe4",
+      "bytes": 1083
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionCallout.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionCallout.tsx",
+      "source_blob": "177d607525aaa77a4c666946cf6fa12813d287e8",
+      "sha256": "63af6a0102a8ccc84b08aee129892e3c9d39f91854847891cf21e8ca25b02d66",
+      "bytes": 796
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionChecklist.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionChecklist.tsx",
+      "source_blob": "ba6f437c9ef073dc0685d0faf3802bafbdfd5214",
+      "sha256": "b2f51e80d15920883cd3f1efd45944fc1323defa410ee14f093e5ff6e3cb0a88",
+      "bytes": 3490
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionFeatureCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionFeatureCard.tsx",
+      "source_blob": "f25b552b3f112fc431f7c61f5b2142290b1444d5",
+      "sha256": "805a62172f37cb6fdeb56b52225b09f9f29b0ddf800210e12a30b40639ece60a",
+      "bytes": 1565
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionHero.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionHero.tsx",
+      "source_blob": "87f01da50b941ce6321e743363ab29d556087fc8",
+      "sha256": "9985b47ee0fdc403aa44b714cbcea1de4831c2b9c0a11b8a5a04799a4e8bccdd",
+      "bytes": 4407
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionHowItWorks.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionHowItWorks.tsx",
+      "source_blob": "3369b7f31754148d3539546a84ca693b0bde5993",
+      "sha256": "0f00f4d10a9870e615b73cccb9786a2678fc0240d59d59e2ec8ecceba6531c45",
+      "bytes": 7379
+    },
+    {
+      "path": "frontend/src/components/landing/sections/SectionTestimonials.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/SectionTestimonials.tsx",
+      "source_blob": "011074ccc13bb5abac478aa2a868fcfd4ad56378",
+      "sha256": "6c4393a0c241958377967a45da5d9a98a0e9762b42bb1f2ce0c9edb5df348edb",
+      "bytes": 1367
+    },
+    {
+      "path": "frontend/src/components/landing/sections/index.ts",
+      "source_path": "lean-mvp/frontend/src/components/landing/sections/index.ts",
+      "source_blob": "3450573b2221a1cbc5af546726a6e1fad6da78ca",
+      "sha256": "2fb84b85f8d3405da5ea7fe7386985c3c1534f2b3524d9d10c57e4ee331a65fc",
+      "bytes": 555
+    },
+    {
+      "path": "frontend/src/components/landing/waveform/VoiceWaveform.tsx",
+      "source_path": "lean-mvp/frontend/src/components/landing/waveform/VoiceWaveform.tsx",
+      "source_blob": "06043bc5a67f3b649bd56c72e28c5a7524022450",
+      "sha256": "ad0f9fcfd3d2a2035158f8319982395997570817a435a3c3dd24c1cf8bfd18b8",
+      "bytes": 814
+    },
+    {
+      "path": "frontend/src/components/renovation/BeforeAfterSlider.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/BeforeAfterSlider.tsx",
+      "source_blob": "610605277787eac6fa6bd0fc2cbcc3b445750027",
+      "sha256": "b2d86bd4f7e18ff281d2a2843388fe5171278773b0d6dc6ec9cf182b2af462e0",
+      "bytes": 6510
+    },
+    {
+      "path": "frontend/src/components/renovation/BracketAnalysisModal.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/BracketAnalysisModal.tsx",
+      "source_blob": "dc6e2087d3f7f6454b4c0431c86ade743ef983e0",
+      "sha256": "eb10510cc9b9f0d36e2762565c13ceff5d0331f47c7af1e93db1522989512482",
+      "bytes": 27860
+    },
+    {
+      "path": "frontend/src/components/renovation/ComparableCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/ComparableCard.tsx",
+      "source_blob": "1546098ae2ecab9912b34d0133e2486eb01b62e6",
+      "sha256": "649abc9822b707c15736800a482bbb924b2fe812cd15efc44d45e1901f85a930",
+      "bytes": 17776
+    },
+    {
+      "path": "frontend/src/components/renovation/ComparableDetailModal.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/ComparableDetailModal.tsx",
+      "source_blob": "7e14fb7bab785515ebb5542938c2a27fbb8b3964",
+      "sha256": "ac604dae994f2d6368481add361f7de4c199f2bbc8adec53adb95e3d060cb78f",
+      "bytes": 14178
+    },
+    {
+      "path": "frontend/src/components/renovation/ComparablesCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/ComparablesCard.tsx",
+      "source_blob": "abd4997d24d7709d24102e9954b28556e0d70f84",
+      "sha256": "6481402e00f5b46e50afd155335e2c9e741ffe2d4240a2130ec478af86cd662d",
+      "bytes": 48431
+    },
+    {
+      "path": "frontend/src/components/renovation/ComparablesMap.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/ComparablesMap.tsx",
+      "source_blob": "95bc4f0a481b7a5be0bc4e9f86dcde2f06cc8fd1",
+      "sha256": "d00ff42893e768f037e9a288bee84fed75eb170c0ee6fffd3e6fbf7b7fd1af3f",
+      "bytes": 17610
+    },
+    {
+      "path": "frontend/src/components/renovation/ComparablesTab.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/ComparablesTab.tsx",
+      "source_blob": "db318450a0d802604a0224096fa8731f5349791b",
+      "sha256": "d1901251a0da12a0a00aeb5415c01ebf66e492643c24940af42d692778357d4d",
+      "bytes": 7918
+    },
+    {
+      "path": "frontend/src/components/renovation/NegotiationModal.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/NegotiationModal.tsx",
+      "source_blob": "f977c5c1b29369d2c328446b3413ba5731d9e16a",
+      "sha256": "a947fc590338388622a9d37cca0248b8caa0808efd82de8e9941636e8d8c8c28",
+      "bytes": 18305
+    },
+    {
+      "path": "frontend/src/components/renovation/OfficialBudgetReport.tsx",
+      "modified": true,
+      "release_sha256": "d75cbac9cba034a0eb2944d1114c3c13e041b7600cab27c89f248b63e74fe4db",
+      "release_bytes": 39647
+    },
+    {
+      "path": "frontend/src/components/renovation/ShareModal.tsx",
+      "source_path": "lean-mvp/frontend/src/components/renovation/ShareModal.tsx",
+      "source_blob": "8011027c8a2b453e7b96d19ef61ba13d093da48e",
+      "sha256": "4814180b37f9aca5219c2d27e5a5b3d0737d3d887da188d29ca83cf7e7ad6da9",
+      "bytes": 18950
+    },
+    {
+      "path": "frontend/src/components/renovation/index.ts",
+      "source_path": "lean-mvp/frontend/src/components/renovation/index.ts",
+      "source_blob": "b2aaa46160c280bfbcfac1f69815eba78a46b8e5",
+      "sha256": "82b125e0d6c861d96c6b76a97a12b2c8911872cfeec0da18d35ef3b522a5d9bd",
+      "bytes": 655
+    },
+    {
+      "path": "frontend/src/components/shared/ActionCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/ActionCard.tsx",
+      "source_blob": "ed42a25e9dcea47f3c5453c1c27f98673f15a065",
+      "sha256": "05a7f3229ab78a4dadbee560b2942e09fbe7912f96e68431d335d8b492da31c1",
+      "bytes": 835
+    },
+    {
+      "path": "frontend/src/components/shared/BubbleTail.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/BubbleTail.tsx",
+      "source_blob": "440d88076c04681a44cae350ef20aa03287b57ae",
+      "sha256": "7ab64db71e8be1130b4c731602fd84ae8ee99661de3175faf441af2ea4c39a74",
+      "bytes": 719
+    },
+    {
+      "path": "frontend/src/components/shared/ChatBubble.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/ChatBubble.tsx",
+      "source_blob": "8a379328256dd7f1120e133885684aa8e335356d",
+      "sha256": "2e04f8959c9eec72824793abf92a7a4ce29a5bd01f4442d8b26631cd1e02b2b6",
+      "bytes": 2252
+    },
+    {
+      "path": "frontend/src/components/shared/ChatInputBar.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/ChatInputBar.tsx",
+      "source_blob": "47f49c87597288254f3b65e47324a75b74d7e6f8",
+      "sha256": "149d3d47b85d5df3797bb095e23a5be41851fa9e799f19769a225342a1c43e5c",
+      "bytes": 5575
+    },
+    {
+      "path": "frontend/src/components/shared/ChatWallpaper.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/ChatWallpaper.tsx",
+      "source_blob": "6bedfbadea2962745e344e420b7d2ad466c84544",
+      "sha256": "aa16ed82705e694c1a793fcd8f8a6c5870f452b96caf2a29750a0f6e4877d294",
+      "bytes": 1379
+    },
+    {
+      "path": "frontend/src/components/shared/CitationsBlock.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/CitationsBlock.tsx",
+      "source_blob": "f6c973b19956d9814f2fc1ad64a092e431dd0f03",
+      "sha256": "8c7fb1c832484ba3d82998dbcbdf3de9c30d481e27c9446c9cea5b04cfe9c0b8",
+      "bytes": 1555
+    },
+    {
+      "path": "frontend/src/components/shared/ConfirmedBadge.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/ConfirmedBadge.tsx",
+      "source_blob": "c926f8f9c704115a712baefe357718309723cba3",
+      "sha256": "831a21d76c929c8f2f802491500e1057035fbec4092f4e4cf772c22169eab567",
+      "bytes": 1073
+    },
+    {
+      "path": "frontend/src/components/shared/DateSeparator.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/DateSeparator.tsx",
+      "source_blob": "5aa891eaad018e99b5abd9533fb9e44c9ff01646",
+      "sha256": "472b99262bdba2c530f0d1569a4dbbaaa69162ef0947f7404349b0c3e8f5f5c5",
+      "bytes": 988
+    },
+    {
+      "path": "frontend/src/components/shared/FilesGizmo.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/FilesGizmo.tsx",
+      "source_blob": "a0f30a70ab380fe796d6ca1a4a54d7a65f365cd0",
+      "sha256": "82cd67bd10014e6bb5857da995d48ccd2cb2d74580f2827d401e82ffcdc64c28",
+      "bytes": 1204
+    },
+    {
+      "path": "frontend/src/components/shared/SuggestedResponseCard.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/SuggestedResponseCard.tsx",
+      "source_blob": "3ce959b184119f7348ff87eaa477decd55c4142b",
+      "sha256": "c726b69522d769310533b0fb95a570cc707dc55ca7411c882b914636895cbeef",
+      "bytes": 1147
+    },
+    {
+      "path": "frontend/src/components/shared/ThoughtIndicator.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/ThoughtIndicator.tsx",
+      "source_blob": "d335ed94f1141a7a0d43a957eea82ec36f657fdc",
+      "sha256": "eb839471e16b092c7bae12effe1dc0f4e94918fb36b3e6f4e9798cc0f82754df",
+      "bytes": 1536
+    },
+    {
+      "path": "frontend/src/components/shared/ToolTrailCollapsible.tsx",
+      "source_path": "lean-mvp/frontend/src/components/shared/ToolTrailCollapsible.tsx",
+      "source_blob": "bc3c00d1b0f92fa53ad3eb374d63b5d920704a1e",
+      "sha256": "24c3ff2d1779fc6871cf1f3d6ec1a7b389f50b486de3a0e93dccc27068723233",
+      "bytes": 4226
+    },
+    {
+      "path": "frontend/src/components/ui/badge.tsx",
+      "source_path": "lean-mvp/frontend/src/components/ui/badge.tsx",
+      "source_blob": "12daad7dcdb0091a814ff09aa257681a3f42d18c",
+      "sha256": "95cf3d2d616ddab5b094db4f67306f2eacb8de23977ec08df6c9c2d4eb38ace2",
+      "bytes": 1127
+    },
+    {
+      "path": "frontend/src/components/ui/button.tsx",
+      "source_path": "lean-mvp/frontend/src/components/ui/button.tsx",
+      "source_blob": "05ebfbd1a92fb2f5c3467d62b9670627e357cd80",
+      "sha256": "01d3b36cee710f56109c7006eb20845708e121e3fce234f7f9a750dc423f13c7",
+      "bytes": 1848
+    },
+    {
+      "path": "frontend/src/components/ui/card.tsx",
+      "source_path": "lean-mvp/frontend/src/components/ui/card.tsx",
+      "source_blob": "e0e550365e22e48071e216cf65639b1c2f1d1933",
+      "sha256": "1b46c611e2fbcebc7192f8b47111b5febae14b97c04881a7622a7d515a7c3a70",
+      "bytes": 1861
+    },
+    {
+      "path": "frontend/src/contexts/DictionaryContext.tsx",
+      "source_path": "lean-mvp/frontend/src/contexts/DictionaryContext.tsx",
+      "source_blob": "8763c454dac2c397d6aa507632778e3722b131c2",
+      "sha256": "7aad57714bf1656063786f99399509ae7c6ce4f5377db6a2210ae1ce622d4c7d",
+      "bytes": 809
+    },
+    {
+      "path": "frontend/src/dictionaries/en.json",
+      "source_path": "lean-mvp/frontend/src/dictionaries/en.json",
+      "source_blob": "9374dcf69bd925bf111832507a37c0704f79b8f5",
+      "sha256": "38fdacb60c2442be6c1c85f32a0817981ad8c3e135205f2e4158339c9e9ee002",
+      "bytes": 27269
+    },
+    {
+      "path": "frontend/src/dictionaries/es.json",
+      "source_path": "lean-mvp/frontend/src/dictionaries/es.json",
+      "source_blob": "f985cbf882a3d2f0c7972b98c42db681f09b340e",
+      "sha256": "3be0f611b5f4f0c0b2c7d09f584a2cd0bc2dd9895bde42f8149525e54e7bc9a8",
+      "bytes": 29098
+    },
+    {
+      "path": "frontend/src/hooks/AppStringsContext.tsx",
+      "source_path": "lean-mvp/frontend/src/hooks/AppStringsContext.tsx",
+      "source_blob": "b47f378629ad72995e2040dc1f9d425991240fb5",
+      "sha256": "cef3a1677299985ba6e9ec18242682e98634ca6725f30063b4bd3748df5c44b0",
+      "bytes": 38665
+    },
+    {
+      "path": "frontend/src/hooks/useTranslation.ts",
+      "source_path": "lean-mvp/frontend/src/hooks/useTranslation.ts",
+      "source_blob": "8cbfb36ab3e1e184f6dac5bc01e72724ecbca05d",
+      "sha256": "1fafe9f94fb102bfdb6e0bd62fe7ab6a52982e52c072861f65c4dd73650fc1c5",
+      "bytes": 11775
+    },
+    {
+      "path": "frontend/src/lib/agent/chat-engine.ts",
+      "source_path": "lean-mvp/frontend/src/lib/agent/chat-engine.ts",
+      "source_blob": "a932bfd7f140c82344b952d9dffd40aff306cd2a",
+      "sha256": "0ff5611820806be6468390dd184f4b40b86fd882cd973ebd43b5ceaa539d47e2",
+      "bytes": 12052
+    },
+    {
+      "path": "frontend/src/lib/agent/mock-data.ts",
+      "modified": true,
+      "release_sha256": "28bfb5c0f96104c7073b9b479676f25131488f6985c9d4d34a72444ae99dbb6c",
+      "release_bytes": 12491
+    },
+    {
+      "path": "frontend/src/lib/agent/types.ts",
+      "source_path": "lean-mvp/frontend/src/lib/agent/types.ts",
+      "source_blob": "517709d0041aab8071a76f29e19530be822246f4",
+      "sha256": "03caec9484b27e9fed17b6c2d99f3bfe44bf7afba348270632142d92f6142378",
+      "bytes": 7377
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "source_path": "lean-mvp/frontend/src/lib/api.ts",
+      "source_blob": "709c6f8465d2cfb11e13ff3f15dc9bc477a21f67",
+      "sha256": "50f7fd3cac298fe0978d2c4fb2ae6c6e1af1a6bc0847e9861534ef5c1fdf0f7f",
+      "bytes": 8142
+    },
+    {
+      "path": "frontend/src/lib/i18n.ts",
+      "source_path": "lean-mvp/frontend/src/lib/i18n.ts",
+      "source_blob": "70a20175daf319c6143d4a82fad54c2ea040727f",
+      "sha256": "134ef40d04a7bae554787325835c61c622699ea73804bc6e186c2ff204ec4594",
+      "bytes": 1200
+    },
+    {
+      "path": "frontend/src/lib/i18n/index.tsx",
+      "source_path": "lean-mvp/frontend/src/lib/i18n/index.tsx",
+      "source_blob": "abfc4b5339c4a4440b152a2db3977c4ef1ea43cf",
+      "sha256": "6c55737b1b24303b890e6f33f0c61963c8a267b0665d73dc520954ce0ae863e8",
+      "bytes": 10381
+    },
+    {
+      "path": "frontend/src/lib/shared/colors.ts",
+      "source_path": "lean-mvp/frontend/src/lib/shared/colors.ts",
+      "source_blob": "17ff094fd27aef379d6428564821d3eaba057843",
+      "sha256": "a1fe8e7cfbd1a2dacdd9187c6306f32ea6a9f2ccb52776537655c18e17e0bd52",
+      "bytes": 4609
+    },
+    {
+      "path": "frontend/src/lib/types.ts",
+      "source_path": "lean-mvp/frontend/src/lib/types.ts",
+      "source_blob": "92b9d02abef20a96d8ef742705977afe21c50f69",
+      "sha256": "25c7e63884f10bfbca20d5ead99464630e0dbc5f348beaa102362ccb0b5cd2fe",
+      "bytes": 11107
+    },
+    {
+      "path": "frontend/src/lib/utils.ts",
+      "source_path": "lean-mvp/frontend/src/lib/utils.ts",
+      "source_blob": "396a02ec17e0156da5cb7957e8b7a91aea71f70c",
+      "sha256": "befbec2d8cd6e0971d06964c7e5105a5616541f1962c84e879f424760b87464e",
+      "bytes": 1646
+    },
+    {
+      "path": "frontend/src/middleware.ts",
+      "omitted": true
+    },
+    {
+      "path": "frontend/src/types/html2pdf.d.ts",
+      "source_path": "lean-mvp/frontend/src/types/html2pdf.d.ts",
+      "source_blob": "52ade1aa6dc8d18add0da33e0f39131e20fddac7",
+      "sha256": "69608d06e4ca8fbeb2beb0a9abc53cebed1a43cb5d0607a4d2df823befbfc553",
+      "bytes": 600
+    },
+    {
+      "path": "frontend/src/types/renovation-v2.ts",
+      "source_path": "lean-mvp/frontend/src/types/renovation-v2.ts",
+      "source_blob": "0c5840cd239970740d650e00865f0c3f062424d2",
+      "sha256": "7b1d8bf51c144141a00dff10eda2363a7a4f259f8d687384a200f5700d8c1203",
+      "bytes": 5417
+    },
+    {
+      "path": "frontend/src/types/renovation.ts",
+      "source_path": "lean-mvp/frontend/src/types/renovation.ts",
+      "source_blob": "4f1e1a8dd8095597bb4f689ecfaf95e4ea5f1bef",
+      "sha256": "7fb737840e5a061082cbbe7235cedcb68eb35fd96aab040ca4500d1f8bab6d2c",
+      "bytes": 2345
+    },
+    {
+      "path": "frontend/tailwind.config.ts",
+      "source_path": "lean-mvp/frontend/tailwind.config.ts",
+      "source_blob": "65c6ffe00fc685207ccf36d7e0faee49abf013fb",
+      "sha256": "331fc403c1d27ee8ecc7d8186616182f5cc293946e9eb1799c36d919c8558582",
+      "bytes": 1657
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "modified": true,
+      "release_sha256": "fb8dab2900d0cd8a3c57fd085763410220de9dc8c514d5e86d04abfe16d5cacd",
+      "release_bytes": 702
+    },
+    {
+      "path": "supabase/migrations/0005_boq_line_items_provenance.sql",
+      "source_path": "lean-mvp/supabase/migrations/0005_boq_line_items_provenance.sql",
+      "source_blob": "af10d1bfc3f03bf843b491d54ad86df581a3c012",
+      "sha256": "e6bb4cb9e71431788e3ff9aed918453458292772c7eb7e018be28a6afcf29a42",
+      "bytes": 4344
+    },
+    {
+      "path": "supabase/migrations/007_due_diligence_research.sql",
+      "source_path": "lean-mvp/supabase/migrations/007_due_diligence_research.sql",
+      "source_blob": "dfd2273b0e99e6ea94caba0050ba21d3bfdda7df",
+      "sha256": "d1d7e07b4232440503a83ad1ad6fb91a733274cad08679cc2cff0ec4862b0b00",
+      "bytes": 3067
+    },
+    {
+      "path": "supabase/migrations/007_property_intelligence_reports.sql",
+      "source_path": "lean-mvp/supabase/migrations/007_property_intelligence_reports.sql",
+      "source_blob": "c7f4ce75574e3d2b59eb9f7decad3497175727cf",
+      "sha256": "4ad31e4b2ff7c619be452c17225071c4ca5ef1691f43609b7c7a5721f84ec5f2",
+      "bytes": 7617
+    },
+    {
+      "path": "supabase/migrations/008_comparables_tables.sql",
+      "source_path": "lean-mvp/supabase/migrations/008_comparables_tables.sql",
+      "source_blob": "527f7026da9596db2e2f82fee7ab79f4db7b56ce",
+      "sha256": "2cc24b3da94b2422f60ca818e481b8d6a74d47be6f0ffc248478640fa84add91",
+      "bytes": 7268
+    },
+    {
+      "path": "supabase/migrations/009_comparables_tables.sql",
+      "source_path": "lean-mvp/supabase/migrations/009_comparables_tables.sql",
+      "source_blob": "900f535d3ffd2d2e06ddbf510b2fa5ec5ae405c2",
+      "sha256": "0646967cce13a97fce27e800e3bcb53c376fe63eb03826678b3cbab4769c2274",
+      "bytes": 6322
+    },
+    {
+      "path": "supabase/migrations/009_v048_tables.sql",
+      "source_path": "lean-mvp/supabase/migrations/009_v048_tables.sql",
+      "source_blob": "c0ab636b2fb9ff94ba4c108cb16bc70f7e868707",
+      "sha256": "48bbb77a4a7e81c3cd0c22b553c16ac3f354c2671b287826c284de6548124fc4",
+      "bytes": 7787
+    },
+    {
+      "path": "supabase/migrations/010_v05_schema_updates.sql",
+      "source_path": "lean-mvp/supabase/migrations/010_v05_schema_updates.sql",
+      "source_blob": "fca98e78c3f2427ca3ddc12d800d47e352aa9fb3",
+      "sha256": "fdec0c97e200faca36e469ce67de1630f22c22d0e8d2ae7774d94565a4c6f4a2",
+      "bytes": 4006
+    },
+    {
+      "path": "supabase/migrations/011_v1_pipeline_schema.sql",
+      "source_path": "lean-mvp/supabase/migrations/011_v1_pipeline_schema.sql",
+      "source_blob": "7b92130715ace22d731a74186a99a2630e82ceda",
+      "sha256": "b88a87fb937135b6c84bdd496763fde296eadfd44f185ca2742cf27739d8350a",
+      "bytes": 13402
+    },
+    {
+      "path": "supabase/migrations/020_create_comparable_image_cache.sql",
+      "source_path": "lean-mvp/supabase/migrations/020_create_comparable_image_cache.sql",
+      "source_blob": "4c4f540f38d4c0868bec9779e495d49607849adc",
+      "sha256": "99a2132cb056cfefab29e46a035297e0559286cb7b4d6d8c73b52fa08eb567a7",
+      "bytes": 1494
+    },
+    {
+      "path": "supabase/migrations/021_add_casafari_raw_response_columns.sql",
+      "source_path": "lean-mvp/supabase/migrations/021_add_casafari_raw_response_columns.sql",
+      "source_blob": "16ac694675ce3c06dc0d21bd8ba1a2c9522431f9",
+      "sha256": "e0a58d8077f9c9c13b1625535c4c079a00ece181232560f5d770fc3bc674c757",
+      "bytes": 311
+    },
+    {
+      "path": "supabase/migrations_legacy/007_due_diligence_research.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/007_due_diligence_research.sql",
+      "source_blob": "dfd2273b0e99e6ea94caba0050ba21d3bfdda7df",
+      "sha256": "d1d7e07b4232440503a83ad1ad6fb91a733274cad08679cc2cff0ec4862b0b00",
+      "bytes": 3067
+    },
+    {
+      "path": "supabase/migrations_legacy/007_property_intelligence_reports.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/007_property_intelligence_reports.sql",
+      "source_blob": "c7f4ce75574e3d2b59eb9f7decad3497175727cf",
+      "sha256": "4ad31e4b2ff7c619be452c17225071c4ca5ef1691f43609b7c7a5721f84ec5f2",
+      "bytes": 7617
+    },
+    {
+      "path": "supabase/migrations_legacy/008_comparables_tables.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/008_comparables_tables.sql",
+      "source_blob": "527f7026da9596db2e2f82fee7ab79f4db7b56ce",
+      "sha256": "2cc24b3da94b2422f60ca818e481b8d6a74d47be6f0ffc248478640fa84add91",
+      "bytes": 7268
+    },
+    {
+      "path": "supabase/migrations_legacy/009_comparables_tables.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/009_comparables_tables.sql",
+      "source_blob": "900f535d3ffd2d2e06ddbf510b2fa5ec5ae405c2",
+      "sha256": "0646967cce13a97fce27e800e3bcb53c376fe63eb03826678b3cbab4769c2274",
+      "bytes": 6322
+    },
+    {
+      "path": "supabase/migrations_legacy/009_v048_tables.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/009_v048_tables.sql",
+      "source_blob": "c0ab636b2fb9ff94ba4c108cb16bc70f7e868707",
+      "sha256": "48bbb77a4a7e81c3cd0c22b553c16ac3f354c2671b287826c284de6548124fc4",
+      "bytes": 7787
+    },
+    {
+      "path": "supabase/migrations_legacy/010_v05_schema_updates.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/010_v05_schema_updates.sql",
+      "source_blob": "fca98e78c3f2427ca3ddc12d800d47e352aa9fb3",
+      "sha256": "fdec0c97e200faca36e469ce67de1630f22c22d0e8d2ae7774d94565a4c6f4a2",
+      "bytes": 4006
+    },
+    {
+      "path": "supabase/migrations_legacy/011_v1_pipeline_schema.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/011_v1_pipeline_schema.sql",
+      "source_blob": "7b92130715ace22d731a74186a99a2630e82ceda",
+      "sha256": "b88a87fb937135b6c84bdd496763fde296eadfd44f185ca2742cf27739d8350a",
+      "bytes": 13402
+    },
+    {
+      "path": "supabase/migrations_legacy/020_create_comparable_image_cache.sql",
+      "source_path": "lean-mvp/supabase/migrations_legacy/020_create_comparable_image_cache.sql",
+      "source_blob": "4c4f540f38d4c0868bec9779e495d49607849adc",
+      "sha256": "99a2132cb056cfefab29e46a035297e0559286cb7b4d6d8c73b52fa08eb567a7",
+      "bytes": 1494
+    },
+    {
+      "path": "frontend/public/DOSSIER_DESIGN_REASONING.md",
+      "source_path": "lean-mvp/frontend/public/DOSSIER_DESIGN_REASONING.md",
+      "source_blob": "eb3bb82cabed4a04ddd517a6536989c0a640e58b",
+      "sha256": "9ffb989951a2f157b656aa55834b2f457ca70bd2283abb6ab9dac99c37f3f9e0",
+      "bytes": 3372
+    },
+    {
+      "path": "frontend/public/favicon.ico",
+      "source_path": "lean-mvp/frontend/public/favicon.ico",
+      "source_blob": "db20466719486ea6a33591c813e3da24b8709730",
+      "sha256": "8d5ef5df31ccc344e334a06cd21c79c98185e0663fa94799d4c9358dc8e9da19",
+      "bytes": 316
+    },
+    {
+      "path": "frontend/public/favicon.png",
+      "source_path": "lean-mvp/frontend/public/favicon.png",
+      "source_blob": "9bdad1c8a7baeae0d8aa204020a55dd0873a2ee9",
+      "sha256": "c6f2588daf9bc00277853b37cc71f2535db0cd20631116f4511b67ac4a677c28",
+      "bytes": 820
+    },
+    {
+      "path": "frontend/public/favicon.svg",
+      "source_path": "lean-mvp/frontend/public/favicon.svg",
+      "source_blob": "e80c6960e745486b877e09b52692c4bd449f88c6",
+      "sha256": "e88a877ad1be352fa34ea15748116569f3a5fb200d94c0e0da2627ec62df9e67",
+      "bytes": 259
+    },
+    {
+      "path": "frontend/public/v5-pipeline-flow.html",
+      "source_path": "lean-mvp/frontend/public/v5-pipeline-flow.html",
+      "source_blob": "125379f3bd5e7b9ae7c02f44fc8a296d13b1e016",
+      "sha256": "d7bb4a23e6cb62d64b678cab1939d8fa27ea64377d708c9143de6c6b8d5ab36f",
+      "bytes": 26390
+    },
+    {
+      "path": "docs/history/RENOVATION_PIPELINE_V2.md",
+      "source_path": "docs/RENOVATION_PIPELINE_V2.md",
+      "source_blob": "32dbbe1c29665799fc73783ce94c0f69288d0d83",
+      "sha256": "4132f018754372115756f4a48b8158233628fa329e9fb5b42c2a858bccd1d6e7",
+      "bytes": 37580
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+# frontend/src/components/renovation/NegotiationModal.tsx
+
+[Source](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx)
+
+| Symbol | Kind | Source line |
+|---|---|---|
+| `PhotoLightbox` | VariableDeclaration | [L29](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L29) |
+| `containerRef` | VariableDeclaration | [L30](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L30) |
+| `scaleVal` | VariableDeclaration | [L31](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L31) |
+| `xVal` | VariableDeclaration | [L32](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L32) |
+| `yVal` | VariableDeclaration | [L33](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L33) |
+| `bgOpacity` | VariableDeclaration | [L34](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L34) |
+| `gesture` | VariableDeclaration | [L37](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L37) |
+| `dist` | VariableDeclaration | [L47](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L47) |
+| `springTo` | VariableDeclaration | [L50](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L50) |
+| `spring` | VariableDeclaration | [L51](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L51) |
+| `v` | VariableDeclaration | [L52](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L52) |
+| `current` | VariableDeclaration | [L53](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L53) |
+| `raf` | VariableDeclaration | [L54](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L54) |
+| `step` | VariableDeclaration | [L55](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L55) |
+| `dx` | VariableDeclaration | [L56](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L56) |
+| `springForce` | VariableDeclaration | [L57](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L57) |
+| `dampForce` | VariableDeclaration | [L58](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L58) |
+| `accel` | VariableDeclaration | [L59](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L59) |
+| `handleTouchStart` | VariableDeclaration | [L73](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L73) |
+| `g` | VariableDeclaration | [L74](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L74) |
+| `handleTouchMove` | VariableDeclaration | [L88](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L88) |
+| `g` | VariableDeclaration | [L89](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L89) |
+| `startDist` | VariableDeclaration | [L92](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L92) |
+| `curDist` | VariableDeclaration | [L93](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L93) |
+| `newScale` | VariableDeclaration | [L94](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L94) |
+| `dx` | VariableDeclaration | [L97](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L97) |
+| `dy` | VariableDeclaration | [L98](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L98) |
+| `s` | VariableDeclaration | [L99](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L99) |
+| `handleTouchEnd` | VariableDeclaration | [L109](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L109) |
+| `g` | VariableDeclaration | [L110](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L110) |
+| `s` | VariableDeclaration | [L121](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L121) |
+| `y` | VariableDeclaration | [L122](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L122) |
+| `handleTap` | VariableDeclaration | [L134](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L134) |
+| `now` | VariableDeclaration | [L135](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L135) |
+| `g` | VariableDeclaration | [L136](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L136) |
+| `current` | VariableDeclaration | [L139](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L139) |
+| `NegotiationIssue` | InterfaceDeclaration | [L188](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L188) |
+| `NegotiationData` | InterfaceDeclaration | [L195](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L195) |
+| `NegotiationModalProps` | InterfaceDeclaration | [L214](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L214) |
+| `RoomPhotosMap` | TypeAliasDeclaration | [L220](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L220) |
+| `eur` | VariableDeclaration | [L224](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L224) |
+| `pickPhoto` | VariableDeclaration | [L230](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L230) |
+| `rid` | VariableDeclaration | [L232](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L232) |
+| `urls` | VariableDeclaration | [L233](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L233) |
+| `collectPhotos` | VariableDeclaration | [L240](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L240) |
+| `out` | VariableDeclaration | [L242](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L242) |
+| `rid` | VariableDeclaration | [L243](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L243) |
+| `url` | VariableDeclaration | [L244](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L244) |
+| `NegotiationPanel` | VariableDeclaration | [L252](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L252) |
+| `photosMap` | VariableDeclaration | [L259](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L259) |
+| `texts` | VariableDeclaration | [L268](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L268) |
+| `issue` | VariableDeclaration | [L271](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L271) |
+| `tip` | VariableDeclaration | [L275](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L275) |
+| `doIt` | VariableDeclaration | [L281](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L281) |
+| `map` | VariableDeclaration | [L282](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L282) |
+| `t` | VariableDeclaration | [L283](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L283) |
+| `t` | VariableDeclaration | [L291](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L291) |
+| `targetPrice` | VariableDeclaration | [L293](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L293) |
+| `savings` | VariableDeclaration | [L296](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L296) |
+| `savingsPct` | VariableDeclaration | [L297](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L297) |
+| `tips` | VariableDeclaration | [L298](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L298) |
+| `photos` | VariableDeclaration | [L328](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L328) |
+| `photo` | VariableDeclaration | [L369](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L369) |
+| `NegotiationModal` | VariableDeclaration | [L433](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L433) |
+| `fetchData` | VariableDeclaration | [L442](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L442) |
+| `resp` | VariableDeclaration | [L446](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L446) |
+| `json` | VariableDeclaration | [L447](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L447) |
+| `prev` | VariableDeclaration | [L466](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L466) |
+| `handleKeyDown` | VariableDeclaration | [L472](../../../../../../../frontend/src/components/renovation/NegotiationModal.tsx#L472) |

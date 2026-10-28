@@ -1,0 +1,77 @@
+{
+  "calculation_source": {
+    "pricing/bcca_price_lookup.py": {
+      "git_blob": "240f9fe56b2f3eb26baa428ece761754e86e5d00",
+      "sha256": "b74fc476770bb9e73f2d63ab4e854e141db3587ca9414f08cbbf441a3142d804"
+    },
+    "pricing/measurement_catalog_v4.py": {
+      "git_blob": "452791bc955bbe6f6eb683dfd200ee633b9a4d51",
+      "sha256": "34166345a10748a29be001ecc6c46bcc161258e83dab22e128141bca6e1a5b06"
+    },
+    "pricing/quantity_formula_v4.py": {
+      "git_blob": "27a2e1a4eb293635398849bbf1179fa75d516549",
+      "sha256": "235b6ad057175fbdc4a956a4694f9f446f6ddbf57b662250be9fc18ad6056e04"
+    },
+    "pricing/v4_quantification_pipeline.py": {
+      "git_blob": "6c0306069a8d14a2f0b6d7d32830202a83998b94",
+      "sha256": "a7b8c818f0e4b9977bed5b2a804685f3d0e89c24774836298180f1106b79f707"
+    }
+  },
+  "fixture": "authored-synthetic-v1",
+  "labor_hours": 7.4,
+  "line_items": [
+    {
+      "bcca_code": "SYNTH-FLOOR-M2",
+      "description": "Synthetic floor finish",
+      "item_kind": "v4",
+      "labor_hours": 6.0,
+      "line_total": 240.0,
+      "provenance": {
+        "formula_ast": {
+          "op": "SIGNAL",
+          "signal_id": "area_synthetic_floor_m2"
+        },
+        "match_mode": "authored-synthetic-price-book",
+        "pipeline": "v4",
+        "signals_used": [
+          "area_synthetic_floor_m2"
+        ],
+        "v4_dimension": "surface_finishes",
+        "work_item_id": "floor"
+      },
+      "quantity": 12.0,
+      "room_id": "synthetic-room",
+      "room_name": "synthetic-room",
+      "system": "flooring",
+      "unit": "m2",
+      "unit_price": 20.0
+    },
+    {
+      "bcca_code": "SYNTH-SKIRT-ML",
+      "description": "Synthetic skirting",
+      "item_kind": "v4",
+      "labor_hours": 1.4000000000000001,
+      "line_total": 70.0,
+      "provenance": {
+        "formula_ast": {
+          "op": "SIGNAL",
+          "signal_id": "perimetro_synthetic_room_ml"
+        },
+        "match_mode": "authored-synthetic-price-book",
+        "pipeline": "v4",
+        "signals_used": [
+          "perimetro_synthetic_room_ml"
+        ],
+        "v4_dimension": "surface_finishes",
+        "work_item_id": "skirting"
+      },
+      "quantity": 14.0,
+      "room_id": "synthetic-room",
+      "room_name": "synthetic-room",
+      "system": "flooring",
+      "unit": "ml",
+      "unit_price": 5.0
+    }
+  ],
+  "pem_subtotal": 310.0
+}

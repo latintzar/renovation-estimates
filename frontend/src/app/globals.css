@@ -1,0 +1,327 @@
+/* Same original type families, self-hosted under SIL Open Font License 1.1. */
+@font-face { font-family: 'Source Sans 3'; src: url('/fonts/SourceSans3-variable.ttf') format('truetype'); font-weight: 300 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Playfair Display'; src: url('/fonts/PlayfairDisplay-variable.ttf') format('truetype'); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Playfair Display'; src: url('/fonts/PlayfairDisplay-Italic-variable.ttf') format('truetype'); font-weight: 400 700; font-style: italic; font-display: swap; }
+:root { --font-sans: 'Source Sans 3'; --font-serif: 'Playfair Display'; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   LEAN MVP STYLES
+   Mobile-first design system for property intelligence
+   ============================================================================ */
+
+:root {
+  /* Colors */
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+  --ring: #22c55e;
+  
+  /* Domain colors */
+  --idealista: #00b140;
+  --fotocasa: #ff6b35;
+  --universal: #6366f1;
+  
+  /* Spacing */
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --muted: #171717;
+    --muted-foreground: #a3a3a3;
+    --border: #262626;
+  }
+}
+
+/* ============================================================================
+   BASE STYLES
+   ============================================================================ */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), 'Source Sans 3', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Safe area handling for mobile */
+.safe-bottom {
+  padding-bottom: calc(var(--safe-area-bottom) + 1rem);
+}
+
+/* ============================================================================
+   COMPONENTS
+   ============================================================================ */
+
+/* URL Input with domain styling */
+.url-input-wrapper {
+  @apply relative;
+}
+
+.url-input {
+  @apply w-full px-4 py-3 rounded-xl border-2 border-transparent;
+  @apply bg-white/80 backdrop-blur-sm;
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-500;
+  @apply transition-all duration-200;
+}
+
+.url-input.domain-idealista {
+  @apply border-idealista/30 bg-green-50/50;
+}
+
+.url-input.domain-fotocasa {
+  @apply border-fotocasa/30 bg-orange-50/50;
+}
+
+/* Property Card */
+.property-card {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-100;
+  @apply overflow-hidden transition-all duration-200;
+  @apply hover:shadow-md hover:-translate-y-0.5;
+  @apply active:scale-[0.98];
+}
+
+.property-card-image {
+  @apply relative aspect-[4/3] bg-gray-100;
+}
+
+.property-card-content {
+  @apply p-4 space-y-2;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  @apply fixed bottom-0 left-0 right-0;
+  @apply bg-white/80 backdrop-blur-lg border-t border-gray-200;
+  @apply safe-bottom;
+}
+
+.bottom-nav-items {
+  @apply flex justify-around items-center py-2;
+}
+
+.bottom-nav-item {
+  @apply flex flex-col items-center gap-1 px-4 py-2;
+  @apply text-gray-500 transition-colors;
+}
+
+.bottom-nav-item.active {
+  @apply text-brand-600;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+  @apply relative overflow-hidden rounded-xl;
+}
+
+.photo-gallery-main {
+  @apply aspect-[4/3] bg-gray-100;
+}
+
+.photo-gallery-thumbs {
+  @apply flex gap-2 p-2 overflow-x-auto;
+  @apply scrollbar-hide;
+}
+
+.photo-gallery-thumb {
+  @apply w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden;
+  @apply border-2 border-transparent cursor-pointer;
+  @apply transition-all duration-200;
+}
+
+.photo-gallery-thumb.active {
+  @apply border-brand-500;
+}
+
+/* Feature Pills */
+.feature-pill {
+  @apply inline-flex items-center gap-1 px-3 py-1;
+  @apply bg-gray-100 text-gray-700 text-sm rounded-full;
+}
+
+/* Price Badge */
+.price-badge {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+/* Stat Item */
+.stat-item {
+  @apply flex items-center gap-1.5 text-gray-600;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* ============================================================================
+   UTILITIES
+   ============================================================================ */
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Gradient overlays */
+.gradient-fade-bottom {
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 100%);
+}
+
+.gradient-fade-top {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 100%);
+}
+
+/* Touch target sizing */
+.touch-target {
+  @apply min-h-[44px] min-w-[44px];
+}
+
+/* Focus ring */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2;
+}
+
+/* ============================================================================
+   ANIMATIONS
+   ============================================================================ */
+
+/* Cursor-like shimmer for loading states */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Shimmer for skeletons */
+@keyframes shimmer-bg {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--muted) 25%,
+    var(--background) 50%,
+    var(--muted) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-bg 1.5s infinite;
+}
+
+/* Slide in animation for cards */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+/* Staggered animation delay */
+.stagger-1 { animation-delay: 50ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 150ms; }
+.stagger-4 { animation-delay: 200ms; }
+.stagger-5 { animation-delay: 250ms; }
+
+/* AI Gradient Border Animation */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+/* Fullscreen carousel fade-in for image transitions */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Pipeline progress animations */
+@keyframes pulse-ring {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes shimmer-sweep {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes progress-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(41, 37, 36, 0.15); }
+  50% { box-shadow: 0 0 16px rgba(41, 37, 36, 0.3); }
+}
+
+@keyframes text-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes step-enter {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+
+.animate-shimmer-sweep {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer-sweep 2s ease-in-out infinite;
+}
+
+.animate-progress-glow {
+  animation: progress-glow 2s ease-in-out infinite;
+}
+
+.animate-text-fade-in {
+  animation: text-fade-in 0.4s ease-out forwards;
+}
+
+.animate-step-enter {
+  animation: step-enter 0.3s ease-out forwards;
+}
+

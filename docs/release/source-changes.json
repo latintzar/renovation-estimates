@@ -1,0 +1,896 @@
+{
+  "upstream_commit": "4dca5f9bd94a3ee4759dff949f3d185acd095022",
+  "modified": [
+    {
+      "path": "docs/history/archive-README.md",
+      "sha256": "9aae6bb55595d1fd791e6f38a905fb2418f5a18e1e3f7cd22ad07c36a0d57ceb"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d97e141cda24547b0946ea02b77765d18da23f76ab0d3358f9d59d97213fb229"
+    },
+    {
+      "path": "backend/clients/casafari_client.py",
+      "sha256": "5d533e04910b96576b425aa92788a0a1f4603fa9eb2b4fb640a31f7e040e2744"
+    },
+    {
+      "path": "backend/clients/foursquare_client.py",
+      "sha256": "b9b41baa4544d5288e91d07a8e710567d42715fe4a794ba3a2d8265d5059e0fd"
+    },
+    {
+      "path": "backend/clients/overture_client.py",
+      "sha256": "0b53534c4fae5e360eaaae1bd1a81ad70818f3486af2d981d01339b8a98fd06f"
+    },
+    {
+      "path": "backend/clients/transitland_client.py",
+      "sha256": "c6c911fa0c49446dfe18926b0071e1cf474ed70bf232e51a7af9875590ef5dc6"
+    },
+    {
+      "path": "backend/config.py",
+      "sha256": "afca4c3eb0e3ce9db8b5a7a32f31f5d484d34ed6678a392506d05d734d3be0b7"
+    },
+    {
+      "path": "backend/generate_ana_illustrations.py",
+      "sha256": "e8303e8729a29552ddcadfc52a7074f791e9fd47135c16e8f3066ea4997a5209"
+    },
+    {
+      "path": "backend/generate_landing_images.py",
+      "sha256": "f2c84466c19f3008d436051e742833f1aada2619b4a2ee42cb3c717fac8d5181"
+    },
+    {
+      "path": "backend/generate_new_before.py",
+      "sha256": "573c6d200f24f45522e32e711a6cd9d042b5fad5af883604fc8dd312b01ffbdc"
+    },
+    {
+      "path": "backend/generate_room_photos.py",
+      "sha256": "289e089d8bf4f65cf85503fd0e8133dee59375a8bf9f4ef13fa4d236aa93cbbd"
+    },
+    {
+      "path": "backend/generate_scope_images.py",
+      "sha256": "e4237dbcc63606abf0ef641603b7ed16db495ab351100d02be0bec5e4ed03cb2"
+    },
+    {
+      "path": "backend/main.py",
+      "sha256": "45e73fa3d03aadbb68bbe1bfd3c5540d054551ac99ec08d638d931c768146067"
+    },
+    {
+      "path": "backend/pipeline/gemini_client.py",
+      "sha256": "2a19518df3d13a4f359c0e4271d4311de92c4059487d25623ad419852ceb4348"
+    },
+    {
+      "path": "backend/pricing/enrich_kg_quantity_guidance.py",
+      "sha256": "baf841376a5ae1f541b93c54c22274d5f0c4f8868073ddee3b582c0396a4983f"
+    },
+    {
+      "path": "backend/regenerate_landing_images.py",
+      "sha256": "c747606da3b0abbb85e2e8bfc7172ee7de93408af5732b841209087ebc76b165"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "sha256": "d79d23c7a7f0b74305a78906f2740b129252e5162813dfc5dd247fb38461a784"
+    },
+    {
+      "path": "backend/routes/building_context.py",
+      "sha256": "0fc1e17f67d54db017de7ed92de11d9cd2594e8e2b47d49eb927a79e879c2681"
+    },
+    {
+      "path": "backend/routes/cs_chat.py",
+      "sha256": "1d0c3a17d2fb907b23f486370f3d13933b557d0468502f42fbd9c07feb86498e"
+    },
+    {
+      "path": "backend/routes/meta_whatsapp.py",
+      "sha256": "40e98d822ba0def9c8651d3614d4526ce0256f29c6b9b5183637c9f6f90a6ec5"
+    },
+    {
+      "path": "backend/routes/webhooks.py",
+      "sha256": "18fd375ef1cd98a649759a8e4b015618b62542ff51793939e820f891d285334a"
+    },
+    {
+      "path": "backend/run_single_stage.py",
+      "sha256": "4bf149c53c0e77d759a7a687fb853823952fdf192eeec232af815caaf43bcfda"
+    },
+    {
+      "path": "backend/scraper/location_intelligence.py",
+      "sha256": "1306b212132e95c56b4bad09475a4a86acc333b27ddefadff9c1dde587af3b7c"
+    },
+    {
+      "path": "backend/scraper/parsers/gemini_universal.py",
+      "sha256": "9203c32e7fc49ac556007a1f4f75e6708caf671c5fbe5bd7e6af0b3bb8e80b7b"
+    },
+    {
+      "path": "backend/scraper/parsers/url_validator.py",
+      "sha256": "b02076dc201320666dfffa5b88cfc70ab5c5c6f37f61882251b54df0eafa3d73"
+    },
+    {
+      "path": "backend/scripts/cost_optimization_test.py",
+      "sha256": "f7cb334b40423fdbcf6a556f82dacafb8f2266019f2c7fc77a426a7d1bec5543"
+    },
+    {
+      "path": "backend/scripts/gemini_image_gen_smoke.py",
+      "sha256": "0f7d5e75406c59493518f577680c268f17d7bcca27ca48b3461bd11a543dce2a"
+    },
+    {
+      "path": "backend/scripts/gen_vinterior_render.py",
+      "sha256": "3d6151065ba679154f7f08f1435cfaffb4000b6b6c527053943be9775c837142"
+    },
+    {
+      "path": "backend/scripts/model_shootout.py",
+      "sha256": "c26082b517f7423e6cf8e1b60720dc4c15102bc393e080ef55693ca8fd9952e0"
+    },
+    {
+      "path": "backend/scripts/paraphrase_bcca_descriptions.py",
+      "sha256": "e3d1c36cb8c93fc3d94c578bc5193818fb3decf3f2b638fb1ab40278464e9946"
+    },
+    {
+      "path": "backend/scripts/pipeline_health.py",
+      "sha256": "560aead9606683d3d09a7df1848f295d85b45144ae445acf4b83f0fc83a908ee"
+    },
+    {
+      "path": "backend/scripts/renovation_report_smoke.py",
+      "sha256": "2cbb65895830af7ed6ef658902ca3c1596d27e5c9b6ae128ffa918ef6e1ad48d"
+    },
+    {
+      "path": "backend/scripts/research_ffe_expansion.py",
+      "sha256": "7643ce43fc7386e60675828abcb7c5b3175c8b50cd16e840f2cb0e1530e4cd5a"
+    },
+    {
+      "path": "backend/scripts/smoke_delta_bcca_worklist.py",
+      "sha256": "af9dae110af7268a3c68adca06b8c257d2a0f8fba8f04b44e3da435f3cef1dae"
+    },
+    {
+      "path": "backend/scripts/try_houzz_quote_submission.py",
+      "sha256": "df3dbc129b4d1df1795bcc6b54ce26f9e153cd64c81ff2409653ea104d5936dc"
+    },
+    {
+      "path": "backend/scripts/validate_pipeline_listing.py",
+      "sha256": "d238f58f8197a8b0bc01025bdf5ebc2d2da8aba36bbc7a62a9f0709a39069666"
+    },
+    {
+      "path": "backend/services/tour_generator.py",
+      "sha256": "fd906fbdbf3a8553970f8c8a3e43ac9e1e4cf1b3739d571639ab7306974ca595"
+    },
+    {
+      "path": "backend/tools/leo_conference_call.py",
+      "sha256": "2b0ef619ec8dd6ec928e85f3caac19a5defe3eaa8c8add7b6693fb3c0831aef7"
+    },
+    {
+      "path": "backend/tools/leo_email_proxy.py",
+      "sha256": "7ba9e3dfb3f046522c4de8e7237eca554d86f0927053068c7bd086bace679223"
+    },
+    {
+      "path": "backend/tools/leo_webhook_handler.py",
+      "sha256": "beeb23b501d4fd06f6920a0bce651a352303aa7f0146089c644c9317dea9b239"
+    },
+    {
+      "path": "backend/utils/google_search.py",
+      "sha256": "480c5fa53e167a6d3d5e03519212a223795c259d009ec359708376069dfdcd36"
+    },
+    {
+      "path": "backend/whatsapp/README.md",
+      "sha256": "b9c75915d50999aa556cfcf778c8170d948d86229584aafeddd826e96f6b90ec"
+    },
+    {
+      "path": "backend/whatsapp/agent.py",
+      "sha256": "8ee695f5c5a9f8053050e69a69d5f1b89a996105569065eb71df82db76fa2917"
+    },
+    {
+      "path": "backend/whatsapp/tools.py",
+      "sha256": "e85fba0c30c9cd087b2ce5d4df691316771bf30f68f54f36798b2e4fdc285132"
+    },
+    {
+      "path": "backend/whatsapp/twilio_client.py",
+      "sha256": "9d22b571fb2579bac0551b277cbdc3de9c16f4f381043f3161abe8073c03b4b6"
+    },
+    {
+      "path": "docs/AGENT_PORTAL_DESIGN.md",
+      "sha256": "c9a3604dbd0c60e0c4d6fc27d8d723adc5927929f7af6ecd03d86c452bef94c5"
+    },
+    {
+      "path": "docs/ANALYSIS_PIPELINE_ARCHITECTURE.md",
+      "sha256": "1d2e802a1fe6c722fe8455f5014752da977c8ff5ee117e6f68a70d3dfe440f01"
+    },
+    {
+      "path": "docs/CLUSTER_PANORAMA_PIPELINE.md",
+      "sha256": "f793f5570b3e02190c139e9a990d5ebe4e49cacc8b709c2f7ba8fd6557895edc"
+    },
+    {
+      "path": "docs/EXTERNAL_DEPENDENCY_AUDIT.md",
+      "sha256": "661fb3cdb21dd9e410fade8937895566fca5ff191bdac43fa7d6f7c5a59713c8"
+    },
+    {
+      "path": "docs/GLB_PIR_WORKFLOW.md",
+      "sha256": "fb56103919536a053a92f6204ac99d31d6712fa4c1a9ffc67a7991792e166f2d"
+    },
+    {
+      "path": "docs/GOOGLE_PLACES_API_DECISION.md",
+      "sha256": "479751a7702897636b54cb30f8128d5510d543da5d268a12579fa955cb0f2e59"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_COMPLETE_ANALYSIS.md",
+      "sha256": "3d105cd569b348db09faf1e550cf1b4e031fdc3754aee26782f7a1253d8ea786"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN_BRACKET_ANALYSIS.md",
+      "sha256": "392d628d0a8df03975b6697b03d43a8fe6a762d31fe1c509e8481f4de908bb92"
+    },
+    {
+      "path": "docs/KG_TRAVERSAL_ARCHITECTURE.md",
+      "sha256": "c747bea778b0b08c9d906d8b34b5439f892c2957169ce6aee0e9ea618fef9713"
+    },
+    {
+      "path": "docs/MARKET_COMPARISON_ARCHITECTURE.md",
+      "sha256": "8060049bad679d6586b8fc846e385bfa0329e42de1bb675fd4dbcedeb6e1d3a6"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_ARCHITECTURE_DECISION.md",
+      "sha256": "8c5bcb1fde695a343b331ab0801da9dad7c7d13523a501e919fad2a383cddb26"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_IMPLEMENTATION_AUDIT.md",
+      "sha256": "b4ee7187ba0fbfe9192c0dd997af7420f539779a43a7f1f1dd8cb1a141b45366"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_MASTER_INDEX.md",
+      "sha256": "5b20e9a05e175e0428d9b16db8a2f8974b7b53aaededd54eaf5bc75880d8065a"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.1.md",
+      "sha256": "eea909c3f4d4f8ea013433ed2329021fe03488106c62a52005f50b6f3641d5fa"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.2_IMPLEMENTATION.md",
+      "sha256": "24cf2d4b1cb344aa3331206795273d513bc6bd18af127f4138b3d92d6f7e848a"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.3.1_KNOWLEDGE_INTEGRATION.md",
+      "sha256": "5cad4a50d2c1b297f443801ad421723605f30e5e811d3c2366fe19613561badd"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.3.2_UNIFIED_PROPERTY_INTELLIGENCE.md",
+      "sha256": "dac6f40644c129935f770dd842df9b5b8cea7b4a372eed940303c69de3ef95a7"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.3_HYBRID_IMPLEMENTATION.md",
+      "sha256": "4e69324c18d7374fb3ba957bcd70cfcc95af3c57e98e39d605c68fda6db7f8ac"
+    },
+    {
+      "path": "docs/PETER_AGENTIC_V0.4_UNIFIED_ESTIMATOR.md",
+      "sha256": "c0de598f721d99f5ddf31f9812401a94cd5172f30c342534117805f3d2432f3b"
+    },
+    {
+      "path": "docs/PIPELINE_CHANGELOG_ROOM_TAGS_SLOTS_V1.md",
+      "sha256": "de85d7f554f5d21265f532fc75f2c56a612706c7c304e8b615e66a935d4d830f"
+    },
+    {
+      "path": "docs/PIPELINE_V1_ARCHITECTURE.md",
+      "sha256": "7183b1d14648aad8c10dde9a182e39019f60f6ea2675094c78323ed8b8a8475c"
+    },
+    {
+      "path": "docs/PIPELINE_V1_PROMPTS.md",
+      "sha256": "8588043c8d8887451145eb72215599022be8db77faf0c650afacb3a2b4a15d8e"
+    },
+    {
+      "path": "docs/PIPELINE_V5_IMPLEMENTATION_PLAN_SINGLE_STRATEGY.md",
+      "sha256": "aa8cf42b237f287838419a91b2441df90fd7b52da7658f5c420c183fbca78f5f"
+    },
+    {
+      "path": "docs/PIPELINE_V5_READINESS_CHECKLIST.md",
+      "sha256": "83c1b8de9c2123333006a78c6eaa17b854d8365e5fcf074585e8d3b6ac855863"
+    },
+    {
+      "path": "docs/PLACE_CURATION_V2.md",
+      "sha256": "4d932bb0d34e34548009f4d40668c111f8c54236d8ea96279c6dbd8b5947ca60"
+    },
+    {
+      "path": "docs/PROPERTY_HOOD_TOUR_ARCHITECTURE.md",
+      "sha256": "e91d803d49774c3c43961b80b880880d29b72ceb06125def420c874e2107882c"
+    },
+    {
+      "path": "docs/RENOVATION_PIPELINE_INDEX.md",
+      "sha256": "e72ba9a9d033f01c97124407068cd1a659efca108ac28fc42fb66dcfeaf8d5a5"
+    },
+    {
+      "path": "docs/RENOVATION_PIPELINE_V3_PLAN.md",
+      "sha256": "da797055ea7389eacb24143876e6d86d70f493dcde29095f84e2f28164eca885"
+    },
+    {
+      "path": "docs/ROOM_TAGS_SLOTS_GSO_V1.md",
+      "sha256": "d9ec72d4f62bfcaf56669718746f92f2438d766bdbd2258cc8fe508ddb1fefcd"
+    },
+    {
+      "path": "docs/SLOTS_BY_ROOM_TYPE_V1.md",
+      "sha256": "5304710c3e981d43fd1c8103823196a00c9154b5bc215de8c54c41a3fd05456e"
+    },
+    {
+      "path": "docs/V1_IMPLEMENTATION_HANDOFF.md",
+      "sha256": "24809056fedfd5546c79cb028991cbf81be2c546878d36e1da63e1a0423ae38e"
+    },
+    {
+      "path": "docs/V1_IMPLEMENTATION_PLAN.md",
+      "sha256": "265be666f116149f9d901062302db4b52005095ec25b8b918f1dbbebb1fd831a"
+    },
+    {
+      "path": "docs/V1_RECHECKS.md",
+      "sha256": "90cc536b1622a8b2c537c89079d06c0aa12935238da08b14d885c835102e8f00"
+    },
+    {
+      "path": "docs/V1_SCHEMA_SPECIFICATION.md",
+      "sha256": "7c2e71f0700162b5e0d94c84cd543e2c3d115e06ffdbf07e8f437570ebfe75d0"
+    },
+    {
+      "path": "docs/V3_QUALITY_FIX_PLAN.md",
+      "sha256": "31adaf8c6e58b7220dbc5473442ebc0915ac7b09dfcffeb7c2681f9b7250e438"
+    },
+    {
+      "path": "docs/V3_TECH_DEBT_AUDIT.md",
+      "sha256": "d557011eaebfb4721044a137b96fda5cbfae9f4c3d7b9a90e9bc609f0ed5e75f"
+    },
+    {
+      "path": "docs/V5_SLOTS_PIPELINE_IMPLEMENTATION_PLAN.md",
+      "sha256": "9f9bbd6bf3354c61a98dfe3e5bcad0cc667776686ca6441e9796bc74876f6df4"
+    },
+    {
+      "path": "frontend/next-env.d.ts",
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "frontend/next.config.mjs",
+      "sha256": "d102263329a77c340e43dd11d00139a9b6f787e443feb7732dd3e647c97e3404"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "sha256": "5d2307501e30da1b521d5ceb56f6f33da095d8b3be3a7ae1c8c6ebf7e58bacb1"
+    },
+    {
+      "path": "frontend/package.json",
+      "sha256": "e6fb5d13a4d23ff0d09ca512fa5e034889ae9b62fb59a5144d6135b4e137f183"
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/photo-clusters/route.ts",
+      "sha256": "62ca5e693338b49c7c91367c32377fab1de131a011c11171f9535b402f9d944e"
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/photos/route.ts",
+      "sha256": "379ece631a551cc86685d8e97a9cd8643e28b05b19892c63f2ed1d32465776ed"
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/room-analyses/route.ts",
+      "sha256": "6c485c67c1f5f496ffcacec4638818051c1592e1fa96fd1173437060cab53d56"
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/route.ts",
+      "sha256": "dbc2eb19afe061dba2de6f76c2ed810d95074b51a4895671172ab6013cad877b"
+    },
+    {
+      "path": "frontend/src/app/api/listings/[id]/run-pipeline/route.ts",
+      "sha256": "a20c62707e12a91bc133511549d478eb9f257db3e300aff4b02c45715620dc04"
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "sha256": "9bcb11925284633be53ffe231d5fd17703f49b9d6b0074bf1a0edf36c5dd0bee"
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "sha256": "11a6586f7cd22d7b95d34f9579ef277f49c3f71d3c0a32cfb91880745580d4a5"
+    },
+    {
+      "path": "frontend/src/components/renovation/OfficialBudgetReport.tsx",
+      "sha256": "d75cbac9cba034a0eb2944d1114c3c13e041b7600cab27c89f248b63e74fe4db"
+    },
+    {
+      "path": "frontend/src/lib/agent/mock-data.ts",
+      "sha256": "28bfb5c0f96104c7073b9b479676f25131488f6985c9d4d34a72444ae99dbb6c"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "sha256": "fb8dab2900d0cd8a3c57fd085763410220de9dc8c514d5e86d04abfe16d5cacd"
+    }
+  ],
+  "omitted": [
+    "backend/scripts/bcca_paraphrase_log.txt",
+    "backend/scripts/cluster_villa_romer.py",
+    "backend/scripts/extract_je_gallery.py",
+    "backend/scripts/extract_je_photos.py",
+    "backend/scripts/fb_auth_scraper.py",
+    "backend/scripts/fb_investigate.py",
+    "backend/scripts/fb_local_scrape.py",
+    "backend/scripts/fb_vacuum.py",
+    "backend/scripts/ffe_research_gemini3pro.txt",
+    "backend/scripts/ffe_research_results.txt",
+    "backend/scripts/final_cross_ref.py",
+    "backend/scripts/forum_discovery_test.py",
+    "backend/scripts/forum_discovery_v2_test.py",
+    "backend/scripts/habitissimo_supply_discovery.py",
+    "backend/scripts/houzz_trades_scrape.py",
+    "backend/scripts/ludicrous_cascade.py",
+    "backend/scripts/ludicrous_cascade_marbella.py",
+    "backend/scripts/ludicrous_cascade_v2.py",
+    "backend/scripts/ludicrous_cascade_v3.py",
+    "backend/scripts/parallel_inspired_test.py",
+    "backend/scripts/research_proof.py",
+    "backend/scripts/research_proof_shower.py",
+    "backend/scripts/research_proof_sofia_shower.py",
+    "backend/scripts/research_v2_sofia.py",
+    "backend/scripts/research_v3_sofia.py",
+    "backend/scripts/research_v4_london_boiler.py",
+    "backend/scripts/research_v4_sofia.py",
+    "backend/scripts/research_v5_finsbury_boiler.py",
+    "backend/scripts/research_v5_universal.py",
+    "backend/scripts/review_richness_probe.py",
+    "backend/scripts/scrape_and_cluster_villa.py",
+    "backend/scripts/scrape_villa_romer.py",
+    "backend/scripts/transcribe_cold_call.py",
+    "frontend/.eslintrc.json",
+    "frontend/src/app/[lang]/FlipperLandingClient.tsx",
+    "frontend/src/app/[lang]/LandingPageClient.deprecated.tsx",
+    "frontend/src/app/[lang]/layout.tsx",
+    "frontend/src/app/[lang]/opengraph-image.tsx",
+    "frontend/src/app/[lang]/page.tsx",
+    "frontend/src/app/[lang]/twitter-image.tsx",
+    "frontend/src/app/agent/DEPRECATED.md",
+    "frontend/src/app/agent/activity/page.tsx",
+    "frontend/src/app/agent/layout.tsx",
+    "frontend/src/app/agent/onboard/[id]/page.tsx",
+    "frontend/src/app/agent/page.tsx",
+    "frontend/src/app/agent/settings/page.tsx",
+    "frontend/src/app/cookies/page.tsx",
+    "frontend/src/app/estimate/page.tsx",
+    "frontend/src/app/opengraph-image.tsx",
+    "frontend/src/app/pitch/PitchClient.tsx",
+    "frontend/src/app/pitch/components/AnimatedCounter.tsx",
+    "frontend/src/app/pitch/components/ArchDiagram.tsx",
+    "frontend/src/app/pitch/components/CallBridge.tsx",
+    "frontend/src/app/pitch/components/CostWalkthrough.tsx",
+    "frontend/src/app/pitch/components/DecisionDiamond.tsx",
+    "frontend/src/app/pitch/components/EmailArc.tsx",
+    "frontend/src/app/pitch/components/FunnelViz.tsx",
+    "frontend/src/app/pitch/components/ImageAnalysisOverlay.tsx",
+    "frontend/src/app/pitch/components/LogFeed.tsx",
+    "frontend/src/app/pitch/components/MiniFilm.tsx",
+    "frontend/src/app/pitch/components/MoodboardChat.tsx",
+    "frontend/src/app/pitch/components/POVTransition.tsx",
+    "frontend/src/app/pitch/components/PageScanViz.tsx",
+    "frontend/src/app/pitch/components/PhoneScene.tsx",
+    "frontend/src/app/pitch/components/PipelineFlow.tsx",
+    "frontend/src/app/pitch/components/PriceScatterChart.tsx",
+    "frontend/src/app/pitch/components/ResearchJourney.tsx",
+    "frontend/src/app/pitch/components/Section.tsx",
+    "frontend/src/app/pitch/components/SourceAnnotation.tsx",
+    "frontend/src/app/pitch/components/TimelineChat.tsx",
+    "frontend/src/app/pitch/components/TokenMeter.tsx",
+    "frontend/src/app/pitch/components/TradeCard.tsx",
+    "frontend/src/app/pitch/components/TrustStackViz.tsx",
+    "frontend/src/app/pitch/components/TypewriterChat.tsx",
+    "frontend/src/app/pitch/components/URLBurst.tsx",
+    "frontend/src/app/pitch/hooks/useScrollSection.ts",
+    "frontend/src/app/pitch/page.tsx",
+    "frontend/src/app/privacy/page.tsx",
+    "frontend/src/app/profile/page.tsx",
+    "frontend/src/app/terms/page.tsx",
+    "frontend/src/app/twitter-image.tsx",
+    "frontend/src/middleware.ts"
+  ],
+  "added": [
+    ".env.example",
+    ".github/workflows/check.yml",
+    ".gitignore",
+    "AGENTS.md",
+    "LICENSE",
+    "Makefile",
+    "NOTICE",
+    "RELEASE-STATUS.md",
+    "SECURITY.md",
+    "THIRD-PARTY-NOTICES.md",
+    "docs/architecture.md",
+    "docs/assets/README.md",
+    "docs/assets/capture-interface.py",
+    "docs/assets/estimate-report-desktop.png",
+    "docs/assets/estimate-report-phone.png",
+    "docs/assets/import-desktop.png",
+    "docs/assets/import-phone.png",
+    "docs/assets/listings-desktop.png",
+    "docs/assets/listings-phone.png",
+    "docs/assets/proof.json",
+    "docs/decisions.md",
+    "docs/dependency-licenses.json",
+    "docs/provenance.md",
+    "docs/providers.md",
+    "docs/reference/README.md",
+    "docs/reference/modules/backend/__init__.py.md",
+    "docs/reference/modules/backend/clients/__init__.py.md",
+    "docs/reference/modules/backend/clients/casafari_client.py.md",
+    "docs/reference/modules/backend/clients/foursquare_client.py.md",
+    "docs/reference/modules/backend/clients/geoapify_isochrone.py.md",
+    "docs/reference/modules/backend/clients/google_places_client.py.md",
+    "docs/reference/modules/backend/clients/overture_client.py.md",
+    "docs/reference/modules/backend/clients/streetview_client.py.md",
+    "docs/reference/modules/backend/clients/transitland_client.py.md",
+    "docs/reference/modules/backend/config.py.md",
+    "docs/reference/modules/backend/database.py.md",
+    "docs/reference/modules/backend/generate_ana_illustrations.py.md",
+    "docs/reference/modules/backend/generate_landing_images.py.md",
+    "docs/reference/modules/backend/generate_new_before.py.md",
+    "docs/reference/modules/backend/generate_room_photos.py.md",
+    "docs/reference/modules/backend/generate_scope_images.py.md",
+    "docs/reference/modules/backend/main.py.md",
+    "docs/reference/modules/backend/pipeline/__init__.py.md",
+    "docs/reference/modules/backend/pipeline/cadastre_client.py.md",
+    "docs/reference/modules/backend/pipeline/gemini_client.py.md",
+    "docs/reference/modules/backend/pipeline/gla_stages.py.md",
+    "docs/reference/modules/backend/pipeline/prompts/condition_assessment_v2.py.md",
+    "docs/reference/modules/backend/pipeline/prompts/rule_verification.py.md",
+    "docs/reference/modules/backend/pipeline/prompts/scope_mapper_v2.py.md",
+    "docs/reference/modules/backend/pipeline/prompts/uniclass_assessment.py.md",
+    "docs/reference/modules/backend/pipeline/schemas/gap_analysis.py.md",
+    "docs/reference/modules/backend/pipeline/schemas/property_intelligence.py.md",
+    "docs/reference/modules/backend/pipeline/schemas/renovation.py.md",
+    "docs/reference/modules/backend/pipeline/steps/__init__.py.md",
+    "docs/reference/modules/backend/pipeline/steps/cluster_photos.py.md",
+    "docs/reference/modules/backend/pipeline/steps/cluster_photos_v5.py.md",
+    "docs/reference/modules/backend/pipeline/steps/map_to_scope.py.md",
+    "docs/reference/modules/backend/pipeline/steps/smart_m2.py.md",
+    "docs/reference/modules/backend/pipeline/steps/visuals.py.md",
+    "docs/reference/modules/backend/pipeline/utils/glb_utils.py.md",
+    "docs/reference/modules/backend/pipeline/v032_orchestrator.py.md",
+    "docs/reference/modules/backend/pipeline/v5_stages.py.md",
+    "docs/reference/modules/backend/pricing/__init__.py.md",
+    "docs/reference/modules/backend/pricing/bcca_embedding_matcher.py.md",
+    "docs/reference/modules/backend/pricing/bcca_price_lookup.py.md",
+    "docs/reference/modules/backend/pricing/coverage_ledger.py.md",
+    "docs/reference/modules/backend/pricing/delta_scope_generator.py.md",
+    "docs/reference/modules/backend/pricing/embedding_runtime.py.md",
+    "docs/reference/modules/backend/pricing/enrich_kg_quantity_guidance.py.md",
+    "docs/reference/modules/backend/pricing/flatten_bcca.py.md",
+    "docs/reference/modules/backend/pricing/flatten_kg.py.md",
+    "docs/reference/modules/backend/pricing/gla_opinion.py.md",
+    "docs/reference/modules/backend/pricing/image_cache.py.md",
+    "docs/reference/modules/backend/pricing/measurement_catalog_v4.py.md",
+    "docs/reference/modules/backend/pricing/multi_phase_estimator_v1.py.md",
+    "docs/reference/modules/backend/pricing/phase_prompts_v1.py.md",
+    "docs/reference/modules/backend/pricing/pir_generator.py.md",
+    "docs/reference/modules/backend/pricing/prompts/gla/__init__.py.md",
+    "docs/reference/modules/backend/pricing/prompts/gla/opinion_room.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/__init__.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/age_context.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/comparable_selector.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/decompose_work_items.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/delta_cross_room_review.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/delta_slots.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/pir_comparable_home.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/pir_target_room.py.md",
+    "docs/reference/modules/backend/pricing/prompts/v5/strategy_targets.py.md",
+    "docs/reference/modules/backend/pricing/quantity_formula_v4.py.md",
+    "docs/reference/modules/backend/pricing/quantity_resolver.py.md",
+    "docs/reference/modules/backend/pricing/room_inference.py.md",
+    "docs/reference/modules/backend/pricing/schemas/__init__.py.md",
+    "docs/reference/modules/backend/pricing/schemas/estimation_error.py.md",
+    "docs/reference/modules/backend/pricing/schemas/gemini_schemas_v1.py.md",
+    "docs/reference/modules/backend/pricing/schemas/gemini_schemas_v2.py.md",
+    "docs/reference/modules/backend/pricing/schemas/gemini_schemas_v3.py.md",
+    "docs/reference/modules/backend/pricing/schemas/gemini_schemas_v4.py.md",
+    "docs/reference/modules/backend/pricing/schemas/gemini_schemas_v5.py.md",
+    "docs/reference/modules/backend/pricing/schemas/phase_outputs.py.md",
+    "docs/reference/modules/backend/pricing/schemas/unified_estimate.py.md",
+    "docs/reference/modules/backend/pricing/scripts/build_bcca_dimension_artifacts_v1.py.md",
+    "docs/reference/modules/backend/pricing/scripts/build_bcca_embedding_index.py.md",
+    "docs/reference/modules/backend/pricing/scripts/build_bcca_embedding_index_full.py.md",
+    "docs/reference/modules/backend/pricing/strategy_selector.py.md",
+    "docs/reference/modules/backend/pricing/takeoff_menu.py.md",
+    "docs/reference/modules/backend/pricing/v2_boq_generator.py.md",
+    "docs/reference/modules/backend/pricing/v2_scheduler.py.md",
+    "docs/reference/modules/backend/pricing/v3_boq_generator.py.md",
+    "docs/reference/modules/backend/pricing/v3_delta_scopes.py.md",
+    "docs/reference/modules/backend/pricing/v4_quantification_pipeline.py.md",
+    "docs/reference/modules/backend/pricing/v5_architect_report.py.md",
+    "docs/reference/modules/backend/pricing/v5_comparable_selector.py.md",
+    "docs/reference/modules/backend/pricing/v5_comparable_standard.py.md",
+    "docs/reference/modules/backend/pricing/v5_eli5.py.md",
+    "docs/reference/modules/backend/pricing/v5_negotiation.py.md",
+    "docs/reference/modules/backend/pricing/v5_pir.py.md",
+    "docs/reference/modules/backend/pricing/v5_room_images.py.md",
+    "docs/reference/modules/backend/pricing/v5_room_tags.py.md",
+    "docs/reference/modules/backend/pricing/v5_room_types.py.md",
+    "docs/reference/modules/backend/pricing/v5_run_market_standard.py.md",
+    "docs/reference/modules/backend/pricing/v5_slots.py.md",
+    "docs/reference/modules/backend/pricing/v5_strategy_delta_decompose.py.md",
+    "docs/reference/modules/backend/pricing/v5_to_v4_adapter.py.md",
+    "docs/reference/modules/backend/pricing/v5_work_items.py.md",
+    "docs/reference/modules/backend/pricing/worklist_validator.py.md",
+    "docs/reference/modules/backend/regenerate_landing_images.py.md",
+    "docs/reference/modules/backend/routes/__init__.py.md",
+    "docs/reference/modules/backend/routes/admin_routes.py.md",
+    "docs/reference/modules/backend/routes/building_context.py.md",
+    "docs/reference/modules/backend/routes/cs_chat.py.md",
+    "docs/reference/modules/backend/routes/curation_v2.py.md",
+    "docs/reference/modules/backend/routes/listings.py.md",
+    "docs/reference/modules/backend/routes/meta_whatsapp.py.md",
+    "docs/reference/modules/backend/routes/scrape.py.md",
+    "docs/reference/modules/backend/routes/story.py.md",
+    "docs/reference/modules/backend/routes/transcribe.py.md",
+    "docs/reference/modules/backend/routes/translate.py.md",
+    "docs/reference/modules/backend/routes/v2_routes.py.md",
+    "docs/reference/modules/backend/routes/v3_routes.py.md",
+    "docs/reference/modules/backend/routes/webhooks.py.md",
+    "docs/reference/modules/backend/run_single_stage.py.md",
+    "docs/reference/modules/backend/schema.py.md",
+    "docs/reference/modules/backend/scraper/__init__.py.md",
+    "docs/reference/modules/backend/scraper/address_resolver.py.md",
+    "docs/reference/modules/backend/scraper/bot_detection.py.md",
+    "docs/reference/modules/backend/scraper/description_formatter.py.md",
+    "docs/reference/modules/backend/scraper/fetcher.py.md",
+    "docs/reference/modules/backend/scraper/geoapify_geocoder.py.md",
+    "docs/reference/modules/backend/scraper/geocoder.py.md",
+    "docs/reference/modules/backend/scraper/location_intelligence.py.md",
+    "docs/reference/modules/backend/scraper/normalizer.py.md",
+    "docs/reference/modules/backend/scraper/parsers/__init__.py.md",
+    "docs/reference/modules/backend/scraper/parsers/gemini_universal.py.md",
+    "docs/reference/modules/backend/scraper/parsers/idealista.py.md",
+    "docs/reference/modules/backend/scraper/parsers/universal.py.md",
+    "docs/reference/modules/backend/scraper/parsers/url_validator.py.md",
+    "docs/reference/modules/backend/scraper/router.py.md",
+    "docs/reference/modules/backend/scraper/rules.py.md",
+    "docs/reference/modules/backend/scripts/_md_report.py.md",
+    "docs/reference/modules/backend/scripts/audit_v4_matching_deterministic.py.md",
+    "docs/reference/modules/backend/scripts/audit_v4_narrative_to_worklist.py.md",
+    "docs/reference/modules/backend/scripts/build_bcca_whole_dwelling_denylist_v1.py.md",
+    "docs/reference/modules/backend/scripts/build_ffe_database.py.md",
+    "docs/reference/modules/backend/scripts/capture_flipper_listing_screenshots.py.md",
+    "docs/reference/modules/backend/scripts/clear_listing_from_stage.py.md",
+    "docs/reference/modules/backend/scripts/clear_v4_artifacts.py.md",
+    "docs/reference/modules/backend/scripts/cost_optimization_test.py.md",
+    "docs/reference/modules/backend/scripts/crawl_atelier.py.md",
+    "docs/reference/modules/backend/scripts/embed_glb_pir_viewer.py.md",
+    "docs/reference/modules/backend/scripts/enqueue_listing_12_run.py.md",
+    "docs/reference/modules/backend/scripts/enqueue_v2_pipeline_run.py.md",
+    "docs/reference/modules/backend/scripts/export_bcca_index.py.md",
+    "docs/reference/modules/backend/scripts/export_ffe_index.py.md",
+    "docs/reference/modules/backend/scripts/export_v4_artifacts_md.py.md",
+    "docs/reference/modules/backend/scripts/export_v4_postrich_analysis_md.py.md",
+    "docs/reference/modules/backend/scripts/extract_energy_knowledge.py.md",
+    "docs/reference/modules/backend/scripts/extract_interior_design_knowledge.py.md",
+    "docs/reference/modules/backend/scripts/extract_process_knowledge.py.md",
+    "docs/reference/modules/backend/scripts/gate0_export_smart_m2_listing_12.py.md",
+    "docs/reference/modules/backend/scripts/gate0_export_smart_m2_panorama_single_room.py.md",
+    "docs/reference/modules/backend/scripts/gate0_export_smart_m2_single_room.py.md",
+    "docs/reference/modules/backend/scripts/gate0_export_smart_m2_three_rooms.py.md",
+    "docs/reference/modules/backend/scripts/gemini_image_gen_smoke.py.md",
+    "docs/reference/modules/backend/scripts/gen_vinterior_render.py.md",
+    "docs/reference/modules/backend/scripts/generate_bcca_full_index.py.md",
+    "docs/reference/modules/backend/scripts/glb_pir_builder.py.md",
+    "docs/reference/modules/backend/scripts/model_shootout.py.md",
+    "docs/reference/modules/backend/scripts/paraphrase_bcca_descriptions.py.md",
+    "docs/reference/modules/backend/scripts/parse_ffe_research.py.md",
+    "docs/reference/modules/backend/scripts/pipeline_health.py.md",
+    "docs/reference/modules/backend/scripts/probe_glb_indoorgml_lite.py.md",
+    "docs/reference/modules/backend/scripts/qc_delta_bcca_worklist.py.md",
+    "docs/reference/modules/backend/scripts/rasterscan_floorplan.py.md",
+    "docs/reference/modules/backend/scripts/renovation_report_smoke.py.md",
+    "docs/reference/modules/backend/scripts/rerun_from_stage.py.md",
+    "docs/reference/modules/backend/scripts/rerun_v4_bcca_match_rich_and_compare.py.md",
+    "docs/reference/modules/backend/scripts/research_ffe_expansion.py.md",
+    "docs/reference/modules/backend/scripts/run_v2_pipeline.py.md",
+    "docs/reference/modules/backend/scripts/run_v4_all_strategies.py.md",
+    "docs/reference/modules/backend/scripts/run_v4_pricing_from_rich_matches.py.md",
+    "docs/reference/modules/backend/scripts/smoke_delta_bcca_worklist.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v4_quantification.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v4_tail_forage_only_from_v5_work_items.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v4_tail_match_only_from_v5_work_items.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v4_tail_quant_plan_only_from_v5_work_items.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_clustering.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_comparable_pir_v5.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_comparable_selector.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_comparables_snapshot.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_decompose_work_items.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_delta_slots.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_eli5.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_listing_snapshot.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_pir_target_slots.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_room_images.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_room_tags.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_strategy_targets.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_to_v4_tail.py.md",
+    "docs/reference/modules/backend/scripts/smoke_v5_work_items_to_v4_tail.py.md",
+    "docs/reference/modules/backend/scripts/test_houzz.py.md",
+    "docs/reference/modules/backend/scripts/try_houzz_quote_submission.py.md",
+    "docs/reference/modules/backend/scripts/validate_pipeline_listing.py.md",
+    "docs/reference/modules/backend/services/__init__.py.md",
+    "docs/reference/modules/backend/services/curation_service.py.md",
+    "docs/reference/modules/backend/services/tour_executor.py.md",
+    "docs/reference/modules/backend/services/tour_generator.py.md",
+    "docs/reference/modules/backend/services/tour_generator_legacy.py.md",
+    "docs/reference/modules/backend/services/translation_service.py.md",
+    "docs/reference/modules/backend/test_router.py.md",
+    "docs/reference/modules/backend/tests/test_smoke.py.md",
+    "docs/reference/modules/backend/tools/__init__.py.md",
+    "docs/reference/modules/backend/tools/leo_call_transcriber.py.md",
+    "docs/reference/modules/backend/tools/leo_conference_call.py.md",
+    "docs/reference/modules/backend/tools/leo_email_proxy.py.md",
+    "docs/reference/modules/backend/tools/leo_webhook_handler.py.md",
+    "docs/reference/modules/backend/utils/__init__.py.md",
+    "docs/reference/modules/backend/utils/google_search.py.md",
+    "docs/reference/modules/backend/whatsapp/__init__.py.md",
+    "docs/reference/modules/backend/whatsapp/agent.py.md",
+    "docs/reference/modules/backend/whatsapp/formatter.py.md",
+    "docs/reference/modules/backend/whatsapp/media.py.md",
+    "docs/reference/modules/backend/whatsapp/message_queue.py.md",
+    "docs/reference/modules/backend/whatsapp/tools.py.md",
+    "docs/reference/modules/backend/whatsapp/twilio_client.py.md",
+    "docs/reference/modules/backend/workers/__init__.py.md",
+    "docs/reference/modules/backend/workers/handlers.py.md",
+    "docs/reference/modules/backend/workers/pipeline_worker.py.md",
+    "docs/reference/modules/frontend/src/app/admin/gla-detail.tsx.md",
+    "docs/reference/modules/frontend/src/app/admin/page.tsx.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/[id]/clear-from-stage/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/[id]/comparables/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/[id]/delete/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/[id]/gla-detail/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/[id]/resume/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/[id]/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/[id]/stop/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/listings/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/pipeline-version/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/resume-all/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/runs/[runId]/costs/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/runs/[runId]/logs/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/runs/[runId]/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/runs/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/admin/stop-all/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/comparables/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/negotiation/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/photo-clusters/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/photos/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/room-analyses/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/run-pipeline/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/[id]/translations/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/listings/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/renovation/[id]/comparables/brackets/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/renovation/[id]/v048/packages/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/renovation/[id]/v048/status/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/scrape/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/scrape/validate/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/translate/batch/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/translate/languages/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/translate/listing/route.ts.md",
+    "docs/reference/modules/frontend/src/app/api/translate/text/route.ts.md",
+    "docs/reference/modules/frontend/src/app/confirm/page.tsx.md",
+    "docs/reference/modules/frontend/src/app/first-estimate/page.tsx.md",
+    "docs/reference/modules/frontend/src/app/layout.tsx.md",
+    "docs/reference/modules/frontend/src/app/listing/[id]/layout.tsx.md",
+    "docs/reference/modules/frontend/src/app/listing/[id]/opengraph-image.tsx.md",
+    "docs/reference/modules/frontend/src/app/listing/[id]/page.tsx.md",
+    "docs/reference/modules/frontend/src/app/listings/page.tsx.md",
+    "docs/reference/modules/frontend/src/app/providers.tsx.md",
+    "docs/reference/modules/frontend/src/app/run-status/page.tsx.md",
+    "docs/reference/modules/frontend/src/app/sitemap.ts.md",
+    "docs/reference/modules/frontend/src/components/BeforeAfter.tsx.md",
+    "docs/reference/modules/frontend/src/components/BottomNav.tsx.md",
+    "docs/reference/modules/frontend/src/components/LanguageToggle.tsx.md",
+    "docs/reference/modules/frontend/src/components/ListingBottomNav.tsx.md",
+    "docs/reference/modules/frontend/src/components/ListingReview.tsx.md",
+    "docs/reference/modules/frontend/src/components/ListingReviewMode.tsx.md",
+    "docs/reference/modules/frontend/src/components/MapModal.tsx.md",
+    "docs/reference/modules/frontend/src/components/PasteLinkModal.tsx.md",
+    "docs/reference/modules/frontend/src/components/PlaceCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/PropertyCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/UrlInput.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/CompletionSummary.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/ContactCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/DocumentCards.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/FileDropZone.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/InteractiveFloorPlan.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/InventoryList.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/PhotoClusterGrid.tsx.md",
+    "docs/reference/modules/frontend/src/components/agent/PropertySummaryCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/buyer-intelligence/ComplexitySlider.tsx.md",
+    "docs/reference/modules/frontend/src/components/buyer-intelligence/ReferencesOverlay.tsx.md",
+    "docs/reference/modules/frontend/src/components/index.ts.md",
+    "docs/reference/modules/frontend/src/components/landing/AgentContent.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/BuyerAgentsContent.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/BuyersContent.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/HomebuyerContent.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/RelocationContent.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/RentersContent.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/content-data.ts.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/AgentVignettes.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/BuyersVignettes.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/ChecklistVisuals.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/ClientPortalMockup.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/CompactVignettes.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/HeroVisuals.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/Isochrones.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/LandingImages.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/LifeStagesVisual.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/MarketingMockups.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/MicroMockups.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/RelocationVignettes.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/RenovationTiersMockup.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/illustrations/index.ts.md",
+    "docs/reference/modules/frontend/src/components/landing/phone-mockups.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/HowItWorks.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/RentersHowItWorks.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionBenefits.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionCTA.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionCallout.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionChecklist.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionFeatureCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionHero.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionHowItWorks.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/SectionTestimonials.tsx.md",
+    "docs/reference/modules/frontend/src/components/landing/sections/index.ts.md",
+    "docs/reference/modules/frontend/src/components/landing/waveform/VoiceWaveform.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/BeforeAfterSlider.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/BracketAnalysisModal.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/ComparableCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/ComparableDetailModal.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/ComparablesCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/ComparablesMap.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/ComparablesTab.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/NegotiationModal.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/OfficialBudgetReport.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/ShareModal.tsx.md",
+    "docs/reference/modules/frontend/src/components/renovation/index.ts.md",
+    "docs/reference/modules/frontend/src/components/shared/ActionCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/BubbleTail.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/ChatBubble.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/ChatInputBar.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/ChatWallpaper.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/CitationsBlock.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/ConfirmedBadge.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/DateSeparator.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/FilesGizmo.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/SuggestedResponseCard.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/ThoughtIndicator.tsx.md",
+    "docs/reference/modules/frontend/src/components/shared/ToolTrailCollapsible.tsx.md",
+    "docs/reference/modules/frontend/src/components/ui/badge.tsx.md",
+    "docs/reference/modules/frontend/src/components/ui/button.tsx.md",
+    "docs/reference/modules/frontend/src/components/ui/card.tsx.md",
+    "docs/reference/modules/frontend/src/contexts/DictionaryContext.tsx.md",
+    "docs/reference/modules/frontend/src/hooks/AppStringsContext.tsx.md",
+    "docs/reference/modules/frontend/src/hooks/useTranslation.ts.md",
+    "docs/reference/modules/frontend/src/lib/agent/chat-engine.ts.md",
+    "docs/reference/modules/frontend/src/lib/agent/mock-data.ts.md",
+    "docs/reference/modules/frontend/src/lib/agent/types.ts.md",
+    "docs/reference/modules/frontend/src/lib/api.ts.md",
+    "docs/reference/modules/frontend/src/lib/i18n.ts.md",
+    "docs/reference/modules/frontend/src/lib/i18n/index.tsx.md",
+    "docs/reference/modules/frontend/src/lib/shared/colors.ts.md",
+    "docs/reference/modules/frontend/src/lib/types.ts.md",
+    "docs/reference/modules/frontend/src/lib/utils.ts.md",
+    "docs/reference/modules/frontend/src/proxy.ts.md",
+    "docs/reference/modules/frontend/src/types/renovation-v2.ts.md",
+    "docs/reference/modules/frontend/src/types/renovation.ts.md",
+    "docs/reference/modules/tools/export-first-result.py.md",
+    "docs/reference/modules/tools/first-estimate.py.md",
+    "docs/reference/modules/tools/link-gate.py.md",
+    "docs/reference/modules/tools/runtime-env.py.md",
+    "docs/reference/modules/tools/source-reference.py.md",
+    "docs/reference/symbols.json",
+    "docs/release/source-baseline.json",
+    "docs/release/source-changes.json",
+    "docs/setup.md",
+    "docs/workflows.md",
+    "frontend/eslint.config.mjs",
+    "frontend/public/fonts/PlayfairDisplay-Italic-variable.ttf",
+    "frontend/public/fonts/PlayfairDisplay-variable.ttf",
+    "frontend/public/fonts/SourceSans3-variable.ttf",
+    "frontend/public/fonts/playfairdisplay-OFL.txt",
+    "frontend/public/fonts/provenance.json",
+    "frontend/public/fonts/sourcesans3-OFL.txt",
+    "frontend/src/app/first-estimate/page.tsx",
+    "frontend/src/fixtures/first-estimate.json",
+    "frontend/src/proxy.ts",
+    "requirements-first-result.txt",
+    "tests/test_first_estimate.py",
+    "tests/test_runtime_env.py",
+    "third_party/provenance.json",
+    "third_party/shadcn-ui-LICENSE.txt",
+    "tools/README-first-estimate.md",
+    "tools/export-first-result.py",
+    "tools/first-estimate.py",
+    "tools/link-gate.py",
+    "tools/runtime-env.py",
+    "tools/source-reference.mjs",
+    "tools/source-reference.py"
+  ]
+}

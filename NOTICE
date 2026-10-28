@@ -1,0 +1,8 @@
+Renovation estimates
+Original source copyright Peter Neyra; MIT.
+Derived from latintzar/leo-archive commit 4dca5f9bd94a3ee4759dff949f3d185acd095022.
+
+Playfair Display and Source Sans3 font bytes retain SIL Open Font License 1.1.
+Their copyright/permission notices and source hashes are in frontend/public/fonts.
+Installed package dependencies retain their own licences; npm package lock records
+the exact dependency tree. Third-party input data is outside this code licence.

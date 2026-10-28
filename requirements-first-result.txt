@@ -1,0 +1,4 @@
+# Complete external import closure exercised by tools/first-estimate.py.
+# NumPy is imported by the original matcher module; this proof does not instantiate it.
+numpy==2.1.3
+pydantic==2.10.4

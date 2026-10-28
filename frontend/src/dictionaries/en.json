@@ -1,0 +1,623 @@
+{
+  "meta": {
+    "lang": "en",
+    "langName": "English"
+  },
+  "shared": {
+    "nav": {
+      "logo": "Leo.casa",
+      "howLeoWorks": "How Leo works",
+      "forRenters": "Renters",
+      "forBuyers": "Buyers",
+      "forProfessionals": "Professionals",
+      "signIn": "Sign in",
+      "talkToLeo": "Talk to Leo"
+    },
+    "toggle": {
+      "renting": "Renting",
+      "buying": "Buying",
+      "buyerAgents": "Personal Shoppers",
+      "relocation": "Relocation"
+    },
+    "footer": {
+      "copyright": "© 2025 Leo.casa — Your AI home advisor.",
+      "privacy": "Privacy",
+      "cookies": "Cookies",
+      "faqs": "FAQs",
+      "contact": "Contact",
+      "terms": "Terms"
+    },
+    "proLink": "I help others find a place →",
+    "forProfessionals": {
+      "title": "For professionals",
+      "description": "Whether you're a buyer agent or relocation specialist, Leo helps you deliver exceptional service at scale.",
+      "buyerAgents": {
+        "label": "For Personal Shoppers",
+        "title": "Let Leo handle client taste and property analysis",
+        "description": "Leo interviews your clients, learns their lifestyle and trade-offs, helps you build smarter shortlists, and prepares viewing checklists.",
+        "cta": "Learn more"
+      },
+      "relocation": {
+        "label": "For Relocation & DSP",
+        "title": "Standardise housing needs across all your relocations",
+        "description": "Leo interviews each assignee or family, turns their lifestyle into a clear housing profile, and helps you shortlist options that work first time.",
+        "cta": "Learn more"
+      }
+    }
+  },
+  "renters": {
+    "hero": {
+      "eyebrow": "For people renting in the city",
+      "headline": "Tell Leo how you live — he finds rentals worth rearranging your day for.",
+      "subcopy": "Leo learns your routine, your budget, the streets you love and the things you can't stand. He scans new listings across agencies and portals and only sends you places that actually feel like 'you'.",
+      "primaryCta": "Talk to Leo about your next move",
+      "secondaryCta": "See how Leo works"
+    },
+    "howItWorks": {
+      "title": "How Leo fits into your next move",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Tell Leo how you live",
+          "description": "Share where you need to be, how you get around, what kind of buildings you like, and what you're done settling for.",
+          "detail": "You can type or talk — Leo asks the questions that make your \"dream flat\" more than just filters."
+        },
+        {
+          "number": 2,
+          "title": "Get rentals worth leaving the sofa for",
+          "description": "Leo tracks new listings as they appear on agency sites and portals.",
+          "detail": "When something matches your lifestyle, your budget, and your taste, you get:",
+          "bullets": [
+            "the link to the listing",
+            "a quick note on why it fits",
+            "the phone or WhatsApp contact to book a viewing fast."
+          ]
+        },
+        {
+          "number": 3,
+          "title": "View, react, and let Leo sharpen your taste",
+          "description": "After seeing a place, you send Leo:",
+          "bullets": [
+            "a quick \"how it felt\"",
+            "a couple of notes",
+            "optional photos from your visit"
+          ],
+          "detail": "Leo learns from every reaction and quietly adjusts what he's looking for, where he's looking, and how he reads images for the next round."
+        }
+      ]
+    },
+    "whatLeoChecks": {
+      "title": "What Leo pays attention to before you spend a Saturday on a viewing",
+      "categories": [
+        {
+          "name": "City & access",
+          "description": "Real transport isochrones for transit, bike, and walking",
+          "items": [
+            "Distance to your work or campus",
+            "How you'd actually get there (walking, transit, bike)",
+            "Connection to places you go most often — gym, friends, sports, nightlife"
+          ]
+        },
+        {
+          "name": "Street & building",
+          "description": "Neighbourhood context and building condition",
+          "items": [
+            "Traffic and street noise",
+            "Nearby bars and terraces",
+            "General feel of the block and entrance",
+            "Floor level and lift vs stairs"
+          ]
+        },
+        {
+          "name": "Look & feel",
+          "description": "AI visual analysis of listing photos",
+          "items": [
+            "Likely natural light in the main rooms",
+            "Whether the layout feels open or fragmented",
+            "Signs of staging vs actual lived-in space",
+            "Overall vibe from listing photos"
+          ]
+        },
+        {
+          "name": "Age & structure",
+          "description": "Cadastro search and typical issues",
+          "items": [
+            "Building year and construction type from cadastro",
+            "Known issues for buildings of that era (aluminosis, asbestos)",
+            "ITE status and recent inspections",
+            "Community complaints and neighbourhood reputation"
+          ]
+        }
+      ],
+      "callout": "You don't have to guess from thumbnails. Leo reads the data, the photos, and the context to decide what's worth your time."
+    },
+    "viewingDay": {
+      "title": "On viewing day, you focus on how it feels. Leo learns from what you notice.",
+      "description": "When you go see a place, your job is simple: notice how it feels to be there.",
+      "afterViewing": "After the viewing, you send Leo:",
+      "bullets": [
+        "a quick rating on how much it felt like \"home\"",
+        "some notes on what you liked or didn't (light, noise, layout, area)",
+        "any photos you took that show the reality"
+      ],
+      "detail": "Leo uses all this to adjust what he recommends next, so each round of places feels closer to what you actually want, not what you thought you wanted on paper.",
+      "cta": "See an example feedback screen"
+    },
+    "movingProfile": {
+      "title": "One profile that follows you between flats",
+      "description": "Most portals forget you the moment you sign a lease. Leo does the opposite.",
+      "detail": "Every move teaches Leo more about how you live:",
+      "bullets": [
+        "which kinds of streets actually suit you",
+        "which layouts you keep rejecting",
+        "where you're willing to compromise"
+      ],
+      "actions": [
+        "**start a search** when you're thinking of moving",
+        "**pause** when you've found a place",
+        "**reactivate** next time life changes and you're ready to move again"
+      ],
+      "callout": "Whether it's your second rental or your seventh, you don't have to explain yourself from scratch.",
+      "pauseTitle": "Your search is paused",
+      "pauseDescription": "Leo's keeping your preferences warm until you're ready.",
+      "resumeButton": "Resume search"
+    },
+    "whoThisIsFor": {
+      "title": "Who Leo helps most when renting",
+      "items": [
+        "People tired of scrolling through hundreds of identical listings",
+        "People with specific routines or hobbies that normal filters can't capture",
+        "People changing neighbourhoods or cities who want to avoid nasty surprises",
+        "People who expect to move again and want a smarter way to do it each time"
+      ],
+      "cta": "Start with a short chat"
+    },
+    "testimonials": {
+      "title": "What renters say about using Leo",
+      "quotes": [
+        "It felt like having a friend who already knew which flats were obviously wrong for me.",
+        "The first batch of places already made more sense than weeks on portals.",
+        "Telling Leo what I didn't like after a viewing helped me understand my own taste.",
+        "Next time I move, I don't start from scratch again — that's the best part."
+      ],
+      "cta": "Talk to Leo"
+    },
+    "finalCta": {
+      "title": "Ready to find your next place?",
+      "description": "I'll help you understand what you really need and find flats that fit your life.",
+      "buttonText": "Talk to Leo"
+    }
+  },
+  "buyers": {
+    "hero": {
+      "eyebrow": "For people buying a home",
+      "headline": "Tell Leo how you live — get homes worth viewing and a checklist for every serious visit.",
+      "subcopy": "Leo learns what \"home\" means to you, scans new listings, and flags the ones that fit your life. For each place you take seriously, he prepares a viewing checklist so you know what to check, what to ask, and what might cost you later.",
+      "primaryCta": "Talk to Leo about your search",
+      "secondaryCta": "See an example viewing checklist"
+    },
+    "howItWorks": {
+      "title": "A clearer way to go from \"maybe\" to \"let's buy it\"",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Share how you live and what your home should unlock",
+          "description": "You tell Leo:",
+          "bullets": [
+            "where you want to be",
+            "how you get around the city",
+            "who's going to live there",
+            "what you want this change to move in your life"
+          ],
+          "detail": "Leo turns that into a clear picture of what you need from a home — not just how many bedrooms."
+        },
+        {
+          "number": 2,
+          "title": "Get homes that match your life, not just your filters",
+          "description": "Leo scans new listings and surfaces the ones that:",
+          "bullets": [
+            "fit your budget and target areas",
+            "align with your daily routine and lifestyle",
+            "have layouts and light that match how you actually use space"
+          ],
+          "detail": "You get:",
+          "secondBullets": [
+            "the link to the listing",
+            "the agent's contact",
+            "a short note on why this one is worth a closer look."
+          ]
+        },
+        {
+          "number": 3,
+          "title": "For each serious candidate, get a custom viewing checklist",
+          "description": "When a place looks promising, Leo prepares a checklist specific to:",
+          "bullets": [
+            "the building's age and type",
+            "what can be inferred from legal and public data",
+            "the street, neighbourhood, and surroundings",
+            "your renovation appetite and long-term plans"
+          ],
+          "detail": "So you don't just \"take a look\" — you walk in knowing exactly what to pay attention to."
+        }
+      ]
+    },
+    "whatLeoLooksInto": {
+      "title": "What Leo considers before you walk into a potential home",
+      "categories": [
+        {
+          "name": "The building and its history",
+          "items": [
+            "Approximate year and construction type",
+            "Clues from official records about size and use",
+            "Signs that future works might be coming"
+          ]
+        },
+        {
+          "name": "The flat itself",
+          "items": [
+            "Likely light in the main rooms",
+            "Relationship between rooms (flow, usability, privacy)",
+            "Floor level and trade-offs (noise vs stairs vs lift)"
+          ]
+        },
+        {
+          "name": "The surroundings",
+          "items": [
+            "Daily access to work, school, or key places in your life",
+            "Street character and likely noise patterns",
+            "General feel of the immediate area"
+          ]
+        },
+        {
+          "name": "Your plans",
+          "items": [
+            "Whether the place seems to fit \"as is\" or might need changes",
+            "Whether the layout seems friendly to typical renovations",
+            "How the home might feel for you in a few years, not just move-in day"
+          ]
+        }
+      ],
+      "callout": "The goal isn't to replace professionals or official checks — it's to help you focus your energy on a smaller set of homes that are actually worth digging into."
+    },
+    "viewingChecklist": {
+      "title": "What you walk in with when you use Leo",
+      "description": "For each home you're seriously considering, Leo prepares a checklist structured around:",
+      "bullets": [
+        "**What to look at** in each key room",
+        "**What to pay attention to** in the building and street",
+        "**What to ask** the agent or owner",
+        "**What to note down** for comparing later"
+      ],
+      "reflects": [
+        "the specifics of that property",
+        "the type of risks most common in that kind of building or area",
+        "your tolerance for work and change"
+      ],
+      "detail": "You can open it on your phone during the viewing and check things off as you go, adding your own notes and photos.",
+      "cta": "See an example"
+    },
+    "afterViewing": {
+      "title": "After the viewing, Leo helps you compare and decide",
+      "description": "Once you've seen a place, you can:",
+      "bullets": [
+        "log whether it felt like a serious contender",
+        "note what you liked and what bothered you",
+        "attach photos showing important details"
+      ],
+      "leoActions": [
+        "updates how he scores future homes",
+        "helps you compare candidates on the things that matter to you",
+        "highlights patterns emerging in what you keep accepting or rejecting"
+      ],
+      "detail": "Over time, the homes you're shown align more with the reality of your choices, not just your initial description."
+    },
+    "renovationHelp": {
+      "title": "When a place \"almost\" works, Leo can help you explore options",
+      "description": "If you're open to doing some work, you can ask Leo to sketch out a few renovation paths, like:",
+      "paths": [
+        "a minimal refresh to make it liveable",
+        "a comfort upgrade to match your lifestyle",
+        "a more transformative project if the structure allows"
+      ],
+      "leoSketches": [
+        "what would change in the space",
+        "how it might affect the way you use the home",
+        "a rough idea of cost and complexity"
+      ],
+      "callout": "This doesn't replace architects or contractors — it gives you a clearer starting point to discuss with them.",
+      "cta": "Talk to Leo about a property you're considering"
+    },
+    "whoThisIsFor": {
+      "title": "Who Leo is built for when buying",
+      "items": [
+        "People who don't want to fall in love with a listing before understanding its realities",
+        "People who'd rather see fewer homes, better-matched, than every possible option",
+        "People who want checklists and structured notes, but not a dry spreadsheet",
+        "People who care as much about day-to-day life in the home as about the price"
+      ]
+    },
+    "testimonials": {
+      "title": "What buyers say",
+      "quotes": [
+        "The checklist made me feel prepared instead of overwhelmed.",
+        "I quickly realised which types of buildings I should stop wasting energy on.",
+        "Seeing Leo's notes on \"why this matters\" next to my own feelings made decisions much clearer."
+      ],
+      "cta": "Start a conversation with Leo"
+    },
+    "finalCta": {
+      "title": "Ready to find the right home?",
+      "description": "I'll help you understand what you really need and find homes that fit your life.",
+      "buttonText": "Talk to Leo"
+    }
+  },
+  "agents": {
+    "hero": {
+      "eyebrow": "For Personal Shoppers",
+      "headline": "Let Leo handle client taste and property analysis — you focus on the deal and the relationship.",
+      "subcopy": "Leo interviews your clients, learns their lifestyle and trade-offs, helps you build smarter shortlists, and prepares viewing checklists for homes that pass from \"interesting\" to \"let's see it\".",
+      "primaryCta": "Use Leo with a real client",
+      "secondaryCta": "See an example client profile"
+    },
+    "howItWorks": {
+      "title": "A copilot for understanding clients and pre-filtering stock",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Onboard each client with a smarter interview",
+          "description": "You can sit with your client and run through the interview together, or send them a branded link.",
+          "leoCaptures": [
+            "their routines and habits",
+            "how they use their current home",
+            "what they want this change to move in their life",
+            "their non-negotiables and red lines"
+          ],
+          "detail": "The result is a structured profile you can rely on and revisit."
+        },
+        {
+          "number": 2,
+          "title": "Build shortlists that respect their time and yours",
+          "description": "You keep using the portals, agency networks, and off-market channels you already have.",
+          "extensionFeatures": [
+            "pick a client in the extension while browsing",
+            "see a quick fit hint on each listing card for that client",
+            "click \"Send to Leo\" on the few properties worth a closer look"
+          ],
+          "leoActions": [
+            "checks fit against the client's profile",
+            "highlights the main reasons it might work",
+            "flags potential issues to clarify before scheduling a viewing"
+          ],
+          "detail": "You end up with smaller, higher-quality shortlists that are easier to defend and easier for the client to understand."
+        },
+        {
+          "number": 3,
+          "title": "Walk into viewings with shared expectations",
+          "description": "For each serious viewing, Leo prepares:",
+          "bullets": [
+            "a checklist your client can follow",
+            "extra notes you see as the expert"
+          ],
+          "detail": "After the viewing, you both log impressions in the same place, and Leo uses that to refine future recommendations."
+        }
+      ]
+    },
+    "clientProfile": {
+      "title": "From vague brief to clear, living profile",
+      "description": "Instead of relying on a few lines of notes, you see:",
+      "items": [
+        "how they balance location vs space",
+        "how sensitive they are to noise, light, or building age",
+        "how much work they're willing to take on",
+        "which past homes they liked and why"
+      ],
+      "persistence": [
+        "across cities",
+        "across price changes",
+        "across future moves"
+      ],
+      "detail": "You can always refer back to it when questions arise or new options surface.",
+      "cta": "Explore an example profile"
+    },
+    "propertyAnalysis": {
+      "title": "Clear reasons to include or exclude a property",
+      "description": "For each property you send to Leo, you see:",
+      "items": [
+        "a quick fit summary (\"Strong on light and layout, weaker on area\")",
+        "tags for key aspects (quiet, lively, renovation potential, old building, etc.)",
+        "a short \"things to verify\" list before or during the viewing"
+      ],
+      "benefits": [
+        "explain your choices to clients",
+        "compare similar options",
+        "avoid visiting flats that never had a chance"
+      ],
+      "cta": "Try Leo on a current listing"
+    },
+    "viewingDay": {
+      "title": "Make every viewing count",
+      "description": "Before each viewing, you and your client can open the shared checklist for that home.",
+      "clientSees": [
+        "simple prompts about what to look at and feel in each key space",
+        "a few key questions to ask"
+      ],
+      "agentSees": [
+        "the same, plus extra technical prompts",
+        "a space to note details the client might miss"
+      ],
+      "detail": "After the viewing, you both log impressions. Leo notices patterns in what draws them in, what puts them off, and what makes them hesitate — and adjusts future suggestions accordingly."
+    },
+    "renovationLayer": {
+      "title": "Use renovation ideas to open or close options, not to oversell them",
+      "description": "When a property is strong but not quite right \"as is\", Leo can sketch:",
+      "paths": [
+        "a simple improvement plan",
+        "a more ambitious reconfiguration if feasible"
+      ],
+      "leoProvides": [
+        "an overview of what would change",
+        "a rough idea of complexity and timing"
+      ],
+      "agentRole": [
+        "choose which scenarios to show",
+        "filter unrealistic options",
+        "guide your client through real-world constraints with your own network"
+      ]
+    },
+    "whyUse": {
+      "title": "Why personal shoppers build Leo into their process",
+      "items": [
+        "To understand new clients faster and deeper",
+        "To defend their shortlists with clear, structured reasoning",
+        "To waste fewer viewings on flats that were wrong from the start",
+        "To have a single place where feedback, notes, and patterns live",
+        "To differentiate their service with a mix of human judgement and clear analysis"
+      ],
+      "cta": "Talk to Leo about integrating this into your next mandate"
+    },
+    "finalCta": {
+      "title": "Ready to supercharge your practice?",
+      "description": "Leo is ready today. Let's talk about integrating this into your next mandate.",
+      "buttonText": "Talk to Leo"
+    }
+  },
+  "relocation": {
+    "hero": {
+      "eyebrow": "For Relocation Companies and DSPs",
+      "headline": "Let Leo standardise housing needs, so you can focus on visas, onboarding, and families.",
+      "subcopy": "Leo interviews each assignee or family, turns their lifestyle and constraints into a clear housing profile, and helps you shortlist options that are more likely to work on the first round of viewings.",
+      "primaryCta": "Use Leo with an assignee",
+      "secondaryCta": "See an example housing brief"
+    },
+    "howItWorks": {
+      "title": "A consistent housing layer across all your relocations",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Intake: a smarter housing interview",
+          "description": "Leo talks to each assignee or family in a simple, guided conversation.",
+          "briefCaptures": [
+            "where they'll be working or studying",
+            "their commuting preferences",
+            "family composition and space needs",
+            "lifestyle habits (quiet vs lively, car vs transit, hobbies)",
+            "sensitivity to noise, old buildings, stairs, etc."
+          ],
+          "detail": "Each profile uses the same structure, making it easy to compare and assign to the right local consultant."
+        },
+        {
+          "number": 2,
+          "title": "Shortlists that respect both policy and people",
+          "description": "You plug in your usual sources:",
+          "sources": [
+            "corporate housing partners",
+            "agency networks",
+            "portals you already use"
+          ],
+          "leoActions": [
+            "checks fit against the profile",
+            "flags obvious mismatches",
+            "highlights a few reasons each option might work"
+          ],
+          "detail": "This helps you present smaller, better-targeted shortlists from the first contact."
+        },
+        {
+          "number": 3,
+          "title": "Viewings that feel purposeful",
+          "description": "For each property that makes it to a viewing, Leo prepares a simple checklist for the assignee.",
+          "assigneeActions": [
+            "walk through the home with prompts in their language",
+            "log quick impressions during or after the visit"
+          ],
+          "detail": "You see their feedback in a structured way, which helps you adjust the next round of proposals quickly."
+        }
+      ]
+    },
+    "housingBrief": {
+      "title": "From scattered emails to a clear housing profile",
+      "description": "After Leo's interview, you see:",
+      "items": [
+        "key locations (office, school, regular destinations)",
+        "commute time and mode they're comfortable with",
+        "minimum and preferred home features",
+        "neighbourhood tone they're drawn to",
+        "specific sensitivities (stairs, noise, building type, etc.)"
+      ],
+      "briefFeatures": [
+        "can be shared within your team",
+        "stays attached to the assignee over time",
+        "can be reused if they move again or extend their stay"
+      ],
+      "cta": "Preview an example brief"
+    },
+    "localNetwork": {
+      "title": "Help your local partners work with clearer expectations",
+      "description": "When you hand off a case to a local consultant or partner agency, you can attach:",
+      "attachments": [
+        "Leo's housing profile",
+        "a few pre-filtered options with fit notes"
+      ],
+      "partnerBenefits": [
+        "understand the assignee quickly",
+        "propose properties more likely to get accepted",
+        "use their time on viewings and negotiations instead of guesswork"
+      ],
+      "detail": "Over time, you can also see patterns in what certain assignee segments tend to accept or reject in each city."
+    },
+    "feedbackLoop": {
+      "title": "Learn from every move without extra admin",
+      "description": "Every time an assignee:",
+      "actions": [
+        "accepts or rejects a property",
+        "gives feedback after a viewing"
+      ],
+      "leoRecords": "Leo records it in the same structure as the initial brief.",
+      "benefits": [
+        "understand why certain options work consistently better",
+        "refine your guidance for future assignees",
+        "adjust your city playbooks based on real choices, not assumptions"
+      ]
+    },
+    "familyOverlap": {
+      "title": "Finding the family sweet spot",
+      "description": "Leo maps overlapping requirements — commutes, schools, preferences — to find zones that work for everyone."
+    },
+    "whyUse": {
+      "title": "Why relocation companies add Leo to their toolkit",
+      "items": [
+        "To standardise housing intake across many consultants and cities",
+        "To reduce wasted viewings and \"none of these fit me\" moments",
+        "To give assignees a sense of being understood from the start",
+        "To support local partners with clearer, actionable briefs",
+        "To learn systematically from every relocation instead of starting fresh each time"
+      ],
+      "cta": "Talk to Leo about your current workflow"
+    },
+    "finalCta": {
+      "title": "Ready to standardise your housing workflow?",
+      "description": "Leo integrates with your existing process. Let's talk about your workflow.",
+      "buttonText": "Talk to Leo"
+    }
+  },
+  "ui": {
+    "labels": {
+      "min15": "15 min",
+      "transit": "Transit",
+      "bike": "Bike",
+      "walk": "Walk",
+      "eastFacing": "East facing",
+      "morningSun": "Morning sun",
+      "highCeiling": "High ceiling",
+      "livingArea": "Living area",
+      "lightExcellent": "Light: Excellent",
+      "noiseModerate": "Noise: Moderate",
+      "fromListing": "From listing",
+      "cadastro": "Cadastro",
+      "typicalProblems": "Typical problems",
+      "hiddenVices": "Hidden vices",
+      "buildingYear": "Year built",
+      "match": "Match",
+      "fit": "% fit"
+    }
+  }
+}

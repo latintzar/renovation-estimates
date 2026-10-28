@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V5 Pipeline &mdash; Node Graph</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --grid: #252542;
+      --text: #eee;
+      --muted: #888;
+      --target: #3b82f6;
+      --comparable: #a855f7;
+      --reno: #f59e0b;
+      --shared: #6b7280;
+      --v4: #10b981;
+      --node-bg: #16213e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      background-image: 
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: var(--text);
+      font-family: system-ui, sans-serif;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: rgba(26,26,46,.95);
+      backdrop-filter: blur(8px);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      border-bottom: 1px solid #333;
+    }
+    .header h1 { font-size: 16px; }
+    .legend { display: flex; gap: 16px; font-size: 12px; }
+    .legend span { display: flex; align-items: center; gap: 6px; }
+    .legend .dot { width: 12px; height: 12px; border-radius: 3px; }
+
+    .canvas { position: relative; width: 1180px; margin: 20px auto; }
+
+    svg.wires {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: visible;
+    }
+    .wire {
+      fill: none;
+      stroke: var(--muted);
+      stroke-width: 2;
+      opacity: 0.6;
+    }
+    .wire.target { stroke: var(--target); }
+    .wire.comparable { stroke: var(--comparable); }
+    .wire.reno { stroke: var(--reno); }
+    .wire.v4 { stroke: var(--v4); }
+
+    .nodes { position: relative; height: 2600px; }
+
+    .node {
+      background: var(--node-bg);
+      border: 2px solid var(--muted);
+      border-radius: 10px;
+      width: 360px;
+      position: relative;
+    }
+    .node.target { border-color: var(--target); }
+    .node.comparable { border-color: var(--comparable); }
+    .node.reno { border-color: var(--reno); }
+    .node.v4 { border-color: var(--v4); }
+
+    .node-header {
+      padding: 10px 14px;
+      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+    }
+    .node.target .node-header { background: rgba(59,130,246,.12); }
+    .node.comparable .node-header { background: rgba(168,85,247,.12); }
+    .node.reno .node-header { background: rgba(245,158,11,.12); }
+    .node.v4 .node-header { background: rgba(16,185,129,.12); }
+
+    .node-stage {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      background: #333;
+    }
+    .node.target .node-stage { background: var(--target); }
+    .node.comparable .node-stage { background: var(--comparable); }
+    .node.reno .node-stage { background: var(--reno); color: #000; }
+    .node.v4 .node-stage { background: var(--v4); color: #000; }
+
+    .node-body {
+      padding: 12px 14px;
+    }
+    .node-desc {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .node-meta {
+      font-size: 11px;
+      font-family: ui-monospace, monospace;
+      color: #666;
+      background: rgba(0,0,0,.3);
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    .node-meta div { margin: 2px 0; }
+    .node-meta .label { color: #888; }
+    .node-meta .value { color: #aaa; }
+
+    /* Parallel indicator */
+    .parallel {
+      margin-top: 10px;
+      border: 1px dashed currentColor;
+      border-radius: 6px;
+      padding: 8px;
+      opacity: 0.85;
+    }
+    .parallel-header {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .parallel-header::before {
+      content: "\2AE8";
+      font-size: 14px;
+    }
+    .parallel-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .parallel-item {
+      background: rgba(0,0,0,.4);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-family: monospace;
+    }
+
+    /* Ports - TOP and BOTTOM */
+    .port {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--muted);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .port.top { top: -6px; }
+    .port.bottom { bottom: -6px; }
+    .node.target .port { background: var(--target); }
+    .node.comparable .port { background: var(--comparable); }
+    .node.reno .port { background: var(--reno); }
+    .node.v4 .port { background: var(--v4); }
+
+    /* Status bar on left */
+    .status-bar{
+      position:absolute;
+      left:0; top:0; bottom:0;
+      width:8px;
+      border-top-left-radius:10px;
+      border-bottom-left-radius:10px;
+      /* Dual-state bar:
+         - top half: implementation status (code exists)
+         - bottom half: cemented status (tested + locked) */
+      background: linear-gradient(
+        to bottom,
+        var(--impl-color, var(--muted)) 0 50%,
+        var(--cement-color, var(--muted)) 50% 100%
+      );
+    }
+    .status-pending{ background:#334155; }
+    .status-in_progress{ background:#2563eb; }
+    .status-done{ background:#16a34a; }
+    .status-blocked{ background:#dc2626; }
+    .status-warn{ background:#f59e0b; }
+
+    /* Port positioning (top/bottom, multiple) */
+    .port{ left: var(--port-x, 50%); }
+
+    .section-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin: 20px 0 -30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>V5 Pipeline &mdash; Node Graph (mirrors orchestrator)</h1>
+  <div class="legend">
+    <span><div class="dot" style="background:var(--target)"></div> Target</span>
+    <span><div class="dot" style="background:var(--comparable)"></div> Comparable</span>
+    <span><div class="dot" style="background:var(--reno)"></div> Delta/Reno</span>
+    <span><div class="dot" style="background:var(--v4)"></div> V4 tail</span>
+  </div>
+</div>
+
+<div class="canvas">
+  <svg class="wires" id="wires"></svg>
+
+  <div class="nodes" id="nodes">
+
+    <!-- A: Fetch Listing -->
+    <div class="node target" id="node-A" style="position:absolute; left:410px; top:40px;">
+      <div class="status-bar status-pending" data-status-for="A.fetch_listing"></div>
+      <div class="port bottom" data-port="A.out_target" style="--port-x:35%"></div>
+      <div class="port bottom" data-port="A.out_comparables" style="--port-x:65%"></div>
+      <div class="node-header">
+        <span class="node-stage">A</span>
+        Fetch Listing
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Load target listing photos + metadata</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">0 (fetch)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_listing_snapshot</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B: Clustering (TARGET photos only) -->
+    <div class="node target" id="node-B" style="position:absolute; left:150px; top:240px;">
+      <div class="status-bar status-pending" data-status-for="B.clustering"></div>
+      <div class="port top" data-port="B.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="B.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">B</span>
+        V5 Clustering
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Group photos into canonical room types</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">1 vision (Gemini Pro)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_clusters</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C: Room Tags -->
+    <div class="node target" id="node-C" style="position:absolute; left:150px; top:420px;">
+      <div class="status-bar status-pending" data-status-for="C.room_tags"></div>
+      <div class="port top" data-port="C.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="C.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">C</span>
+        V5 Room Tags
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Derive tags from canonical room types (deterministic)</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">0 (deterministic)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_room_tags</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- D: Target PIR -->
+    <div class="node target" id="node-D" style="position:absolute; left:150px; top:600px;">
+      <div class="status-bar status-pending" data-status-for="D.pir_target"></div>
+      <div class="port top" data-port="D.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="D.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">D</span>
+        V5 Target PIR
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Describe current state: 1 sentence per slot, per room</div>
+        <div class="parallel">
+          <div class="parallel-header">Parallel: 1 LLM call per room</div>
+          <div class="parallel-items" id="roomsTargetPIR"></div>
+        </div>
+        <div class="node-meta" style="margin-top:10px;">
+          <div><span class="label">calls:</span> <span class="value">N rooms &times; 1 (Gemini Pro vision)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_pir_target</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMP: Fetch comparables -->
+    <div class="node comparable" id="node-COMP-fetch" style="position:absolute; left:670px; top:240px;">
+      <div class="status-bar status-pending" data-status-for="COMP.fetch_comparables"></div>
+      <div class="port top" data-port="COMP.fetch.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="COMP.fetch.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">C1</span>
+        Fetch Comparables
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Fetch comparable listings for target (location/type/features)</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">0 (fetch)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_comparables</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMP: Infer room plan from listing info/features (no clustering) -->
+    <div class="node comparable" id="node-COMP-roomplan" style="position:absolute; left:670px; top:420px;">
+      <div class="status-bar status-pending" data-status-for="COMP.room_plan"></div>
+      <div class="port top" data-port="COMP.room_plan.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="COMP.room_plan.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">C2</span>
+        Infer Comparable Rooms
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Infer comparable "rooms present" from listing info + features (NO photo clustering)</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">0 (deterministic)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_comparable_room_plan</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMP: Comparable PIR (1 call per comparable; all photos; 1 sentence per slot) -->
+    <div class="node comparable" id="node-COMP-pir" style="position:absolute; left:670px; top:600px;">
+      <div class="status-bar status-pending" data-status-for="COMP.pir"></div>
+      <div class="port top" data-port="COMP.pir.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="COMP.pir.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">C3</span>
+        Comparable PIR
+      </div>
+      <div class="node-body">
+        <div class="node-desc">For each comparable: use ALL photos + slot schema &rarr; 1 sentence per slot</div>
+        <div class="parallel">
+          <div class="parallel-header">Parallel: 1 LLM call per comparable</div>
+          <div class="parallel-items" id="comparablesPIR"></div>
+        </div>
+        <div class="node-meta" style="margin-top:10px;">
+          <div><span class="label">calls:</span> <span class="value">N comparables &times; 1 (Gemini Pro vision)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_pir_comparable</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMP: Selector -->
+    <div class="node comparable" id="node-COMP-selector" style="position:absolute; left:670px; top:820px;">
+      <div class="status-bar status-pending" data-status-for="COMP.selector"></div>
+      <div class="port top" data-port="COMP.selector.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="COMP.selector.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">C4</span>
+        Comparable Selector
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Gemini call: choose the market_standard comparable using ALL comparable PIRs</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">1 (Gemini Flash/Pro)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_selected_comparable</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E: Market Targets (merge target PIR + selected comparable PIR) -->
+    <div class="node target" id="node-E" style="position:absolute; left:410px; top:980px;">
+      <div class="status-bar status-pending" data-status-for="E.slot_standard"></div>
+      <div class="port top" data-port="E.in_selected" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="E.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">E</span>
+        V5 Comparable Slot Standard (targets)
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Build the "target standard" per slot from the selected comparable (room PIRs &rarr; slot standard). Market Targets stage is dropped.</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">0 (deterministic)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_selected_comparable_slot_standard_{id}</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- F: Delta -->
+    <div class="node reno" id="node-F" style="position:absolute; left:410px; top:1180px;">
+      <div class="status-bar status-pending" data-status-for="F.delta"></div>
+      <div class="port top" data-port="F.in_current" style="--port-x:35%"></div>
+      <div class="port top" data-port="F.in_target" style="--port-x:65%"></div>
+      <div class="port bottom" data-port="F.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">F</span>
+        V5 Delta
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Compare CURRENT (target PIR) vs TARGET (comparable slot standard): per slot output is "no change" or ONE short Spanish work sentence</div>
+        <div class="parallel">
+          <div class="parallel-header">Parallel: 1 LLM call per room</div>
+          <div class="parallel-items" id="roomsDelta"></div>
+        </div>
+        <div class="node-meta" style="margin-top:10px;">
+          <div><span class="label">calls:</span> <span class="value">N rooms &times; 1 (Gemini Pro, text)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_delta_slots_market_standard</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- G: Decompose -->
+    <div class="node reno" id="node-G" style="position:absolute; left:410px; top:1400px;">
+      <div class="status-bar status-pending" data-status-for="G.decompose"></div>
+      <div class="port top" data-port="G.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="G.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">G</span>
+        V5 Decompose
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Decompose per room using dimension-scoped BCCA vocab &rarr; matchable work items</div>
+        <div class="parallel">
+          <div class="parallel-header">Parallel: 1 LLM call per room</div>
+          <div class="parallel-items" id="roomsDecompose"></div>
+        </div>
+        <div class="node-meta" style="margin-top:10px;">
+          <div><span class="label">calls:</span> <span class="value">N rooms &times; 1 (Gemini Flash)</span></div>
+          <div><span class="label">output:</span> <span class="value">v5_work_items_market_standard</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- H: Smart M2 (ensure/regenerate) -->
+    <div class="node v4" id="node-H" style="position:absolute; left:410px; top:1620px;">
+      <div class="status-bar status-pending" data-status-for="V4.smart_m2"></div>
+      <div class="port top" data-port="H.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="H.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">H</span>
+        Smart M&sup2; (room dimensions)
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Ensure authoritative room dimensions exist. Reuse if IDs match current clusters; otherwise regenerate from scratch (Gemini Pro + all room photos).</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">0 (reuse) or 1 (Gemini Pro vision, all photos)</span></div>
+          <div><span class="label">output:</span> <span class="value">smart_m2 (floor m&sup2;, wall m&sup2;, perimeter, openings per room)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- V4: BCCA Match -->
+    <div class="node v4" id="node-I" style="position:absolute; left:410px; top:1820px;">
+      <div class="status-bar status-pending" data-status-for="V4.match"></div>
+      <div class="port top" data-port="I.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="I.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">I</span>
+        BCCA Match
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Match work items to BCCA catalog entries. Denylist filters commercial/institutional codes; Flash Lite LLM reranks top-10 embedding candidates for physical correctness.</div>
+        <div class="node-meta">
+          <div><span class="label">method:</span> <span class="value">dimension-scoped embeddings (top-10) &rarr; denylist &rarr; Flash Lite rerank</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- V4: Quantification -->
+    <div class="node v4" id="node-J" style="position:absolute; left:410px; top:2020px;">
+      <div class="status-bar status-pending" data-status-for="V4.quant"></div>
+      <div class="port top" data-port="J.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="J.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">J</span>
+        Quant Plan (signals)
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Choose the ONE measurable room signal per work item (schema-first, room-physical)</div>
+        <div class="node-meta">
+          <div><span class="label">calls:</span> <span class="value">LLM (Gemini Pro, JSON schema)</span></div>
+          <div><span class="label">output:</span> <span class="value">v4_quant_plan_{strategy}_{dimension}</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- V4: Forage -->
+    <div class="node v4" id="node-K" style="position:absolute; left:410px; top:2220px;">
+      <div class="status-bar status-pending" data-status-for="V4.forage"></div>
+      <div class="port top" data-port="K.in" style="--port-x:50%"></div>
+      <div class="port bottom" data-port="K.out" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">K</span>
+        Forage (measure signals)
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Measure signals from room photos, anchored to Smart M&sup2; room dimensions. Then run a Pro zero-rescue pass so no work item prices at 0.</div>
+        <div class="node-meta">
+          <div><span class="label">prefill:</span> <span class="value">Smart M&sup2; &rarr; floor m&sup2;, wall m&sup2;, perimeter per room</span></div>
+          <div><span class="label">calls:</span> <span class="value">N rooms (Gemini Pro vision) + rescue for any remaining zeros</span></div>
+          <div><span class="label">output:</span> <span class="value">v4_signals_{strategy}</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- V4: BOQ -->
+    <div class="node v4" id="node-L" style="position:absolute; left:410px; top:2440px;">
+      <div class="status-bar status-pending" data-status-for="V4.boq"></div>
+      <div class="port top" data-port="L.in" style="--port-x:50%"></div>
+      <div class="node-header">
+        <span class="node-stage">L</span>
+        BOQ (Bill of Quantities)
+      </div>
+      <div class="node-body">
+        <div class="node-desc">Final priced line items with quantity sanity caps (per-room ud, flat-level accumulation, area-based m&sup2;/ml anchored to listing sqm).</div>
+        <div class="node-meta">
+          <div><span class="label">guards:</span> <span class="value">denylist filter + qty caps + listing_sqm anchor</span></div>
+          <div><span class="label">output:</span> <span class="value">boq_line_items</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const WIRES = [
+  // split: listing -> target+comparables
+  ["A.out_target", "B.in", "target"],
+  ["A.out_comparables", "COMP.fetch.in", "comparable"],
+
+  // target chain
+  ["B.out", "C.in", "target"],
+  ["C.out", "D.in", "target"],
+  ["D.out", "F.in_current", "target"],
+
+  // comparable chain (no photo clustering)
+  ["COMP.fetch.out", "COMP.room_plan.in", "comparable"],
+  ["COMP.room_plan.out", "COMP.pir.in", "comparable"],
+  ["COMP.pir.out", "COMP.selector.in", "comparable"],
+  ["COMP.selector.out", "E.in_selected", "comparable"],
+
+  // merge -> reno -> v4 tail (G -> H smart m2 -> I match -> J quant -> K forage -> L boq)
+  ["E.out", "F.in_target", "reno"],
+  ["F.out", "G.in", "reno"],
+  ["G.out", "H.in", "v4"],
+  ["H.out", "I.in", "v4"],
+  ["I.out", "J.in", "v4"],
+  ["J.out", "K.in", "v4"],
+  ["K.out", "L.in", "v4"]
+];
+
+function portEl(portId) {
+  return document.querySelector(`[data-port="${portId}"]`);
+}
+
+function portCenter(port) {
+  const canvasRect = document.querySelector(".canvas").getBoundingClientRect();
+  const r = port.getBoundingClientRect();
+  return {
+    x: (r.left + r.right) / 2 - canvasRect.left,
+    y: (r.top + r.bottom) / 2 - canvasRect.top
+  };
+}
+
+function drawWires() {
+  const svg = document.getElementById("wires");
+  svg.innerHTML = "";
+  const nodesRect = document.getElementById("nodes").getBoundingClientRect();
+  svg.style.height = (nodesRect.height + 80) + "px";
+
+  for (const [fromPort, toPort, type] of WIRES) {
+    const a = portEl(fromPort);
+    const b = portEl(toPort);
+    if (!a || !b) continue;
+    const p1 = portCenter(a);
+    const p2 = portCenter(b);
+    const midY = (p1.y + p2.y) / 2;
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", `M ${p1.x} ${p1.y} C ${p1.x} ${midY}, ${p2.x} ${midY}, ${p2.x} ${p2.y}`);
+    path.setAttribute("class", `wire ${type}`);
+    svg.appendChild(path);
+  }
+}
+
+async function loadStatus() {
+  try {
+    const res = await fetch("./v5_pipeline_status.json?_t=" + Date.now());
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+
+    // rooms + comparables labels
+    const rooms = data.rooms || [];
+    const comps = data.comparables || [];
+    document.getElementById("roomsTargetPIR").innerHTML = rooms.slice(0, 5).map(r => `<span class="parallel-item">${r.id}</span>`).join("");
+    document.getElementById("roomsDelta").innerHTML = rooms.slice(0, 5).map(r => `<span class="parallel-item">${r.id}</span>`).join("");
+
+    document.getElementById("roomsDecompose").innerHTML =
+      rooms.slice(0, 8).map(r => `<span class="parallel-item">${r.id}</span>`).join("") + (rooms.length > 8 ? `<span class="parallel-item">&hellip;</span>` : "");
+
+    document.getElementById("comparablesPIR").innerHTML =
+      comps.slice(0, 5).map(c => `<span class="parallel-item">${c.id}</span>`).join("");
+
+    // status bars
+    const nodes = data.nodes || {};
+    const STATUS_COLOR = {
+      pending: "#334155",
+      in_progress: "#2563eb",
+      done: "#16a34a",
+      blocked: "#dc2626",
+      warn: "#f59e0b"
+    };
+    document.querySelectorAll("[data-status-for]").forEach(el => {
+      const key = el.getAttribute("data-status-for");
+      const n = nodes?.[key] || {};
+      const impl = n.impl_status || n.status || "pending";
+      const cement = n.cement_status || "pending";
+
+      el.className = `status-bar`;
+      el.style.setProperty("--impl-color", STATUS_COLOR[impl] || STATUS_COLOR.pending);
+      el.style.setProperty("--cement-color", STATUS_COLOR[cement] || STATUS_COLOR.pending);
+      el.title = `impl=${impl} | cement=${cement}`;
+    });
+
+  } catch {
+    // ignore status load errors; diagram still renders
+  } finally {
+    drawWires();
+  }
+}
+
+window.addEventListener("load", () => setTimeout(loadStatus, 50));
+window.addEventListener("resize", () => setTimeout(drawWires, 0));
+</script>
+
+</body>
+</html>
