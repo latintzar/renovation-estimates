@@ -10,13 +10,24 @@ The original app keeps the listing, rooms, proposed work and itemized estimate t
 
 The sample estimate uses independently authored rates and measurements: two work items totaling €310. Provider accounts, licensed reference data and the full analysis pipeline have their own [setup guide](docs/setup.md).
 
-## First result
+## Run the app
 
-Use Python 3.12:
+Use Node 22.12 or later:
 
 ```sh
 git clone https://github.com/latintzar/renovation-estimates.git
-cd renovation-estimates
+cd renovation-estimates/frontend
+npm ci
+npm run dev
+```
+
+Open `http://127.0.0.1:3002/first-estimate` for the original report interface backed by the proved synthetic rows. `/listings` opens the original listing workspace. Its listing importer uses the backend, recipient-owned provider accounts and licensed inputs. [Setup](docs/setup.md) records the database and full-pipeline integration boundary.
+
+## Run the costing modules
+
+From the repository root, use Python 3.12:
+
+```sh
 python3.12 -m venv .venv
 .venv/bin/python -m pip install -r requirements-first-result.txt
 .venv/bin/python tools/first-estimate.py
@@ -26,18 +37,6 @@ python3.12 -m venv .venv
 The command writes a private local receipt and SQLite records: **two items, €310 total, 7.4 synthetic labor hours**. It executes the original price lookup, coverage validator, measurement catalogue, formula evaluator and BOQ assembler. The receipt identifies the inputs, calculations, source hashes and local persistence seam. [Calculation guide](tools/README-first-estimate.md).
 
 These authored demonstration rates are synthetic; the receipt describes a calculation, rather than a market quotation or an analyzed property.
-
-## App
-
-Use Node 22.12 or later:
-
-```sh
-cd frontend
-npm ci
-npm run dev
-```
-
-Open `http://127.0.0.1:3002/first-estimate` for the original report interface backed by the proved synthetic rows. `/listings` opens the original listing workspace. Its listing importer uses the backend, recipient-owned provider accounts and licensed inputs. [Setup](docs/setup.md) records the database and full-pipeline integration boundary.
 
 ## Guide
 
