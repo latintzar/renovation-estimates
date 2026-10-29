@@ -25,4 +25,4 @@ Property listing → Room condition and scope → Quantities and unit rates → 
 
 The native preview includes three authored properties and complete cached reports. It uses the original interface, costing results and recovered project images. Fresh property analysis and image generation use your configured providers. Connect property intake, verify local price evidence and run the analysis pipeline with your own accounts.
 
-Source: [docs/workflows.md](../docs/workflows.md), [docs/native-workspace.md](../docs/native-workspace.md), [docs/design.md](../docs/design.md), [docs/setup.md](../docs/setup.md).
+Source: [docs/workflows.md](../docs/workflows.md), [docs/native-workspace.md](../docs/native-workspace.md), [docs/setup.md](../docs/setup.md).
