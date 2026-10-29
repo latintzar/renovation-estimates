@@ -6,7 +6,9 @@ Leo Estimate is a renovation cost estimator for Spanish properties, with room-by
 
 The original app keeps the listing, rooms, proposed work and itemized estimate together. The source includes its Next.js interface, FastAPI services, worker pipeline and deterministic costing modules.
 
-![Leo Estimate’s native renovation workspace](docs/assets/native-renovation-desktop.png)
+![Leo Estimate renovation comparison shown in a phone frame](docs/assets/readme-hero.jpg)
+
+[Phone artwork credit](docs/assets/handset-CREDITS.md)
 
 The workspace opens with three fictional properties and complete cached reports: four rooms and 24calculated work items per property. The photographs are recovered, originally generated project assets. Prices, measurements, observations and comparable properties are authored examples.
 
