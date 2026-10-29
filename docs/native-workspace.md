@@ -49,3 +49,7 @@ These are retrospective extraction choices:
 Fresh frontend npm installation, full Next 16.4.3 build and TypeScript checks pass. Pure server-contract tests cover complete cached reports, exact BOQ totals, bounded pagination, readonly behavior and provider-path denial. Actual Chromium checks desktop/phone listing, renovation, property and comparable views, the detailed budget, selected-property address/area, professional assignment state and print layout. Source/publication receipts record final hashes.
 
 Live acquired listings, model/photo analysis, queue/Supabase bootstrap, embedding reference artifacts, measured maps, negotiation, translation providers, communications and billing are recipient commissioning. All source preparation and cached workspace proof use zero model/provider calls.
+
+## Atelier navigation
+
+The bundled MIT Atelier navigation and ISC-licensed Lucide icons identify the hosted app and link directly to the other previews. The app viewport starts beneath the 56px bar. Remove the `Script` and viewport wrapper in the root layout when adapting the workspace for another deployment.

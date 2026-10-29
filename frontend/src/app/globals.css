@@ -325,3 +325,6 @@ body {
   animation: step-enter 0.3s ease-out forwards;
 }
 
+
+/* Native Atelier navigation keeps the app viewport below the bar. */
+#atelier-native-app{position:fixed;inset:56px 0 0;overflow:auto;transform:translateZ(0)}

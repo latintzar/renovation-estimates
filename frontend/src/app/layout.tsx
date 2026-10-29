@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -33,7 +34,8 @@ export default function RootLayout({
         style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif" }}
         suppressHydrationWarning
       >
-          <Providers>{children}</Providers>
+          <div id="atelier-native-app"><Providers>{children}</Providers></div>
+          <Script src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/native-nav/atelier-nav.js`} strategy="afterInteractive" data-project="leo-estimates" />
           </body>
     </html>
   );
