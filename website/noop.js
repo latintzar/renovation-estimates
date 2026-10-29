@@ -1,0 +1,1 @@
+/* Analytics disabled in the standalone page. */
