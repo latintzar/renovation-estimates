@@ -1,1 +1,2 @@
 html{--atelier-nav-height:56px}body{padding-top:56px!important}body>div>header,body header.fixed{top:56px!important}
+.atelier-credit{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 24px;background:#f8f6f1;color:#514c46;font:14px/1.4 system-ui,sans-serif}.atelier-credit nav{display:flex;gap:18px;flex-wrap:wrap}.atelier-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
