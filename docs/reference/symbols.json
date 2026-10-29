@@ -21480,22 +21480,22 @@
         {
           "name": "siteUrl",
           "kind": "VariableDeclaration",
-          "line": 5
+          "line": 6
         },
         {
           "name": "metadata",
           "kind": "VariableDeclaration",
-          "line": 6
+          "line": 7
         },
         {
           "name": "viewport",
           "kind": "VariableDeclaration",
-          "line": 13
+          "line": 14
         },
         {
           "name": "RootLayout",
           "kind": "FunctionDeclaration",
-          "line": 21
+          "line": 22
         }
       ]
     },
