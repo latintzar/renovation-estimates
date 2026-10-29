@@ -1,2 +1,7 @@
 html{--atelier-nav-height:56px}body{padding-top:56px!important}body>div>header,body header.fixed{top:56px!important}
 .atelier-credit{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 24px;background:#f8f6f1;color:#514c46;font:14px/1.4 system-ui,sans-serif}.atelier-credit nav{display:flex;gap:18px;flex-wrap:wrap}.atelier-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+div.mx-auto[style*="width:264px"][style*="height:533px"]{position:relative!important;height:538px!important;padding:9px 10.78px!important;background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}
+div.mx-auto[style*="width:264px"][style*="height:533px"]::after{content:"";position:absolute;left:-36.03%;top:-3.65%;width:172.06%;aspect-ratio:1170/1500;background:url('/renovation-estimates/handset/front.webp') center/contain no-repeat;pointer-events:none;z-index:5}
+div.mx-auto[style*="width:264px"][style*="height:533px"]::before{content:"";position:absolute;top:2.93%;left:50%;width:29.44%;height:4.24%;transform:translateX(-50%);border-radius:999px;background:#0b0b0c;pointer-events:none;z-index:6}
+div.mx-auto[style*="width:264px"][style*="height:533px"]>div{border-radius:31px!important}
+div.mx-auto[style*="width:264px"][style*="height:533px"]>div>div{padding-top:28px;box-sizing:border-box}
