@@ -255,7 +255,7 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 - [backend/services/tour_executor.py](modules/backend/services/tour_executor.py.md): 24 symbols.
 - [backend/services/tour_generator.py](modules/backend/services/tour_generator.py.md): 10 symbols.
 - [backend/services/tour_generator_legacy.py](modules/backend/services/tour_generator_legacy.py.md): 35 symbols.
-- [backend/services/translation_service.py](modules/backend/services/translation_service.py.md): 8 symbols.
+- [backend/services/translation_service.py](modules/backend/services/translation_service.py.md): 11 symbols.
 
 ## backend/tests
 
@@ -616,3 +616,4 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 - [tools/runtime-env.py](modules/tools/runtime-env.py.md): 6 symbols.
 - [tools/sample-app.py](modules/tools/sample-app.py.md): 2 symbols.
 - [tools/source-reference.py](modules/tools/source-reference.py.md): 4 symbols.
+- [tools/test-database-policies.py](modules/tools/test-database-policies.py.md): 1 symbols.

@@ -15980,15 +15980,42 @@
       "summary": "Translation Service ====================",
       "symbols": [
         {
+          "name": "GoogleTranslator",
+          "kind": "ClassDef",
+          "line": 41,
+          "summary": "Bounded official Cloud Translation adapter, commissioned by its recipient."
+        },
+        {
+          "name": "GoogleTranslator.__init__",
+          "kind": "FunctionDef",
+          "line": 43,
+          "summary": "",
+          "parameters": [
+            "self",
+            "source",
+            "target"
+          ]
+        },
+        {
+          "name": "GoogleTranslator.translate",
+          "kind": "FunctionDef",
+          "line": 53,
+          "summary": "",
+          "parameters": [
+            "self",
+            "text"
+          ]
+        },
+        {
           "name": "TranslationService",
           "kind": "ClassDef",
-          "line": 38,
-          "summary": "Handles text translation between supported languages. Uses Google Translate under the hood (free tier)."
+          "line": 79,
+          "summary": "Handles text translation between supported languages. Uses the recipient-commissioned Cloud Translation provider."
         },
         {
           "name": "TranslationService.__init__",
           "kind": "FunctionDef",
-          "line": 44,
+          "line": 85,
           "summary": "",
           "parameters": [
             "self"
@@ -15997,7 +16024,7 @@
         {
           "name": "TranslationService._get_cache_key",
           "kind": "FunctionDef",
-          "line": 47,
+          "line": 88,
           "summary": "Generate cache key for translation.",
           "parameters": [
             "self",
@@ -16009,7 +16036,7 @@
         {
           "name": "TranslationService.translate_text",
           "kind": "FunctionDef",
-          "line": 51,
+          "line": 92,
           "summary": "Translate a single text string.",
           "parameters": [
             "self",
@@ -16021,7 +16048,7 @@
         {
           "name": "TranslationService.translate_batch",
           "kind": "FunctionDef",
-          "line": 94,
+          "line": 135,
           "summary": "Translate multiple texts efficiently.",
           "parameters": [
             "self",
@@ -16033,7 +16060,7 @@
         {
           "name": "TranslationService.translate_dict",
           "kind": "FunctionDef",
-          "line": 142,
+          "line": 183,
           "summary": "Translate string values in a dictionary.",
           "parameters": [
             "self",
@@ -16046,14 +16073,14 @@
         {
           "name": "get_translation_service",
           "kind": "FunctionDef",
-          "line": 186,
+          "line": 227,
           "summary": "Get or create translation service singleton.",
           "parameters": []
         },
         {
           "name": "get_supported_languages",
           "kind": "FunctionDef",
-          "line": 194,
+          "line": 235,
           "summary": "Return dict of supported language codes and display names.",
           "parameters": []
         }
@@ -29885,6 +29912,22 @@
           "line": 67,
           "summary": "",
           "parameters": []
+        }
+      ]
+    },
+    {
+      "path": "tools/test-database-policies.py",
+      "summary": "Execute retained-policy regression against a task-owned isolated Postgres.",
+      "symbols": [
+        {
+          "name": "sql",
+          "kind": "FunctionDef",
+          "line": 6,
+          "summary": "",
+          "parameters": [
+            "text",
+            "ok"
+          ]
         }
       ]
     }

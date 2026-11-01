@@ -2,15 +2,18 @@
 Translation Service
 ====================
 
-Multi-language translation using deep-translator.
+Multi-language translation through recipient-owned Google Cloud Translation.
 Supports: EN, ES, DE, FR, CA (Catalan), IT
 
-Uses Google Translate (free, no API key needed).
+Commission Google Cloud Translation and recipient Application Default Credentials.
+Set TRANSLATION_PROVIDER=google-cloud and GOOGLE_TRANSLATION_PROJECT to enable calls.
 """
 
 import logging
 from typing import Optional, List, Dict
-from deep_translator import GoogleTranslator
+import os
+import re
+import httpx
 
 logger = logging.getLogger(__name__)
 
@@ -35,10 +38,48 @@ LANGUAGE_LABELS = {
 }
 
 
+class GoogleTranslator:
+    """Bounded official Cloud Translation adapter, commissioned by its recipient."""
+    def __init__(self, *, source: str, target: str):
+        if os.getenv("TRANSLATION_PROVIDER") != "google-cloud":
+            raise RuntimeError("Configure the recipient translation provider")
+        self.project = os.getenv("GOOGLE_TRANSLATION_PROJECT", "")
+        if not re.fullmatch(r"(?:[a-z][a-z0-9-]{4,61}[a-z0-9]|[0-9]{6,20})", self.project):
+            raise RuntimeError("Configure the recipient Google translation project")
+        if target not in SUPPORTED_LANGUAGES or source not in {*SUPPORTED_LANGUAGES, "auto"}:
+            raise ValueError("Choose a supported translation language")
+        self.source, self.target = source, target
+
+    def translate(self, text: str) -> str:
+        if len(text.encode("utf-8")) > 20000:
+            raise ValueError("Translate up to 20 KiB per request")
+        # google-auth is already part of the declared Google Cloud runtime.
+        import google.auth
+        from google.auth.transport.requests import Request
+        credentials, _ = google.auth.default(
+            scopes=["https://www.googleapis.com/auth/cloud-translation"],
+            quota_project_id=self.project,
+        )
+        if not credentials.valid:
+            credentials.refresh(Request())
+        payload = {"contents": [text], "mimeType": "text/plain", "targetLanguageCode": self.target}
+        if self.source != "auto":
+            payload["sourceLanguageCode"] = self.source
+        endpoint = f"https://translate.googleapis.com/v3/projects/{self.project}/locations/global:translateText"
+        with httpx.Client(timeout=20, follow_redirects=False) as client:
+            response = client.post(endpoint, headers={"Authorization": "Bearer " + credentials.token}, json=payload)
+        if response.status_code != 200 or len(response.content) > 131072:
+            raise RuntimeError("Translation provider returned an unavailable response")
+        data = response.json().get("translations", [])
+        if len(data) != 1 or not isinstance(data[0].get("translatedText"), str):
+            raise RuntimeError("Translation provider returned an invalid response")
+        return data[0]["translatedText"]
+
+
 class TranslationService:
     """
     Handles text translation between supported languages.
-    Uses Google Translate under the hood (free tier).
+    Uses the recipient-commissioned Cloud Translation provider.
     """
     
     def __init__(self):
@@ -88,7 +129,7 @@ class TranslationService:
             return result
             
         except Exception as e:
-            logger.error(f"Translation failed: {e}")
+            logger.warning("Translation provider unavailable; retaining original text")
             return text  # Return original on failure
     
     def translate_batch(
@@ -136,7 +177,7 @@ class TranslationService:
             return results
             
         except Exception as e:
-            logger.error(f"Batch translation failed: {e}")
+            logger.warning("Batch translation unavailable; retaining original text")
             return texts  # Return originals on failure
     
     def translate_dict(

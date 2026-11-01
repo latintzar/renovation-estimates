@@ -31,3 +31,9 @@ Optional worker notifications and retained communications helpers use the commun
 The scraper’s existing google.genai import is declared as google-genai 1.62.0, whose published metadata accepts the original Pydantic 2.10.4 constraint. The original Google generative/Vertex branches remain separate. Dependency declaration and full live runtime acceptance are recorded separately in release status.
 
 The report accepts optional recipient-owned labor_rates and machinery_rates with {name, rate} records, plus a price_basis label. The included fixture supplies only its actual synthetic composite unit prices. Unprovided decomposition/rate tables are omitted from its report.
+
+## Translation
+
+The optional translation adapter uses Google Cloud Translation Advanced with the recipient’s own project and Application Default Credentials. Enable that API and authorize its translation role, then set `TRANSLATION_PROVIDER=google-cloud` and `GOOGLE_TRANSLATION_PROJECT` in the private server environment. The existing `GOOGLE_APPLICATION_CREDENTIALS` selector can point at that recipient’s owned credentials file. The adapter uses the official fixed endpoint, bounded text requests and short timeouts. Original text remains available while translation is unconfigured. Native sample mode uses its stored reports.
+
+Provider contract: https://cloud.google.com/translate/docs/reference/rest/v3/projects.locations/translateText . The old indirect public translation scraper dependency was removed after an unresolved advisory range was found; this change makes the recipient account and outbound text destination explicit.

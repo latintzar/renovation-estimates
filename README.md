@@ -30,7 +30,7 @@ The native preview includes three authored properties and complete cached report
 
 ## Run the app
 
-Use Node 22.18+ in the Node 22 line and Python 3.10+, from the repository root:
+Use Node 22.18+ in the Node 22 line and Python 3.11+, from the repository root:
 
 ```sh
 git clone https://github.com/latintzar/renovation-estimates.git

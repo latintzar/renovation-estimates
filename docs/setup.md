@@ -8,7 +8,7 @@ The SQLite sink implements the assembler's `save_boq_line_items_batch` seam. Sup
 
 ## Native interface
 
-From the root, use Node 22.18+ in the Node 22 line and Python 3.10+: `npm ci --prefix frontend`, `python3 tools/sample-app.py build`, then `python3 tools/sample-app.py start`. Open http://127.0.0.1:3002. `python3 tools/sample-app.py dev` runs the same source in development.
+From the root, use Node 22.18+ in the Node 22 line and Python 3.11+: `npm ci --prefix frontend`, `python3 tools/sample-app.py build`, then `python3 tools/sample-app.py start`. Open http://127.0.0.1:3002. `python3 tools/sample-app.py dev` runs the same source in development.
 
 The original `/listings` feed opens immediately with three fictional properties. Each `/listing/101`–`103` workspace includes a four-room cached proposal, before/after imagery, comparables and 24calculated cost items. The server supplies the native API contracts from a committed cache. All sample API mutations and provider-backed paths return a configuration response. [Native workspace](native-workspace.md) records the calculation, data and route boundary.
 
@@ -77,3 +77,7 @@ The report adapter adds an authored flooring category to the two synthetic finis
 ## Static report preview
 
 Set NEXT_PUBLIC_ATELIER_PREVIEW=true during a frontend production build to use the /apps/estimates asset prefix and link the report entry to the recipient setup guide. Ordinary local builds link to the original /listings workspace. This flag changes the first-result presentation, while the report component and calculation stay the same.
+
+## Database access
+
+Apply the [database access migration](database-security.md) when connecting your Supabase project.
