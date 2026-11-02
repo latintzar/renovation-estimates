@@ -546,7 +546,7 @@ Generated from source with Python AST and the TypeScript compiler. Each module l
 - [frontend/src/components/renovation/ComparablesMap.tsx](modules/frontend/src/components/renovation/ComparablesMap.tsx.md): 72 symbols.
 - [frontend/src/components/renovation/ComparablesTab.tsx](modules/frontend/src/components/renovation/ComparablesTab.tsx.md): 18 symbols.
 - [frontend/src/components/renovation/NegotiationModal.tsx](modules/frontend/src/components/renovation/NegotiationModal.tsx.md): 69 symbols.
-- [frontend/src/components/renovation/OfficialBudgetReport.tsx](modules/frontend/src/components/renovation/OfficialBudgetReport.tsx.md): 49 symbols.
+- [frontend/src/components/renovation/OfficialBudgetReport.tsx](modules/frontend/src/components/renovation/OfficialBudgetReport.tsx.md): 58 symbols.
 - [frontend/src/components/renovation/ShareModal.tsx](modules/frontend/src/components/renovation/ShareModal.tsx.md): 72 symbols.
 - [frontend/src/components/renovation/index.ts](modules/frontend/src/components/renovation/index.ts.md): 0 symbols.
 
