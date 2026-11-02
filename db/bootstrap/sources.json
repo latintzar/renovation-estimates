@@ -72,7 +72,7 @@
     },
     {
       "path": "db/bootstrap/private-backend.sql",
-      "sha256": "8856c82815ef8206d6ec5a9c60946f1fac5583ad1207417bcf0ea50ec68406cb"
+      "sha256": "9e901186f96fe823fec43f7d0a6d99571e517693105358ba08e39fbb9db69662"
     }
   ],
   "normalizations": [

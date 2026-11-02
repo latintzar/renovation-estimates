@@ -6,5 +6,5 @@ Assemble the fresh-install SQL from pinned retained DDL and current contracts.
 
 | Symbol | Kind | Source line |
 |---|---|---|
-| `outputs` | FunctionDef | [L53](../../../../tools/build-database-bootstrap.py#L53) |
-| `main` | FunctionDef | [L75](../../../../tools/build-database-bootstrap.py#L75) |
+| `outputs` | FunctionDef | [L58](../../../../tools/build-database-bootstrap.py#L58) |
+| `main` | FunctionDef | [L80](../../../../tools/build-database-bootstrap.py#L80) |

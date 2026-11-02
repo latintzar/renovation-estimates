@@ -125,7 +125,11 @@ def main():
           GRANT USAGE ON SCHEMA auth TO anon,authenticated,service_role;
         """)
         bootstrap = (ROOT / "db/bootstrap.sql").read_text()
+        sql("CREATE EXTENSION hstore WITH SCHEMA public;")
+        extension_acl = sql("SELECT coalesce(proacl::text,'default') FROM pg_proc WHERE oid='public.hstore(text,text)'::regprocedure;")
         sql(bootstrap)
+        assert sql("SELECT coalesce(proacl::text,'default') FROM pg_proc WHERE oid='public.hstore(text,text)'::regprocedure;") == extension_acl
+        assert sql("SELECT has_function_privilege('anon','public.hstore(text,text)','EXECUTE');") == "t"
         sql(bootstrap, allowed=False)  # An existing project is preserved, not reinitialized.
         sql("""SET ROLE service_role;
           INSERT INTO public.listings(id,source_url,title) VALUES(101,'https://example.test/home/101','Authored home');

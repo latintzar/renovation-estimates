@@ -40,10 +40,15 @@ BEGIN
   END IF;
   IF EXISTS (
     SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
-    WHERE n.nspname='public' AND c.relkind IN ('r','p')
-      AND NOT EXISTS (SELECT 1 FROM pg_depend d WHERE d.objid=c.oid AND d.deptype='e')
+    WHERE n.nspname='public' AND c.relkind IN ('r','p','v','m','S')
+      AND NOT EXISTS (SELECT 1 FROM pg_depend d WHERE d.classid='pg_class'::regclass AND d.objid=c.oid AND d.deptype='e')
   ) THEN
     RAISE EXCEPTION 'Use a fresh project: public application tables already exist';
+  END IF;
+  IF EXISTS(SELECT 1 FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace
+    WHERE n.nspname='public' AND NOT EXISTS(SELECT 1 FROM pg_depend d
+      WHERE d.classid='pg_proc'::regclass AND d.objid=p.oid AND d.deptype='e')) THEN
+    RAISE EXCEPTION 'Use a fresh project: public application functions already exist';
   END IF;
 END;
 $guard$;
