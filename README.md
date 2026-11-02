@@ -4,7 +4,7 @@ Room-by-room renovation estimates from a property listing
 
 Leo Estimate is a renovation cost estimator for Spanish properties, with room-by-room work, quantities and price evidence.
 
-[Website](https://atelierneyra.com/renovation-estimates) · [Open app](https://preview.atelierneyra.com/apps/estimates/listings) · [Documentation](https://docs.atelierneyra.com/leo-estimates/overview/)
+[Website](https://atelierneyra.com/renovation-estimates) · [Open demo](https://preview.atelierneyra.com/apps/estimates/listings) · [Product tour](docs/product-tour.md) · [Documentation](https://docs.atelierneyra.com/leo-estimates/overview/)
 
 The original app keeps the listing, rooms, proposed work and itemized estimate together. The source includes its Next.js interface, FastAPI services, worker pipeline and deterministic costing modules.
 
@@ -12,9 +12,9 @@ The original app keeps the listing, rooms, proposed work and itemized estimate t
 
 [Phone artwork credit](docs/assets/handset-CREDITS.md)
 
-The workspace opens with three fictional properties and complete cached reports: four rooms and 24calculated work items per property. The photographs are recovered, originally generated project assets. Prices, measurements, observations and comparable properties are authored examples.
+The workspace opens with three fictional properties and complete cached reports: four rooms and 24 calculated work items per property. The photographs are recovered, originally generated project assets. Prices, measurements, observations and comparable properties are authored examples.
 
-## How it works
+## Product areas
 
 A property listing shows what is there. A buyer also needs to understand the work, quantities and likely cost before deciding what to buy or asking for contractor quotes.
 
@@ -26,7 +26,11 @@ A property listing shows what is there. A buyer also needs to understand the wor
 | Printable estimate | Carry the itemized scope and totals into a report. |
 | Analysis pipeline | Continue with the original FastAPI services, durable workers and deterministic costing modules. |
 
-The native preview includes three authored properties and complete cached reports. It uses the original interface, costing results and recovered project images. Fresh property analysis and image generation use your configured providers. Connect property intake, verify local price evidence and run the analysis pipeline with your own accounts. [Product guide](docs/PROJECT.md).
+## Explore a report
+
+Choose a property, compare its room renovation in **Reforma**, inspect the original listing in **Anuncio**, and open **Comparables** for the target standard. Select **Presupuesto desglosado** to expand the priced work and print the report. The [product tour](docs/product-tour.md) connects those screens to the quantities, price lookup and durable analysis pipeline.
+
+The native preview uses the original interface, calculated work items and recovered project images. Fresh property intake, analysis, image generation and current price evidence use your configured data and providers. [Reached stage and product context](docs/PROJECT.md).
 
 ## Run the app
 
@@ -40,9 +44,9 @@ python3 tools/sample-app.py build
 python3 tools/sample-app.py start
 ```
 
-Open **http://127.0.0.1:3002**. Browse the original listing feed, open a property, compare the before/after, explore rooms and comparables, then open **Presupuesto desglosado** for measurements, itemized costs and printing. This runs the complete native Next interface with a real read-only local API. [Native workspace](docs/native-workspace.md) explains the cached reports and deployment. [Provider setup](docs/setup.md) activates the original FastAPI, worker and analysis pipeline with recipient-owned services.
+Open **http://127.0.0.1:3002**. Browse the original listing feed, open a property, compare the before/after, explore rooms and comparables, then open **Presupuesto desglosado** for measurements, itemized costs and printing. This runs the complete native Next interface with a real read-only local API. [Native workspace](docs/native-workspace.md) explains the cached reports and deployment. [Provider setup](docs/setup.md) activates the original FastAPI, worker and analysis pipeline with your own services.
 
-## Run the costing modules
+## Reuse the costing modules
 
 From the repository root, use Python 3.12:
 
@@ -57,8 +61,9 @@ The command writes a private local receipt and SQLite records: **two items, €3
 
 These authored demonstration rates are synthetic; the receipt describes a calculation, rather than a market quotation or an analyzed property.
 
-## Guide
+## Build with it
 
+- [Product tour](docs/product-tour.md): property-to-report journey, product areas and source map.
 - [Native workspace](docs/native-workspace.md): cached reports, API contracts and deployment.
 - [Setup](docs/setup.md): runtimes, private configuration and database artifacts.
 - [Workflows](docs/workflows.md): listing → rooms → comparable standard → work → quantities → estimate.

@@ -1,6 +1,6 @@
 # Renovation estimates
 
-Read README.md, RELEASE-STATUS.md and docs/setup.md before running the app. The source authority is leo-archive commit 4dca5f9bd94a3ee4759dff949f3d185acd095022. Preserve the original interface, domain contracts and native provider adapters.
+Read the [product tour](docs/product-tour.md), [README](README.md), [release status](RELEASE-STATUS.md) and [setup](docs/setup.md) before running the app. The tour maps the property-to-report journey to source. Historical plans and deployment receipts retain their dated scope. The source authority is leo-archive commit 4dca5f9bd94a3ee4759dff949f3d185acd095022. Preserve the original interface, domain contracts and native provider adapters.
 
 Start with the synthetic result in tools/first-estimate.py. Run `python3 -m unittest discover -s tests -v`. This verifies the original deterministic costing tail; it does not establish photo analysis, provider acceptance or Supabase queue recovery.
 
