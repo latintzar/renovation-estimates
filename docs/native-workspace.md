@@ -53,3 +53,9 @@ Live acquired listings, model/photo analysis, embedding reference artifacts, mea
 ## Atelier navigation
 
 The bundled MIT Atelier navigation and ISC-licensed Lucide icons identify the hosted app and link directly to the other previews. The app viewport starts beneath the 56px bar. Remove the `Script` and viewport wrapper in the root layout when adapting the workspace for another deployment.
+
+## Check the detailed report
+
+With the sample workspace running, run `ESTIMATES_BASE_URL=http://127.0.0.1:3002 python3 tests/browser-report-ux.py` using Python with Playwright, Chromium and PyMuPDF installed. `PLAYWRIGHT_CHROMIUM` selects an existing Chromium executable; `ESTIMATES_PROOF_DIR` selects receipts, screenshots and generated PDFs.
+
+The check uses the authored cached property at 320, 390, 768 and 1600px. It scrolls the workspace before opening the report, verifies its fullscreen native dialog, focus/Escape/return and sticky controls, then generates a PDF and checks the total, exclusions and final source footer. The dialog is portalled to the document body so the app's transformed scrolling viewport can retain its position. Printing isolates that report while preserving the supplied quantities and price calculations.

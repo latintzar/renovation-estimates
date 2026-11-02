@@ -6,7 +6,8 @@
  * The release fixture names its synthetic basis; the layout asserts no approval.
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import {
   X,
   Printer,
@@ -170,6 +171,35 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
   architectName = 'Por asignar',
   propertyArea,
 }) => {
+  const [mounted, setMounted] = useState(false);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const titleId = useId();
+  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!mounted || !isOpen || !dialog) return;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const scroller = document.getElementById('atelier-native-app') || document.documentElement;
+    const previousOverflow = scroller.style.overflow;
+    scroller.style.overflow = 'hidden';
+    dialog.showModal();
+    dialog.querySelector<HTMLButtonElement>('[aria-label="Close report"]')?.focus();
+    const wrapFocus = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const controls = [...dialog.querySelectorAll<HTMLElement>('button:not([disabled]),a[href],[tabindex]')]
+        .filter((element) => element.tabIndex >= 0 && element.getClientRects().length);
+      const target = event.shiftKey && document.activeElement === controls[0] ? controls.at(-1)
+        : !event.shiftKey && document.activeElement === controls.at(-1) ? controls[0] : null;
+      if (target) { event.preventDefault(); target.focus(); }
+    };
+    dialog.addEventListener('keydown', wrapFocus);
+    return () => {
+      dialog.removeEventListener('keydown', wrapFocus);
+      if (dialog.open) dialog.close();
+      scroller.style.overflow = previousOverflow;
+      if (opener?.isConnected) opener.focus({ preventScroll: true });
+    };
+  }, [mounted, isOpen]);
   const [activeSection, setActiveSection] = useState<string>('summary');
   const [expandedChapters, setExpandedChapters] = useState<Set<string>>(new Set());
   const laborRates: Record<string, { name: string; rate: number }> = analysis.labor_rates || {};
@@ -279,7 +309,7 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
     window.print();
   };
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
   const generatedDate = new Date().toLocaleDateString('es-ES', {
     year: 'numeric',
@@ -778,27 +808,32 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
     { id: 'general', label: 'Presupuesto General', icon: Receipt },
   ];
 
-  return (
-    <div className="fixed inset-0 z-[60] bg-white overflow-auto print:relative print:overflow-visible">
+  // The application viewport is a transformed scroller. A body portal plus
+  // native top layer keeps the report visible after scrolling and isolates print.
+  return createPortal(
+    <dialog ref={dialogRef} aria-labelledby={titleId}
+      onCancel={(event) => { event.preventDefault(); onClose(); }}
+      className="estimate-budget-report fixed inset-0 m-0 w-screen h-dvh max-w-none max-h-none p-0 border-0 z-[60] bg-white overflow-auto overscroll-contain print:relative print:overflow-visible">
+      <div className="estimate-report-controls sticky top-0 z-10 bg-white print:hidden">
       {/* Header - Hidden on print */}
-      <div className="sticky top-0 z-10 bg-white border-b border-stone-200 px-4 py-3 flex items-center justify-between print:hidden">
+      <div className="bg-white border-b border-stone-200 px-4 py-3 flex items-center justify-between print:hidden">
         <div className="flex items-center gap-3">
           <button
             onClick={onClose}
             aria-label="Close report"
-            className="p-1.5 text-stone-900 hover:text-stone-900 hover:bg-stone-100 rounded"
+            className="min-w-11 min-h-11 p-1.5 text-stone-900 hover:text-stone-900 hover:bg-stone-100 rounded-md"
           >
             <X className="w-5 h-5" />
           </button>
           <div>
-            <h1 className="text-sm font-semibold text-stone-900">Presupuesto desglosado</h1>
+            <h1 id={titleId} className="text-sm font-semibold text-stone-900">Presupuesto desglosado</h1>
             <p className="text-xs text-stone-900">Mediciones y precios unitarios</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
           <button
             onClick={handlePrint}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs text-white bg-stone-900 hover:bg-stone-800 rounded"
+            className="flex items-center justify-center gap-1.5 min-h-11 px-3 py-1.5 text-xs text-white bg-stone-900 hover:bg-stone-800 rounded-md"
           >
             <Printer className="w-4 h-4" />
             Imprimir / PDF
@@ -807,7 +842,7 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
       </div>
 
       {/* Section Navigation - Hidden on print */}
-      <div className="sticky top-[57px] z-10 bg-stone-50 border-b border-stone-200 px-4 py-2 overflow-x-auto print:hidden">
+      <div className="bg-stone-50 border-b border-stone-200 px-4 py-2 overflow-x-auto print:hidden">
         <div className="flex gap-1 min-w-max">
           {sections.filter(section => (section.id !== 'precios1' || hasRateBreakdown) && (section.id !== 'descompuestos' || hasItemBreakdown)).map(section => (
             <button
@@ -826,6 +861,7 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
         </div>
       </div>
 
+      </div>
       {/* Document Content */}
       <div className="max-w-4xl mx-auto px-8 py-6">
         {/* Document Title - Always shown on print */}
@@ -879,7 +915,13 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
 
       {/* Print Styles */}
       <style jsx global>{`
+        .estimate-budget-report { font-family: inherit; }
+        .estimate-budget-report::backdrop { background: transparent; }
+        .estimate-budget-report button:focus-visible { outline: 2px solid #2147f5; outline-offset: 2px; }
         @media print {
+          body:has(> .estimate-budget-report[open]) > :not(.estimate-budget-report) { display: none !important; }
+          dialog.estimate-budget-report { display: block !important; position: static !important; width: 100% !important; height: auto !important; max-height: none !important; overflow: visible !important; }
+          .estimate-budget-report::backdrop { display: none; }
           body { 
             font-size: 10px !important; 
             line-height: 1.3 !important;
@@ -892,7 +934,7 @@ export const OfficialBudgetReport: React.FC<OfficialBudgetReportProps> = ({
           @page { margin: 15mm; }
         }
       `}</style>
-    </div>
+    </dialog>, document.body,
   );
 };
 
