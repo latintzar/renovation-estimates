@@ -16,6 +16,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 GROUPS = {
     "database": ("SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"),
+    "database-admin": ("DATABASE_URL",),
     "gemini": ("GEMINI_API_KEY", "GEMINI_FLASH_MODEL", "GEMINI_PRO_MODEL"),
     "comparables": ("CASAFARI_API_TOKEN",),
     "scraping": ("SCRAPFLY_API_KEY", "SCRAPINGDOG_API_KEY"),

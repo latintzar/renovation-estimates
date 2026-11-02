@@ -1,0 +1,86 @@
+{
+  "scope": "Fresh native Estimate backend; provider acquisition and pricing datasets are separate inputs.",
+  "historical_files_preserved": true,
+  "sources_in_application_order": [
+    {
+      "path": "db/001_schema.sql",
+      "sha256": "2e1a842483370f4e432afa07f39eeaf2c3eab77c8a963d3048e46e3b4c13da59"
+    },
+    {
+      "path": "supabase/migrations/007_property_intelligence_reports.sql",
+      "sha256": "4ad31e4b2ff7c619be452c17225071c4ca5ef1691f43609b7c7a5721f84ec5f2"
+    },
+    {
+      "path": "supabase/migrations/007_due_diligence_research.sql",
+      "sha256": "d1d7e07b4232440503a83ad1ad6fb91a733274cad08679cc2cff0ec4862b0b00"
+    },
+    {
+      "path": "supabase/migrations/009_comparables_tables.sql",
+      "sha256": "0646967cce13a97fce27e800e3bcb53c376fe63eb03826678b3cbab4769c2274"
+    },
+    {
+      "path": "supabase/migrations/009_v048_tables.sql",
+      "sha256": "48bbb77a4a7e81c3cd0c22b553c16ac3f354c2671b287826c284de6548124fc4"
+    },
+    {
+      "path": "supabase/migrations/010_v05_schema_updates.sql",
+      "sha256": "fdec0c97e200faca36e469ce67de1630f22c22d0e8d2ae7774d94565a4c6f4a2"
+    },
+    {
+      "path": "supabase/migrations/011_v1_pipeline_schema.sql",
+      "sha256": "b88a87fb937135b6c84bdd496763fde296eadfd44f185ca2742cf27739d8350a"
+    },
+    {
+      "path": "supabase/migrations/020_create_comparable_image_cache.sql",
+      "sha256": "99a2132cb056cfefab29e46a035297e0559286cb7b4d6d8c73b52fa08eb567a7"
+    },
+    {
+      "path": "supabase/migrations/021_add_casafari_raw_response_columns.sql",
+      "sha256": "e0a58d8077f9c9c13b1625535c4c079a00ece181232560f5d770fc3bc674c757"
+    },
+    {
+      "path": "backend/migrations/004_renovation_reports.sql",
+      "sha256": "c4eb47201f6fd63baf2592c40f5acf9ce42b9f5cfc5d9ec150b5732bed8b2daf"
+    },
+    {
+      "path": "db/bootstrap/current-contracts.sql",
+      "sha256": "8ea443888dee310096e29030e187c91ea11b914f572794b17f843a17939a3932"
+    },
+    {
+      "path": "supabase/migrations/0005_boq_line_items_provenance.sql",
+      "sha256": "e6bb4cb9e71431788e3ff9aed918453458292772c7eb7e018be28a6afcf29a42"
+    },
+    {
+      "path": "backend/migrations/005_pipeline_run_status_source_of_truth.sql",
+      "sha256": "a217477fb2dc2523501439f2f5d54cca6607c59c9e246395582d3734a0f4ee18"
+    },
+    {
+      "path": "backend/migrations/009_gemini_call_log_and_run_costs_view.sql",
+      "sha256": "5d4f6016484cc22a286234ed78b6edadd0a1096c32d7e39cb3c84d9338111352"
+    },
+    {
+      "path": "backend/migrations/010b_gemini_call_log_clear_history.sql",
+      "sha256": "670433643f91218eb5031989f19b55782c044b161397c094a1a0a4f3d4094ede"
+    },
+    {
+      "path": "backend/migrations/011_refresh_pipeline_run_status_remove_architect_report.sql",
+      "sha256": "bd38e15ad69bee29d93c245adcb3b262b7ace12450e85f071f074679aa5887fd"
+    },
+    {
+      "path": "supabase/migrations/202611010001_service_only_research_writes.sql",
+      "sha256": "1cce3805cb640bedbf1851f4d9c4cb48083247b64ea08523792d851133351191"
+    },
+    {
+      "path": "db/bootstrap/private-backend.sql",
+      "sha256": "8856c82815ef8206d6ec5a9c60946f1fac5583ad1207417bcf0ea50ec68406cb"
+    }
+  ],
+  "normalizations": [
+    "single outer transaction",
+    "original project identifier removed",
+    "trailing formatting whitespace removed in generated copy",
+    "later comparable contract selected",
+    "current queue/report/BOQ contracts added",
+    "private service-role backend grants"
+  ]
+}

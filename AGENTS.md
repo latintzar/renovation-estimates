@@ -8,7 +8,7 @@ Recipient credentials belong in an absolute private file outside the checkout. U
 
 The source beta uses Next 16.4.3. Read the version-matched documentation under frontend/node_modules/next/dist/docs/ before changing routing or request APIs. Preserve supported React 18 component behaviour and the existing typography. Font bytes and OFL notices are local.
 
-Reference pricing, embeddings, property photographs, listing records and market-provider responses have separate rights. Use the authored synthetic fixture for local proof. Full recipient-owned regeneration and missing queue-schema artifacts are documented in docs/setup.md. A model key alone does not supply those artifacts.
+Reference pricing, embeddings, property photographs, listing records and market-provider responses have separate rights. Use the authored synthetic fixture for local proof. For a fresh connected database, read docs/fresh-database.md and run tools/test-database-bootstrap.py with Docker. Preserve the original worker/predecessor and additive BOQ merge contracts. Your reference-data regeneration remains a separate step in docs/setup.md.
 
 The API and admin routes retain their original trusted local-workspace contract. Keep the starter bound to loopback. A public deployment needs its own authentication, authorization, input acquisition policy and provider limits.
 

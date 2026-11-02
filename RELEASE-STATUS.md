@@ -10,7 +10,9 @@ The original coverage validator, formula evaluator, measurement catalogue, BCCA 
 
 ## Recipient acceptance
 
-Full Supabase schema/RPC installation, worker recovery, photo acquisition, comparable/model/embedding stages, reference-data regeneration and live account acceptance remain individual commissioning tasks. The archive lacks the base pipeline_jobs/claim_pipeline_jobs DDL and exact current f32 embedding/metadata/full labor-index artifacts. These concrete original integration boundaries remain documented.
+The [fresh-database bootstrap](docs/fresh-database.md) now installs the native Estimate persistence and queue/RPC contracts. A disposable PostgreSQL16 test verifies concurrent claims, idempotency, availability, lease/reaper/cancellation, status aggregation, BOQ merge, actual released-client JSON fields and private backend grants. Dated original migrations remain intact. This is source-derived reconstruction of missing installation DDL, separate from historical hosted acceptance.
+
+Photo acquisition, comparable/model/embedding stages, reference-data regeneration and your connected Supabase/PostgREST/storage/worker acceptance remain installation checks. The exact original f32 embedding/metadata/full labor-index artifacts remain outside the archive; the source includes their licensed-input regeneration path. Optional communications and historical experimental modules retain separate contracts.
 
 Sample mode is a read-only local cached API selected explicitly by the launcher. Real API/admin routes retain the original trusted-operator contract and require application authorization/provider limits before broader deployment. Report overhead/margin/tax percentages are retained interface arithmetic for the synthetic example; recipients supply actual project assumptions.
 

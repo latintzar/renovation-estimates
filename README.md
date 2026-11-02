@@ -66,6 +66,7 @@ These authored demonstration rates are synthetic; the receipt describes a calcul
 - [Product tour](docs/product-tour.md): property-to-report journey, product areas and source map.
 - [Native workspace](docs/native-workspace.md): cached reports, API contracts and deployment.
 - [Setup](docs/setup.md): runtimes, private configuration and database artifacts.
+- [Fresh database](docs/fresh-database.md): install the native persistence, worker queue and costing RPCs in your own Supabase project.
 - [Workflows](docs/workflows.md): listing → rooms → comparable standard → work → quantities → estimate.
 - [Architecture](docs/architecture.md): queue, worker, providers, calculation and persistence.
 - [Decisions](docs/decisions.md): why the interface and extraction behave this way.

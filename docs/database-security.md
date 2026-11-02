@@ -1,6 +1,6 @@
 # Database access boundaries
 
-The sample app uses its local authored workspace. The retained Supabase migration sequence is a historical schema, with recipient-owned database commissioning recorded separately.
+The sample app uses its local authored workspace. New connected installations use the [fresh database](fresh-database.md), whose native backend tables and RPCs are service-role only. The retained migration sequence records the historical schema and its earlier access policies.
 
 ## Forward policy hardening
 

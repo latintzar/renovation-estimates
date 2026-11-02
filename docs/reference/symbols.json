@@ -29623,6 +29623,50 @@
       ]
     },
     {
+      "path": "tools/bootstrap-database.py",
+      "summary": "Install the current schema in your fresh Supabase project using private libpq input.",
+      "symbols": [
+        {
+          "name": "private_psql_env",
+          "kind": "FunctionDef",
+          "line": 13,
+          "summary": "",
+          "parameters": [
+            "inherited"
+          ]
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 29,
+          "summary": "",
+          "parameters": [
+            "argv"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "tools/build-database-bootstrap.py",
+      "summary": "Assemble the fresh-install SQL from pinned retained DDL and current contracts.",
+      "symbols": [
+        {
+          "name": "outputs",
+          "kind": "FunctionDef",
+          "line": 53,
+          "summary": "",
+          "parameters": []
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 75,
+          "summary": "",
+          "parameters": []
+        }
+      ]
+    },
+    {
       "path": "tools/build-native-sample.py",
       "summary": "Build cached native report contracts with original BOQ math and authored inputs.",
       "symbols": [
@@ -29800,13 +29844,13 @@
         {
           "name": "ConfigError",
           "kind": "ClassDef",
-          "line": 31,
+          "line": 32,
           "summary": ""
         },
         {
           "name": "private_path",
           "kind": "FunctionDef",
-          "line": 35,
+          "line": 36,
           "summary": "",
           "parameters": [
             "raw",
@@ -29816,7 +29860,7 @@
         {
           "name": "read_config",
           "kind": "FunctionDef",
-          "line": 53,
+          "line": 54,
           "summary": "",
           "parameters": [
             "path"
@@ -29825,7 +29869,7 @@
         {
           "name": "write_config",
           "kind": "FunctionDef",
-          "line": 70,
+          "line": 71,
           "summary": "",
           "parameters": [
             "path",
@@ -29835,7 +29879,7 @@
         {
           "name": "child_env",
           "kind": "FunctionDef",
-          "line": 85,
+          "line": 86,
           "summary": "",
           "parameters": [
             "values",
@@ -29845,7 +29889,7 @@
         {
           "name": "main",
           "kind": "FunctionDef",
-          "line": 104,
+          "line": 105,
           "summary": "",
           "parameters": [
             "argv"
@@ -29910,6 +29954,110 @@
           "name": "main",
           "kind": "FunctionDef",
           "line": 67,
+          "summary": "",
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "path": "tools/test-database-bootstrap.py",
+      "summary": "Verify a fresh schema and queue in disposable, network-isolated PostgreSQL16.",
+      "symbols": [
+        {
+          "name": "command",
+          "kind": "FunctionDef",
+          "line": 17,
+          "summary": "",
+          "parameters": []
+        },
+        {
+          "name": "sql",
+          "kind": "FunctionDef",
+          "line": 21,
+          "summary": "",
+          "parameters": [
+            "text",
+            "allowed"
+          ]
+        },
+        {
+          "name": "verify_released_payloads",
+          "kind": "FunctionDef",
+          "line": 30,
+          "summary": "Execute released client functions with a fenced SQL-backed request recorder.",
+          "parameters": []
+        },
+        {
+          "name": "verify_released_payloads.Response",
+          "kind": "ClassDef",
+          "line": 42,
+          "summary": ""
+        },
+        {
+          "name": "verify_released_payloads.Response.__init__",
+          "kind": "FunctionDef",
+          "line": 45,
+          "summary": "",
+          "parameters": [
+            "self",
+            "rows"
+          ]
+        },
+        {
+          "name": "verify_released_payloads.Response.json",
+          "kind": "FunctionDef",
+          "line": 46,
+          "summary": "",
+          "parameters": [
+            "self"
+          ]
+        },
+        {
+          "name": "verify_released_payloads.Client",
+          "kind": "ClassDef",
+          "line": 48,
+          "summary": ""
+        },
+        {
+          "name": "verify_released_payloads.Client.delete",
+          "kind": "AsyncFunctionDef",
+          "line": 49,
+          "summary": "",
+          "parameters": [
+            "self",
+            "url",
+            "params"
+          ]
+        },
+        {
+          "name": "verify_released_payloads.Client.post",
+          "kind": "AsyncFunctionDef",
+          "line": 60,
+          "summary": "",
+          "parameters": [
+            "self",
+            "url",
+            "json"
+          ]
+        },
+        {
+          "name": "verify_released_payloads.get_client",
+          "kind": "AsyncFunctionDef",
+          "line": 75,
+          "summary": "",
+          "parameters": []
+        },
+        {
+          "name": "verify_released_payloads.exercise",
+          "kind": "AsyncFunctionDef",
+          "line": 84,
+          "summary": "",
+          "parameters": []
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 100,
           "summary": "",
           "parameters": []
         }

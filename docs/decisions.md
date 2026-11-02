@@ -16,7 +16,7 @@ The model proposes the difference between a target property and selected compara
 
 ## Jobs outlive HTTP requests
 
-The importer creates a listing and enqueues work. `v2_scheduler.py` and `workers/pipeline_worker.py` use durable jobs, predecessor gates, claim leases, heartbeat, retry and acknowledgement. This keeps an expensive run independent of the initiating browser request. The archive's missing original claim/bootstrap DDL is recorded as installation work; source implementation and fresh database acceptance remain distinct evidence.
+The importer creates a listing and enqueues work. `v2_scheduler.py` and `workers/pipeline_worker.py` use durable jobs, predecessor gates, claim leases, heartbeat, retry and acknowledgement. This keeps an expensive run independent of the initiating browser request. The original claim/bootstrap DDL was absent from the archive. The [fresh database](fresh-database.md) reconstructs that SQL from the current call paths, preserves earlier DDL and verifies its contracts in disposable PostgreSQL; connected provider acceptance remains separate evidence.
 
 ## Recipient files own provider access
 

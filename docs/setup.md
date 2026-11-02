@@ -46,17 +46,17 @@ Install `backend/requirements.txt` into a separate virtual environment for the c
 
 ## Supabase and queue artifacts
 
-The native application uses Supabase REST tables and Postgres RPCs. `db/001_schema.sql` is the original base schema. `supabase/migrations` and `backend/migrations` retain subsequent versioned changes; `supabase/migrations_legacy` records older copies. Their duplicate numbers and historical assumptions require reconciliation against a newly owned empty project, rather than running every file lexically.
+For a new Supabase project, follow the [private CLI bootstrap](fresh-database.md): configure your connection URI through hidden input, check local inputs and run `tools/bootstrap-database.py --apply`. Then configure your project URL and server service-role key. The same guide explains the installed tables, queue/RPC contracts and disposable PostgreSQL verification.
 
-The archived code implements pipeline runs/jobs, job claims, acknowledgement, retry, lease extension and status aggregation. The archive lacks the original base `pipeline_jobs`/`claim_pipeline_jobs` DDL. Fresh queue installation and worker recovery therefore remain an explicit integration task. The original cloud tables were retired; archived customer-row dumps stay private. This release supplies source and the proved deterministic result, with this schema gap recorded.
+The bootstrap reconciles the current native Estimate persistence with retained DDL: text run IDs, durable jobs/events, atomic claims, BOQ merge, report variants and run costs. It preserves the dated migrations and refuses an existing application schema. The original cloud tables were retired; customer-row archives retain their private custody.
 
-Use a recipient-owned Supabase URL and server service-role credential. Keep the service role on the server. Set up the owned schema, storage permissions and application access control before importing recipient data or starting a worker. Preserve the worker's lease/predecessor/idempotency semantics when completing the missing bootstrap. The retained API/admin routes were trusted local tools; public hosting needs application authorization and provider limits.
+The frontend reads through the backend. Fresh application tables and RPCs are granted to its service role; keep that key in the private backend runtime file. Review storage permissions, application authorization and provider limits when making your connected installation public. Historical migration folders remain useful design records and forward-migration inputs for an existing installation.
 
 ## Reference-data regeneration
 
 The first result uses synthetic rates. A full V5 run needs an owned construction price database, compatible index and dimension metadata, plus the matching embeddings and full labor index named by `backend/pricing/bcca_embedding_matcher.py`. The current loader's four f32/metadata files and full labor index are absent from the archived tree. The differently named older array is a historical artifact, rather than a verified replacement.
 
-With licensed recipient inputs, `backend/pricing/scripts/build_bcca_embedding_index_full.py` and `build_bcca_dimension_artifacts_v1.py` provide the original regeneration path. That path uses the recipient's embedding provider. Regeneration, full queue setup, listing acquisition, model analysis and actual account acceptance require measured verification after those resources are commissioned.
+With your licensed inputs, `backend/pricing/scripts/build_bcca_embedding_index_full.py` and `build_bcca_dimension_artifacts_v1.py` provide the original regeneration path using your embedding provider. Follow [connected acceptance](fresh-database.md#connected-acceptance) to verify acquired listings, model analysis and your account configuration against the installed queue.
 
 On a constrained verification host, ESTIMATES_BUILD_CACHE=0 disables only generated Webpack filesystem caching. The application and locked dependencies are unchanged. Normal installs/builds use the default cache.
 

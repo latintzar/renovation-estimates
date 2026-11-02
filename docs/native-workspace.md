@@ -48,7 +48,7 @@ These are retrospective extraction choices:
 
 Fresh frontend npm installation, full Next 16.4.3 build and TypeScript checks pass. Pure server-contract tests cover complete cached reports, exact BOQ totals, bounded pagination, readonly behavior and provider-path denial. Actual Chromium checks desktop/phone listing, renovation, property and comparable views, the detailed budget, selected-property address/area, professional assignment state and print layout. Source/publication receipts record final hashes.
 
-Live acquired listings, model/photo analysis, queue/Supabase bootstrap, embedding reference artifacts, measured maps, negotiation, translation providers, communications and billing are recipient commissioning. All source preparation and cached workspace proof use zero model/provider calls.
+Live acquired listings, model/photo analysis, embedding reference artifacts, measured maps, negotiation, translation providers, communications and billing use your own connected resources. [Fresh database](fresh-database.md) supplies the native persistence/queue bootstrap and its isolated SQL proof. All source preparation and cached workspace proof use zero model/provider calls.
 
 ## Atelier navigation
 
